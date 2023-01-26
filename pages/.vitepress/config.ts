@@ -11,7 +11,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "Example", link: "/example" }
+      { text: "Team", link: "/team" }
 
       // {
       //   text: 'Dropdown Menu',
@@ -30,7 +30,7 @@ export default defineConfig({
         text: "Welcome",
         items: [
           { text: "Home", link: "/" },
-          { text: "Example", link: "/example" }
+          { text: "Team", link: "/team" }
           // ...
         ]
       }
