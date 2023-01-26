@@ -2,9 +2,11 @@ import { defineConfig } from "vitepress";
 
 // refer https://vitepress.vuejs.org/config/introduction for details
 export default defineConfig({
-  lang: "en-US",
   title: "HUNT Cloud",
   description: "Vite & Vue powered static site generator.",
+
+  lang: "en-US",
+  outDir: "../build",
 
   themeConfig: {
     nav: [
