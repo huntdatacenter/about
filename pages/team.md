@@ -63,6 +63,12 @@ const members = [
       { icon: 'github', link: 'https://github.com/JakubNTNU' },
     ]
   },
+  {
+    avatar: 'https://scontent.ftrd4-1.fna.fbcdn.net/v/t39.30808-6/291898733_441725691294624_2762473677040864481_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=vpuqosTtOW8AX_0LCJg&_nc_oc=AQmHGMARK6hgrzcu9Jf5PFjiAxVFqqY8oobuH9sWqQ5rkpPt3h3J82mxFrDe_1rJ7AM&tn=MFetIvO19rG3qhzL&_nc_ht=scontent.ftrd4-1.fna&oh=00_AfDNKaFSbADAjZMw0Vso4fWUVoHAxJB-kKw9tM9Bf4AI-Q&oe=63D7D12E',
+    name: 'Ingunn Berg Ferstad',
+    title: 'Communication',
+    //links: []
+  },
 ]
 </script>
 
