@@ -11,18 +11,15 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "Team", link: "/team" }
-
-      // {
-      //   text: 'Dropdown Menu',
-      //   items: [
-      //     { text: 'Item A', link: '/item-1' },
-      //     { text: 'Item B', link: '/item-2' },
-      //     { text: 'Item C', link: '/item-3' },
-      //   ],
-      // },
-
-      // ...
+      { text: "Team", link: "/team" },
+      {
+        text: 'Sections',
+        items: [
+          { text: 'Do Science', link: '#do-science' },
+          { text: 'Administer Science', link: '#administer-science' },
+          { text: 'Find Out', link: '#find-out' },
+        ],
+      },
     ],
 
     sidebar: [
@@ -30,8 +27,7 @@ export default defineConfig({
         text: "Welcome",
         items: [
           { text: "Home", link: "/" },
-          { text: "Team", link: "/team" }
-          // ...
+          { text: "Team", link: "/team" },
         ]
       }
     ]
