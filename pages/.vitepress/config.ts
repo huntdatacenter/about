@@ -7,6 +7,7 @@ export default defineConfig({
 
   lang: "en-US",
   outDir: "../build",
+  appearance: 'light',
 
   themeConfig: {
     siteTitle: "",
