@@ -1,4 +1,5 @@
 ---
+title: Team
 layout: page
 sidebar: false
 ---

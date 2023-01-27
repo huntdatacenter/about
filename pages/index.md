@@ -1,4 +1,5 @@
 ---
+title: Welcome
 layout: page
 sidebar: false
 ---
@@ -24,7 +25,7 @@ import VPImage from '@theme/components/VPImage.vue'
         size="medium"
         theme="brand"
         text="Do science"
-        href="#do-science"
+        href="#testing1"
       />
     </div>
     <div class="column">
@@ -34,7 +35,7 @@ import VPImage from '@theme/components/VPImage.vue'
         size="medium"
         theme="alt"
         text="Administer science"
-        href="#administer-science"
+        href="#testing2"
       />
     </div>
     <div class="column">
@@ -44,7 +45,7 @@ import VPImage from '@theme/components/VPImage.vue'
         size="medium"
         theme="sponsor"
         text="Find out"
-        href="#find-out"
+        href="#testing3"
       />
     </div>
   </div>
