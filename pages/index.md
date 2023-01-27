@@ -16,16 +16,7 @@ import VPImage from '@theme/components/VPImage.vue'
     <div class="hunt-cloud-header-img"></div>
   </div>
 
-  <!-- <VPImage
-    image="https://images.unsplash.com/photo-1528722828814-77b9b83aafb2"
-    alt="Heading"
-    height="300"
-    width="300"
-  /> -->
-  <!-- theme = brand / alt /sponsor -->
-
-  <div class="row" style="max-width: 960px;
-  margin: 0 auto !important;">
+  <div class="row">
     <div class="column">
       <VPButton
         class="hunt-cloud-section"
@@ -65,7 +56,7 @@ import VPImage from '@theme/components/VPImage.vue'
 .hunt-cloud-header {
   width: 100vw;
   max-width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 64px;
 }
 
 .hunt-cloud-header-img {
@@ -87,12 +78,31 @@ import VPImage from '@theme/components/VPImage.vue'
   justify-content: center;
   align-items: center;
   margin-left: 40px;
-  margin-right: 40px
+  margin-right: 40px;
+}
+
+.row {
+  max-width: 960px;
+  margin: 0 auto !important;
 }
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 80%;
+  min-height: 50px;
+  padding-bottom: 32px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+@media (min-width: 720px) {
+
+  .column {
+    width: 33%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
 }
 
 </style>
