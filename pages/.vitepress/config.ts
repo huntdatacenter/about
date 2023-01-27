@@ -3,12 +3,14 @@ import { defineConfig } from "vitepress";
 // refer https://vitepress.vuejs.org/config/introduction for details
 export default defineConfig({
   title: "HUNT Cloud",
-  description: "Vite & Vue powered static site generator.",
+  description: "",
 
   lang: "en-US",
   outDir: "../build",
 
   themeConfig: {
+    siteTitle: "",
+    logo: "/img/hunt-cloud-logo.svg",
     nav: [
       { text: "Home", link: "/" },
       { text: "Team", link: "/team" },
