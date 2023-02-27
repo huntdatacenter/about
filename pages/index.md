@@ -14,7 +14,7 @@ import VPImage from '@theme/components/VPImage.vue'
 
 <div class="hunt-cloud-container">
   <div class="hunt-cloud-header">
-    <div class="hunt-cloud-header-img"></div>
+    <div class="hc-header-img"></div>
   </div>
 
   <div class="row">
@@ -24,7 +24,7 @@ import VPImage from '@theme/components/VPImage.vue'
         tag="a"
         size="medium"
         theme="brand"
-        text="Do science"
+        text="Explore"
         href="#testing1"
       />
     </div>
@@ -34,7 +34,7 @@ import VPImage from '@theme/components/VPImage.vue'
         tag="a"
         size="medium"
         theme="alt"
-        text="Administer science"
+        text="Evolve"
         href="#testing2"
       />
     </div>
@@ -44,7 +44,7 @@ import VPImage from '@theme/components/VPImage.vue'
         tag="a"
         size="medium"
         theme="sponsor"
-        text="Find out"
+        text="Scientific Suite"
         href="#testing3"
       />
     </div>
@@ -60,18 +60,19 @@ import VPImage from '@theme/components/VPImage.vue'
   margin-bottom: 64px;
 }
 
-.hunt-cloud-header-img {
-  background-image: url("https://assets.hdc.ntnu.no/assets/artworks/hunt-cloud_explore_medium.jpg");
-  background-position: 50% 72%;
+.hc-header-img {
+  background-image: url("https://assets.hdc.ntnu.no/assets/static/banner_640.jpg");
+  background-position: 50% 50%;
   //background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #004c7b;
   width: 100vw;
   max-width: 100%;
-  height: 350px;
+  height: 200px;
   object-fit: fill;
   margin: 0 auto !important;
+  box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .hunt-cloud-section {
@@ -104,6 +105,27 @@ import VPImage from '@theme/components/VPImage.vue'
     margin-right: 0;
   }
 
+}
+  
+@media (min-width: 960px) {
+  .hc-header-img {
+    background-image: url("https://assets.hdc.ntnu.no/assets/static/banner_1280.jpg");
+    height: 350px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hc-header-img {
+    background-image: url("https://assets.hdc.ntnu.no/assets/static/banner_1920.jpg");
+    height: 450px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hc-header-img {
+    background-image: url("https://assets.hdc.ntnu.no/assets/static/banner_1920.jpg");
+    height: 700px;
+  }
 }
 
 </style>
