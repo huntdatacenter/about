@@ -9,7 +9,7 @@ export default defineConfig({
   base: "",
   outDir: "../build",
   appearance: false,
-  cleanUrls: 'with-subfolders',
+  cleanUrls: true,
 
   // https://vitepress.vuejs.org/config/app-configs#head
   head: [
@@ -19,6 +19,14 @@ export default defineConfig({
         rel: "shortcut icon",
         href: "https://www.ntnu.no/assets/images/favicon.ico"
       }
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "/css/custom.css",
+      },
     ],
     [
       "link",
