@@ -8,7 +8,7 @@ export default defineConfig({
 
   base: "",
   outDir: "../build",
-  appearance: 'light',
+  appearance: false,
   cleanUrls: 'with-subfolders',
 
   // https://vitepress.vuejs.org/config/app-configs#head
@@ -68,9 +68,9 @@ export default defineConfig({
       {
         text: 'Sections',
         items: [
-          { text: 'Do Science', link: '#testing1' },
-          { text: 'Administer Science', link: '#testing2' },
-          { text: 'Find Out', link: '#testing3' },
+          { text: 'Explore', link: '/explore/' },
+          { text: 'Evolve', link: '/evolve/' },
+          { text: 'Scientific Suite', link: '/scientific-suite/' },
         ],
       },
     ],
@@ -85,6 +85,31 @@ export default defineConfig({
             { text: "Team", link: "/team" },
           ]
         }
+      ],
+      "/explore/": [
+        {
+          text: "Explore",
+          items: [
+            { text: "Home", link: "/explore/" },
+            { text: "Test", link: "/explore/test" },
+          ]
+        },
+      ],
+      "/evolve/": [
+        {
+          text: "Evolve",
+          items: [
+            { text: "Home", link: "/evolve/" },
+          ]
+        },
+      ],
+      "/scientific-suite/": [
+        {
+          text: "Scientific Suite",
+          items: [
+            { text: "Home", link: "/" },
+          ]
+        },
       ],
     },
   }

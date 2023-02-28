@@ -25,7 +25,7 @@ import VPImage from '@theme/components/VPImage.vue'
         size="medium"
         theme="brand"
         text="Explore"
-        href="#testing1"
+        href="/explore/"
       />
     </div>
     <div class="column">
@@ -35,7 +35,7 @@ import VPImage from '@theme/components/VPImage.vue'
         size="medium"
         theme="alt"
         text="Evolve"
-        href="#testing2"
+        href="/evolve/"
       />
     </div>
     <div class="column">
@@ -45,7 +45,7 @@ import VPImage from '@theme/components/VPImage.vue'
         size="medium"
         theme="sponsor"
         text="Scientific Suite"
-        href="#testing3"
+        href="/scientific-suite/"
       />
     </div>
   </div>
