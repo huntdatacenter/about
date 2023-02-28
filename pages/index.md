@@ -12,15 +12,15 @@ import VPImage from '@theme/components/VPImage.vue'
 //const members = []
 </script>
 
-<div class="hunt-cloud-container">
-  <div class="hunt-cloud-header">
+<div class="hc-container">
+  <div class="hc-header">
     <div class="hc-header-img"></div>
   </div>
 
-  <div class="row">
-    <div class="column">
+  <div class="hc-row">
+    <div class="hc-column">
       <VPButton
-        class="hunt-cloud-section"
+        class="hc-section"
         tag="a"
         size="medium"
         theme="brand"
@@ -28,9 +28,9 @@ import VPImage from '@theme/components/VPImage.vue'
         href="#testing1"
       />
     </div>
-    <div class="column">
+    <div class="hc-column">
       <VPButton
-        class="hunt-cloud-section"
+        class="hc-section"
         tag="a"
         size="medium"
         theme="alt"
@@ -38,9 +38,9 @@ import VPImage from '@theme/components/VPImage.vue'
         href="#testing2"
       />
     </div>
-    <div class="column">
+    <div class="hc-column">
       <VPButton
-        class="hunt-cloud-section"
+        class="hc-section"
         tag="a"
         size="medium"
         theme="sponsor"
@@ -54,7 +54,7 @@ import VPImage from '@theme/components/VPImage.vue'
 
 <style scoped>
 
-.hunt-cloud-header {
+.hc-header {
   width: 100vw;
   max-width: 100%;
   margin-bottom: 64px;
@@ -75,7 +75,7 @@ import VPImage from '@theme/components/VPImage.vue'
   box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.hunt-cloud-section {
+.hc-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,12 +83,12 @@ import VPImage from '@theme/components/VPImage.vue'
   margin-right: 40px;
 }
 
-.row {
+.hc-row {
   max-width: 960px;
   margin: 0 auto !important;
 }
 
-.column {
+.hc-column {
   float: left;
   width: 80%;
   min-height: 50px;
@@ -99,7 +99,7 @@ import VPImage from '@theme/components/VPImage.vue'
 
 @media (min-width: 720px) {
 
-  .column {
+  .hc-column {
     width: 33%;
     margin-left: 0;
     margin-right: 0;
