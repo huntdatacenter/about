@@ -61,7 +61,7 @@ import VPImage from '@theme/components/VPImage.vue'
 }
 
 .hc-header-img {
-  background-image: url("https://assets.hdc.ntnu.no/assets/static/banner_640.jpg");
+  background-image: url("/img/HAD_banner_960_3.jpg");
   background-position: 50% 50%;
   //background-attachment: fixed;
   background-repeat: no-repeat;
@@ -106,24 +106,24 @@ import VPImage from '@theme/components/VPImage.vue'
   }
 
 }
-  
+
 @media (min-width: 960px) {
   .hc-header-img {
-    background-image: url("https://assets.hdc.ntnu.no/assets/static/banner_1280.jpg");
+    background-image: url("/img/HAD_banner_1280_5.jpg");
     height: 350px;
   }
 }
 
 @media (min-width: 1280px) {
   .hc-header-img {
-    background-image: url("https://assets.hdc.ntnu.no/assets/static/banner_1920.jpg");
+    background-image: url("/img/HAD_banner_1920_1.jpg");
     height: 450px;
   }
 }
 
 @media (min-width: 1920px) {
   .hc-header-img {
-    background-image: url("https://assets.hdc.ntnu.no/assets/static/banner_1920.jpg");
+    background-image: url("/img/HAD_banner_1920_1.jpg");
     height: 700px;
   }
 }
