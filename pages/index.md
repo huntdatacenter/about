@@ -63,7 +63,6 @@ import VPImage from '@theme/components/VPImage.vue'
 .hc-header-img {
   background-image: url("/img/HAD_banner_960_3.jpg");
   background-position: 50% 50%;
-  //background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #004c7b;
