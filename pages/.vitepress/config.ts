@@ -1,7 +1,6 @@
-import { defineConfig } from "vitepress";
-
 // refer https://vitepress.vuejs.org/config/introduction for details
-export default defineConfig({
+
+export default {
   title: "HUNT Cloud",
   description: "About",
   lang: "en-US",
@@ -121,4 +120,4 @@ export default defineConfig({
       ],
     },
   }
-});
+}
