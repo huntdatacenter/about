@@ -70,11 +70,6 @@ const members = [
     title: 'Communication',
     //links: []
   },
-  {
-     avatar: 'https://www.ntnu.no/documents/4941131/1323102351/user-profile-empty.svg',
-     name: 'Diepiriye Deinma Okujagu',
-     title: 'Data Engineer',
-  },
 ]
 </script>
 
