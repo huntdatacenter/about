@@ -2,129 +2,214 @@
 title: Welcome
 layout: page
 sidebar: false
+buttons:
+  - text: Explore
+    # href: /explore/
+    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
+    theme: brand
+  - text: Evolve
+    # href: /evolve/
+    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
+    theme: alt
+  - text: Scientific Suite
+    # href: /scientific-suite/
+    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
+    theme: sponsor
+contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 
-<script setup>
+<!-- <script setup></script> -->
 
-import VPButton from '@theme/components/VPButton.vue'
-import VPImage from '@theme/components/VPImage.vue'
-
-//const members = []
-</script>
-
-<div class="hc-container">
+<div class="hc-home-page">
   <div class="hc-header">
     <div class="hc-header-img"></div>
   </div>
 
-  <div class="hc-row">
-    <div class="hc-column">
-      <VPButton
-        class="hc-section"
-        tag="a"
-        size="medium"
-        theme="brand"
-        text="Explore"
-        href="/explore/"
-      />
+  <div class="hc-grey-block">
+    <div class="hc-block-container">
+      <div class="hc-title-main">
+        Freedom to Explore
+      </div>
+      <div class="hc-subtitle-main">
+        HUNT Cloud provides scientists with the tools and guidance to explore the world of science and research.
+      </div>
     </div>
-    <div class="hc-column">
-      <VPButton
-        class="hc-section"
-        tag="a"
-        size="medium"
-        theme="alt"
-        text="Evolve"
-        href="/evolve/"
-      />
+  </div>
+
+  <div class="hc-white-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Core products
+      </div>
+      <div class="hc-row">
+        <div class="hc-col">
+          <VPButton
+            tag="a"
+            size="medium"
+            :theme="$frontmatter.buttons[0].theme"
+            :text="$frontmatter.buttons[0].text"
+            :href="$frontmatter.buttons[0].href"
+          />
+        </div>
+        <div class="hc-col">
+          <VPButton
+            tag="a"
+            size="medium"
+            :theme="$frontmatter.buttons[1].theme"
+            :text="$frontmatter.buttons[1].text"
+            :href="$frontmatter.buttons[1].href"
+          />
+        </div>
+        <div class="hc-col">
+          <VPButton
+            tag="a"
+            size="medium"
+            :theme="$frontmatter.buttons[2].theme"
+            :text="$frontmatter.buttons[2].text"
+            :href="$frontmatter.buttons[2].href"
+          />
+        </div>
+      </div>
     </div>
-    <div class="hc-column">
-      <VPButton
-        class="hc-section"
-        tag="a"
-        size="medium"
-        theme="sponsor"
-        text="Scientific Suite"
-        href="/scientific-suite/"
-      />
+  </div>
+
+  <div class="hc-grey-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Contact us
+      </div>
+      <div class="hc-container-subtitle">
+        HUNT Cloud provides scientists with the tools and guidance to explore the world of science and research.
+      </div>
+      <div class="hc-section">
+        <VPButton
+          tag="a"
+          size="medium"
+          theme="brand"
+          text="Contact us"
+          :href="$frontmatter.contact"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="hc-white-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Roles
+      </div>
+      <div class="hc-row">
+        <div class="hc-col">
+          Abc
+        </div>
+        <div class="hc-col">
+          Def
+        </div>
+        <div class="hc-col">
+          Ghi
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hc-grey-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        About ISO
+      </div>
+      <div class="hc-row">
+        <div class="hc-col">
+          Abc
+        </div>
+        <div class="hc-col">
+          Def
+        </div>
+        <div class="hc-col">
+          Ghi
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hc-white-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Scientific Tools
+      </div>
+      <div class="hc-row">
+        <div class="hc-col">
+          Abc
+        </div>
+        <div class="hc-col">
+          Def
+        </div>
+        <div class="hc-col">
+          Ghi
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hc-grey-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Pillars
+      </div>
+      <div class="hc-row">
+        <div class="hc-col">
+          Abc
+        </div>
+        <div class="hc-col">
+          Def
+        </div>
+        <div class="hc-col">
+          Ghi
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hc-white-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Agreements
+      </div>
+      <div class="hc-container-title">
+        Prices
+      </div>
+    </div>
+  </div>
+
+  <div class="hc-grey-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        About HUNT Cloud
+      </div>
+      <div class="hc-container-subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+      </div>
+      <p>
+        Ut luctus dui sit amet tellus hendrerit, ac tincidunt nulla porta. Praesent tempus lacus vel nunc dictum vestibulum. Praesent fermentum quam a dolor maximus euismod et eu nulla. Donec consequat ultricies est, at congue ante blandit vitae. Praesent semper et ligula sit amet aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in sem id massa pretium faucibus.
+      </p>
+      <div class="hc-section">
+        <VPButton
+          tag="a"
+          size="medium"
+          theme="brand"
+          text="Contact us"
+          :href="$frontmatter.contact"
+        />
+      </div>
     </div>
   </div>
 
 </div>
 
+
+
+
 <style scoped>
 
-.hc-header {
-  width: 100vw;
-  max-width: 100%;
-  margin-bottom: 64px;
-}
-
-.hc-header-img {
-  background-image: url("/img/HAD_banner_960_3.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #004c7b;
-  width: 100vw;
-  max-width: 100%;
-  height: 200px;
-  object-fit: fill;
-  margin: 0 auto !important;
-  box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.hc-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.hc-row {
-  max-width: 960px;
-  margin: 0 auto !important;
-}
-
-.hc-column {
-  float: left;
-  width: 80%;
-  min-height: 50px;
-  padding-bottom: 32px;
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
-
-@media (min-width: 720px) {
-
-  .hc-column {
-    width: 33%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-}
-
-@media (min-width: 960px) {
-  .hc-header-img {
-    background-image: url("/img/HAD_banner_1280_5.jpg");
-    height: 350px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .hc-header-img {
-    background-image: url("/img/HAD_banner_1920_1.jpg");
-    height: 450px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .hc-header-img {
-    background-image: url("/img/HAD_banner_1920_1.jpg");
-    height: 700px;
-  }
-}
+/* CSS scoped specifically to this page */
 
 </style>
