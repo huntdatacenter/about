@@ -10,22 +10,25 @@
     /* margin-bottom: 64px; */
 }
 
-.hc-white-block {
+.hc-block {
     display: block;
     width: 100vw;
     max-width: 100%;
     min-height: 100px;
     /* background-color: rgb(255, 255, 255); */
-    /* margin-bottom: 64px; */
+}
+
+/* Grey block */
+.hc-block:nth-child(even) {
+    background-color: rgb(238, 238, 238);
 }
 
 .hc-grey-block {
-    display: block;
-    width: 100vw;
-    max-width: 100%;
-    min-height: 100px;
-    background-color: rgb(238, 238, 238);
-    /* margin-bottom: 64px; */
+    background-color: rgb(238, 238, 238) !important;
+}
+
+.hc-white-block {
+    background-color: unset !important;
 }
 
 .hc-title-main {

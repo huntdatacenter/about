@@ -25,7 +25,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-header-img"></div>
   </div>
 
-  <div class="hc-grey-block">
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-title-main">
         Freedom to Explore
@@ -36,7 +36,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-  <div class="hc-white-block">
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Core products
@@ -73,7 +73,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-  <div class="hc-grey-block">
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Contact us
@@ -93,7 +93,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-  <div class="hc-white-block">
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Roles
@@ -112,7 +112,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-  <div class="hc-grey-block">
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         About ISO
@@ -131,7 +131,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-  <div class="hc-white-block">
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Scientific Tools
@@ -150,7 +150,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-  <div class="hc-grey-block">
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Pillars
@@ -169,7 +169,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-  <div class="hc-white-block">
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Agreements
@@ -180,7 +180,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-  <div class="hc-grey-block">
+  <div class="hc-block hc-grey-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         About HUNT Cloud
