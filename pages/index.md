@@ -6,7 +6,8 @@ buttons:
   - text: Explore
     # href: /explore/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    theme: brand
+    # theme: brand
+    theme: sponsor
   - text: Evolve
     # href: /evolve/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
@@ -85,7 +86,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <VPButton
           tag="a"
           size="medium"
-          theme="brand"
+          theme="sponsor"
           text="Contact us"
           :href="$frontmatter.contact"
         />
@@ -195,7 +196,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <VPButton
           tag="a"
           size="medium"
-          theme="brand"
+          theme="sponsor"
           text="Contact us"
           :href="$frontmatter.contact"
         />
