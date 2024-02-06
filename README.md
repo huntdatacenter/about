@@ -1,15 +1,25 @@
 # About HUNT Cloud
 
-Tested with node18.
+Make sure to have `node>=18` installed
+
+## Setup development environment
+
+```bash
+mamba create -n node20 -y "python==3.12.*" "nodejs==20.*" "yarn"
+
+mamba activate node20
+```
+
+## Running
 
 Install dependencies:
 
-```
+```bash
 yarn install
 ```
 
 Run dev locally:
 
-```
+```bash
 yarn dev
 ```
