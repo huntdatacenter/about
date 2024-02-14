@@ -8,17 +8,20 @@ products:
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
     # theme: brand
     # theme: sponsor
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    img: ./img/product-explore.png
+    text: Scientists are explorers. This section is aimed at those who use data to discover knowledge for a better world in HUNT Cloud.
   - title: Evolve
     # href: /evolve/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
     # theme: alt
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    img: ./img/product-evolve.png
+    text: Scientific administrators are keymakers. This section is aimed at administrators that enables scientific explorations.
   - title: Scientific Suite
     # href: /scientific-suite/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
     # theme: sponsor
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    img: ./img/product-scientific-suite.png
+    text: Trust enables science. This section is aimed at data controllers and scientific centers that guides the development of HUNT Cloud.
 contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 

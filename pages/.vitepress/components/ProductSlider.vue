@@ -41,7 +41,8 @@ export default {
   <!-- TODO: make this to work with different number of items -->
   <div :class="sliderClasses">
     <a v-for="item in items" :key="item.title" :href="item.href" class="group-slider-item">
-      <div class="group-slider-item-title">{{ item.title }}</div>
+      <!-- <div class="group-slider-item-title">{{ item.title }}</div> -->
+      <img :src="item.img" :alt="item.title" style="margin-top: -36px;" />
       <div class="group-slider-item-text">
         {{ item.text }}
       </div>
@@ -55,7 +56,7 @@ export default {
     /* box-sizing: border-box; */
 	/* background-color: #0E1318; */
 	/* width: 500px; */
-	height: 300px;
+	height: 380px;
 
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -113,7 +114,7 @@ export default {
     box-sizing: border-box;
     background-color: rgb(238, 238, 238);
     padding: 15px 15px 10px 15px;
-    height: 240px;
+    height: 320px;
     width: 250px;
     border-radius: 5px;
 }
@@ -125,8 +126,15 @@ export default {
     line-height: 24px;
     font-weight: bold;
     font-size: 18px;
-	margin: 0 auto;
+    margin: 0 auto;
     margin-bottom: 12px;
+}
+
+.group-slider-item-text {
+    padding-top: 20px;
+    line-height: 18px;
+    font-size: 14px;
+    text-align: justify;
 }
 
 </style>
