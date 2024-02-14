@@ -2,6 +2,7 @@ import type { EnhanceAppContext } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 
 // import GreyBlock from '../components/GreyBlock.vue';
+import ProductSlider from '../components/ProductSlider.vue';
 // import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vue';
 import { VPButton } from 'vitepress/theme';
 // import { VPImage } from 'vitepress/theme';
@@ -14,6 +15,7 @@ export default {
     enhanceApp(context: EnhanceAppContext) {
         // context.app.component('GreyBlock', GreyBlock);
         context.app.component('VPButton', VPButton);
+        context.app.component('ProductSlider', ProductSlider);
         // context.app.component('VPImage', VPImage);
     }
 }

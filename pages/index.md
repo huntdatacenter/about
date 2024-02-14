@@ -2,20 +2,23 @@
 title: Welcome
 layout: page
 sidebar: false
-buttons:
-  - text: Explore
+products:
+  - title: Explore
     # href: /explore/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
     # theme: brand
-    theme: sponsor
-  - text: Evolve
+    # theme: sponsor
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Evolve
     # href: /evolve/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    theme: alt
-  - text: Scientific Suite
+    # theme: alt
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - title: Scientific Suite
     # href: /scientific-suite/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    theme: sponsor
+    # theme: sponsor
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 
@@ -42,35 +45,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-title">
         Core products
       </div>
-      <div class="hc-row">
-        <div class="hc-col">
-          <VPButton
-            tag="a"
-            size="medium"
-            :theme="$frontmatter.buttons[0].theme"
-            :text="$frontmatter.buttons[0].text"
-            :href="$frontmatter.buttons[0].href"
-          />
-        </div>
-        <div class="hc-col">
-          <VPButton
-            tag="a"
-            size="medium"
-            :theme="$frontmatter.buttons[1].theme"
-            :text="$frontmatter.buttons[1].text"
-            :href="$frontmatter.buttons[1].href"
-          />
-        </div>
-        <div class="hc-col">
-          <VPButton
-            tag="a"
-            size="medium"
-            :theme="$frontmatter.buttons[2].theme"
-            :text="$frontmatter.buttons[2].text"
-            :href="$frontmatter.buttons[2].href"
-          />
-        </div>
-      </div>
+      <ProductSlider :products="$frontmatter.products" />
     </div>
   </div>
 
