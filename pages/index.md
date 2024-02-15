@@ -48,6 +48,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-title">
         Core products
       </div>
+      <!-- <div class="bg-blue-500 text-white p-4">Hello, Tailwind CSS!</div> -->
       <ProductSlider :products="$frontmatter.products" />
     </div>
   </div>

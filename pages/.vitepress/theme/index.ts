@@ -7,6 +7,8 @@ import ProductSlider from '../components/ProductSlider.vue';
 import { VPButton } from 'vitepress/theme';
 // import { VPImage } from 'vitepress/theme';
 
+import './tailwind.postcss';
+
 import './custom.css';
 import './common.css';
 
