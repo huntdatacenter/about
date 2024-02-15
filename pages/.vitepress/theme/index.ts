@@ -17,6 +17,7 @@ import './common.css';
 
 import PrimeVue from 'primevue/config';
 import Button from 'primevue/button';
+import Card from 'primevue/card';
 import Lara from './presets/lara';
 
 // import 'primevue/resources/themes/aura-light-green/theme.css'
@@ -28,12 +29,15 @@ export default {
             unstyled: true,
             pt: Lara,
         });
-        // context.app.component('GreyBlock', GreyBlock);
-        context.app.component('VPButton', VPButton);
-        context.app.component('ProductSlider', ProductSlider);
-        // context.app.component('VPImage', VPImage);
 
+        // Custom components
+        context.app.component('ProductSlider', ProductSlider);
+        context.app.component('VPButton', VPButton);
+        // context.app.component('GreyBlock', GreyBlock);
+
+        // Primevue components
         context.app.component('Button', Button);
+        context.app.component('Card', Card);
 
     }
 }
