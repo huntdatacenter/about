@@ -42,7 +42,7 @@ export default {
   <div :class="sliderClasses">
     <a v-for="item in items" :key="item.title" :href="item.href" class="group-slider-item">
       <!-- <div class="group-slider-item-title">{{ item.title }}</div> -->
-      <img :src="item.img" :alt="item.title" style="margin-top: -36px;" />
+      <img class="group-slider-item-img" :src="item.img" :alt="item.title" />
       <div class="group-slider-item-text">
         {{ item.text }}
       </div>
@@ -128,6 +128,21 @@ export default {
     font-size: 18px;
     margin: 0 auto;
     margin-bottom: 12px;
+}
+
+.group-slider-item-img {
+  max-width: 220px;
+  margin-top: -36px;
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+}
+
+.group-slider-item-img:hover {
+  max-width: 230px;
+  margin-top: -46px;
+  margin-left: -5px;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
 }
 
 .group-slider-item-text {
