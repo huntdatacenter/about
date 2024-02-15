@@ -17,6 +17,7 @@
     "primevue": "^3.48.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.23.9",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
