@@ -1,10 +1,11 @@
 <script lang="ts">
-// import { VPTeamMembers } from 'vitepress/theme'
+
+import Card from 'primevue/card';
 
 export default {
-//   components: {
-//     VPTeamMembers
-//   },
+  components: {
+    Card
+  },
   props: {
     products: {
       type: Object,
@@ -40,12 +41,18 @@ export default {
 <template>
   <!-- TODO: make this to work with different number of items -->
   <div :class="sliderClasses">
-    <a v-for="item in items" :key="item.title" :href="item.href" class="group-slider-item">
-      <!-- <div class="group-slider-item-title">{{ item.title }}</div> -->
-      <img class="group-slider-item-img" :src="item.img" :alt="item.title" />
-      <div class="group-slider-item-text">
-        {{ item.text }}
-      </div>
+    <a v-for="item in items" :key="item.title" :href="item.href">
+      <Card class="group-slider-card">
+        <!-- <div class="group-slider-item-title">{{ item.title }}</div> -->
+        <template #title>
+          <img class="group-slider-item-img" :src="item.img" :alt="item.title" />
+        </template>
+        <template #content>
+          <div class="group-slider-item-text">
+            {{ item.text }}
+          </div>
+        </template>
+      </Card>
     </a>
   </div>
 </template>
@@ -56,7 +63,7 @@ export default {
     /* box-sizing: border-box; */
 	/* background-color: #0E1318; */
 	/* width: 500px; */
-	height: 380px;
+	height: 400px;
 
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -109,12 +116,22 @@ export default {
     scrollbar-width: none;  /* Firefox */
 }
 
+.group-slider-card {
+    display: inline-block;
+    box-sizing: border-box;
+    /* background-color: rgb(238, 238, 238); */
+    /* padding: 15px 15px 10px 15px; */
+    height: 350px;
+    width: 250px;
+    /* border-radius: 5px; */
+}
+
 .group-slider-item {
     display: inline-block;
     box-sizing: border-box;
     background-color: rgb(238, 238, 238);
     padding: 15px 15px 10px 15px;
-    height: 320px;
+    height: 350px;
     width: 250px;
     border-radius: 5px;
 }
@@ -146,10 +163,10 @@ export default {
 }
 
 .group-slider-item-text {
-    padding-top: 20px;
-    line-height: 18px;
+    padding-top: 6px;
+    line-height: 22px;
     font-size: 14px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 </style>
