@@ -61,13 +61,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         HUNT Cloud provides scientists with the tools and guidance to explore the world of science and research.
       </div>
       <div class="hc-section">
-        <VPButton
-          tag="a"
-          size="medium"
-          theme="sponsor"
-          text="Contact us"
-          :href="$frontmatter.contact"
-        />
+        <v-btn rounded="1" size="x-large" target="_blank" :href="$frontmatter.contact">Contact us</v-btn>
       </div>
     </div>
   </div>
@@ -171,13 +165,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Ut luctus dui sit amet tellus hendrerit, ac tincidunt nulla porta. Praesent tempus lacus vel nunc dictum vestibulum. Praesent fermentum quam a dolor maximus euismod et eu nulla. Donec consequat ultricies est, at congue ante blandit vitae. Praesent semper et ligula sit amet aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in sem id massa pretium faucibus.
       </p>
       <div class="hc-section">
-        <VPButton
-          tag="a"
-          size="medium"
-          theme="sponsor"
-          text="Contact us"
-          :href="$frontmatter.contact"
-        />
+        <v-btn rounded="1" size="x-large" target="_blank" :href="$frontmatter.contact">Contact us</v-btn>
       </div>
     </div>
   </div>
