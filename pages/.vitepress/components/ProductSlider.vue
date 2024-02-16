@@ -40,12 +40,14 @@ export default {
 <template>
   <!-- TODO: make this to work with different number of items -->
   <div :class="sliderClasses">
-    <a v-for="item in items" :key="item.title" :href="item.href" class="group-slider-item">
-      <!-- <div class="group-slider-item-title">{{ item.title }}</div> -->
-      <img class="group-slider-item-img" :src="item.img" :alt="item.title" />
-      <div class="group-slider-item-text">
-        {{ item.text }}
-      </div>
+    <a v-for="item in items" :key="item.title" :href="item.href" class="group-slider-card-item">
+      <v-card class="pa-4 group-slider-card" elevation="1" style="height: 100%">
+        <!-- <div class="group-slider-item-title">{{ item.title }}</div> -->
+        <img class="group-slider-item-img" :src="item.img" :alt="item.title" />
+        <div class="group-slider-item-text">
+          {{ item.text }}
+        </div>
+      </v-card>
     </a>
   </div>
 </template>
@@ -64,7 +66,7 @@ export default {
 	display: grid;
 	/* grid-template-columns: repeat(6, auto); */
     /* grid-template-columns: auto; */
-	grid-gap: 0 50px;
+	grid-gap: 0 40px;
 
 	padding: 30px 60px;
 	padding-right: 0;
@@ -74,7 +76,7 @@ export default {
 }
 
 .group-slider {
-	padding-right: 50px !important;
+	padding-right: 40px !important;
 }
 .group-slider-1-items {
 	grid-template-columns: repeat(1, auto);
@@ -107,6 +109,20 @@ export default {
 .group-slider {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+.group-slider-card-item {
+    display: inline-block;
+    box-sizing: border-box;
+    /* background-color: rgb(238, 238, 238); */
+    /* padding: 15px 15px 10px 15px; */
+    height: 330px;
+    width: 260px;
+    border-radius: 5px;
+}
+
+.group-slider-card {
+    overflow: unset;
 }
 
 .group-slider-item {
