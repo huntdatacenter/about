@@ -1,0 +1,29 @@
+name: Publish
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Setup nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "yarn"
+      - run: yarn install
+      - run: yarn build
+      - name: Deploy to GitHub Pages
+        # uses: JamesIves/github-pages-deploy-action@releases/v4
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: build
