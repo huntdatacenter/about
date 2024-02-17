@@ -97,5 +97,10 @@ export default {
         },
       ],
     },
+  },
+  vite: {
+    ssr: {
+      noExternal: ["vuetify"]
+    }
   }
 }
