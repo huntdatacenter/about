@@ -22,6 +22,27 @@ products:
     # theme: sponsor
     img: ./img/product-scientific-suite.png
     text: Trust enables science. This section is aimed at data controllers and scientific centers that guides the development of HUNT Cloud.
+roles:
+  - title: Scientist
+    # href: /roles/scientist/
+    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
+    text: Scientists are explorers. This section is aimed at those who...
+  - title: Scientific leader
+    # href: /roles/scientific-leader/
+    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
+    text: Scientists are explorers. This section is aimed at those who...
+  - title: Administrator
+    # href: /roles/administrator/
+    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
+    text: Scientists are explorers. This section is aimed at those who...
+  - title: Teacher
+    # href: /roles/teacher/
+    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
+    text: Scientists are explorers. This section is aimed at those who...
+  - title: Inventor (SME)
+    # href: /roles/sme-inventor/
+    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
+    text: Scientists are explorers. This section is aimed at those who...
 contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 
@@ -71,17 +92,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-title">
         Roles
       </div>
-      <div class="hc-row">
-        <div class="hc-col">
-          Abc
-        </div>
-        <div class="hc-col">
-          Def
-        </div>
-        <div class="hc-col">
-          Ghi
-        </div>
-      </div>
+      <RoleSlider :roles="$frontmatter.roles" />
     </div>
   </div>
 
