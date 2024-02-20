@@ -9,7 +9,7 @@ products:
     # theme: brand
     # theme: sponsor
     img: ./img/product-explore.png
-    text: Scientists are explorers. This section is aimed at those who use data to discover knowledge for a better world in HUNT Cloud.
+    text: Get easy access to trusted research environments and commonly used tools with our Explore package.
   - title: Evolve
     # href: /evolve/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
@@ -44,6 +44,7 @@ roles:
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
     text: Scientists are explorers. This section is aimed at those who...
 contact: https://docs.hdc.ntnu.no/about/contact/
+
 ---
 
 <!-- <script setup></script> -->
@@ -53,25 +54,35 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-header-img"></div>
   </div>
 
+<!-- Block: Freedom to explore -->
+
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-title-main">
         Freedom to Explore
       </div>
       <div class="hc-subtitle-main">
-        HUNT Cloud provides scientists with the tools and guidance to explore the world of science and research.
+        Welcome to HUNT Cloud! We provide scientists with tools and guidance to explore and evolve their magical world of sensitive data science. 
       </div>
     </div>
   </div>
+
+<!-- Block: Core products -->
+<!-- Content: In this page header -->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Core products
       </div>
+      <div class="hc-container-subtitle">
+      HUNT Cloud provides trusted research environments.
+      </div>
       <ProductSlider :products="$frontmatter.products" />
     </div>
   </div>
+
+<!-- Block: Contact us -->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -79,31 +90,89 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Contact us
       </div>
       <div class="hc-container-subtitle">
-        HUNT Cloud provides scientists with the tools and guidance to explore the world of science and research.
+        Contact us to get started, to ask how your science may prosper from our services, or just to share the joy and excitement of data-driven science!
       </div>
       <div class="hc-section">
         <v-btn rounded="1" size="x-large" target="_blank" :href="$frontmatter.contact">Contact us</v-btn>
       </div>
     </div>
   </div>
+
+<!-- Block: Roles -->
+<!-- Content: In this page header -->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Roles
       </div>
-      <RoleSlider :roles="$frontmatter.roles" />
+      <div class="hc-container-subtitle">
+        Read about our products from your own perspective.
+      </div>
+      <div class="hc-row">
+        <div class="hc-col">
+          <b>Scientist</b>
+        </div>
+        <div class="hc-col">
+          <b>Scientific leader</b><br>
+          Text something.
+        </div>
+        <div class="hc-col">
+          <b>Scientific administrator</b>
+        </div>
+        <div class="hc-col">
+          <b>Teacher</b>
+        </div>
+        <div class="hc-col">
+          <b>Private enterprise</b>
+        </div>
+        <div class="hc-col">
+          <b>Department or clinic</b>
+        </div>
+      </div>
+<!--      <RoleSlider :roles="$frontmatter.roles" /> -->
     </div>
   </div>
+
+
+<!-- Content: ISO -->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        About ISO
+        ISO certificates
+      </div>
+      <div class="hc-container-subtitle">
+        Trust is crucial in science. HUNT Cloud holds third-party verified ISO certificates for information security, privacy and quality.
       </div>
       <div class="hc-row">
         <div class="hc-col">
-          Abc
+          <b>Quality management</b>
+        </div>
+        <div class="hc-col">
+          <b>Information security</b>
+        </div>
+        <div class="hc-col">
+          <b>Information privacy</b>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Content: Scientific tools -->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Scientific tools
+      </div>
+      <div class="hc-container-subtitle">
+        Value statement on tools.
+      </div>
+      <div class="hc-row">
+        <div class="hc-col">
+          <b>Test</b>
         </div>
         <div class="hc-col">
           Def
@@ -115,75 +184,86 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Scientific Tools
-      </div>
-      <div class="hc-row">
-        <div class="hc-col">
-          Abc
-        </div>
-        <div class="hc-col">
-          Def
-        </div>
-        <div class="hc-col">
-          Ghi
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Block: Pillars -->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Pillars
       </div>
+      <div class="hc-container-subtitle">
+        Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+      </div>
       <div class="hc-row">
         <div class="hc-col">
-          Abc
+          Trust
         </div>
         <div class="hc-col">
-          Def
+          Technology
         </div>
         <div class="hc-col">
-          Ghi
+          Collaboration
         </div>
       </div>
     </div>
   </div>
+
+<!-- Block: Agreements -->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Agreements
       </div>
-      <div class="hc-container-title">
-        Prices
+      <div class="hc-container-subtitle">
+        Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
       </div>
     </div>
   </div>
 
-  <div class="hc-block hc-grey-block">
+
+<!-- Block: Prices -->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Prices
+      </div>
+      <div class="hc-container-subtitle">
+        Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+      </div>
+    </div>
+  </div>
+
+
+<!-- Block: About HUNT -->
+
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         About HUNT Cloud
       </div>
       <div class="hc-container-subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+        Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
       </div>
-      <p>
-        Ut luctus dui sit amet tellus hendrerit, ac tincidunt nulla porta. Praesent tempus lacus vel nunc dictum vestibulum. Praesent fermentum quam a dolor maximus euismod et eu nulla. Donec consequat ultricies est, at congue ante blandit vitae. Praesent semper et ligula sit amet aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in sem id massa pretium faucibus.
-      </p>
       <div class="hc-section">
         <v-btn rounded="1" size="x-large" target="_blank" :href="$frontmatter.contact">Contact us</v-btn>
       </div>
     </div>
   </div>
 
+
+<!-- Block: Bottom text -->
+
+  <div class="hc-block hc-grey-block">
+    <div class="hc-block-container">
+      <p>
+        Sub text on privacy etc.
+      </p>
+    </div>
+  </div>
+
 </div>
-
-
 
 
 <style scoped>
