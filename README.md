@@ -5,7 +5,7 @@ Make sure to have `node>=18` installed
 ## Setup development environment
 
 ```bash
-mamba create -n node20 -y "python==3.12.*" "nodejs==20.*" "yarn"
+mamba create -n node20 -c conda-forge -y "python==3.12.*" "nodejs==20.*" "yarn"
 
 mamba activate node20
 ```
