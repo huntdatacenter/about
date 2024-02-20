@@ -62,7 +62,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Freedom to Explore
       </div>
       <div class="hc-subtitle-main">
-        Welcome to HUNT Cloud! We provide scientists with tools and guidance to explore and evolve their magical world of sensitive data science. 
+        Welcome to HUNT Cloud! We provide scientists with tools and guidance to explore and evolve their magical world of sensitive data science.
       </div>
     </div>
   </div>
@@ -170,17 +170,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         Value statement on tools.
       </div>
-      <div class="hc-row">
-        <div class="hc-col">
-          <b>Test</b>
-        </div>
-        <div class="hc-col">
-          Def
-        </div>
-        <div class="hc-col">
-          Ghi
-        </div>
-      </div>
+      <ToolsSlider />
     </div>
   </div>
 
