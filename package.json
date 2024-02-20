@@ -9,11 +9,17 @@
   "scripts": {
     "dev": "vitepress dev pages",
     "build": "vitepress build pages",
-    "preview": "vitepress preview pages"
+    "preview": "vitepress preview pages",
+    "test": "vitest"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/test-utils": "^2.4.4",
+    "happy-dom": "^13.3.8",
     "vite-plugin-vuetify": "^2.0.1",
     "vitepress": "^1.0.0-rc.41",
+    "vitest": "^1.3.0",
     "vue": "^3.4.15",
     "vuetify": "^3.5.4"
   },
