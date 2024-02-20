@@ -1,6 +1,6 @@
 # About HUNT Cloud
 
-Make sure to have `node>=18` installed
+Make sure to have `node==20` installed
 
 ## Setup development environment
 
