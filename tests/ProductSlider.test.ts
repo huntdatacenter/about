@@ -1,19 +1,24 @@
 import { mount } from "@vue/test-utils";
 import ProductSlider from "../pages/.vitepress/components/ProductSlider.vue";
-import { expect, test, it, describe } from "vitest";
+import { expect, it } from "vitest";
 
-describe('ProductSlider', () => {
-  it('renders empty component', () => {
-    const wrapper = mount(ProductSlider, {
-      propsData: {
-        products: [],
-      }
-    });
-    expect(wrapper.exists()).toBe(true);
-  });
+import { vuetify } from '../pages/.vitepress/plugins/vuetify';
 
-  it('renders the component', () => {
-    const wrapper = mount(ProductSlider, {
+
+it('renders empty component', () => {
+  const wrapper = mount(ProductSlider, {
+    propsData: {
+      products: [],
+    }
+  })
+
+  expect(wrapper.exists()).toBe(true)
+})
+
+it('renders the component', () => {
+  const wrapper = mount(
+    ProductSlider,
+    {
       propsData: {
         products: [
           {
@@ -22,10 +27,16 @@ describe('ProductSlider', () => {
             img: './product1.png',
             href: '#product1',
           },
-        ],
+        ]
+      },
+      global: {
+        // components: {
+        //   ProductSlider,
+        // },
+        plugins: [vuetify],
       }
-    });
-    expect(wrapper.exists()).toBe(true);
-  });
-  // Add more test cases as needed
-});
+    }
+  )
+
+  expect(wrapper.exists()).toBe(true)
+})
