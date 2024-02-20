@@ -4,6 +4,9 @@ import DefaultTheme from 'vitepress/theme';
 // import GreyBlock from '../components/GreyBlock.vue';
 import ProductSlider from '../components/ProductSlider.vue';
 import RoleSlider from '../components/RoleSlider.vue';
+import ToolsSlider from '../components/ToolsSlider.vue';
+import WindowSlider from '../components/WindowSlider.vue';
+
 // import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vue';
 import { VPButton } from 'vitepress/theme';
 // import { VPImage } from 'vitepress/theme';
@@ -31,6 +34,8 @@ export default {
     context.app.component('VPButton', VPButton);
     context.app.component('ProductSlider', ProductSlider);
     context.app.component('RoleSlider', RoleSlider);
+    context.app.component('ToolsSlider', ToolsSlider);
+    context.app.component('WindowSlider', WindowSlider);
     // context.app.component('VPImage', VPImage);
   }
 }
