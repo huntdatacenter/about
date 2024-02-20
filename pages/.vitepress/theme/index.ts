@@ -14,20 +14,15 @@ import { VPButton } from 'vitepress/theme';
 import './custom.css';
 import './common.css';
 
-import '@mdi/font/css/materialdesignicons.css'
+import '@mdi/font/css/materialdesignicons.css';
 
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
+import 'vuetify/styles';
+
+import { vuetify } from '../plugins/vuetify';
 
 export default {
   extends: DefaultTheme,
   enhanceApp(context: EnhanceAppContext) {
-    const vuetify = createVuetify({
-      components,
-      directives,
-    })
     context.app.use(vuetify)
 
     // context.app.component('GreyBlock', GreyBlock);
