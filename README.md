@@ -15,7 +15,7 @@ mamba activate node20
 Install dependencies:
 
 ```bash
-yarn install
+yarn install --immutable
 ```
 
 Run dev locally:
