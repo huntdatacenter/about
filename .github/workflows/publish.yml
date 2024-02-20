@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
       - name: Run tests
-        run: yarn test
+        run: yarn test --run
       - name: Build pages
         run: yarn build
       - name: Deploy to GitHub Pages
