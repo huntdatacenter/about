@@ -10,7 +10,8 @@
     "dev": "vitepress dev pages",
     "build": "vitepress build pages",
     "preview": "vitepress preview pages",
-    "test": "vitest"
+    "test": "vitest",
+    "shell": "node"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
