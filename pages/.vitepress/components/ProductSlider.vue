@@ -1,13 +1,20 @@
 <script lang="ts">
 // import { VPTeamMembers } from 'vitepress/theme'
 
+interface Product {
+  title: string,
+  text: string,
+  img: string,
+  href: string,
+}
+
 export default {
 //   components: {
 //     VPTeamMembers
 //   },
   props: {
     products: {
-      type: Object,
+      type: Array<Product>,
       required: true
     }
   },
