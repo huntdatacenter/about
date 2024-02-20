@@ -23,3 +23,11 @@ Run dev locally:
 ```bash
 yarn dev
 ```
+
+## Testing
+
+Run tests:
+
+```bash
+yarn test
+```
