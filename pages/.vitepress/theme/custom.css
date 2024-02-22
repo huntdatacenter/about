@@ -15,7 +15,12 @@
     width: 100vw;
     max-width: 100%;
     min-height: 100px;
+    line-height: 1.2;
     /* background-color: rgb(255, 255, 255); */
+    @media screen and (max-width: 960px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
 }
 
 /* Grey block */
@@ -34,7 +39,6 @@
 
 .hc-title-main {
     color: rgb(0, 0, 0);
-    font-weight: bold;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -42,23 +46,21 @@
     margin-top: 96px;
     margin-bottom: 32px;
     padding-bottom: 32px;
-    font-size: 96px;
-    line-height: 96px;
-    /* font-size: calc(3px + 5vw); */
-    @media screen and (max-width: 960px) {
-        font-size: 8vw;
-        line-height: 6rem;
-    }
-    @media screen and (max-width: 400px) {
-        font-size: 8vw;
-        line-height: 2.5rem;
-    }
+    font-weight: bold;
+    font-size: min(6em, calc(18px + 8vw));
+    line-height: 1.5;
+    /* @media screen and (max-width: 960px) {
+      font-size: 8vw;
+    } */
+    /* @media screen and (max-width: 400px) {
+      font-size: 8vw;
+    } */
 }
 
 .hc-subtitle-main {
     color: rgb(0, 0, 0);
-    line-height: 30px;
-    font-size: 24px;
+    font-size: min(2em, calc(8px + 3vw));
+    line-height: 1.5;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -71,32 +73,31 @@
 .hc-block-container {
     max-width: 960px;
     margin: 0 auto !important;
-    padding: 32px 0px 48px 0px;
+    padding: 32px 0px 64px 0px;
 }
 
 .hc-container-title {
     color: rgb(0, 0, 0);
-    line-height: 30px;
-    font-weight: bold;
-    font-size: 48px;
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 48px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: min(3.5em, calc(10px + 6vw));
 }
 
 .hc-container-subtitle {
     color: rgb(0, 0, 0);
-    line-height: 42px;
-    font-size: 32px;
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* padding-top: 4px; */
     padding-bottom: 32px;
+    line-height: 1.5;
+    font-size: min(1.5em, calc(6px + 2vw));
 }
 
 .hc-row {

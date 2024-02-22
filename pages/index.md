@@ -58,7 +58,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-title-main">
+      <div class="hc-title-main font-weight-black">
         Freedom to Explore
       </div>
       <div class="hc-subtitle-main">
@@ -109,28 +109,63 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         Read about our products from your own perspective.
       </div>
-      <div class="hc-row">
-        <div class="hc-col">
-          <b>Scientist</b>
-        </div>
-        <div class="hc-col">
-          <b>Scientific leader</b><br>
-          Text something.
-        </div>
-        <div class="hc-col">
-          <b>Scientific administrator</b>
-        </div>
-        <div class="hc-col">
-          <b>Teacher</b>
-        </div>
-        <div class="hc-col">
-          <b>Private enterprise</b>
-        </div>
-        <div class="hc-col">
-          <b>Department or clinic</b>
-        </div>
-      </div>
-<!--      <RoleSlider :roles="$frontmatter.roles" /> -->
+      <v-row align="center">
+        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Scientist</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Scientific leader</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Scientific administrator</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Teacher</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Private enterprise</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Department or clinic</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+      <!-- <RoleSlider :roles="$frontmatter.roles" /> -->
     </div>
   </div>
 
@@ -145,17 +180,35 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         Trust is crucial in science. HUNT Cloud holds third-party verified ISO certificates for information security, privacy and quality.
       </div>
-      <div class="hc-row">
-        <div class="hc-col">
-          <b>Quality management</b>
-        </div>
-        <div class="hc-col">
-          <b>Information security</b>
-        </div>
-        <div class="hc-col">
-          <b>Information privacy</b>
-        </div>
-      </div>
+      <v-row align="center">
+        <v-col cols="12" class="v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Quality management</v-card-title>
+            <v-card-text>
+              Ut quis tincidunt lacus, vitae maximus consectetur adipiscing elit.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Information security</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Information privacy</v-card-title>
+            <v-card-text>
+              Ut quis tincidunt lacus, consectetur adipiscing elit.
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </div>
   </div>
 
@@ -181,11 +234,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-title">
         Pillars
       </div>
-      <div class="hc-container-subtitle">
+      <!-- <div class="hc-container-subtitle">
         Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
-      </div>
-      <v-row>
-        <v-col col="4">
+      </div> -->
+      <v-row align="center">
+        <v-col cols="12" class="v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Trust</v-card-title>
@@ -194,7 +247,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col col="4">
+        <v-col cols="12" class="v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Technology</v-card-title>
@@ -203,7 +256,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col col="4">
+        <v-col cols="12" class="v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Collaboration</v-card-title>
@@ -220,7 +273,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <v-row>
+      <v-row class="my-4">
         <!-- Agreements -->
         <v-col col="6">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
