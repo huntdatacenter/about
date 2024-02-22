@@ -31,8 +31,9 @@ export default {
     max-width="920"
   >
     <v-slide-group
-      class="h-100 pa-4"
+      class="h-100 py-4"
       show-arrows
+      style="margin-left: -24px; margin-right: -24px"
     >
       <v-slide-group-item
         v-for="item in products"

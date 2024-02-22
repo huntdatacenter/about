@@ -228,3 +228,7 @@
     text-align: center;
     gap: 1rem;
 }
+
+.v-slide-group__content {
+  justify-content: center;
+}
