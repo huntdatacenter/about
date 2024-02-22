@@ -9,6 +9,12 @@ it('renders empty component', () => {
   const wrapper = mount(ProductSlider, {
     propsData: {
       products: [],
+    },
+    global: {
+      // components: {
+      //   ProductSlider,
+      // },
+      plugins: [vuetify],
     }
   })
 
