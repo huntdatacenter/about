@@ -19,7 +19,7 @@ export default {
   //   },
   // },
   mounted() {
-    // const headerImage = document.getElementById('header-reserve');
+    // const headerImage = document.getElementById('header-image');
     // console.log(headerImage);
 
     const headerImageObs = document.getElementById('header-image')
@@ -33,7 +33,7 @@ export default {
           //   headerImageElem.style.minHeight = '250px';
           // }
           headerReserveElem.style.height = `${headerImageElem.clientHeight > 250 ? headerImageElem.clientHeight : 250}px`;
-          console.log(`Size changed: ${ headerImageElem ? headerImageElem.clientHeight : 0} ${ headerReserveElem.style.height }`);
+          // console.log(`Size changed: ${ headerImageElem ? headerImageElem.clientHeight : 0} ${ headerReserveElem.style.height }`);
         }
       });
       resizeObserver.observe(headerImageObs);
@@ -47,9 +47,8 @@ export default {
 
 <template>
   <div class="content-header-block">
-    <!-- <div class="content-header-wrapper content-header-screen-size"> -->
     <div class="content-header-wrapper">
-      <v-img id="header-image" class="content-header-img-wrapper" content-class="content-header-img" :src="src" :srcset="srcset" :alt="alt"></v-img>
+      <v-img id="header-image" class="content-header-img-wrapper" :src="src" :srcset="srcset" :alt="alt" cover></v-img>
     </div>
     <div id="header-reserve" class="content-header-reserve"></div>
   </div>
@@ -59,17 +58,12 @@ export default {
 
 .content-header-block {
   display: block;
-  /* position: fixed; */
   padding-top: 0px !important;
-  /* margin-top: -50px !important; */
+  box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .content-header-wrapper {
   width: 100vw;
-}
-
-.content-header-img {
-  object-fit: fill !important;
 }
 
 .content-header-img-wrapper {
@@ -79,7 +73,6 @@ export default {
   width: 100vw;
   max-width: 100%;
   min-height: 250px;
-  box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .content-header-reserve {
@@ -88,7 +81,6 @@ export default {
   width: 100%;
   min-height: 250px;
   height: 250px;
-  /* background-color: rgb(255, 255, 255) !important; */
 }
 
 </style>
