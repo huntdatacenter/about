@@ -75,7 +75,7 @@ export default {
         {
           text: "Explore",
           items: [
-            { text: "Home", link: "/explore/" },
+            { text: "Introduction", link: "/explore/" },
             { text: "Test", link: "/explore/test" },
           ]
         },
@@ -84,7 +84,7 @@ export default {
         {
           text: "Evolve",
           items: [
-            { text: "Home", link: "/evolve/" },
+            { text: "Introduction", link: "/evolve/" },
           ]
         },
       ],
@@ -92,7 +92,16 @@ export default {
         {
           text: "Scientific Suite",
           items: [
-            { text: "Home", link: "/" },
+            { text: "Introduction", link: "/scientific-suite/" },
+          ]
+        },
+      ],
+      "/tools/": [
+        {
+          text: "Tools",
+          items: [
+            { text: "Introduction", link: "/tools/" },
+            { text: "Workbench", link: "/tools/workbench/" },
           ]
         },
       ],

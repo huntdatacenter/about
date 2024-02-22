@@ -184,17 +184,35 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
       </div>
-      <div class="hc-row">
-        <div class="hc-col">
-          Trust
-        </div>
-        <div class="hc-col">
-          Technology
-        </div>
-        <div class="hc-col">
-          Collaboration
-        </div>
-      </div>
+      <v-row>
+        <v-col col="4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Trust</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col col="4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Technology</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col col="4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Collaboration</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </div>
   </div>
 
@@ -202,56 +220,35 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-container-title">
-        Agreements
-      </div>
-      <div class="hc-container-subtitle">
-        Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
-      </div>
+      <v-row>
+        <!-- Agreements -->
+        <v-col col="6">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card elevation="0">
+            <v-card-title>Agreements</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <!-- Prices -->
+        <v-col col="6">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card elevation="0">
+            <v-card-title>Prices</v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </div>
   </div>
 
 
-<!-- Block: Prices -->
+<!-- Block: About HUNT Cloud -->
 
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Prices
-      </div>
-      <div class="hc-container-subtitle">
-        Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
-      </div>
-    </div>
-  </div>
-
-
-<!-- Block: About HUNT -->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        About HUNT Cloud
-      </div>
-      <div class="hc-container-subtitle">
-        Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
-      </div>
-      <div class="hc-section">
-        <v-btn rounded="1" size="x-large" target="_blank" :href="$frontmatter.contact">Contact us</v-btn>
-      </div>
-    </div>
-  </div>
-
-
-<!-- Block: Bottom text -->
-
-  <div class="hc-block hc-grey-block">
-    <div class="hc-block-container">
-      <p>
-        Sub text on privacy etc.
-      </p>
-    </div>
-  </div>
+<FooterBlock :contact="$frontmatter.contact" />
 
 </div>
 

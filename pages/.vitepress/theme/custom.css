@@ -137,6 +137,34 @@
     box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
+.hc-page {
+  display: block;
+  z-index: 1;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.hc-page {
+  & > * {
+    max-width: 960px;
+    margin: 0 auto !important;
+  }
+  & > .hc-block-container {
+    padding: 32px 0px 48px 0px !important;
+  }
+}
+
+.white-bg {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.scrollover {
+  z-index: 1;
+  margin-top: 50px;
+  /* &:nth-of-type(2) {
+    margin-top: 150px !important;
+  } */
+}
+
 @media (min-width: 720px) {
 
     .hc-column {
