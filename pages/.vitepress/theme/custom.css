@@ -28,7 +28,8 @@
 }
 
 .hc-white-block {
-    background-color: unset !important;
+    background-color: rgb(255, 255, 255) !important;
+    /* background-color: unset !important; */
 }
 
 .hc-title-main {
