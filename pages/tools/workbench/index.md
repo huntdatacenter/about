@@ -3,15 +3,14 @@ title: Workbench
 subtitle: HUNT Workbench aims to improve your day to day work experience with modern data science tools such as Python, R code, and MATLAB.
 layout: page
 sidebar: false
+contact: https://docs.hdc.ntnu.no/about/contact/
 features:
   - A safe place to experiment
   - Reproducible science
   - Flexibility
 ---
 
-<!-- <div class="hc-home-page"> -->
-
-<ContentHeader img="/img/HAD_banner_960_3.jpg"/>
+<ContentHeader src="/img/HAD_banner_960_3.jpg" srcset="/img/HAD_banner_1280_5.jpg 960w, /img/HAD_banner_1920_1.jpg 1280w" />
 
 <div class="hc-page pb-5">
   <div class="hc-block-container">
@@ -29,7 +28,7 @@ features:
         class="mx-auto"
         max-width="600"
         height="300"
-        image="https://docs.hdc.ntnu.no/assets/img/JupyterLab.c8d6ca60.png"
+        image="./images/workbench.png"
         title=""
         theme="dark"
       ></v-card>
@@ -88,7 +87,28 @@ features:
       </a>
     </v-col>
   </v-row>
+</div>
 
+<div class="hc-block hc-grey-block">
+  <div class="hc-block-container">
+    <div class="hc-container-title">
+      Open science
+    </div>
+    <div class="hc-container-subtitle">
+      The open-source playground where ideas flourish and analysis thrives!
+    </div>
+  </div>
+</div>
+
+<div class="hc-block hc-white-block">
+  <div class="hc-block-container">
+    <div class="hc-container-title">
+      Stuck in Past Statistical Snags?
+    </div>
+    <div class="hc-container-subtitle">
+      Level up with Python and R!
+    </div>
+  </div>
 </div>
 
 <FooterBlock :contact="$frontmatter.contact" />

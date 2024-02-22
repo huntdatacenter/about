@@ -3,14 +3,40 @@
 export default {
   // name: 'ContentHeader',
   props: {
-    // title: { type: String, default: null },
-    // subtitle: { type: String, default: null },
-    img: { type: String, required: true },
-    height: { type: String, default: "400px" },
+    src: { type: String, required: true, default: "/img/HAD_banner_960_3.jpg" },
+    srcset: { type: String, default: "/img/HAD_banner_1280_5.jpg 960w, /img/HAD_banner_1920_1.jpg 1280w" },
+    alt: { type: String, default: "Header image" },
+    // height: { type: String, default: "400px" },
   },
   data() {
     return {
-      imgSrc: this.img,
+      // item: null,
+    }
+  },
+  // watch: {
+  //   variableName: function(after, before) {
+  //     console.log(after);
+  //   },
+  // },
+  mounted() {
+    // const headerImage = document.getElementById('header-reserve');
+    // console.log(headerImage);
+
+    const headerImageObs = document.getElementById('header-image')
+    if (headerImageObs) {
+      const resizeObserver = new ResizeObserver(() => {
+        const headerImageElem = document.getElementById('header-image')
+        const headerReserveElem = document.getElementById('header-reserve')
+
+        if (headerImageElem && headerReserveElem) {
+          // if (headerImageElem.clientHeight < 250) {
+          //   headerImageElem.style.minHeight = '250px';
+          // }
+          headerReserveElem.style.height = `${headerImageElem.clientHeight > 250 ? headerImageElem.clientHeight : 250}px`;
+          console.log(`Size changed: ${ headerImageElem ? headerImageElem.clientHeight : 0} ${ headerReserveElem.style.height }`);
+        }
+      });
+      resizeObserver.observe(headerImageObs);
     }
   },
   computed: {
@@ -21,12 +47,11 @@ export default {
 
 <template>
   <div class="content-header-block">
+    <!-- <div class="content-header-wrapper content-header-screen-size"> -->
     <div class="content-header-wrapper">
-      <v-img class="content-header-img" :style="`height: ${height}; background-image: url('${imgSrc}');`"></v-img>
+      <v-img id="header-image" class="content-header-img-wrapper" content-class="content-header-img" :src="src" :srcset="srcset" :alt="alt"></v-img>
     </div>
-    <div class="content" :style="`height: ${height};`">
-
-    </div>
+    <div id="header-reserve" class="content-header-reserve"></div>
   </div>
 </template>
 
@@ -36,42 +61,34 @@ export default {
   display: block;
   /* position: fixed; */
   padding-top: 0px !important;
-  margin-top: -50px !important;
+  /* margin-top: -50px !important; */
 }
 
 .content-header-wrapper {
   width: 100vw;
-  padding-top: 0px;
-  /* position: fixed; */
-  /* margin-bottom: 64px; */
-}
-
-.content {
-  display: block;
-  /* z-index: 1; */
-  width: 100%;
-  height: 250px;
-  /* background-color: rgb(255, 255, 255) !important; */
 }
 
 .content-header-img {
-  /* z-index: 9999; */
+  object-fit: fill !important;
+}
+
+.content-header-img-wrapper {
   z-index: -1;
   padding-top: 0px;
-  /* position: absolute; */
-  /* max-width: 100%; */
   position: fixed;
-  /* background-attachment: fixed; */
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #004c7b;
   width: 100vw;
   max-width: 100%;
-  /* height: 400px; */
-  object-fit: fill;
-  margin: 0 auto !important;
+  min-height: 250px;
   box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-header-reserve {
+  display: block;
+  /* z-index: 1; */
+  width: 100%;
+  min-height: 250px;
+  height: 250px;
+  /* background-color: rgb(255, 255, 255) !important; */
 }
 
 </style>
