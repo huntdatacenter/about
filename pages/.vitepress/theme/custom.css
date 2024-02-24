@@ -107,6 +107,17 @@
     font-size: min(1.5em, calc(6px + 2vw));
 }
 
+.hc-container-text {
+    /* color: rgb(0, 0, 0); */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 32px;
+    line-height: 1.5;
+    font-size: min(1.5em, calc(4px + 1vw));
+}
+
 .hc-row {
     display: grid;
     column-gap: 10px;
