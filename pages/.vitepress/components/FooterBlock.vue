@@ -46,13 +46,13 @@ export default {
   <!-- <div class="hc-block hc-grey-block"> -->
   <div class="hc-block hc-blue-block">
     <div class="hc-block-container">
-      <v-row class="my-4">
-        <v-col cols="8" class="v-col-sm-6 v-col-md-4">
-          <b>Ready to get started?</b>
+      <v-row class="my-4 px-4">
+        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+          <b>Ready to get started on your journey?</b>
           <br />
-          Reach out to arrange a call.
+          Reach out to arrange a&nbsp;call.
         </v-col>
-        <v-col cols="4" class="v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
               <v-btn
@@ -74,11 +74,12 @@ export default {
           </v-hover>
         </v-col>
       </v-row>
-      <v-divider class="my-4"></v-divider>
+      <!-- <v-divider class="my-4"></v-divider> -->
       <v-row>
         <v-col v-for="(list, i) in lists" :key="i" cols="12" class="v-col-sm-6 v-col-md-4">
           <v-list bg-color="transparent">
             <v-list-subheader style="color: #fff;">{{ list.title }}</v-list-subheader>
+            <v-divider></v-divider>
               <v-list-item
                 v-for="(item, j) in list.items"
                 :key="i"
@@ -96,17 +97,20 @@ export default {
       <!-- <div class="hc-container-title">
         About HUNT Cloud
       </div> -->
-      <v-row class="my-4">
-        <v-col cols="12" class="v-col-sm-8 v-col-md-8">
+      <v-row class="mt-4 px-4">
+        <v-col cols="12" class="v-col-sm-12 v-col-md-8">
           <div class="hc-container-text" style="text-align: justify">
-            HUNT Cloud was established in 2013 to deliver trustworthy cloud services for
-            national and international science projects under the vision «data for a better world».
-            Our aim is to give scientists freedom to explore in digital laboratories where they bring their own data,
-            tools and collaborators. And we want to facilitate that explorations happens across fields
-            and across geographical borders.
+            <b>HUNT Cloud provides high-trust and flexible cloud computing for scientific explorations</b>
+            <br /><br />
+            Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for
+            both national and international scientific initiatives under the vision «data&nbsp;for&nbsp;a&nbsp;better&nbsp;world».
+            Our aim is to empower scientists by offering them the freedom to explore in digital laboratories,
+            where they bring their own sensitive data, tools and collaborators.
+            Our overarching goal is to facilitate seamless exploration across various fields and geographical borders,
+            fostering collaboration and innovation on a&nbsp;global scale.
           </div>
         </v-col>
-        <v-col cols="12" class="v-col-sm-4 v-col-md-4">
+        <v-col cols="12" class="v-col-sm-12 v-col-md-4">
           <v-img
             class="mx-auto"
             max-width="400"
@@ -128,10 +132,10 @@ export default {
       </v-row>
     </div>
     <div class="hc-block-container">
-      <v-row>
-        <p>
+      <v-row class="px-4">
+        <v-col cols="12">
           <a href="https://docs.hdc.ntnu.no/administer-science/privacy-statement/" target="_blank">Privacy statement</a>
-        </p>
+        </v-col>
       </v-row>
     </div>
   </div>
