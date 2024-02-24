@@ -17,6 +17,7 @@ export default {
 
 <template>
   <div class="hc-block hc-grey-block">
+  <!-- <div class="hc-block hc-blue-block"> -->
     <div class="hc-block-container">
       <div class="hc-container-title">
         About HUNT Cloud
@@ -28,8 +29,6 @@ export default {
         <v-btn rounded="1" size="x-large" target="_blank" :href="contact">Contact us</v-btn>
       </div>
     </div>
-  </div>
-  <div class="hc-block hc-grey-block">
     <div class="hc-block-container">
       <p>
         Sub text on privacy etc.
