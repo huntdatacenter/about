@@ -16,8 +16,8 @@ export default {
 </script>
 
 <template>
-  <div class="hc-block hc-grey-block">
-  <!-- <div class="hc-block hc-blue-block"> -->
+  <!-- <div class="hc-block hc-grey-block"> -->
+  <div class="hc-block hc-blue-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         About HUNT Cloud
