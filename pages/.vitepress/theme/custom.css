@@ -23,6 +23,11 @@
   }
 }
 
+/* Odd/white block */
+.hc-block:nth-child(odd) {
+  box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Grey block */
 .hc-block:nth-child(even) {
   /* background-color: rgb(238, 238, 238); */

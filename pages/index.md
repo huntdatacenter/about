@@ -93,12 +93,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Contact us to get started, to ask how your science may prosper from our services, or just to share the joy and excitement of data-driven science!
       </div>
       <div class="hc-section">
-        <v-btn rounded="1" size="x-large" target="_blank" :href="$frontmatter.contact" append-icon="mdi-chevron-right">
-          Contact us
-          <template v-slot:append>
-            <v-icon color="#ef8114"></v-icon>
-          </template>
-        </v-btn>
+        <hc-button title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
       </div>
     </div>
   </div>
@@ -120,7 +115,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Scientist</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button block size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -129,7 +133,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Scientific leader</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button block size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -138,7 +151,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Scientific administrator</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button block size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -147,7 +169,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Teacher</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -156,7 +187,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Private enterprise</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -165,7 +205,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Department or clinic</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -191,7 +240,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Quality management</v-card-title>
             <v-card-text>
-              Ut quis tincidunt lacus, vitae maximus consectetur adipiscing elit.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button block size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -200,7 +258,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Information security</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button block size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -209,7 +276,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Information privacy</v-card-title>
             <v-card-text>
-              Ut quis tincidunt lacus, consectetur adipiscing elit.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button block size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -248,7 +324,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Trust</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -257,7 +342,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Technology</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -266,7 +360,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card color="transparent" elevation="0">
             <v-card-title>Collaboration</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -285,7 +388,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card elevation="0">
             <v-card-title>Agreements</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -295,7 +407,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-card elevation="0">
             <v-card-title>Prices</v-card-title>
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+              <v-row dense>
+                <v-col cols="12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>

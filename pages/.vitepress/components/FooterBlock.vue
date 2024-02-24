@@ -53,25 +53,7 @@ export default {
           Reach out to arrange a&nbsp;call.
         </v-col>
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
-          <v-hover>
-            <template v-slot:default="{ isHovering, props }">
-              <v-btn
-                v-bind="props"
-                rounded="sm"
-                size="large"
-                target="_blank"
-                elevation="2"
-                :href="contact"
-                :append-icon="isHovering ? 'mdi-chevron-triple-right' : 'mdi-chevron-right'"
-              >
-                Contact us
-                <template v-slot:append>
-                  <!-- :class="{'ml-1': isHovering, 'mr-1': !isHovering}" -->
-                  <v-icon color="#ef8114"></v-icon>
-                </template>
-              </v-btn>
-            </template>
-          </v-hover>
+          <hc-button title="Contact us" :href="contact" target="_blank" size="large" elevation="2" />
         </v-col>
       </v-row>
       <!-- <v-divider class="my-4"></v-divider> -->
