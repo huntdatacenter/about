@@ -93,7 +93,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Contact us to get started, to ask how your science may prosper from our services, or just to share the joy and excitement of data-driven science!
       </div>
       <div class="hc-section">
-        <v-btn rounded="1" size="x-large" target="_blank" :href="$frontmatter.contact">Contact us</v-btn>
+        <v-btn rounded="1" size="x-large" target="_blank" :href="$frontmatter.contact" append-icon="mdi-chevron-right">
+          Contact us
+          <template v-slot:append>
+            <v-icon color="#ef8114"></v-icon>
+          </template>
+        </v-btn>
       </div>
     </div>
   </div>

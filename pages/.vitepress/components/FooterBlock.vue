@@ -6,7 +6,8 @@ export default {
   },
   data() {
     return {
-    //   imgSrc: this.img,
+      isHovering: false,
+      // imgSrc: this.img,
     }
   },
   computed: {
@@ -26,7 +27,25 @@ export default {
         Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
       </div>
       <div class="hc-section">
-        <v-btn rounded="1" size="x-large" target="_blank" :href="contact">Contact us</v-btn>
+        <v-hover>
+          <template v-slot:default="{ isHovering, props }">
+            <v-btn
+              v-bind="props"
+              rounded="sm"
+              size="x-large"
+              target="_blank"
+              elevation="2"
+              :href="contact"
+              :append-icon="isHovering ? 'mdi-chevron-triple-right' : 'mdi-chevron-right'"
+            >
+              Contact us
+              <template v-slot:append>
+                <!-- :class="{'ml-1': isHovering, 'mr-1': !isHovering}" -->
+                <v-icon color="#ef8114"></v-icon>
+              </template>
+            </v-btn>
+          </template>
+        </v-hover>
       </div>
     </div>
     <div class="hc-block-container">
