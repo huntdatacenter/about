@@ -3,7 +3,7 @@
 export default {
   props: {
     contact: { type: String, required: true },
-    image: { type: String, default: '' },
+    image: { type: String, default: '/img/robot-2-square-250.png' },
   },
   data() {
     return {
@@ -80,10 +80,11 @@ export default {
         About HUNT Cloud
       </div> -->
       <v-row class="mt-4 px-4">
+        <v-col cols="12">
+          <b>HUNT Cloud provides high-trust and flexible cloud computing for scientific explorations</b>
+        </v-col>
         <v-col cols="12" class="v-col-sm-12 v-col-md-8">
           <div class="hc-container-text" style="text-align: justify">
-            <b>HUNT Cloud provides high-trust and flexible cloud computing for scientific explorations</b>
-            <br /><br />
             Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for
             both national and international scientific initiatives under the vision «data&nbsp;for&nbsp;a&nbsp;better&nbsp;world».
             Our aim is to empower scientists by offering them the freedom to explore in digital laboratories,
@@ -95,9 +96,8 @@ export default {
         <v-col cols="12" class="v-col-sm-12 v-col-md-4">
           <v-img
             class="mx-auto"
-            max-width="400"
-            max-height="400"
-            color="#9db7e1"
+            max-width="200"
+            max-height="200"
             :src="image && image.length > 0 ? image : null"
           >
             <!-- src="https://docs.hdc.ntnu.no/img/hunt-cloud_bot_250_2.png" -->
