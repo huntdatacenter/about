@@ -120,7 +120,7 @@
     flex-direction: column;
     padding-bottom: 32px;
     line-height: 1.5;
-    font-size: min(1.1em, calc(8px + 1vw));
+    /* font-size: min(1.1em, calc(8px + 1vw)); */
 }
 
 .hc-row {
