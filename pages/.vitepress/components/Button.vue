@@ -42,7 +42,7 @@ export default {
         {{ title }}
         <template v-slot:append>
           <!-- :class="{'ml-1': isHovering, 'mr-1': !isHovering}" -->
-          <v-icon class="mt-1" color="#ef8114"></v-icon>
+          <v-icon color="#ef8114" style="margin-top: 1px !important"></v-icon>
         </template>
       </v-btn>
     </template>
