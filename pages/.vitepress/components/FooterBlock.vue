@@ -98,7 +98,7 @@ export default {
             class="mx-auto"
             max-width="200"
             max-height="200"
-            :src="image && image.length > 0 ? image : null"
+            :src="image"
           >
             <!-- src="https://docs.hdc.ntnu.no/img/hunt-cloud_bot_250_2.png" -->
             <template v-slot:placeholder>
