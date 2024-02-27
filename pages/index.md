@@ -62,7 +62,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Freedom to Explore
       </div>
       <div class="hc-subtitle-main">
-        Welcome to HUNT Cloud! We provide scientists with tools and guidance to explore and evolve their magical world of sensitive data science.
+        Enable your scientists with tools and guidance to explore and evolve the world of sensitive data science!
+        <!-- Welcome to HUNT Cloud! We provide scientists with tools and guidance to explore and evolve their magical world of sensitive data science. -->
       </div>
     </div>
   </div>
