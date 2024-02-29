@@ -95,7 +95,7 @@
     justify-content: center;
     flex-direction: column;
     padding-top: 64px;
-    padding-bottom: 48px;
+    padding-bottom: 18px;
     line-height: 1.5;
     font-weight: 500;
     font-size: min(3.5em, calc(10px + 6vw));
