@@ -42,13 +42,17 @@ export default {
       >
         <!-- v-slot="{ isSelected, toggle, selectedClass }" -->
         <a :href="item.href" class="group-slider-card-link">
-          <v-card class="mx-4 my-8 pa-4 group-slider-card" elevation="1" style="height: 100%" width="260">
+          <v-card class="mx-4 my-8 pa-4 group-slider-card" elevation="4" style="height: 100%" width="260">
             <img class="group-slider-item-img" :src="item.img" :alt="item.title" />
             <div class="group-slider-item-text">
               <b>{{ item.subtitle }}</b>
             </div>
             <div class="group-slider-item-text">
               {{ item.text }}
+              <br />
+              <div class="mt-2">
+                <hc-button size="small" href="place-link" title="Read more" />
+              </div>
             </div>
           </v-card>
         </a>
