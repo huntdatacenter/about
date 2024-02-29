@@ -114,14 +114,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Read about our products from your own perspective.
       </div>
       <v-row align="center">
-        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Scientist</v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Scientists working in a range of different fields use HUNT Cloud for their sensitive data explorations. Read on to see if we are a good fit for your needs.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -132,14 +133,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Scientific leader</v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Sensitive data represents a range of new oportunities in most scientific fields. At the same time, handling multiple projects, teams, legal and ethical complexities is a challenge. Our is for your team to thrive in this setting and succeed in ground-breaking science.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -150,14 +152,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Scientific administrator</v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Organizations owning large data values require trustworthy and predictable solutions. Scientific administrators are the unheralded drivers of scientific success in sensitive data. HUNT Cloud helps scientific administrators and organisations build data culture and promote trustworthy, high-ranking science.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -168,14 +171,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Teacher</v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  The next generation of scientists deserves to build their skills in real-life environments. They need to learn the tools of the future and be comfortable with the complexities that surround sensitive data. Our course packages are developed with this in mind. Read more to see how our set-up can be tailored to your course.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -186,14 +190,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Private enterprise</v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Innovation projects, enterprises and private companies have spesific challenges and needs in dealing with sensitive data. The HUNT Cloud Invent program might be for you.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -204,14 +209,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Department or clinic</v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  HUNT Cloud works closely with departments and clinics from many organisations. Our product packages are tailored for different levels of sensitive data activities, while ensuring easy overview and organisational control.
                 </v-col>
               </v-row>
               <v-row dense>
