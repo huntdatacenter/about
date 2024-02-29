@@ -81,9 +81,9 @@ export default {
           {
             text: 'Overview by field',
             items: [
-              { text: "Genomics", link: "#link" },
-              { text: "Statistics", link: "#link" },
-              { text: "Engineering", link: "#link" },
+              { text: "🧬 Genomics", link: "#link" },
+              { text: "📊 Statistics", link: "#link" },
+              { text: "👩‍💻 Engineering", link: "#link" },
             ]
           },
           {
@@ -98,6 +98,16 @@ export default {
               { text: "Image annotation", link: "#link" },
             ]
           },
+        ],
+      },
+      {
+        text: 'Resources',
+        items: [
+          { text: "Documentation", link: "https://docs.hdc.ntnu.no/" },
+          { text: 'Community', link: 'https://docs.hdc.ntnu.no/do-science/community/' },
+          { text: 'Prices', link: 'https://docs.hdc.ntnu.no/administer-science/prices/pricelist/' },
+          { text: 'Certificates', link: 'https://docs.hdc.ntnu.no/govern-science/compliance/certificates/' },
+          { text: 'Tingweek', link: 'https://docs.hdc.ntnu.no/govern-science/tingweek/' },
         ],
       },
       {
