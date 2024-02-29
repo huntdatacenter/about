@@ -270,7 +270,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" blue />
+                  <hc-button size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -288,7 +288,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" blue />
+                  <hc-button size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -306,7 +306,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" blue />
+                  <hc-button size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -433,6 +433,144 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
+<!-- Block: .... -->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Title
+      </div>
+      <div class="hc-container-subtitle">
+        Subtitle.
+      </div>
+      <v-row align="center">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Title</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Text
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Title</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Text
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Title</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Text
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+<!-- Block: .... -->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Title
+      </div>
+      <div class="hc-container-subtitle">
+        Subtitle.
+      </div>
+      <v-row align="center">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Title</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Text
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Title</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Text
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Title</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Text
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <hc-button size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+  </div>
 
 <!-- Block: About HUNT Cloud -->
 
