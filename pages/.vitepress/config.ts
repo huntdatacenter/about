@@ -49,13 +49,64 @@ export default {
     // https://vitepress.vuejs.org/config/theme-configs#nav
     nav: [
       { text: "Home", link: "/" },
-      { text: "Team", link: "/team" },
       {
-        text: 'Sections',
+        text: 'Products',
         items: [
-          { text: 'Explore', link: '/explore/' },
-          { text: 'Evolve', link: '/evolve/' },
-          { text: 'Scientific Suite', link: '/scientific-suite/' },
+          { text: 'Get started', link: '/products/' },
+          {
+            text: 'Core products',
+            items: [
+              { text: 'Explore', link: '/products/explore/' },
+              { text: 'Evolve', link: '/products/evolve/' },
+              { text: 'Scientific Suite', link: '/products/scientific-suite/' },
+            ]
+          },
+          {
+            text: 'Overview by roles',
+            items: [
+              { text: "Scientist", link: "/roles/scientist/" },
+              { text: "Scientific leader", link: "/roles/scientific-leader/" },
+              // { text: "Scientific administrator", link: "/roles/scientific-administrator/" },
+              { text: "Teacher", link: "/roles/teacher/" },
+              { text: "Private enterprise", link: "/roles/private-enterprise/" },
+              { text: "Department", link: "/roles/department/" },
+              { text: "Clinic", link: "/roles/clinic/" },
+            ]
+          },
+        ],
+      },
+      {
+        text: 'Solutions',
+        items: [
+          {
+            text: 'Overview by field',
+            items: [
+              { text: "Genomics", link: "#link" },
+              { text: "Statistics", link: "#link" },
+              { text: "Engineering", link: "#link" },
+            ]
+          },
+          {
+            text: 'Use cases',
+            items: [
+              { text: "Machine learning", link: "#link" },
+              { text: "Generative AI", link: "#link" },
+              { text: "Phenotyping", link: "#link" },
+              { text: "Text annotation", link: "#link" },
+              { text: "Image processing", link: "#link" },
+              { text: "Image annotation", link: "#link" },
+            ]
+          },
+        ],
+      },
+      {
+        text: 'About',
+        items: [
+          { text: "Team", link: "/team" },
+          { text: 'Products', link: '/products/' },
+          { text: 'Compliance', link: '/compliance/' },
+          { text: 'Pillars', link: '/pillars/' },
+          { text: 'Tools', link: '/tools/' },
         ],
       },
     ],
@@ -68,31 +119,38 @@ export default {
           items: [
             { text: "Home", link: "/" },
             { text: "Team", link: "/team" },
+            { text: "Products", link: "/products" },
+            { text: "Roles", link: "/roles" },
+            { text: "Compliance", link: "/compliance" },
+            { text: "Pillars", link: "/pillars" },
+            { text: "Tools", link: "/tools" },
           ]
         }
       ],
-      "/explore/": [
+      "/products/": [
         {
-          text: "Explore",
+          text: "Products",
+          link: "/products/",
           items: [
-            { text: "Introduction", link: "/explore/" },
-            { text: "Test", link: "/explore/test" },
+            { text: "Explore", link: "/products/explore/" },
+            { text: "Evolve", link: "/products/evolve/" },
+            { text: "Scientific Suite", link: "/products/scientific-suite/" },
+            // { text: "Test", link: "/explore/test" },
           ]
         },
       ],
-      "/evolve/": [
+      "/roles/": [
         {
-          text: "Evolve",
+          text: "Overview by roles",
+          link: "/roles/",
           items: [
-            { text: "Introduction", link: "/evolve/" },
-          ]
-        },
-      ],
-      "/scientific-suite/": [
-        {
-          text: "Scientific Suite",
-          items: [
-            { text: "Introduction", link: "/scientific-suite/" },
+            { text: "Scientist", link: "/roles/scientist/" },
+            { text: "Scientific leader", link: "/roles/scientific-leader/" },
+            // { text: "Scientific administrator", link: "/roles/scientific-administrator/" },
+            { text: "Teacher", link: "/roles/teacher/" },
+            { text: "Private enterprise", link: "/roles/private-enterprise/" },
+            { text: "Department", link: "/roles/department/" },
+            { text: "Clinic", link: "/roles/clinic/" },
           ]
         },
       ],
@@ -102,6 +160,28 @@ export default {
           items: [
             { text: "Introduction", link: "/tools/" },
             { text: "Workbench", link: "/tools/workbench/" },
+          ]
+        },
+      ],
+      "/compliance/": [
+        {
+          text: "Compliance",
+          link: "/compliance/",
+          items: [
+            { text: "Quality management", link: "/compliance/quality-management/" },
+            { text: "Information security", link: "/compliance/information-security/" },
+            { text: "Information privacy", link: "/compliance/information-privacy/" },
+          ]
+        },
+      ],
+      "/pillars/": [
+        {
+          text: "Pillars",
+          link: "/pillars/",
+          items: [
+            { text: "Trust", link: "/pillars/trust/" },
+            { text: "Technology", link: "/pillars/technology/" },
+            { text: "Collaboration", link: "/pillars/collaboration/" },
           ]
         },
       ],

@@ -1,0 +1,6 @@
+---
+title: Collaboration
+
+---
+
+# {{ $frontmatter.title }}
