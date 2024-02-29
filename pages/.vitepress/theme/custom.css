@@ -255,3 +255,15 @@
 .v-slide-group__content {
   justify-content: center;
 }
+
+.VPMenu {
+  min-width: 256px !important;
+}
+
+.VPMenuGroup {
+  & > .title {
+    color: var(--vp-c-text-3) !important;
+    font-size: 15px !important;
+    padding-bottom: 8px !important;
+  }
+}
