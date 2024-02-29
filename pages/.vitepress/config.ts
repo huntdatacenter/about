@@ -56,9 +56,9 @@ export default {
           {
             text: 'Core products',
             items: [
-              { text: 'Explore', link: '/products/explore/' },
-              { text: 'Evolve', link: '/products/evolve/' },
-              { text: 'Scientific Suite', link: '/products/scientific-suite/' },
+              { text: '🧭 Explore', link: '/products/explore/' },
+              { text: '🧬 Evolve', link: '/products/evolve/' },
+              { text: '👩‍💼 Scientific Suite', link: '/products/scientific-suite/' },
             ]
           },
           {
@@ -91,6 +91,7 @@ export default {
             items: [
               { text: "Machine learning", link: "#link" },
               { text: "Generative AI", link: "#link" },
+              { text: "Sensitive AI", link: "#link" },
               { text: "Phenotyping", link: "#link" },
               { text: "Text annotation", link: "#link" },
               { text: "Image processing", link: "#link" },
