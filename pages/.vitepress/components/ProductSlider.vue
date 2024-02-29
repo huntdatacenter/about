@@ -2,6 +2,7 @@
 
 interface Product {
   title: string,
+  subtitle: string,
   text: string,
   img: string,
   href: string,
@@ -44,6 +45,9 @@ export default {
           <v-card class="mx-4 my-8 pa-4 group-slider-card" elevation="1" style="height: 100%" width="260">
             <img class="group-slider-item-img" :src="item.img" :alt="item.title" />
             <div class="group-slider-item-text">
+              <b>{{ item.subtitle }}</b>
+            </div>
+            <div class="group-slider-item-text">
               {{ item.text }}
             </div>
           </v-card>
@@ -56,17 +60,19 @@ export default {
 <style scoped>
 
 .group-slider-wrapper {
-  height: 420px;
+  /* height: 500px; */
+  height: 560px;
 }
 
 .group-slider-card-link {
-    display: inline-block;
-    height: 330px;
+  display: inline-block;
+  /* height: 420px; */
+  height: 480px;
 }
 
 /* Allow 3d view - image out of card */
 .group-slider-card {
-    overflow: unset;
+  overflow: unset;
 }
 
 .group-slider-item-img {
@@ -86,10 +92,10 @@ export default {
 }
 
 .group-slider-item-text {
-    padding-top: 20px;
-    line-height: 18px;
-    font-size: 14px;
-    text-align: justify;
+  padding-top: 20px;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: justify;
 }
 
 </style>
