@@ -245,7 +245,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Trust is crucial in science. HUNT Cloud holds third-party verified ISO certificates for information security, privacy and quality.
       </div>
       <v-row align="center">
-        <v-col cols="12" class="v-col-sm-4">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Quality management</v-card-title>
@@ -263,7 +263,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="v-col-sm-4">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Information security</v-card-title>
@@ -281,7 +281,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="v-col-sm-4">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Information privacy</v-card-title>
@@ -325,18 +325,18 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-title">
         Pillars
       </div>
-      <!-- <div class="hc-container-subtitle">
-        Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
-      </div> -->
+      <div class="hc-container-subtitle">
+        HUNT Cloud rests on three pillars that guide our moral and philosophical approach to sensitive data.
+      </div>
       <v-row align="center">
-        <v-col cols="12" class="v-col-sm-4">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Trust</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Trust is the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We have continued the tradition with third-party verified trust, caring deeply for study participants and their data.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -347,14 +347,14 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="v-col-sm-4">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Technology</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Technology changes fast and brings with it new solutionos and new oportunities. At NTNU we have a strong traditioon for experimentation and adoption of new technologies. Our dreamers and tinkerers work closely with scientists to ensure we know what moves and what will be available in the years to come.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -365,14 +365,14 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="v-col-sm-4">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Collaboration</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  The lone scientists does no longer exists. Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
                 </v-col>
               </v-row>
               <v-row dense>
