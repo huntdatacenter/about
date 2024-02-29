@@ -14,7 +14,7 @@ import { VPButton } from 'vitepress/theme';
 // import { VPImage } from 'vitepress/theme';
 
 import './custom.css';
-import './common.css';
+// import './common.css';
 
 import '@mdi/font/css/materialdesignicons.css';
 
