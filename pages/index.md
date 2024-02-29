@@ -233,6 +233,19 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
+<!-- Content: Scientific tools -->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Scientific tools
+      </div>
+      <div class="hc-container-subtitle">
+        Value statement on tools.
+      </div>
+      <ToolsSlider />
+    </div>
+  </div>
 
 <!-- Content: ISO -->
 
@@ -303,20 +316,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
-<!-- Content: Scientific tools -->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Scientific tools
-      </div>
-      <div class="hc-container-subtitle">
-        Value statement on tools.
-      </div>
-      <ToolsSlider />
-    </div>
-  </div>
 
 <!-- Block: Pillars -->
 
