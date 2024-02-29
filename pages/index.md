@@ -108,7 +108,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Roles
+        Overview by role
       </div>
       <div class="hc-container-subtitle">
         Read about our products from your own perspective.
