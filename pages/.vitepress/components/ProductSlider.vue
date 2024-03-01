@@ -1,5 +1,7 @@
 <script lang="ts">
 
+import Button from '../components/Button.vue';
+
 interface Product {
   title: string,
   subtitle: string,
@@ -9,7 +11,7 @@ interface Product {
 }
 
 export default {
-  components: {},
+  components: {'hc-button': Button},
   props: {
     products: {
       type: Array<Product>,
