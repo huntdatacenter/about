@@ -79,15 +79,15 @@ export default {
         text: 'Solutions',
         items: [
           {
-            text: 'Overview by field',
+            text: '👩‍🔬 Overview by field',
             items: [
-              { text: "🧬 Genomics", link: "#link" },
-              { text: "📊 Statistics", link: "#link" },
-              { text: "👩‍💻 Engineering", link: "#link" },
+              { text: "Genomics", link: "#link" },
+              { text: "Statistics", link: "#link" },
+              { text: "Engineering", link: "#link" },
             ]
           },
           {
-            text: 'Use cases',
+            text: '🧪 Use cases',
             items: [
               { text: "Machine learning", link: "#link" },
               { text: "Generative AI", link: "#link" },
