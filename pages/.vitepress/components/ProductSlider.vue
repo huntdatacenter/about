@@ -51,7 +51,7 @@ export default {
             </div>
             <div class="group-slider-item-text">
               {{ item.text }}
-              <br />
+              <!-- <br /> -->
               <div class="mt-2">
                 <hc-button size="small" href="place-link" title="Read more" />
               </div>
