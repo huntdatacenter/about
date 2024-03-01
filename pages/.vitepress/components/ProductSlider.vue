@@ -42,7 +42,7 @@ export default {
       >
         <!-- v-slot="{ isSelected, toggle, selectedClass }" -->
         <a :href="item.href" class="group-slider-card-link">
-          <v-card class="mx-4 my-8 pa-4 group-slider-card" elevation="4" style="height: 100%" width="260">
+          <v-card class="mx-4 my-8 pa-4 group-slider-card" elevation="4" style="height: 100%">
             <img class="group-slider-item-img" :src="item.img" :alt="item.title" />
             <div class="group-slider-item-text">
               <b>{{ item.subtitle }}</b>
@@ -77,13 +77,23 @@ export default {
 /* Allow 3d view - image out of card */
 .group-slider-card {
   overflow: unset;
-}
+  width: 260px;
+  }
+
 
 .group-slider-item-img {
   max-width: 240px;
   margin-top: -46px;
   transition: all .6s ease;
   -webkit-transition: all .6s ease;
+}
+@media screen and (max-width: 400px) {
+  .group-slider-card {
+    width: calc(100vw - 150px);
+  }
+  .group-slider-item-img {
+    max-width: 100%;
+  }
 }
 
 /* On hover zoom in image */
