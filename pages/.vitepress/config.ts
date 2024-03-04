@@ -196,6 +196,7 @@ export default {
           ]
         },
       ],
+      "/price-calculator": {},
     },
   },
   vite: {
