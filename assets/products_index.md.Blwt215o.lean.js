@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as r}from"./chunks/framework.BIGhdWqW.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"products/index.md","filePath":"products/index.md"}'),a={name:"products/index.md"};function o(n,s,c,d,i,p){return r(),t("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};
