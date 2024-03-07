@@ -66,13 +66,13 @@ export default {
 
 .group-slider-wrapper {
   /* height: 500px; */
-  height: 560px;
+  height: 440px;
 }
 
 .group-slider-card-link {
   display: inline-block;
   /* height: 420px; */
-  height: 480px;
+  height: 360px;
 }
 
 /* Allow 3d view - image out of card */

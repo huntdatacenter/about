@@ -9,9 +9,9 @@ products:
     # theme: brand
     # theme: sponsor
     img: ./img/product-explore.png
-    subtitle: Come through the portal, it's time to explore.
+    subtitle: Your journey awaits.
     text: |
-      Science is hard and with good reason, you are not diving into the unknown becasue it is easy. Working with sensitive data means entering a land of laws, regulations and agreements; but this is also where scientific progress happens every day. We are here to make sure you get to do the hard things.
+      Explore and analyse your data within trusted research environments with easy access to your favorite tools in Workbench.
   - title: Evolve
     # href: /evolve/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
@@ -19,7 +19,7 @@ products:
     img: ./img/product-evolve.png
     subtitle: Take your ideas to the next level.
     text: |
-      As your ideas develop, you grown you project portfolio, team and scientific career. You are ready to expand and we got you covered for this next phase of your journey.
+      Manage and grow your research portfolio, your team and scientific career seamlessly through our Evolve package.
   - title: Scientific Suite
     # href: /scientific-suite/
     href: https://docs.hdc.ntnu.no/administer-science/services/overview/
@@ -27,7 +27,7 @@ products:
     img: ./img/product-scientific-suite.png
     subtitle: Gathering great minds.
     text: |
-      Collaboration is where the magic happens, where ideas take flight in new directions, young scientists grow up and multidisiplinary teams make discoveries that change worlds. Our scientific suites are for you, set up for the complexities you phase as you take on the grand challenges.
+      For research centers and large-scale research efforts who require additional resources, speed and portfolio management.
 roles:
   - title: Scientist
     # href: /roles/scientist/
