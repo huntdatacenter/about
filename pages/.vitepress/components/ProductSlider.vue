@@ -1,6 +1,6 @@
 <script lang="ts">
 
-import Button from '../components/Button.vue';
+// import Button from '../components/Button.vue';
 
 interface Product {
   title: string,
@@ -11,7 +11,7 @@ interface Product {
 }
 
 export default {
-  components: {'hc-button': Button},
+  // components: {'hc-button': Button},
   props: {
     products: {
       type: Array<Product>,
@@ -40,21 +40,20 @@ export default {
     >
       <v-slide-group-item
         v-for="item in products"
-        :key="item.title"
+        :key="`product-item-${item.title}`"
       >
-        <!-- v-slot="{ isSelected, toggle, selectedClass }" -->
         <a :href="item.href" class="group-slider-card-link">
           <v-card class="mx-4 my-8 pa-4 group-slider-card" elevation="4" style="height: 100%">
             <img class="group-slider-item-img" :src="item.img" :alt="item.title" />
             <div class="group-slider-item-text">
               <b>{{ item.subtitle }}</b>
-            </div>
-            <div class="group-slider-item-text">
+            <!-- </div>
+            <div class="group-slider-item-text"> -->
               {{ item.text }}
               <!-- <br /> -->
-              <div class="mt-2">
+              <!-- <div class="mt-2">
                 <hc-button size="small" href="place-link" title="Read more" />
-              </div>
+              </div> -->
             </div>
           </v-card>
         </a>
@@ -111,7 +110,7 @@ export default {
   padding-top: 20px;
   line-height: 18px;
   font-size: 14px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 </style>
