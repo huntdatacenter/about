@@ -53,7 +53,7 @@ export default {
           Reach out to arrange a&nbsp;call.
         </v-col>
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
-          <hc-button title="Contact us" :href="contact" target="_blank" size="large" elevation="2" />
+          <SimpleButton title="Contact us" :href="contact" target="_blank" size="large" elevation="2" />
         </v-col>
       </v-row>
       <!-- <v-divider class="my-4"></v-divider> -->

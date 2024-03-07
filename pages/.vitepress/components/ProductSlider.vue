@@ -1,6 +1,6 @@
 <script lang="ts">
 
-// import Button from '../components/Button.vue';
+// import SimpleButton from '../components/SimpleButton.vue';
 
 interface Product {
   title: string,
@@ -11,7 +11,7 @@ interface Product {
 }
 
 export default {
-  // components: {'hc-button': Button},
+  // components: {'SimpleButton': SimpleButton},
   props: {
     products: {
       type: Array<Product>,
@@ -52,7 +52,7 @@ export default {
               {{ item.text }}
               <!-- <br /> -->
               <!-- <div class="mt-2">
-                <hc-button size="small" href="place-link" title="Read more" />
+                <SimpleButton size="small" href="place-link" title="Read more" />
               </div> -->
             </div>
           </v-card>
