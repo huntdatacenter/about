@@ -5,19 +5,19 @@ sidebar: false
 products:
   - title: Explore
     href: /products/explore/
-    img: ./img/product-explore.png
+    img: /img/product-explore.png
     subtitle: Your journey awaits.
     text: |
       Explore and analyse your data within trusted research environments with easy access to your favorite tools in Workbench.
   - title: Evolve
     href: /products/evolve/
-    img: ./img/product-evolve.png
+    img: /img/product-evolve.png
     subtitle: Take your ideas to the next level.
     text: |
       Manage and grow your research portfolio, your team and scientific career seamlessly through our Evolve package.
   - title: Scientific Suite
     href: /products/scientific-suite/
-    img: ./img/product-scientific-suite.png
+    img: /img/product-scientific-suite.png
     subtitle: Gathering great minds.
     text: |
       For research centers and large-scale research efforts who require additional resources, speed and portfolio management.
@@ -83,7 +83,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Core products
       </div>
       <div class="hc-container-subtitle">
-      HUNT Cloud provides trusted research environments.
+        HUNT Cloud provides trusted research environments.
       </div>
       <ProductSlider :products="$frontmatter.products" />
     </div>
