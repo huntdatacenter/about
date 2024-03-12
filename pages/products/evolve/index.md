@@ -5,10 +5,6 @@ title: Evolve
 # {{ $frontmatter.title }}
 
 
-\newpage
-
-# Evolve
-
 As your ideas develop, you grown you project portfolio, team and scientific career. You are ready to expand and we got you covered for this next phase of your journey. 
 
 The Evolve package is perfect for research groups that are facing one or more of these challenges:
