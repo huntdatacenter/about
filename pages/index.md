@@ -449,11 +449,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Combining compliance and GPUs</v-card-title>
+            <v-card-title>Compliance and GPUs</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  AI is rapidly developing and revolutionizing entire sectors. Sensitive data represents underused oportunities in most scientific fields, and are challenging to activate for AI explorations. Combining GPUs and scaleable resources with our extensive compliance program enables our users to undertake multiple sensitive AI approaches. 
+                  Combining GPUs and scaleable resources with our extensive compliance program enables our users to undertake multiple sensitive AI approaches. 
                 </v-col>
               </v-row>
               <v-row dense>
@@ -471,7 +471,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  At HUNT Cloud, we see a need for developing AI while remaining trustworthy and caring towards data donors, scientists and future users. With our trusted research environments you can do machine learning, large language models, natural language models and much more, using your favorite tools such as R, python, tensorflow and pytorch.
+                  With our trusted research environments you can do machine learning, large language models, natural language models and much more, using your favorite tools such as R, python, tensorflow and pytorch.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -485,11 +485,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Activate sensitive data for AI</v-card-title>
+            <v-card-title>Activate sensitive data</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  We have developed secure methods of data import and export, combining SFT servers and a rolebased agreement framework that allows data controllers to transfer data directly into your trusted research environment. Our team works closely with departments and clinics throughout Norway and Europe and are readily available to help you find and activate the data you need. 
+                  Combining SFT servers and a rolebased agreement framework allows data controllers to transfer data directly into your trusted research environment. Our team works closely with departments and clinics throughout Norway and Europe and are readily available to help you find and activate the data you need. 
                 </v-col>
               </v-row>
               <v-row dense>
