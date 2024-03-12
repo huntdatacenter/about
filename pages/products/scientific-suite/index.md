@@ -4,7 +4,6 @@ title: Scientific Suite
 
 # {{ $frontmatter.title }}
 
-# Scientific suite
 
 For large-scale explorations that combine the best minds, ideas and wildest dreams.
 
