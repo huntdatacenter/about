@@ -108,6 +108,7 @@ export default {
           { text: 'Prices', link: 'https://docs.hdc.ntnu.no/administer-science/prices/pricelist/' },
           { text: 'Certificates', link: 'https://docs.hdc.ntnu.no/govern-science/compliance/certificates/' },
           { text: 'Tingweek', link: 'https://docs.hdc.ntnu.no/govern-science/tingweek/' },
+          { text: 'Price-calculator', link: '/price-calculator/'}
         ],
       },
       {
@@ -135,6 +136,7 @@ export default {
             { text: "Compliance", link: "/compliance" },
             { text: "Pillars", link: "/pillars" },
             { text: "Tools", link: "/tools" },
+            { text: "Price calculator", link: "/price-calculator" },
           ]
         }
       ],
@@ -196,7 +198,13 @@ export default {
           ]
         },
       ],
-      "/price-calculator": {},
+      "/price-calculator/": [{
+        text: "Price calculator",
+        link: "/price-calculator/",
+        items: [
+          { text: "Introduction", link: "/price-calculator/" },
+        ]
+      }],
     },
   },
   vite: {
