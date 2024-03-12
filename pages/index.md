@@ -489,7 +489,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Combining SFT servers and a rolebased agreement framework allows data controllers to transfer data directly into your trusted research environment. Our team works closely with departments and clinics throughout Norway and Europe and are readily available to help you find and activate the data you need. 
+                  Combining SFT servers and a rolebased agreement framework allows data controllers to transfer data directly into your trusted research environment.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -541,7 +541,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  We work closely with data providers to activate their data for research. Our trusted research environments, agreement system and ISO certificates enable a flexible high-trust environment where your data can be made available for research.
+                  We work closely with data providers to activate their data for research. Our trusted research environments, agreement system and ISO certificates enable a flexible high-trust environment where your data can be made available for research. 
                 </v-col>
               </v-row>
               <v-row dense>
