@@ -373,7 +373,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  The lone scientists does no longer exists. Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
+                  Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -435,12 +435,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-<!-- Block: .... -->
+<!-- Block: sensitive AI -->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Title
+        Sensitive AI
       </div>
       <div class="hc-container-subtitle">
         Subtitle.
