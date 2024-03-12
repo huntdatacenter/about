@@ -32,25 +32,24 @@ roles:
   - title: Scientific leader
     href: /roles/scientific-leader/
     text: |
-      Sensitive data represents a range of new oportunities in most scientific fields. At the same time, handling multiple projects, teams, legal and ethical complexities is a challenge. Our is for your team to thrive in this setting and succeed in ground-breaking science.
-  - title: Scientific Administrator
-    href: /roles/scientific-administrator/
-    text: |
-      Organizations owning large data values require trustworthy and predictable solutions. Scientific administrators are the unheralded drivers of scientific success in sensitive data. HUNT Cloud helps scientific administrators and organisations build data culture and promote trustworthy, high-ranking science.
+      Sensitive data represents a range of new oportunities. Our goal is for your team to thrive and succeed in ground-breaking science, all the while keeping their data protected.
   - title: Teacher
     href: /roles/teacher/
     text: |
-      The next generation of scientists deserves to build their skills in real-life environments. They need to learn the tools of the future and be comfortable with the complexities that surround sensitive data. Our course packages are developed with this in mind. Read more to see how our set-up can be tailored to your course.
-  - title: Scientific Administrator
-    href: /roles/scientific-administrator/
-    text: |
-      Innovation projects, enterprises and private companies have spesific challenges and needs in dealing with sensitive data. The HUNT Cloud Invent program might be for you.
-  - title: Department or clinic
+      The next generation of scientists deserves to build their skills in real-life environments. Our course packages are developed with this in mind. Read more to see how our set-up can be tailored to your course. 
+  - title: Department
     href: /roles/department/
     text: |
-      HUNT Cloud works closely with departments and clinics from many organisations. Our product packages are tailored for different levels of sensitive data activities, while ensuring easy overview and organisational control.
+      HUNT Cloud works closely with departments from many organisations. Our product packages are tailored for different levels of sensitive data activities, while ensuring easy overview and organisational control
+  - title: Clinic
+    href: /roles/clinic/
+    text: |
+      Clinics use HUNT Cloud for research and data processing during production. We are ISO/IEC certified and compliant with Helesnormen, while our trusted research environments can be tailored to your security needs.
+ - title: Private enterprise
+    href: /roles/private-enterprise/
+    text: |
+      Innovation projects, enterprises and private companies have spesific challenges and needs in dealing with sensitive data. The HUNT Cloud Invent program might be for you.
 contact: https://docs.hdc.ntnu.no/about/contact/
-
 ---
 
 <!-- <script setup></script> -->
@@ -268,7 +267,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Our management systems follows the international standard ISO9001. We strive to provide the best possible services for our users, their organisations and collaborators.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -286,7 +285,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  HUNT Cloud holds the ISO certificate for information security, ISO27001. Our information security management system includes vetting people, policies and technology in accordance with the standard.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -304,7 +303,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  HUNT Clouds holds the ISO certificate for privacy information management, ISO27701, a global standard that goes beyond GDPR in protection of privacy information management.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -402,7 +401,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  A solid agreement framework is the key to enable your scientists with the freedom to explore.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -421,7 +420,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  HUNT Cloud use a total cost model and run our services with zero profit.
                 </v-col>
               </v-row>
               <v-row dense>
