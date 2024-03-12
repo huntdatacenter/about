@@ -443,17 +443,17 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Sensitive AI
       </div>
       <div class="hc-container-subtitle">
-        Subtitle.
+        With access to GPUs and scaleable resources, our trusted research environments are ready for your next sensitive AI project.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Title</v-card-title>
+            <v-card-title>Combining compliance and GPUs</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Text
+                  AI is rapidly developing and revolutionizing entire sectors. Sensitive data represents underused oportunities in most scientific fields, and are challenging to activate for AI explorations. Combining GPUs and scaleable resources with our extensive compliance program enables our users to undertake multiple sensitive AI approaches. 
                 </v-col>
               </v-row>
               <v-row dense>
@@ -467,11 +467,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Title</v-card-title>
+            <v-card-title>Creative freedom</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Text
+                  At HUNT Cloud, we see a need for developing AI while remaining trustworthy and caring towards data donors, scientists and future users. With our trusted research environments you can do machine learning, large language models, natural language models and much more, using your favorite tools such as R, python, tensorflow and pytorch.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -485,11 +485,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Title</v-card-title>
+            <v-card-title>Activate sensitive data for AI</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Text
+                  We have developed secure methods of data import and export, combining SFT servers and a rolebased agreement framework that allows data controllers to transfer data directly into your trusted research environment. Our team works closely with departments and clinics throughout Norway and Europe and are readily available to help you find and activate the data you need. 
                 </v-col>
               </v-row>
               <v-row dense>
@@ -505,15 +505,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   </div>
 
 
-<!-- Block: .... -->
+<!-- Block: activate your data -->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Title
+        Activate your data
       </div>
       <div class="hc-container-subtitle">
-        Subtitle.
+        We work closely with data providers to make sure data is activated for impact.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
@@ -523,7 +523,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Text
+                  Our passion is knowledge generation from sensitive data. Nothing makes us happier than scientists succeeding in their explorations, and for that to happen data must be available.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -541,7 +541,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Text
+                  We work closely with data providers to activate their data for research. Our trusted research environments, agreement system and ISO certificates enable a flexible high-trust environment where your data can be made available for research.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -559,7 +559,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Text
+                  Our approach to data activation mirrors that of a publishing house. Valuable data deserve a marketing team that can send data on impactfull data journeys. We will help you on the way to ensure your data makes the biggest possible impact. 
                 </v-col>
               </v-row>
               <v-row dense>
