@@ -18,7 +18,6 @@ You are in charge of your compute and storage resources. Our digital labs are fl
 We have developed Workbench to give you easy access to your favorite tools. Each user is automatically set up with their own, personal Workbench. HUNT Workbench enables interactive web-based computing built around Jupyter, with access to applications such as Jupyter Notebook, Python, RStudio, R and Conda. We also support MATLAB and Stata for those that bring their own license.
 
 ## Technology
-Digital labs in HUNT Cloud are run ... Linux environments ... open source, open code stuff.
 Our digital labs allow for a range of technical and analytical tool, you can read more about what is available in our documentation pages ( https://docs.hdc.ntnu.no/do-science/tools/)
 
 ## Security and compliance
