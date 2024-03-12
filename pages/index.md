@@ -45,7 +45,7 @@ roles:
     href: /roles/clinic/
     text: |
       Clinics use HUNT Cloud for research and data processing during production. We are ISO/IEC certified and compliant with Helesnormen, while our trusted research environments can be tailored to your security needs.
- - title: Private enterprise
+  - title: Private enterprise
     href: /roles/private-enterprise/
     text: |
       Innovation projects, enterprises and private companies have spesific challenges and needs in dealing with sensitive data. The HUNT Cloud Invent program might be for you.
