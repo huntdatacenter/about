@@ -17,19 +17,12 @@ You are in charge of your compute and storage resources. Our digital labs are fl
 ## Workbench
 We have developed Workbench to give you easy access to your favorite tools. Each user is automatically set up with their own, personal Workbench. HUNT Workbench enables interactive web-based computing built around Jupyter, with access to applications such as Jupyter Notebook, Python, RStudio, R and Conda. We also support MATLAB and Stata for those that bring their own license.
 
-% give a brief intro to workbench. Consider building out with examples or more spesifics. 
-
-
 ## Technology
 Digital labs in HUNT Cloud are run ... Linux environments ... open source, open code stuff.
-Our digital labs allow for a range of technical and analytical tool, you can read more about what is available in our documentation pages (link to https://docs.hdc.ntnu.no/do-science/tools/)
-
-% brief description of technology in our system, both how labs are set-up/work and the tools, with links to relevant documentation pages. For the people who want to dig deep
+Our digital labs allow for a range of technical and analytical tool, you can read more about what is available in our documentation pages ( https://docs.hdc.ntnu.no/do-science/tools/)
 
 ## Security and compliance
 We believe that trust is the single most valuable asset in data-driven science. We have a wholesome approach to security and compliance with a strong emphasis on third-party verified trust. HUNT Cloud holds ISO Certificates in quality management, information security and privacy. You can read more about our approach to data security here (link) and our compliance program here (link).
-
-% very brief intro to security and compliance approach, main goal is to answer out immediate concerns and provide links to more detailed info
 
 ## HUNT Cloud Community
 Science is global, and so is the HUNT Cloud community. Our scientists comes from many different countries, they work in a range of different fields, applying many different methods to exiting research questions. We strive to facilitate knowledge flow and sharing within this wonderful community. All users have access to our shared Slack channels and designated Slack channels for just your lab. In addition, you are invited to Labting three times a year. This is a place to meet your peers, discuss and advance the field of sensitive data and co-invent the HUNT Cloud services right along with us. 
@@ -41,7 +34,7 @@ Click here to check if your organisation already have a data space!
 
 The data space is an administrative tool that ensures that the organisation have an overview of their sensitive data, research projects and users with data access. This solution enables the researchers to focus solely on their projects.
 
-If you organisation does not have a data space, let us know and we will help you to get started. (contact button)
+If your organisation does not have a data space, let us know and we will help you to get started.
 
 
 ## Explore Spesifications At A Glance
