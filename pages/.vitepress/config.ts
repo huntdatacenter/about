@@ -64,13 +64,13 @@ export default {
           {
             text: 'Overview by roles',
             items: [
-              { text: "Scientist", link: "/roles/scientist/" },
-              { text: "Scientific leader", link: "/roles/scientific-leader/" },
-              // { text: "Scientific administrator", link: "/roles/scientific-administrator/" },
-              { text: "Teacher", link: "/roles/teacher/" },
-              { text: "Private enterprise", link: "/roles/private-enterprise/" },
-              { text: "Department", link: "/roles/department/" },
-              { text: "Clinic", link: "/roles/clinic/" },
+              { text: "Scientist", link: "/overview-by-role/scientist/" },
+              { text: "Scientific leader", link: "/overview-by-role/scientific-leader/" },
+              // { text: "Scientific administrator", link: "/overview-by-role/scientific-administrator/" },
+              { text: "Teacher", link: "/overview-by-role/teacher/" },
+              { text: "Private enterprise", link: "/overview-by-role/private-enterprise/" },
+              { text: "Department", link: "/overview-by-role/department/" },
+              { text: "Clinic", link: "/overview-by-role/clinic/" },
             ]
           },
         ],
@@ -81,21 +81,21 @@ export default {
           {
             text: '👩‍🔬 Overview by field',
             items: [
-              { text: "Genomics", link: "#link" },
-              { text: "Statistics", link: "#link" },
-              { text: "Engineering", link: "#link" },
+              { text: "Genomics", link: "/overview-by-field/genomics" },
+              { text: "Statistics", link: "/overview-by-field/statistics" },
+              { text: "Engineering", link: "/overview-by-field/engineering" },
             ]
           },
           {
             text: '🧪 Use cases',
             items: [
-              { text: "Machine learning", link: "#link" },
-              { text: "Generative AI", link: "#link" },
-              { text: "Sensitive AI", link: "#link" },
-              { text: "Phenotyping", link: "#link" },
-              { text: "Text annotation", link: "#link" },
-              { text: "Image processing", link: "#link" },
-              { text: "Image annotation", link: "#link" },
+              { text: "Sensitive AI", link: "/use-cases/sensitive-ai" },
+              { text: "Phenotyping", link: "/use-cases/phenotyping" },
+              { text: "Image processing", link: "/use-cases/image-processing" },
+              { text: "Image annotation", link: "/use-cases/image-annotation" },
+              { text: "Text annotation", link: "/use-cases/text-annotation" },
+              { text: "Generative AI", link: "/use-cases/generative-ai" },
+              { text: "Machine learning", link: "/use-cases/machine-learning" },
             ]
           },
         ],
@@ -131,7 +131,8 @@ export default {
             { text: "Home", link: "/" },
             { text: "Team", link: "/team" },
             { text: "Products", link: "/products" },
-            { text: "Roles", link: "/roles" },
+            { text: "Overview by role", link: "/overview-by-role" },
+            { text: "Overview by field", link: "/overview-by-field" },
             { text: "Compliance", link: "/compliance" },
             { text: "Pillars", link: "/pillars" },
             { text: "Tools", link: "/tools" },
@@ -146,22 +147,32 @@ export default {
             { text: "Explore", link: "/products/explore/" },
             { text: "Evolve", link: "/products/evolve/" },
             { text: "Scientific Suite", link: "/products/scientific-suite/" },
-            // { text: "Test", link: "/explore/test" },
           ]
         },
       ],
-      "/roles/": [
+      "/overview-by-role/": [
         {
-          text: "Overview by roles",
-          link: "/roles/",
+          text: "Overview by role",
+          link: "/overview-by-role/",
           items: [
-            { text: "Scientist", link: "/roles/scientist/" },
-            { text: "Scientific leader", link: "/roles/scientific-leader/" },
-            // { text: "Scientific administrator", link: "/roles/scientific-administrator/" },
-            { text: "Teacher", link: "/roles/teacher/" },
-            { text: "Private enterprise", link: "/roles/private-enterprise/" },
-            { text: "Department", link: "/roles/department/" },
-            { text: "Clinic", link: "/roles/clinic/" },
+            { text: "Scientist", link: "/overview-by-role/scientist/" },
+            { text: "Scientific leader", link: "/overview-by-role/scientific-leader/" },
+            // { text: "Scientific administrator", link: "/overview-by-role/scientific-administrator/" },
+            { text: "Teacher", link: "/overview-by-role/teacher/" },
+            { text: "Private enterprise", link: "/overview-by-role/private-enterprise/" },
+            { text: "Department", link: "/overview-by-role/department/" },
+            { text: "Clinic", link: "/overview-by-role/clinic/" },
+          ]
+        },
+      ],
+      "/overview-by-field/": [
+        {
+          text: "Overview by field",
+          link: "/overview-by-field/",
+          items: [
+            { text: "Genomics", link: "/overview-by-field/genomics" },
+            { text: "Statistics", link: "/overview-by-field/statistics" },
+            { text: "Engineering", link: "/overview-by-field/engineering" },
           ]
         },
       ],
@@ -193,6 +204,21 @@ export default {
             { text: "Trust", link: "/pillars/trust/" },
             { text: "Technology", link: "/pillars/technology/" },
             { text: "Collaboration", link: "/pillars/collaboration/" },
+          ]
+        },
+      ],
+      "/use-cases/": [
+        {
+          text: '🧪 Use cases',
+          link: "/pillars/",
+          items: [
+            { text: "Sensitive AI", link: "/use-cases/sensitive-ai" },
+            { text: "Phenotyping", link: "/use-cases/phenotyping" },
+            { text: "Image processing", link: "/use-cases/image-processing" },
+            { text: "Image annotation", link: "/use-cases/image-annotation" },
+            { text: "Text annotation", link: "/use-cases/text-annotation" },
+            { text: "Generative AI", link: "/use-cases/generative-ai" },
+            { text: "Machine learning", link: "/use-cases/machine-learning" },
           ]
         },
       ],
