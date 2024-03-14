@@ -36,7 +36,7 @@ roles:
   - title: Teacher
     href: /roles/teacher/
     text: |
-      The next generation of scientists deserves to build their skills in real-life environments. Our course packages are developed with this in mind. Read more to see how our set-up can be tailored to your course. 
+      The next generation of scientists deserves to build their skills in real-life environments. Our course packages are developed with this in mind. Read more to see how our set-up can be tailored to your course.
   - title: Department
     href: /roles/department/
     text: |
@@ -406,7 +406,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="/resources/agreements" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -425,7 +425,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="/resources/prices" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -453,7 +453,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Combining GPUs and scaleable resources with our extensive compliance program enables our users to undertake multiple sensitive AI approaches. 
+                  Combining GPUs and scaleable resources with our extensive compliance program enables our users to undertake multiple sensitive AI approaches.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -541,7 +541,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  We work closely with data providers to activate their data for research. Our trusted research environments, agreement system and ISO certificates enable a flexible high-trust environment where your data can be made available for research. 
+                  We work closely with data providers to activate their data for research. Our trusted research environments, agreement system and ISO certificates enable a flexible high-trust environment where your data can be made available for research.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -559,7 +559,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our approach to data activation mirrors that of a publishing house. Valuable data deserve a marketing team that can send data on impactfull data journeys. We will help you on the way to ensure your data makes the biggest possible impact. 
+                  Our approach to data activation mirrors that of a publishing house. Valuable data deserve a marketing team that can send data on impactfull data journeys. We will help you on the way to ensure your data makes the biggest possible impact.
                 </v-col>
               </v-row>
               <v-row dense>

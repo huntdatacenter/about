@@ -103,9 +103,11 @@ export default {
       {
         text: 'Resources',
         items: [
+          { text: "Agreements", link: "/resources/agreements" },
+          { text: "Prices", link: "/resources/prices" },
+          { text: "Documentation", link: "https://docs.hdc.ntnu.no/" },
           { text: "Documentation", link: "https://docs.hdc.ntnu.no/" },
           { text: 'Community', link: 'https://docs.hdc.ntnu.no/do-science/community/' },
-          { text: 'Prices', link: 'https://docs.hdc.ntnu.no/administer-science/prices/pricelist/' },
           { text: 'Certificates', link: 'https://docs.hdc.ntnu.no/govern-science/compliance/certificates/' },
           { text: 'Tingweek', link: 'https://docs.hdc.ntnu.no/govern-science/tingweek/' },
         ],
@@ -118,6 +120,7 @@ export default {
           { text: 'Compliance', link: '/compliance/' },
           { text: 'Pillars', link: '/pillars/' },
           { text: 'Tools', link: '/tools/' },
+          { text: 'Resources', link: '/resources/' },
         ],
       },
     ],
@@ -130,12 +133,20 @@ export default {
           items: [
             { text: "Home", link: "/" },
             { text: "Team", link: "/team" },
-            { text: "Products", link: "/products" },
-            { text: "Overview by role", link: "/overview-by-role" },
-            { text: "Overview by field", link: "/overview-by-field" },
-            { text: "Compliance", link: "/compliance" },
-            { text: "Pillars", link: "/pillars" },
-            { text: "Tools", link: "/tools" },
+            { text: "Products", link: "/products/" },
+            { text: "Overview by role", link: "/overview-by-role/" },
+            { text: "Overview by field", link: "/overview-by-field/" },
+            { text: "Compliance", link: "/compliance/" },
+            { text: "Pillars", link: "/pillars/" },
+            { text: "Tools", link: "/tools/" },
+            {
+              text: 'Resources',
+              link: '/resources/',
+              items: [
+                { text: "Agreements", link: "/resources/agreements" },
+                { text: "Prices", link: "/resources/prices" },
+              ]
+            },
           ]
         }
       ],

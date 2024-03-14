@@ -1,6 +1,5 @@
 ---
-title: Tools
-# sidebar: false
+title: Agreements
 
 ---
 
