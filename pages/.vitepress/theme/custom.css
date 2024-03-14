@@ -1,5 +1,10 @@
 /* Custom CSS */
 
+:root {
+  --vp-home-hero-name-color: #00509E;
+  --vp-c-brand-1: #00509E;
+}
+
 .hc-home-page {
     display: block;
 }
