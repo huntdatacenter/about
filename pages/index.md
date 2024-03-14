@@ -104,9 +104,52 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-<!-- Block: Roles -->
-<!-- Content: In this page header -->
+<!-- Content: Scientific tools -->
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Scientific tools
+      </div>
+      <div class="hc-container-subtitle">
+        Value statement on tools.
+      </div>
+      <!-- <ToolsSlider /> -->
+      <v-row class="my-5" style="justify-content: center; align-items: center;">
+      <v-col cols="1">
+        <a href="https://jupyter.org/" target="_blank">
+          <v-img max-height="80px" src="/img/logos-tools/jupyter.png" />
+        </a>
+      </v-col>
+      <v-col cols="2" style="justify-content: center;">
+        <a href="https://pandas.pydata.org/" target="_blank">
+          <v-img max-height="80px" src="/img/logos-tools/pandas.png" />
+        </a>
+      </v-col>
+      <v-col cols="2">
+        <a href="https://www.python.org/" target="_blank">
+          <v-img max-height="80px" src="/img/logos-tools/python.png" />
+        </a>
+      </v-col>
+      <v-col cols="2">
+        <a href="https://mathworks.com/" target="_blank">
+          <v-img max-height="80px" src="/img/logos-tools/matlab.png" />
+        </a>
+      </v-col>
+      <v-col cols="2">
+        <a href="https://posit.co/products/open-source/rstudio-server/" target="_blank">
+          <v-img max-height="80px" src="/img/logos-tools/rstudio.png" />
+        </a>
+      </v-col>
+      <v-col cols="2">
+        <a href="https://code.visualstudio.com/" target="_blank">
+          <v-img max-height="80px" src="/img/logos-tools/vscode.png" />
+        </a>
+      </v-col>
+    </v-row>
+    </div>
+  </div>
 
+<!-- Block: Roles -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
@@ -232,20 +275,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         </v-col>
       </v-row>
       <!-- <RoleSlider :roles="$frontmatter.roles" /> -->
-    </div>
-  </div>
-
-<!-- Content: Scientific tools -->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Scientific tools
-      </div>
-      <div class="hc-container-subtitle">
-        Value statement on tools.
-      </div>
-      <ToolsSlider />
     </div>
   </div>
 
