@@ -396,7 +396,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <!-- Agreements -->
         <v-col col="6">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card elevation="0">
+          <v-card elevation="0" color="transparent">
             <v-card-title>Agreements</v-card-title>
             <v-card-text>
               <v-row dense>
@@ -415,7 +415,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <!-- Prices -->
         <v-col col="6">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card elevation="0">
+          <v-card elevation="0" color="transparent">
             <v-card-title>Prices</v-card-title>
             <v-card-text>
               <v-row dense>

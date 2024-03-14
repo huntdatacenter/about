@@ -54,7 +54,7 @@ products:
   </div>
 </div>
 
-<div class="hc-block hc-white-block">
+<div class="hc-block hc-light-block">
   <div class="hc-block-container">
     <div class="hc-container-title">
       Lorem ipsum

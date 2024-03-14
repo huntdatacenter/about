@@ -89,7 +89,7 @@ features:
   </v-row>
 </div>
 
-<div class="hc-block hc-grey-block">
+<div class="hc-block hc-blue-block">
   <div class="hc-block-container">
     <div class="hc-container-title">
       Open science
@@ -100,7 +100,7 @@ features:
   </div>
 </div>
 
-<div class="hc-block hc-white-block">
+<div class="hc-block hc-light-block">
   <div class="hc-block-container">
     <div class="hc-container-title">
       Stuck in Past Statistical Snags?

@@ -32,6 +32,7 @@ export default {
     class="group-slider-wrapper ma-auto"
     elevation="0"
     max-width="920"
+    color="transparent"
   >
     <v-slide-group
       class="h-100 py-4"
