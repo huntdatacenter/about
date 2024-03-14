@@ -58,32 +58,32 @@ features:
   <v-row class="my-5" style="justify-content: center; align-items: center;">
     <v-col cols="1">
       <a href="https://jupyter.org/" target="_blank">
-        <v-img max-height="80px" src="./images/jupyter.png" />
+        <v-img max-height="80px" src="/img/logos-tools/jupyter.png" />
       </a>
     </v-col>
     <v-col cols="2" style="justify-content: center;">
       <a href="https://pandas.pydata.org/" target="_blank">
-        <v-img max-height="80px" src="./images/pandas.png" />
+        <v-img max-height="80px" src="/img/logos-tools/pandas.png" />
       </a>
     </v-col>
     <v-col cols="2">
       <a href="https://www.python.org/" target="_blank">
-        <v-img max-height="80px" src="./images/python.png" />
+        <v-img max-height="80px" src="/img/logos-tools/python.png" />
       </a>
     </v-col>
     <v-col cols="2">
       <a href="https://mathworks.com/" target="_blank">
-        <v-img max-height="80px" src="./images/matlab.png" />
+        <v-img max-height="80px" src="/img/logos-tools/matlab.png" />
       </a>
     </v-col>
     <v-col cols="2">
       <a href="https://posit.co/products/open-source/rstudio-server/" target="_blank">
-        <v-img max-height="80px" src="./images/rstudio.png" />
+        <v-img max-height="80px" src="/img/logos-tools/rstudio.png" />
       </a>
     </v-col>
     <v-col cols="2">
       <a href="https://code.visualstudio.com/" target="_blank">
-        <v-img max-height="80px" src="./images/vscode.png" />
+        <v-img max-height="80px" src="/img/logos-tools/vscode.png" />
       </a>
     </v-col>
   </v-row>
