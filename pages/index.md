@@ -6,21 +6,22 @@ products:
   - title: Explore
     href: /products/explore/
     img: /img/product-explore.png
-    subtitle: Your journey awaits.
+    subtitle: Make it easy.
     text: |
-      Explore and analyse your data within trusted research environments with easy access to your favorite tools in Workbench.
+      Start to explore and analyse your sensitive data in trusted research environments with easy access to preferred tools in HUNT Workbench.
   - title: Evolve
     href: /products/evolve/
     img: /img/product-evolve.png
-    subtitle: Take your ideas to the next level.
+    subtitle: Evolve your ideas.
     text: |
-      Manage and grow your research portfolio, your team and scientific career seamlessly through our Evolve package.
+      Evolve is for scientific groups that aims to evolve and expand their ideas, careers, collaborations, data and methods with flexible choices.
   - title: Scientific Suite
     href: /products/scientific-suite/
     img: /img/product-scientific-suite.png
-    subtitle: Gathering great minds.
+    subtitle: Gather great minds.
     text: |
-      For research centers and large-scale research efforts who require additional resources, speed and portfolio management.
+      Scientific suite allows research centers and large-scale efforts both flexibility and control over large and diverse research portfolios. 
+
 overview_by_role:
   title: 'Overview by role'
   subtitle: 'Read about our products from your own perspective.'
@@ -59,7 +60,10 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-header-img"></div>
   </div>
 
+
+<!----------------------------------------------->
 <!-- Block: Freedom to explore -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -68,12 +72,14 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <div class="hc-subtitle-main">
         Enable your scientists with tools and guidance to explore and evolve the world of sensitive data science!
-        <!-- Welcome to HUNT Cloud! We provide scientists with tools and guidance to explore and evolve their magical world of sensitive data science. -->
       </div>
     </div>
   </div>
 
+
+<!----------------------------------------------->
 <!-- Block: Core products -->
+<!----------------------------------------------->
 <!-- Content: In this page header -->
 
   <div class="hc-block">
@@ -82,13 +88,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Core products
       </div>
       <div class="hc-container-subtitle">
-        HUNT Cloud provides trusted research environments.
+        HUNT Cloud provides trusted research environments. Choose among three core products for scientific explorations: Explore, Evolve and Scientific suite.
       </div>
       <ProductSlider :products="$frontmatter.products" />
     </div>
   </div>
 
+<!----------------------------------------------->
 <!-- Block: Contact us -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -96,7 +104,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Contact us
       </div>
       <div class="hc-container-subtitle">
-        Contact us to get started, to ask how your science may prosper from our services, or just to share the joy and excitement of data-driven science!
+        Contact us to get started, to ask how your science may benefit from our services, or just to share the joy of data-driven science!
       </div>
       <div class="hc-section">
         <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
@@ -104,44 +112,48 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
+
+<!----------------------------------------------->
 <!-- Content: Scientific tools -->
+<!----------------------------------------------->
+
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Scientific tools
       </div>
       <div class="hc-container-subtitle">
-        All tools in one box.
+        Get easy access to major scientific tools in HUNT Workbench. Install the rest directly in your lab.
       </div>
       <!-- <ToolsSlider /> -->
       <v-row class="my-5" style="justify-content: center; align-items: center;">
         <v-col cols="6" class="v-col-sm-4 v-col-md-1">
-          <a href="https://jupyter.org/" target="_blank">
+          <a href="https://about.hdc.ntnu.no/tools/">
             <v-img max-height="80px" src="/img/logos-tools/jupyter.png" />
           </a>
         </v-col>
         <v-col cols="6" class="v-col-sm-4 v-col-md-2" style="justify-content: center;">
-          <a href="https://pandas.pydata.org/" target="_blank">
+          <a href="https://about.hdc.ntnu.no/tools/">
             <v-img max-height="80px" src="/img/logos-tools/pandas.svg" />
           </a>
         </v-col>
         <v-col cols="6" class="v-col-sm-4 v-col-md-2">
-          <a href="https://www.python.org/" target="_blank">
+          <a href="https://about.hdc.ntnu.no/tools/">
             <v-img max-height="80px" src="/img/logos-tools/python.svg" />
           </a>
         </v-col>
         <v-col cols="6" class="v-col-sm-4 v-col-md-2">
-          <a href="https://pytorch.org/" target="_blank">
+          <a href="https://about.hdc.ntnu.no/tools/">
             <v-img max-height="80px" src="/img/logos-tools/pytorch.svg" />
           </a>
         </v-col>
         <v-col cols="6" class="v-col-sm-4 v-col-md-2">
-          <a href="https://posit.co/products/open-source/rstudio-server/" target="_blank">
+          <a href="https://about.hdc.ntnu.no/tools/">
             <v-img max-height="80px" src="/img/logos-tools/rstudio.png" />
           </a>
         </v-col>
         <v-col cols="6" class="v-col-sm-4 v-col-md-2">
-          <a href="https://code.visualstudio.com/" target="_blank">
+          <a href="https://about.hdc.ntnu.no/tools/">
             <v-img max-height="80px" src="/img/logos-tools/vscode.png" />
           </a>
         </v-col>
@@ -149,136 +161,72 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-<!-- Block: Roles -->
+
+<!----------------------------------------------->
+<!-- Block: sensitive AI -->
+<!----------------------------------------------->
+
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        {{ $frontmatter.overview_by_role.title }}
+        Sensitive AI
       </div>
       <div class="hc-container-subtitle">
-        {{ $frontmatter.overview_by_role.subtitle }}
+        AI on sensitive data needs GPUs and trustworthy compliance to thrive. At HUNT Cloud you get both.      
       </div>
       <v-row align="center">
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[0].title }}</v-card-title>
-            <v-divider></v-divider>
+            <v-card-title>Select your GPUs</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  {{ $frontmatter.roles[0].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[0].href" title="Read more" />
+                  Your scientist may choose their preferred GPUs and compute resources or use our default suggestions.   
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[1].title }}</v-card-title>
-            <v-divider></v-divider>
+            <v-card-title>Run your models</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  {{ $frontmatter.roles[1].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[1].href" title="Read more" />
+                  With our trusted research environments you can do machine learning, large language models, natural language models and much more, using your favorite tools such as R, python, tensorflow and pytorch.
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[2].title }}</v-card-title>
-            <v-divider></v-divider>
+            <v-card-title>Explore and Evolve</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  {{ $frontmatter.roles[2].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[2].href" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[3].title }}</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  {{ $frontmatter.roles[3].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[3].href" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[4].title }}</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  {{ $frontmatter.roles[4].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[4].href" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[5].title }}</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  {{ $frontmatter.roles[5].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[5].href" title="Read more" />
+                  Combining SFTP servers and a rolebased agreement framework allows data controllers to transfer data directly into your trusted research environment.
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
       </v-row>
-      <!-- <RoleSlider :roles="$frontmatter.roles" /> -->
+    <div class="hc-section">
+      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+    </div>
     </div>
   </div>
 
+
+
+
+<!----------------------------------------------->
 <!-- Content: ISO -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -417,7 +365,10 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
+
+<!----------------------------------------------->
 <!-- Block: Agreements -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -464,77 +415,154 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-<!-- Block: sensitive AI -->
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Block: Roles -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Sensitive AI
+        {{ $frontmatter.overview_by_role.title }}
       </div>
       <div class="hc-container-subtitle">
-        With access to GPUs and scaleable resources, our trusted research environments are ready for your next sensitive AI project.
+        {{ $frontmatter.overview_by_role.subtitle }}
       </div>
       <v-row align="center">
-        <v-col cols="12" class="align-self-start v-col-sm-4">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Compliance and GPUs</v-card-title>
+            <v-card-title>{{ $frontmatter.roles[0].title }}</v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Combining GPUs and scaleable resources with our extensive compliance program enables our users to undertake multiple sensitive AI approaches.
+                  {{ $frontmatter.roles[0].text }}
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" blue />
+                  <SimpleButton size="small" :href="$frontmatter.roles[0].href" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-4">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Creative freedom</v-card-title>
+            <v-card-title>{{ $frontmatter.roles[1].title }}</v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  With our trusted research environments you can do machine learning, large language models, natural language models and much more, using your favorite tools such as R, python, tensorflow and pytorch.
+                  {{ $frontmatter.roles[1].text }}
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" blue />
+                  <SimpleButton size="small" :href="$frontmatter.roles[1].href" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-4">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Activate sensitive data</v-card-title>
+            <v-card-title>{{ $frontmatter.roles[2].title }}</v-card-title>
+            <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Combining SFT servers and a rolebased agreement framework allows data controllers to transfer data directly into your trusted research environment.
+                  {{ $frontmatter.roles[2].text }}
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" blue />
+                  <SimpleButton size="small" :href="$frontmatter.roles[2].href" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>{{ $frontmatter.roles[3].title }}</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  {{ $frontmatter.roles[3].text }}
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" :href="$frontmatter.roles[3].href" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>{{ $frontmatter.roles[4].title }}</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  {{ $frontmatter.roles[4].text }}
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" :href="$frontmatter.roles[4].href" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>{{ $frontmatter.roles[5].title }}</v-card-title>
+            <v-divider></v-divider>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  {{ $frontmatter.roles[5].text }}
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" :href="$frontmatter.roles[5].href" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
       </v-row>
+      <!-- <RoleSlider :roles="$frontmatter.roles" /> -->
     </div>
   </div>
 
 
+
+
+<!----------------------------------------------->
 <!-- Block: activate your data -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -603,7 +631,10 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
+
+<!----------------------------------------------->
 <!-- Block: About HUNT Cloud -->
+<!----------------------------------------------->
 
 <FooterBlock :contact="$frontmatter.contact" />
 
