@@ -88,7 +88,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Core products
       </div>
       <div class="hc-container-subtitle">
-        HUNT Cloud provides trusted research environments. Choose among three core products for scientific explorations: Explore, Evolve and Scientific suite.
+        HUNT Cloud provides trusted research environments for scientific explorations. Choose among three core products.
       </div>
       <ProductSlider :products="$frontmatter.products" />
     </div>
@@ -104,7 +104,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Contact us
       </div>
       <div class="hc-container-subtitle">
-        Contact us to get started, to ask how your science may benefit from our services, or just to share the joy of data-driven science!
+        Get started, ask how your science may benefit from our services, or just contact us to chat and share the joy of data-driven science!
       </div>
       <div class="hc-section">
         <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
@@ -178,11 +178,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Choose your GPUs</v-card-title>
+            <v-card-title>Get your GPUs</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                    Select your preferred GPU and compute resources, or use our default suggestions.
+                    Choose your preferred GPU and compute resources, or use our default setups.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -235,22 +235,17 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         ISO certificates
       </div>
       <div class="hc-container-subtitle">
-        Trust is crucial in science. HUNT Cloud holds third-party verified ISO certificates for information security, privacy and quality.
+        Trust strengthens relationships. HUNT Cloud follows international standards for quality, security and privacy.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Quality management</v-card-title>
+            <v-card-title>Quality</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our management systems follows the international standard ISO9001. We strive to provide the best possible services for our users, their organisations and collaborators.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -259,16 +254,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Information security</v-card-title>
+            <v-card-title>Security</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  HUNT Cloud holds the ISO certificate for information security, ISO27001. Our information security management system includes vetting people, policies and technology in accordance with the standard.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  Our information security management system (ISO 27001) add an exstensive list of security controls to protect your data and activities.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -277,22 +267,21 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Information privacy</v-card-title>
+            <v-card-title>Privacy</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  HUNT Clouds holds the ISO certificate for privacy information management, ISO27701, a global standard that goes beyond GDPR in protection of privacy information management.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
       </v-row>
+      <br>
+    <div class="hc-section">
+      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+    </div>
     </div>
   </div>
 
@@ -330,7 +319,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[0].href" title="Read more" />
+                  <SimpleButton size="small" :href="$frontmatter.roles[0].href" title="Scientist" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -349,7 +338,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[1].href" title="Read more" />
+                  <SimpleButton size="small" :href="$frontmatter.roles[1].href" title="Scientific leader" />
                 </v-col>
               </v-row>
             </v-card-text>
