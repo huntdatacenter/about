@@ -123,7 +123,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Scientific tools
       </div>
       <div class="hc-container-subtitle">
-        Get easy access to major scientific tools in HUNT Workbench. Install the rest directly in your lab.
+        Get instant access to major scientific tools in HUNT Workbench. Or install your favorites directly in your lab.
       </div>
       <!-- <ToolsSlider /> -->
       <v-row class="my-5" style="justify-content: center; align-items: center;">
@@ -172,17 +172,17 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Sensitive AI
       </div>
       <div class="hc-container-subtitle">
-        AI on sensitive data needs GPUs and trustworthy compliance to thrive. At HUNT Cloud you get both.      
+        Enjoy accelerated computing in environments tailored for sensitive AI.    
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Select your GPUs</v-card-title>
+            <v-card-title>Choose your GPUs</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Your scientist may choose their preferred GPUs and compute resources or use our default suggestions.   
+                    Select your preferred GPU and compute resources, or use our default suggestions.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -195,7 +195,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  With our trusted research environments you can do machine learning, large language models, natural language models and much more, using your favorite tools such as R, python, tensorflow and pytorch.
+                  Train or bring your favorite models, such as large language models. 
                 </v-col>
               </v-row>
             </v-card-text>
@@ -208,13 +208,14 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Combining SFTP servers and a rolebased agreement framework allows data controllers to transfer data directly into your trusted research environment.
+                  Start exploring AI in easy to use labs or go big with large and advanced experiments.
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
       </v-row>
+      <br>
     <div class="hc-section">
       <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
     </div>
@@ -294,128 +295,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
     </div>
   </div>
-
-
-<!-- Block: Pillars -->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Pillars
-      </div>
-      <div class="hc-container-subtitle">
-        HUNT Cloud rests on three pillars that guide our moral and philosophical approach to sensitive data.
-      </div>
-      <v-row align="center">
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Technology</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Technology changes fast and brings with it new solutionos and new oportunities. At NTNU we have a strong traditioon for experimentation and adoption of new technologies. Our dreamers and tinkerers work closely with scientists to ensure we know what moves and what will be available in the years to come.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" blue />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Trust</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Trust is the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We have continued the tradition with third-party verified trust, caring deeply for study participants and their data.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" blue />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Collaboration</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" blue />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-    </div>
-  </div>
-
-
-<!----------------------------------------------->
-<!-- Block: Agreements -->
-<!----------------------------------------------->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <v-row class="my-4">
-        <!-- Agreements -->
-        <v-col col="6">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card elevation="0" color="transparent">
-            <v-card-title>Agreements</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  A solid agreement framework is the key to enable your scientists with the freedom to explore.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" href="/resources/agreements" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <!-- Prices -->
-        <v-col col="6">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card elevation="0" color="transparent">
-            <v-card-title>Prices</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  HUNT Cloud use a total cost model and run our services with zero profit.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" href="/resources/prices" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-    </div>
-  </div>
-
-
 
 
 
@@ -556,6 +435,152 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <!-- <RoleSlider :roles="$frontmatter.roles" /> -->
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Block: Agreements -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <v-row class="my-4">
+        <!-- Agreements -->
+        <v-col col="6">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card elevation="0" color="transparent">
+            <v-card-title>Agreements</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  A solid agreement framework is the key to enable your scientists with the freedom to explore.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="/resources/agreements" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <!-- Prices -->
+        <v-col col="6">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card elevation="0" color="transparent">
+            <v-card-title>Prices</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  HUNT Cloud use a total cost model and run our services with zero profit.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="/resources/prices" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Content: Pillars -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Pillars
+      </div>
+      <div class="hc-container-subtitle">
+        HUNT Cloud rests on three pillars that guide our moral and philosophical approach to sensitive data.
+      </div>
+      <v-row align="center">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Technology</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Technology changes fast and brings with it new solutionos and new oportunities. At NTNU we have a strong traditioon for experimentation and adoption of new technologies. Our dreamers and tinkerers work closely with scientists to ensure we know what moves and what will be available in the years to come.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Trust</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Trust is the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We have continued the tradition with third-party verified trust, caring deeply for study participants and their data.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Collaboration</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more" blue />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
 
 
 
