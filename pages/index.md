@@ -208,7 +208,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Start exploring AI in easy to use labs or go big with large and advanced experiments.
+                  Explore AI in easy to use labs or go big with large and advanced experiments.
                 </v-col>
               </v-row>
             </v-card-text>
