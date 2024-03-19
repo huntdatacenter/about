@@ -24,7 +24,7 @@ products:
 
 overview_by_role:
   title: 'Overview by role'
-  subtitle: 'Read about our products from your own perspective.'
+  subtitle: 'Read about the solutions from your own perspective.'
 roles:
   - title: Scientist
     href: /roles/scientist/
@@ -235,7 +235,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         ISO certificates
       </div>
       <div class="hc-container-subtitle">
-        Trust strengthens relationships. HUNT Cloud follows international standards for quality, security and privacy.
+        Trust strengthens relations. HUNT Cloud follows international standards for quality, security and privacy.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
@@ -291,8 +291,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
-
-
 <!----------------------------------------------->
 <!-- Block: Roles -->
 <!----------------------------------------------->
@@ -309,14 +307,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[0].title }}</v-card-title>
             <v-divider></v-divider>
             <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  {{ $frontmatter.roles[0].text }}
-                </v-col>
-              </v-row>
               <v-row dense>
                 <v-col cols="12">
                   <SimpleButton size="small" :href="$frontmatter.roles[0].href" title="Scientist" />
@@ -328,14 +320,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[1].title }}</v-card-title>
             <v-divider></v-divider>
             <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  {{ $frontmatter.roles[1].text }}
-                </v-col>
-              </v-row>
               <v-row dense>
                 <v-col cols="12">
                   <SimpleButton size="small" :href="$frontmatter.roles[1].href" title="Scientific leader" />
@@ -347,17 +333,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[2].title }}</v-card-title>
             <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  {{ $frontmatter.roles[2].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[2].href" title="Read more" />
+                  <SimpleButton size="small" :href="$frontmatter.roles[2].href" title="Teacher" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -366,17 +346,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[3].title }}</v-card-title>
             <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  {{ $frontmatter.roles[3].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[3].href" title="Read more" />
+                  <SimpleButton size="small" :href="$frontmatter.roles[3].href" title="Department" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -385,17 +359,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[4].title }}</v-card-title>
             <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  {{ $frontmatter.roles[4].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[4].href" title="Read more" />
+                  <SimpleButton size="small" :href="$frontmatter.roles[4].href" title="Hospital clinic" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -404,17 +372,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>{{ $frontmatter.roles[5].title }}</v-card-title>
             <v-divider></v-divider>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  {{ $frontmatter.roles[5].text }}
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[5].href" title="Read more" />
+                  <SimpleButton size="small" :href="$frontmatter.roles[5].href" title="Private enterprise" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -448,40 +410,56 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <v-row class="my-4">
-        <!-- Agreements -->
-        <v-col col="6">
+          <v-row align="center">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card elevation="0" color="transparent">
+          <v-card color="transparent" elevation="0">
             <v-card-title>Agreements</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  A solid agreement framework is the key to enable your scientists with the freedom to explore.
+                  Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="/resources/agreements" title="Read more" />
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
-        <!-- Prices -->
-        <v-col col="6">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card elevation="0" color="transparent">
+          <v-card color="transparent" elevation="0">
             <v-card-title>Prices</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  HUNT Cloud use a total cost model and run our services with zero profit.
+                  Our information security management system (ISO 27001) add an exstensive list of security controls to protect your data and activities.
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="/resources/prices" title="Read more" />
+                  <SimpleButton size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Documentation</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more"/>
                 </v-col>
               </v-row>
             </v-card-text>
