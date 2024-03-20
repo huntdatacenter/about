@@ -393,7 +393,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 <!----------------------------------------------->
-<!-- Content: ISO -->
+<!-- Content: Supportive products -->
 <!----------------------------------------------->
 
   <div class="hc-block">
@@ -415,6 +415,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
                   Class-based framework to bring the excitement and joy to of data-driven explorations to the next generation of scientists. 
                 </v-col>
               </v-row>
+                <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more"/>
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -426,6 +431,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               <v-row dense>
                 <v-col cols="12">
                   Participate to develop new...
+                </v-col>
+              </v-row>
+                <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more"/>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -441,14 +451,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
                   Small and medium-sized enterprises (SMEs)... 
                 </v-col>
               </v-row>
+                <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more"/>
+                </v-col>
+              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
       </v-row>
-      <br>
-    <div class="hc-section">
-      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
-    </div>
     </div>
   </div>
 
