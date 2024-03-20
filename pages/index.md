@@ -238,6 +238,18 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Trust builds relations. HUNT Cloud follows international standards for quality, security and privacy.
       </div>
       <v-row align="center">
+              <v-col cols="2" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/kiwa-iso-9001-2017.png" />
+          </a>
+        </v-col>
+              <v-col cols="2" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/ISO_IEC_27001_WEO_27701_col.png" />
+          </a>
+        </v-col>
+        </v-row>
+      <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
