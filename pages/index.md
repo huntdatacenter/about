@@ -172,7 +172,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Sensitive AI
       </div>
       <div class="hc-container-subtitle">
-        Enjoy accelerated computing in environments tailored for sensitive AI.    
+        Enjoy accelerated computing in environments made for sensitive AI.    
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
@@ -182,7 +182,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                    Choose your preferred GPU and compute resources, or use our default setups.
+                    Select your preferred GPU and compute resources, or use our default setups.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -235,7 +235,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         ISO certificates
       </div>
       <div class="hc-container-subtitle">
-        Trust strengthens relations. HUNT Cloud follows international standards for quality, security and privacy.
+        Trust builds relations. HUNT Cloud follows international standards for quality, security and privacy.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
@@ -399,10 +399,10 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Additional products
+        Supportive products
       </div>
       <div class="hc-container-subtitle">
-        Trust strengthens relations. HUNT Cloud follows international standards for quality, security and privacy.
+        Subheader.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
@@ -412,7 +412,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
+                  Class-based framework to bring the excitement and joy to of data-driven explorations to the next generation of scientists. 
                 </v-col>
               </v-row>
             </v-card-text>
@@ -425,7 +425,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our information security management system (ISO 27001) add an exstensive list of security controls to protect your data and activities.
+                  Participate to develop new...
                 </v-col>
               </v-row>
             </v-card-text>
@@ -438,7 +438,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                  Small and medium-sized enterprises (SMEs)... 
                 </v-col>
               </v-row>
             </v-card-text>
@@ -464,31 +464,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
-<!----------------------------------------------->
-<!-- Block: activate your data -->
-<!----------------------------------------------->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Activate your data
-      </div>
-      <div class="hc-container-subtitle">
-        We work closely with data providers to make sure data is activated for impact.
-      </div>
-      <br>
-    <div class="hc-section">
-      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
-    </div>
-    </div>
-  </div>
-  
   
 
 
 
 <!----------------------------------------------->
-<!-- Block: Agreements -->
+<!-- Block: Agreements and multiblock -->
 <!----------------------------------------------->
 
   <div class="hc-block">
@@ -548,6 +529,29 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Block: Agreements and multiblock -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+          <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
@@ -617,6 +621,38 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Block: activate your data -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Activate your data
+      </div>
+      <div class="hc-container-subtitle">
+        We work closely with data providers to make sure data is activated for impact.
+      </div>
+      <br>
+    <div class="hc-section">
+      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+    </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
 <!----------------------------------------------->
 <!-- Content: Philosophy -->
 <!----------------------------------------------->
@@ -624,7 +660,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Philosphy
+        Philosophy
       </div>
       <div class="hc-container-subtitle">
         HUNT Cloud's sensitive data philosophy builds on three pillars.
@@ -691,7 +727,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        About
+        About HUNT Cloud
       </div>
       <div class="hc-container-subtitle">
         HUNT Cloud's sensitive data philosophy builds on three pillars.
