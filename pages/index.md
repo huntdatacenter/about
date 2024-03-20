@@ -529,29 +529,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </v-card-text>
           </v-card>
         </v-col>
-      </v-row>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!----------------------------------------------->
-<!-- Block: Agreements and multiblock -->
-<!----------------------------------------------->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-          <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
@@ -613,6 +590,18 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Block: Agreements and multiblock -->
+<!----------------------------------------------->
 
 
 
@@ -805,6 +794,26 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
+
+<!----------------------------------------------->
+<!-- Block: activate your data -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Get going
+      </div>
+      <div class="hc-container-subtitle">
+        Ready to start your journey?
+      </div>
+      <br>
+    <div class="hc-section">
+      <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+    </div>
+    </div>
+  </div>
+  
 
 <!----------------------------------------------->
 <!-- Block: About HUNT Cloud -->
