@@ -71,7 +71,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Freedom to Explore
       </div>
       <div class="hc-subtitle-main">
-        Enable your scientists with tools and guidance to explore and evolve the world of sensitive data science!
+        Enabling scientists with tools and guidance to explore and evolve the world of sensitive data science!
       </div>
     </div>
   </div>
