@@ -32,14 +32,14 @@ export default {
         v-bind="props"
         rounded="sm"
         :block="block"
-        :color="blue ? '#3e628a' : '#fff'"
+        :color="blue ? '#253a55' : '#fff'"
         :size="size"
         :target="target"
         :elevation="elevation"
         :href="href"
         :append-icon="isHovering ? 'mdi-chevron-triple-right' : 'mdi-chevron-right'"
       >
-      <!-- org color: #253a55 -->
+      <!-- rgba(37, 58, 85, 1) -->
         {{ title }}
         <template v-slot:append>
           <!-- :class="{'ml-1': isHovering, 'mr-1': !isHovering}" -->
