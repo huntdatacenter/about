@@ -20,7 +20,7 @@ products:
     img: /img/product-scientific-suite.png
     subtitle: Gather great minds.
     text: |
-      Scientific suite allows research centers and large-scale efforts both flexibility and control over large and diverse research portfolios. 
+      Scientific suite allows research centers and large-scale efforts both flexibility and control over large and diverse research portfolios.
 
 overview_by_role:
   title: 'Solutions by role'
@@ -172,7 +172,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Sensitive AI
       </div>
       <div class="hc-container-subtitle">
-        Enjoy accelerated computing in environments made for sensitive AI.    
+        Enjoy accelerated computing in environments made for sensitive AI.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
@@ -195,7 +195,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Train or bring your favorite models, such as large language models. 
+                  Train or bring your favorite models, such as large language models.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -237,19 +237,24 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         Trust builds relations. HUNT Cloud follows international standards for quality, security and privacy.
       </div>
-      <v-row align="center">
-              <v-col cols="2" class="v-col-sm-4 v-col-md-2">
+      <v-row>
+        <v-col cols="2" class="v-col-sm-4 v-col-md-4">
           <a href="https://about.hdc.ntnu.no/tools/">
-            <v-img max-height="80px" src="/img/logos-tools/kiwa-iso-9001-2017.png" />
+            <v-img max-height="160px" src="/img/kiwa-iso-9001-2017.svg" />
           </a>
         </v-col>
-              <v-col cols="2" class="v-col-sm-4 v-col-md-2">
+        <v-col cols="2" class="v-col-sm-4 v-col-md-4">
           <a href="https://about.hdc.ntnu.no/tools/">
-            <v-img max-height="80px" src="/img/logos-tools/ISO_IEC_27001_WEO_27701_col.png" />
+            <v-img max-height="200px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
           </a>
         </v-col>
-        </v-row>
-      <v-row align="center">
+        <v-col cols="2" class="v-col-sm-4 v-col-md-4">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="200px" src="/img/InformationSecuritySys_ISOIEC27001_col.png" />
+          </a>
+        </v-col>
+      </v-row>
+      <v-row>
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
@@ -424,7 +429,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Class-based framework to bring the excitement and joy to of data-driven explorations to the next generation of scientists. 
+                  Class-based framework to bring the excitement and joy to of data-driven explorations to the next generation of scientists.
                 </v-col>
               </v-row>
                 <v-row dense>
@@ -460,7 +465,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Small and medium-sized enterprises (SMEs)... 
+                  Small and medium-sized enterprises (SMEs)...
                 </v-col>
               </v-row>
                 <v-row dense>
@@ -487,7 +492,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
-  
+
 
 
 
@@ -497,7 +502,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
   <div class="hc-block">
     <div class="hc-block-container">
-          <v-row align="center">
+      <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
@@ -657,7 +662,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
     </div>
   </div>
-  
+
 
 
 
@@ -836,7 +841,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
     </div>
   </div>
-  
+
 
 <!----------------------------------------------->
 <!-- Block: About HUNT Cloud -->
