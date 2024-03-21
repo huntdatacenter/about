@@ -217,7 +217,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
       <br>
     <div class="hc-section">
-      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
     </div>
     </div>
   </div>
@@ -237,7 +237,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         Trust builds relations. HUNT Cloud follows international standards for quality, security and privacy.
       </div>
-      <v-row>
+      <!-- <v-row>
         <v-col cols="2" class="v-col-sm-4 v-col-md-4">
           <a href="https://about.hdc.ntnu.no/compliance/">
             <v-img max-height="160px" src="/img/kiwa-iso-9001-2017.svg" />
@@ -253,15 +253,18 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-img max-height="200px" src="/img/InformationSecuritySys_ISOIEC27001_col.png" />
           </a>
         </v-col>
-      </v-row>
+      </v-row> -->
       <v-row>
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Quality</v-card-title>
+            <v-card-title align="center">Quality</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
+                  <a href="https://about.hdc.ntnu.no/compliance/">
+                    <v-img class="mb-5" max-height="160px" src="/img/kiwa-iso-9001-2017.svg" />
+                  </a>
                   Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
                 </v-col>
               </v-row>
@@ -271,10 +274,13 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Security</v-card-title>
+            <v-card-title align="center">Security</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
+                  <a href="https://about.hdc.ntnu.no/compliance/">
+                    <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
+                  </a>
                   Our information security management system (ISO 27001) add an exstensive list of security controls to protect your data and activities.
                 </v-col>
               </v-row>
@@ -284,10 +290,13 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Privacy</v-card-title>
+            <v-card-title align="center">Privacy</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
+                  <a href="https://about.hdc.ntnu.no/compliance/">
+                    <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
+                  </a>
                   Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
                 </v-col>
               </v-row>
@@ -295,10 +304,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           </v-card>
         </v-col>
       </v-row>
-      <br>
-    <div class="hc-section">
-      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
-    </div>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+        </v-col>
+      </v-row>
     </div>
   </div>
 
@@ -596,10 +606,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         We work closely with data providers to make sure data is activated for impact.
       </div>
-      <br>
-    <div class="hc-section">
-      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
-    </div>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+        </v-col>
+      </v-row>
     </div>
   </div>
 
@@ -663,10 +674,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           </v-card>
         </v-col>
       </v-row>
-      <br>
-    <div class="hc-section">
-      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
-    </div>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+        </v-col>
+      </v-row>
     </div>
   </div>
 
@@ -730,10 +742,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           </v-card>
         </v-col>
       </v-row>
-      <br>
-    <div class="hc-section">
-      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
-    </div>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+        </v-col>
+      </v-row>
     </div>
   </div>
 
@@ -753,10 +766,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         NORTRE logo.
       </div>
-      <br>
-    <div class="hc-section">
-      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
-    </div>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+        </v-col>
+      </v-row>
     </div>
   </div>
 
@@ -776,9 +790,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Ready to start your journey?
       </div>
       <br>
-    <div class="hc-section">
-      <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
-    </div>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+        </v-col>
+      </v-row>
     </div>
   </div>
 
