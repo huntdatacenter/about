@@ -239,17 +239,17 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <v-row>
         <v-col cols="2" class="v-col-sm-4 v-col-md-4">
-          <a href="https://about.hdc.ntnu.no/tools/">
+          <a href="https://about.hdc.ntnu.no/compliance/">
             <v-img max-height="160px" src="/img/kiwa-iso-9001-2017.svg" />
           </a>
         </v-col>
         <v-col cols="2" class="v-col-sm-4 v-col-md-4">
-          <a href="https://about.hdc.ntnu.no/tools/">
+          <a href="https://about.hdc.ntnu.no/compliance/">
             <v-img max-height="200px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
           </a>
         </v-col>
         <v-col cols="2" class="v-col-sm-4 v-col-md-4">
-          <a href="https://about.hdc.ntnu.no/tools/">
+          <a href="https://about.hdc.ntnu.no/compliance/">
             <v-img max-height="200px" src="/img/InformationSecuritySys_ISOIEC27001_col.png" />
           </a>
         </v-col>
