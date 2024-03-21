@@ -322,82 +322,22 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[0].href" title="Scientist" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
+          <SimpleButton size="small" :href="$frontmatter.roles[0].href" title="Scientist" block />
         </v-col>
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[1].href" title="Scientific leader" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
+          <SimpleButton size="small" :href="$frontmatter.roles[1].href" title="Scientific leader" block />
         </v-col>
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[2].href" title="Teacher" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
+          <SimpleButton size="small" :href="$frontmatter.roles[2].href" title="Teacher" block />
         </v-col>
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[3].href" title="Department" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
+          <SimpleButton size="small" :href="$frontmatter.roles[3].href" title="Department" block />
         </v-col>
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[4].href" title="Hospital clinic" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
+          <SimpleButton size="small" :href="$frontmatter.roles[4].href" title="Hospital clinic" block />
         </v-col>
         <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  <SimpleButton size="small" :href="$frontmatter.roles[5].href" title="Private enterprise" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
+          <SimpleButton size="small" :href="$frontmatter.roles[5].href" title="Private enterprise" block />
         </v-col>
       </v-row>
     </div>
