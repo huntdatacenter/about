@@ -374,7 +374,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
                 <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more"/>
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -392,7 +392,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
                 <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more"/>
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -410,7 +410,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
                 <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more"/>
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -491,7 +491,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more"/>
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -509,7 +509,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more"/>
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -527,7 +527,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more"/>
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -545,7 +545,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more"/>
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
