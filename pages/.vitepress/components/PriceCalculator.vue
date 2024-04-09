@@ -1,6 +1,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
+import csvApi from '../api/csv.js';
+import { parse } from 'csv-parse';
+
 export default defineComponent({
   props: {
     title: { type: String, default: "Title" },
@@ -8,21 +11,113 @@ export default defineComponent({
   data() {
     return {
       LabCards: [], // Initialize LabCards as an empty array
-      subscriptions: [
-        { name: 'Basic', price: 100 },
-        { name: 'Pro', price: 200 },
-        { name: 'Enterprise', price: 300 },
+      selectedDataSpaceSub: null,
+      dataspaceSubscriptions: [
+        {
+          name: "Data space",
+          subscription: "White (1 year)",
+          label: "White (1 year)",
+          units: 1,
+          price: 0.0,
+        },
+        {
+          name: "Data space",
+          subscription: "White (3 years)",
+          label: "White (3 years)",
+          units: 1,
+          price: 0.0,
+        },
+        {
+          name: "Data space",
+          subscription: "Orange (1 year)",
+          label: "Orange (1 year)",
+          units: 1,
+          price: 8495.0,
+        },
+        {
+          name: "Data space",
+          subscription: "Orange (3 years)",
+          label: "Orange (3 years)",
+          units: 1,
+          price: 29734.0,
+        },
+        {
+          name: "Data space",
+          subscription: "Blue (1 year)",
+          label: "Blue (1 year)",
+          units: 1,
+          price: 35397.0,
+        },
       ],
+      isInitializingComputePrices: false,
+      computePrices: [],
+      isInitializingStoragePrices: false,
+      storagePrices: [],
+      isInitializingGpuPrices: false,
+      gpuPrices: [],
+      
+
       items: ['foo', 'bar', 'fizz', 'buzz', 'fizzbuzz', 'foobar'],
       value: ['foo', 'bar', 'fizz'],
       gbValues: ['10GB', '20GB', '30GB', '40GB', '50GB', '60GB', '70GB', '80GB', '90GB', '100GB']
     }
   },
+  created() {
+    this.initializeFlavors();
+    this.initializeStoragePrices();
+    this.initializeGpuPrices();
+  },
   methods: {
+    initializeFlavors() {
+      this.isInitializingComputePrices = true;
+      const uponFlavors = csvApi.getComputeFlavors();
+      Promise.all(uponFlavors).then((responses) => {
+        // console.log(responses);
+        const records = [];
+        const parser = parse({
+          delimiter: [";"],
+          trim: true,
+          columns: true,
+        });
+        this.computePrices = records;
+        this.isInitializingComputePrices = false;
+        // console.log(records);
+      });
+    },
+    initializeStoragePrices() {
+      this.isInitializingStoragePrices = true;
+      const uponStorage = csvApi.getStoragePrices();
+      uponStorage.then((response) => {
+        const records = parse(response.data, {
+          delimiter: [";"],
+          trim: true,
+          columns: true,
+        });
+        this.storagePrices = records;
+        this.isInitializingStoragePrices = false;
+        // console.log(records);
+      });
+    },
+    initializeGpuPrices() {
+      this.isInitializingGpuPrices = true;
+      const uponStorage = csvApi.getGpuPrices();
+      uponStorage.then((response) => {
+        const records = parse(response.data, {
+          delimiter: [";"],
+          trim: true,
+          columns: true,
+        });
+        this.gpuPrices = records;
+        this.isInitializingGpuPrices = false;
+        // console.log(records);
+      });
+    },
+
     addLabCard() {
       // Add a new item to the LabCards array
       this.LabCards.push(this.LabCards.length + 1);
       console.log(this.LabCards);
+      csvApi.getComputeFlavors()
     }
   },
 })
@@ -31,7 +126,13 @@ export default defineComponent({
 <template>
   <v-sheet class="group-slider-wrapper ma-auto" elevation="0" max-width="920">
     <h3> Dataspace</h3>
-    <v-select :items="subscriptions" item-title="name" label="Choose a subscription">
+    <v-select 
+      v-model="selectedDataSpaceSub"
+      :items="dataspaceSubscriptions" 
+      item-title="label" 
+      label="Choose a subscription"
+      clearable
+      >
       <template v-slot:item="{ props, item }">
         <v-list-item v-bind="props" :subtitle="item.raw.price"></v-list-item>
       </template>
