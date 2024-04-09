@@ -1,7 +1,7 @@
 import type { EnhanceAppContext } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 
-import Button from '../components/Button.vue';
+import SimpleButton from '../components/SimpleButton.vue';
 import FooterBlock from '../components/FooterBlock.vue';
 import ContentHeader from '../components/ContentHeader.vue';
 import ProductSlider from '../components/ProductSlider.vue';
@@ -30,7 +30,7 @@ export default {
   enhanceApp(context: EnhanceAppContext) {
     context.app.use(vuetify)
 
-    context.app.component('hc-button', Button);
+    context.app.component('SimpleButton', SimpleButton);
     context.app.component('FooterBlock', FooterBlock);
     context.app.component('ContentHeader', ContentHeader);
     context.app.component('ProductSlider', ProductSlider);

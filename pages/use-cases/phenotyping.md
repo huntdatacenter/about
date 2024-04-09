@@ -1,7 +1,8 @@
 ---
-title: Tools
-# sidebar: false
+title: Phenotyping
 
 ---
 
 # {{ $frontmatter.title }}
+
+Lorem ipsum

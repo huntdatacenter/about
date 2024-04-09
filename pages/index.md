@@ -4,53 +4,53 @@ layout: page
 sidebar: false
 products:
   - title: Explore
-    # href: /explore/
-    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    # theme: brand
-    # theme: sponsor
-    img: ./img/product-explore.png
-    subtitle: Come through the portal, it's time to explore.
+    href: /products/explore/
+    img: /img/product-explore.png
+    subtitle: Make it easy.
     text: |
-      Science is hard and with good reason, you are not diving into the unknown becasue it is easy. Working with sensitive data means entering a land of laws, regulations and agreements; but this is also where scientific progress happens every day. We are here to make sure you get to do the hard things.
+      Start to explore and analyse your sensitive data in trusted research environments with easy access to preferred tools in HUNT Workbench.
   - title: Evolve
-    # href: /evolve/
-    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    # theme: alt
-    img: ./img/product-evolve.png
-    subtitle: Take your ideas to the next level.
+    href: /products/evolve/
+    img: /img/product-evolve.png
+    subtitle: Evolve your ideas.
     text: |
-      As your ideas develop, you grown you project portfolio, team and scientific career. You are ready to expand and we got you covered for this next phase of your journey.
+      Evolve is for scientific groups that aims to evolve and expand their ideas, careers, collaborations, data and methods with flexible choices.
   - title: Scientific Suite
-    # href: /scientific-suite/
-    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    # theme: sponsor
-    img: ./img/product-scientific-suite.png
-    subtitle: Gathering great minds.
+    href: /products/scientific-suite/
+    img: /img/product-scientific-suite.png
+    subtitle: Gather great minds.
     text: |
-      Collaboration is where the magic happens, where ideas take flight in new directions, young scientists grow up and multidisiplinary teams make discoveries that change worlds. Our scientific suites are for you, set up for the complexities you phase as you take on the grand challenges.
+      Scientific suite allows research centers and large-scale efforts both flexibility and control over large and diverse research portfolios.
+
+overview_by_role:
+  title: 'Solutions by role'
+  subtitle: 'Read about our solutions from your own perspective.'
 roles:
   - title: Scientist
-    # href: /roles/scientist/
-    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    text: Scientists are explorers. This section is aimed at those who...
+    href: /roles/scientist/
+    text: |
+      Scientists working in a range of different fields use HUNT Cloud for their sensitive data explorations. Read on to see if we are a good fit for your needs.
   - title: Scientific leader
-    # href: /roles/scientific-leader/
-    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    text: Scientists are explorers. This section is aimed at those who...
-  - title: Administrator
-    # href: /roles/administrator/
-    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    text: Scientists are explorers. This section is aimed at those who...
+    href: /roles/scientific-leader/
+    text: |
+      Sensitive data represents a range of new oportunities. Our goal is for your team to thrive and succeed in ground-breaking science, all the while keeping their data protected.
   - title: Teacher
-    # href: /roles/teacher/
-    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    text: Scientists are explorers. This section is aimed at those who...
-  - title: Inventor (SME)
-    # href: /roles/sme-inventor/
-    href: https://docs.hdc.ntnu.no/administer-science/services/overview/
-    text: Scientists are explorers. This section is aimed at those who...
+    href: /roles/teacher/
+    text: |
+      The next generation of scientists deserves to build their skills in real-life environments. Our course packages are developed with this in mind. Read more to see how our set-up can be tailored to your course.
+  - title: Department
+    href: /roles/department/
+    text: |
+      HUNT Cloud works closely with departments from many organisations. Our product packages are tailored for different levels of sensitive data activities, while ensuring easy overview and organisational control
+  - title: Clinic
+    href: /roles/clinic/
+    text: |
+      Clinics use HUNT Cloud for research and data processing during production. We are ISO/IEC certified and compliant with Helesnormen, while our trusted research environments can be tailored to your security needs.
+  - title: Private enterprise
+    href: /roles/private-enterprise/
+    text: |
+      Innovation projects, enterprises and private companies have spesific challenges and needs in dealing with sensitive data. The HUNT Cloud Invent program might be for you.
 contact: https://docs.hdc.ntnu.no/about/contact/
-
 ---
 
 <!-- <script setup></script> -->
@@ -60,7 +60,10 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-header-img"></div>
   </div>
 
+
+<!----------------------------------------------->
 <!-- Block: Freedom to explore -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -68,13 +71,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Freedom to Explore
       </div>
       <div class="hc-subtitle-main">
-        Enable your scientists with tools and guidance to explore and evolve the world of sensitive data science!
-        <!-- Welcome to HUNT Cloud! We provide scientists with tools and guidance to explore and evolve their magical world of sensitive data science. -->
+        Enabling scientists with tools and guidance to explore and evolve the world of sensitive data science!
       </div>
     </div>
   </div>
 
+
+<!----------------------------------------------->
 <!-- Block: Core products -->
+<!----------------------------------------------->
 <!-- Content: In this page header -->
 
   <div class="hc-block">
@@ -83,13 +88,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Core products
       </div>
       <div class="hc-container-subtitle">
-      HUNT Cloud provides trusted research environments.
+        HUNT Cloud provides trusted research environments for scientific explorations. Choose among three core products.
       </div>
       <ProductSlider :products="$frontmatter.products" />
     </div>
   </div>
 
+<!----------------------------------------------->
 <!-- Block: Contact us -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -97,146 +104,18 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Contact us
       </div>
       <div class="hc-container-subtitle">
-        Contact us to get started, to ask how your science may prosper from our services, or just to share the joy and excitement of data-driven science!
+        Get started, ask how your science may benefit from our services, or just contact us to chat and share the joy of data-driven science!
       </div>
       <div class="hc-section">
-        <hc-button title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+        <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
       </div>
     </div>
   </div>
 
-<!-- Block: Roles -->
-<!-- Content: In this page header -->
 
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Overview by role
-      </div>
-      <div class="hc-container-subtitle">
-        Read about our products from your own perspective.
-      </div>
-      <v-row align="center">
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Scientist</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Scientists working in a range of different fields use HUNT Cloud for their sensitive data explorations. Read on to see if we are a good fit for your needs.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Scientific leader</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Sensitive data represents a range of new oportunities in most scientific fields. At the same time, handling multiple projects, teams, legal and ethical complexities is a challenge. Our is for your team to thrive in this setting and succeed in ground-breaking science.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Scientific administrator</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Organizations owning large data values require trustworthy and predictable solutions. Scientific administrators are the unheralded drivers of scientific success in sensitive data. HUNT Cloud helps scientific administrators and organisations build data culture and promote trustworthy, high-ranking science.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Teacher</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  The next generation of scientists deserves to build their skills in real-life environments. They need to learn the tools of the future and be comfortable with the complexities that surround sensitive data. Our course packages are developed with this in mind. Read more to see how our set-up can be tailored to your course.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Private enterprise</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Innovation projects, enterprises and private companies have spesific challenges and needs in dealing with sensitive data. The HUNT Cloud Invent program might be for you.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Department or clinic</v-card-title>
-            <v-divider></v-divider>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  HUNT Cloud works closely with departments and clinics from many organisations. Our product packages are tailored for different levels of sensitive data activities, while ensuring easy overview and organisational control.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-      <!-- <RoleSlider :roles="$frontmatter.roles" /> -->
-    </div>
-  </div>
-
+<!----------------------------------------------->
 <!-- Content: Scientific tools -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -244,13 +123,111 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Scientific tools
       </div>
       <div class="hc-container-subtitle">
-        Value statement on tools.
+        Get instant access to major scientific tools in HUNT Workbench. Or install your favorites directly in your lab.
       </div>
-      <ToolsSlider />
+      <!-- <ToolsSlider /> -->
+      <v-row class="my-5" style="justify-content: center; align-items: center;">
+        <v-col cols="6" class="v-col-sm-4 v-col-md-1">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/jupyter.png" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2" style="justify-content: center;">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/pandas.svg" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/python.svg" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/pytorch.svg" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/rstudio.png" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/vscode.png" />
+          </a>
+        </v-col>
+      </v-row>
     </div>
   </div>
 
+
+<!----------------------------------------------->
+<!-- Block: sensitive AI -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Sensitive AI
+      </div>
+      <div class="hc-container-subtitle">
+        Enjoy accelerated computing in environments made for sensitive AI.
+      </div>
+      <v-row align="center">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Get your GPUs</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                    Select your preferred GPU and compute resources, or use our default setups.
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Run your models</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Train or bring your favorite models, such as large language models.
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Explore and Evolve</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Explore AI in easy to use labs or go big with large and advanced experiments.
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+      <br>
+    <div class="hc-section">
+      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+    </div>
+    </div>
+  </div>
+
+
+
+
+<!----------------------------------------------->
 <!-- Content: ISO -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -258,22 +235,156 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         ISO certificates
       </div>
       <div class="hc-container-subtitle">
-        Trust is crucial in science. HUNT Cloud holds third-party verified ISO certificates for information security, privacy and quality.
+        Trust builds relations. HUNT Cloud follows international standards for quality, security and privacy.
+      </div>
+      <!-- <v-row>
+        <v-col cols="2" class="v-col-sm-4 v-col-md-4">
+          <a href="https://about.hdc.ntnu.no/compliance/">
+            <v-img max-height="160px" src="/img/kiwa-iso-9001-2017.svg" />
+          </a>
+        </v-col>
+        <v-col cols="2" class="v-col-sm-4 v-col-md-4">
+          <a href="https://about.hdc.ntnu.no/compliance/">
+            <v-img max-height="200px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
+          </a>
+        </v-col>
+        <v-col cols="2" class="v-col-sm-4 v-col-md-4">
+          <a href="https://about.hdc.ntnu.no/compliance/">
+            <v-img max-height="200px" src="/img/InformationSecuritySys_ISOIEC27001_col.png" />
+          </a>
+        </v-col>
+      </v-row> -->
+      <v-row>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title align="center">Quality</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  <a href="https://about.hdc.ntnu.no/compliance/">
+                    <v-img class="mb-5" max-height="160px" src="/img/kiwa-iso-9001-2017.svg" />
+                  </a>
+                  Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title align="center">Security</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  <a href="https://about.hdc.ntnu.no/compliance/">
+                    <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
+                  </a>
+                  Our information security management system (ISO 27001) add an exstensive list of security controls to protect your data and activities.
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title align="center">Privacy</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  <a href="https://about.hdc.ntnu.no/compliance/">
+                    <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
+                  </a>
+                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Block: Roles -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        {{ $frontmatter.overview_by_role.title }}
+      </div>
+      <div class="hc-container-subtitle">
+        {{ $frontmatter.overview_by_role.subtitle }}
+      </div>
+      <v-row align="center">
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+          <SimpleButton size="small" :href="$frontmatter.roles[0].href" title="Scientist" block />
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+          <SimpleButton size="small" :href="$frontmatter.roles[1].href" title="Scientific leader" block />
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+          <SimpleButton size="small" :href="$frontmatter.roles[2].href" title="Teacher" block />
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+          <SimpleButton size="small" :href="$frontmatter.roles[3].href" title="Department" block />
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+          <SimpleButton size="small" :href="$frontmatter.roles[4].href" title="Hospital clinic" block />
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-6 v-col-md-4">
+          <SimpleButton size="small" :href="$frontmatter.roles[5].href" title="Private enterprise" block />
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Content: Supportive products -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Supportive products
+      </div>
+      <div class="hc-container-subtitle">
+        Subheader.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Quality management</v-card-title>
+            <v-card-title>Teach</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Class-based framework to bring the excitement and joy to of data-driven explorations to the next generation of scientists.
                 </v-col>
               </v-row>
-              <v-row dense>
+                <v-row dense>
                 <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -282,16 +393,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Information security</v-card-title>
+            <v-card-title>Partner</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Participate to develop new...
                 </v-col>
               </v-row>
-              <v-row dense>
+                <v-row dense>
                 <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -300,16 +411,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Information privacy</v-card-title>
+            <v-card-title>Enterprise</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
+                  Small and medium-sized enterprises (SMEs)...
                 </v-col>
               </v-row>
-              <v-row dense>
+                <v-row dense>
                 <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -320,15 +431,207 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   </div>
 
 
-<!-- Block: Pillars -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Block: Agreements and multiblock -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <v-row align="center">
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Agreements</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Price</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Our information security management system (ISO 27001) add an exstensive list of security controls to protect your data and activities.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Documentation</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Community</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Support</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Tingweek</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                </v-col>
+              </v-row>
+              <v-row dense>
+                <v-col cols="12">
+                  <SimpleButton size="small" href="place-link" title="Read more" />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Block: Agreements and multiblock -->
+<!----------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Block: activate your data -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Pillars
+        Activate your data
       </div>
       <div class="hc-container-subtitle">
-        HUNT Cloud rests on three pillars that guide our moral and philosophical approach to sensitive data.
+        We work closely with data providers to make sure data is activated for impact.
+      </div>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Content: Philosophy -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Philosophy
+      </div>
+      <div class="hc-container-subtitle">
+        HUNT Cloud's sensitive data philosophy builds on three pillars.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
@@ -339,11 +642,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               <v-row dense>
                 <v-col cols="12">
                   Technology changes fast and brings with it new solutionos and new oportunities. At NTNU we have a strong traditioon for experimentation and adoption of new technologies. Our dreamers and tinkerers work closely with scientists to ensure we know what moves and what will be available in the years to come.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" blue />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -359,11 +657,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
                   Trust is the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We have continued the tradition with third-party verified trust, caring deeply for study participants and their data.
                 </v-col>
               </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" blue />
-                </v-col>
-              </v-row>
             </v-card-text>
           </v-card>
         </v-col>
@@ -374,92 +667,49 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  The lone scientists does no longer exists. Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" blue />
+                  Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
       </v-row>
-    </div>
-  </div>
-
-<!-- Block: Agreements -->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <v-row class="my-4">
-        <!-- Agreements -->
-        <v-col col="6">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card elevation="0">
-            <v-card-title>Agreements</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <!-- Prices -->
-        <v-col col="6">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card elevation="0">
-            <v-card-title>Prices</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis tincidunt lacus, vitae maximus enim.
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
         </v-col>
       </v-row>
     </div>
   </div>
 
-<!-- Block: .... -->
+
+
+
+
+
+
+
+<!----------------------------------------------->
+<!-- Content: About -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Title
+        About HUNT Cloud
       </div>
       <div class="hc-container-subtitle">
-        Subtitle.
+        HUNT Cloud's sensitive data philosophy builds on three pillars.
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Title</v-card-title>
+            <v-card-title>Team</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Text
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" blue />
+                  Technology changes fast and brings with it new solutionos and new oportunities. At NTNU we have a strong traditioon for experimentation and adoption of new technologies. Our dreamers and tinkerers work closely with scientists to ensure we know what moves and what will be available in the years to come.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -468,16 +718,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Title</v-card-title>
+            <v-card-title>History</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Text
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" blue />
+                  Trust is the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We have continued the tradition with third-party verified trust, caring deeply for study participants and their data.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -486,96 +731,77 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Title</v-card-title>
+            <v-card-title>Artworks</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Text
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" blue />
+                  Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+        </v-col>
+      </v-row>
     </div>
   </div>
 
 
-<!-- Block: .... -->
+
+
+
+<!----------------------------------------------->
+<!-- Block: activate your data -->
+<!----------------------------------------------->
 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Title
+        Norwegian trust domain
       </div>
       <div class="hc-container-subtitle">
-        Subtitle.
+        NORTRE logo.
       </div>
-      <v-row align="center">
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Title</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Text
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Title</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Text
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Title</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Text
-                </v-col>
-              </v-row>
-              <v-row dense>
-                <v-col cols="12">
-                  <hc-button size="small" href="place-link" title="Read more" />
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
         </v-col>
       </v-row>
     </div>
   </div>
 
+
+
+
+<!----------------------------------------------->
+<!-- Block: activate your data -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Get going
+      </div>
+      <div class="hc-container-subtitle">
+        Ready to start your journey?
+      </div>
+      <br>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+<!----------------------------------------------->
 <!-- Block: About HUNT Cloud -->
+<!----------------------------------------------->
 
 <FooterBlock :contact="$frontmatter.contact" />
 

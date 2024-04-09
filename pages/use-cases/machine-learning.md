@@ -1,7 +1,8 @@
 ---
-title: Tools
-# sidebar: false
+title: Sensitive AI
 
 ---
 
 # {{ $frontmatter.title }}
+
+Lorem ipsum

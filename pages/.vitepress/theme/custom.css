@@ -1,5 +1,10 @@
 /* Custom CSS */
 
+:root {
+  --vp-home-hero-name-color: #00509E;
+  --vp-c-brand-1: #00509E;
+}
+
 .hc-home-page {
     display: block;
 }
@@ -23,20 +28,18 @@
   }
 }
 
-/* Odd/white block */
+/* Odd=light block */
 .hc-block:nth-child(odd) {
   box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+  color: rgb(60, 60, 68);
 }
 
-/* Grey block */
+/* Even=blue block */
 .hc-block:nth-child(even) {
   /* background-color: rgb(238, 238, 238); */
   background-color: rgb(62,98,138);
   color: rgb(255, 255, 255);
-}
-
-.hc-grey-block {
-  background-color: rgb(238, 238, 238) !important;
 }
 
 .hc-blue-block {
@@ -44,8 +47,10 @@
   color: rgb(255, 255, 255) !important;
 }
 
-.hc-white-block {
-  background-color: rgb(255, 255, 255) !important;
+.hc-light-block {
+  /* background-color: rgb(255, 255, 255) !important; */
+  background-color: #f2f2f2 !important;
+  color: rgb(60, 60, 68) !important;
   /* background-color: unset !important; */
 }
 

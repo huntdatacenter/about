@@ -1,7 +1,8 @@
 ---
-title: Tools
-# sidebar: false
+title: Image annotation
 
 ---
 
 # {{ $frontmatter.title }}
+
+Lorem ipsum

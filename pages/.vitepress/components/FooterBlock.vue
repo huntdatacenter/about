@@ -43,19 +43,22 @@ export default {
 </script>
 
 <template>
-  <!-- <div class="hc-block hc-grey-block"> -->
   <div class="hc-block hc-blue-block">
     <div class="hc-block-container">
+<!--        
       <v-row class="my-4 px-4">
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
-          <b>Ready to get started on your journey?</b>
-          <br />
-          Reach out to arrange a&nbsp;call.
+<b>Ready to get started on your journey?</b>
+           <br />
+           Reach out to arrange a&nbsp;call.
         </v-col>
+-->
+<!--        
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
-          <hc-button title="Contact us" :href="contact" target="_blank" size="large" elevation="2" />
+          <SimpleButton title="Contact us" :href="contact" target="_blank" size="large" elevation="2" />
         </v-col>
       </v-row>
+-->
       <!-- <v-divider class="my-4"></v-divider> -->
       <v-row>
         <v-col v-for="(list, i) in lists" :key="i" cols="12" class="v-col-sm-6 v-col-md-4">
@@ -81,6 +84,7 @@ export default {
       </div> -->
       <v-row class="mt-4 px-4">
         <v-col cols="12">
+<!--
           <b>HUNT Cloud provides high-trust and flexible cloud computing for scientific explorations</b>
         </v-col>
         <v-col cols="12" class="v-col-sm-12 v-col-md-8">
@@ -92,6 +96,7 @@ export default {
             Our overarching goal is to facilitate seamless exploration across various fields and geographical borders,
             fostering collaboration and innovation on a&nbsp;global scale.
           </div>
+-->          
         </v-col>
         <v-col cols="12" class="v-col-sm-12 v-col-md-4">
           <v-img
