@@ -1,44 +1,37 @@
 <script lang="ts">
-interface Machine {
-    name: string;
-    index: number;
-}
+
 export default {
     name: 'LabCard',
     props: {
-        labName: {
-            type: String,
-            required: true
-        },
-        title: { type: String, required: true, default: "Lab " }
+        title: { type: String, required: true, default: "Lab " },
+        computePrices: { type: Array, default: () => [] },
+        gpuPrices: { type: Array, default: () => [] },
+        storagePrices: { type: Array, default: () => [] },
+        machines: { type: Array, default: () => [] },
+        availableGpus: { type: Array, default: () => [] },
     },
     data() {
         return {
-            machines: [] as Machine[],
+            computeId: 0,
+            isComputeModalOpen: false,
         };
     },
 
-    methods: {
-        
-
-
-
+    methods: {  
         addMachine() {
-            console.log('Adding machine');
-            const newMachine: Machine = {
-                name: `Machine ${this.machines.length +1}`,
-                index: this.machines.length +1,
-            };
-            this.machines.push(newMachine);
-
+            this.isComputeModalOpen = true;
         },
-        removeMachine(machine: Machine) {
-            const machineIndex = this.machines.findIndex(existingMachine => existingMachine === machine);
-            if (machineIndex > -1) { // Check if machine found
-                this.machines.splice(machineIndex, 1);
-            }
+        closeComputeModal(payload) {
+        if (payload) {
+            this.computeId = this.computeId + 1;
+            this.datasetCompute.push(payload);
         }
-    }
+            this.isComputeModalOpen = false;
+        },
+    },
+    created() {
+
+    },
 
 }
 </script>
@@ -46,14 +39,19 @@ export default {
 <template>
     <v-sheet class="lab-card">
         <v-card class="ma-0">
-            <v-card-title>{{ title + labName }}</v-card-title>
+            <v-card-title>{{ title }}</v-card-title>
             <v-card-subtitle>Add a machine</v-card-subtitle>
 
             <v-col cols="auto">
                 <v-btn icon="mdi-plus" size="small" @click="addMachine"></v-btn>
             </v-col>
-            <Machine v-for="(machine, index) in machines" :key="index" :machineIndex=index + 1 :title="machine.name"
-                @remove-machine="removeMachine" />
+            <Machine v-if="isComputeModalOpen"
+                    :compute-id="computeId"
+                    :flavors="computePrices"
+                    :gpus="gpuPrices"
+                    :machines="machines"
+                    :available-gpus="availableGpus"
+                    @close="closeComputeModal"/>
             <v-card-subtitle> Add storage </v-card-subtitle>
             <v-col cols="auto">
                 <v-btn icon="mdi-plus" size="small"></v-btn>

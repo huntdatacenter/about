@@ -2,15 +2,20 @@
 import { defineComponent } from 'vue';
 
 import csvApi from '../api/csv.js';
-import { parse } from 'csv-parse';
+interface labCard {
+  id: number;
+  title: string;
+  // Add more properties if needed
+}
 
 export default defineComponent({
   props: {
     title: { type: String, default: "Title" },
   },
+  
   data() {
     return {
-      LabCards: [], // Initialize LabCards as an empty array
+      LabCards: [] as labCard[],
       selectedDataSpaceSub: null,
       dataspaceSubscriptions: [
         {
@@ -55,6 +60,10 @@ export default defineComponent({
       storagePrices: [],
       isInitializingGpuPrices: false,
       gpuPrices: [],
+      isInitializingMachines: false,
+      machines: [],
+      isInitializingAvailableGpus: false,
+      availableGpus: [],
       
 
       items: ['foo', 'bar', 'fizz', 'buzz', 'fizzbuzz', 'foobar'],
@@ -66,58 +75,64 @@ export default defineComponent({
     this.initializeFlavors();
     this.initializeStoragePrices();
     this.initializeGpuPrices();
+    this.initializeMachines();
+    this.initializeAvailableGpus();
   },
+
+  
+
   methods: {
     initializeFlavors() {
       this.isInitializingComputePrices = true;
       const uponFlavors = csvApi.getComputeFlavors();
-      Promise.all(uponFlavors).then((responses) => {
-        // console.log(responses);
-        const records = [];
-        const parser = parse({
-          delimiter: [";"],
-          trim: true,
-          columns: true,
-        });
-        this.computePrices = records;
+      uponFlavors.then((flavors) => {
+        this.computePrices = flavors.filter((item) => item['service.group'] === 'cpu');
         this.isInitializingComputePrices = false;
-        // console.log(records);
+      });
+    },
+    initializeAvailableGpus() {
+      this.isInitializingAvailableGpus = true;
+      const uponGpus = csvApi.getAvailableGPUS();
+      uponGpus.then((gpus) => {
+        this.availableGpus = gpus;
+        this.isInitializingAvailableGpus = false;
+      });
+    },
+    initializeMachines() {
+      this.isInitializingMachines = true;
+      const machines = csvApi.getMachines();
+      machines.then((machine) => {
+        this.machines = machine;
+        this.isInitializingMachines = false;
       });
     },
     initializeStoragePrices() {
       this.isInitializingStoragePrices = true;
       const uponStorage = csvApi.getStoragePrices();
-      uponStorage.then((response) => {
-        const records = parse(response.data, {
-          delimiter: [";"],
-          trim: true,
-          columns: true,
-        });
-        this.storagePrices = records;
+      uponStorage.then((storage) => {
+        this.storagePrices = storage.filter((item) => item['service.family'] === 'store');
         this.isInitializingStoragePrices = false;
-        // console.log(records);
       });
     },
     initializeGpuPrices() {
       this.isInitializingGpuPrices = true;
-      const uponStorage = csvApi.getGpuPrices();
-      uponStorage.then((response) => {
-        const records = parse(response.data, {
-          delimiter: [";"],
-          trim: true,
-          columns: true,
-        });
-        this.gpuPrices = records;
+      const uponGpu = csvApi.getGpuPrices();
+      uponGpu.then((gpu) => {
+        this.gpuPrices = gpu.filter((item) => item['service.group'] === 'gpu');
         this.isInitializingGpuPrices = false;
-        // console.log(records);
       });
     },
 
     addLabCard() {
-      // Add a new item to the LabCards array
-      this.LabCards.push(this.LabCards.length + 1);
-      console.log(this.LabCards);
-      csvApi.getComputeFlavors()
+  // Add a new lab card with specific data
+    const newLabCard = {
+    id: this.LabCards.length + 1, // Assign a unique ID to the new lab card
+    title: `Lab ${this.LabCards.length + 1}`,
+    // Add more properties if needed
+    };
+
+    // Push the new lab card to the LabCards array
+    this.LabCards.push(newLabCard);
     }
   },
 })
@@ -146,8 +161,19 @@ export default defineComponent({
       </v-row>
     </v-container>
     <!-- Loop through LabCards array and render LabCard component -->
-    <LabCard v-for="(lab, index) in LabCards" :key="index" :labName="index+1"/>
-      
+    <v-row>
+      <v-col v-for="(lab, index) in LabCards" :key="index" cols="12">
+        <LabCard
+          :key="lab.id"
+          :title="lab.title"
+          :compute-prices="computePrices"
+          :gpu-prices="gpuPrices"
+          :storage-prices="storagePrices"
+          :machines="machines"
+          :available-gpus="availableGpus"
+        />
+      </v-col>
+    </v-row>
     <!-- Other components -->
 
     <div class="text-caption">GB</div>
