@@ -20,7 +20,7 @@ products:
     img: /img/product-scientific-suite.png
     subtitle: Gather great minds.
     text: |
-      Scientific suite allows research centers and large-scale efforts both flexibility and control over large and diverse research portfolios.
+      Scientific suite allows research centers and large-scale collaborations flexibility and control over diverse research portfolios.
 
 overview_by_role:
   title: 'Solutions by role'
@@ -88,7 +88,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Core products
       </div>
       <div class="hc-container-subtitle">
-        HUNT Cloud provides tools, guidance and digital labs for sensitive data explorations. Choose among our three core trusted reach environment products.
+        HUNT Cloud provides tools, guidance and digital labs for sensitive data explorations. Choose among our three main trusted research environment products.
       </div>
       <ProductSlider :products="$frontmatter.products" />
     </div>
@@ -104,7 +104,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Contact us
       </div>
       <div class="hc-container-subtitle">
-        Contact us to get started, ask how your science may benefit from our services, or just to share the joy of data-driven science!
+        Contact us to get started, ask how your science may benefit from our services, or just share the joy of data-driven science!
       </div>
       <div class="hc-section">
         <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
