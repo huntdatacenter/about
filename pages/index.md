@@ -71,7 +71,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Freedom to Explore
       </div>
       <div class="hc-subtitle-main">
-        Enabling scientists with tools and guidance to explore and evolve the world of sensitive data science!
+        Enabling scientists to explore and evolve the exciting world of sensitive data science!
       </div>
     </div>
   </div>
@@ -88,7 +88,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Core products
       </div>
       <div class="hc-container-subtitle">
-        HUNT Cloud provides trusted research environments for scientific explorations. Choose among three core products.
+        HUNT Cloud provides tools, guidance and digital labs for sensitive data explorations. Choose among our three core trusted reach environment products.
       </div>
       <ProductSlider :products="$frontmatter.products" />
     </div>
@@ -104,7 +104,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Contact us
       </div>
       <div class="hc-container-subtitle">
-        Get started, ask how your science may benefit from our services, or just contact us to chat and share the joy of data-driven science!
+        Contact us to get started, ask how your science may benefit from our services, or just to share the joy of data-driven science!
       </div>
       <div class="hc-section">
         <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
@@ -123,7 +123,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Scientific tools
       </div>
       <div class="hc-container-subtitle">
-        Get instant access to major scientific tools in HUNT Workbench. Or install your favorites directly in your lab.
+        Get instant access to major scientific tools in HUNT Workbench, or install your favorites directly in your lab.
       </div>
       <!-- <ToolsSlider /> -->
       <v-row class="my-5" style="justify-content: center; align-items: center;">
@@ -156,6 +156,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <a href="https://about.hdc.ntnu.no/tools/">
             <v-img max-height="80px" src="/img/logos-tools/vscode.png" />
           </a>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
         </v-col>
       </v-row>
     </div>
