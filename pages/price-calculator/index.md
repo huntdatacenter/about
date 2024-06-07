@@ -1,8 +1,14 @@
 ---
 title: Price Calculator
+layout: page
+sidebar: false
+
 ---
 
-# {{ $frontmatter.title }}
+# Price Calculator
+
+
 
 <PriceCalculator />
+
 ```

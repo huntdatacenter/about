@@ -68,14 +68,13 @@ export default {
       }
       const subscriptionType = this.formData.subscription.slice(0, -2);
       const commitmentLength = this.formData.subscription.slice(-2);
-      console.log(this.flavors)
       if (subscriptionType === "ONDEMAND" || subscriptionType === "BLUE") {
           const price = this.flavors.find((item) => item["service.unit"] === this.formData.flavor && item["service.level"] === subscriptionType)
           return price ? parseInt(price["price.nok.ex.vat"]) : 0;
       }
       const price = this.flavors.find(
         (item) => item["service.unit"] === this.formData.flavor && item["service.level"] === subscriptionType && item["service.commitment"] === commitmentLength)
-      console.log(price)
+
       return price ? parseInt(price["price.nok.ex.vat"]) : 0;
 
     },
@@ -88,7 +87,6 @@ export default {
       const price = this.gpus.find(
         (item) => item["service.unit"] === this.formData.gpu && item["service.level"] === subscriptionType)
 
-      console.log(price)
       return price ? parseInt(price["price.nok.ex.vat"]) : 0;
     },
     getYearPrice() {
@@ -148,25 +146,31 @@ export default {
         console.log("No machine type selected");
         return;
       }
+
       const name = this.formData.gpu
         ? `${this.formData.name} (incl. GPU)`
         : this.formData.name;
-      const flavor = this.formData.gpu
-        ? `${this.formData.flavor["MACHINENAME"]}.${this.formData.gpu["GPUTYPE"]}`
-        : this.formData.flavor["MACHINENAME"];
+
+
+      
       const totalPrice = this.getYearPrice + this.getGpuYearPrice;
       const type = null;
+      const subscriptionType = this.formData.subscription.slice(0, -2);
+      /* Splitting up the "default.b3 - 8 CPUs / 16 GB RAM" to get number of CPUs and GB of RAM**/
+      const machinetitle = this.machines.filter((item) => item["value"] === this.formData.flavor)[0]["title"].split(" - ")[1].split(" / ")  
+      console.log(machinetitle)
+      const core_count = parseInt(machinetitle[0].slice(0, 2))
+      const ram = parseInt(machinetitle[1].slice(0, 3))
+      const commitmentLength = this.periods[this.formData.subscription]
+      const flavorWithGpu = this.formData.gpu ? this.formData.flavor + " + " + this.formData.gpu : this.formData.flavor;
       this.$emit("close", {
         id: this.formData.id,
         name: name,
-        flavor: flavor,
-        cpu: this.formData.flavor ? parseInt(this.formData.flavor["CPU"]) : 0,
-        ram: this.formData.flavor ? parseInt(this.formData.flavor["RAM"]) : 0,
-        ramMb: this.formData.flavor
-          ? 1024 * parseInt(this.formData.flavor["RAM"])
-          : 0,
-        type: type,
-        period: this.getPeriod,
+        flavor: this.formData.flavor ? flavorWithGpu: null,
+        gpu: this.formData.gpu ? this.formData.gpu : null,
+        core_count: core_count,
+        ram: ram,
+        period: commitmentLength,
         price: totalPrice,
       });
     },
