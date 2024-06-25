@@ -1,6 +1,7 @@
 import type { EnhanceAppContext } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 
+import ContactDialog from '../components/ContactDialog.vue';
 import SimpleButton from '../components/SimpleButton.vue';
 import FooterBlock from '../components/FooterBlock.vue';
 import ContentHeader from '../components/ContentHeader.vue';
@@ -28,6 +29,7 @@ export default {
   enhanceApp(context: EnhanceAppContext) {
     context.app.use(vuetify)
 
+    context.app.component('ContactDialog', ContactDialog);
     context.app.component('SimpleButton', SimpleButton);
     context.app.component('FooterBlock', FooterBlock);
     context.app.component('ContentHeader', ContentHeader);

@@ -74,7 +74,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Enabling scientists to explore and evolve the exciting world of sensitive data science!
       </div>
       <div class="hc-section">
-        <SimpleButton title="Book a demo" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+        <ContactDialog title="Book a demo" size="x-large" elevation="2" />
       </div>
     </div>
   </div>
