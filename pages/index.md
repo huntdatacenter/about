@@ -73,6 +73,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-subtitle-main">
         Enabling scientists to explore and evolve the exciting world of sensitive data science!
       </div>
+      <div class="hc-section">
+        <SimpleButton title="Book a demo" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+      </div>
     </div>
   </div>
 
@@ -82,7 +85,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!----------------------------------------------->
 <!-- Content: In this page header -->
 
-  <div class="hc-block">
+  <!-- <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Core products
@@ -92,13 +95,13 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <ProductSlider :products="$frontmatter.products" />
     </div>
-  </div>
+  </div> -->
 
 <!----------------------------------------------->
 <!-- Block: Contact us -->
 <!----------------------------------------------->
 
-  <div class="hc-block">
+  <!-- <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Contact us
@@ -110,7 +113,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 <!----------------------------------------------->
