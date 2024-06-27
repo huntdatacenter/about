@@ -78,6 +78,7 @@ export default {
   methods: {
     closeBtn() {
       this.panel = 0;
+      this.dialog = false;
       this.$emit('input', false);
     },
     activateSendButtons() {
@@ -272,7 +273,7 @@ export default {
                     </v-btn>
                   </v-col>
                   <v-col cols="4">
-                    <v-btn color="link" block @click="dialog = false">
+                    <v-btn color="link" block @click="closeBtn">
                       Close
                     </v-btn>
                   </v-col>
