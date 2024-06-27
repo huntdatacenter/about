@@ -1,21 +1,24 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue"
 
-import csvApi from '../api/csv.js';
+import csvApi from "../api/csv.js"
 interface labCard {
-  id: number;
-  title: string;
+  id: number
+  title: string
   // Add more properties if needed
+  storage: number
+  priceCompute: number
+  numCompute: number
 }
 
 export default defineComponent({
   props: {
     title: { type: String, default: "Title" },
   },
-  
+
   data() {
     return {
-      LabCards: [] as labCard[],
+      labCards: [] as labCard[],
       selectedDataSpaceSub: null,
       dataspaceSubscriptions: [
         {
@@ -53,7 +56,7 @@ export default defineComponent({
           units: 1,
           price: 35397.0,
         },
-      ],
+      ] as { name: string, subscription: string | null, label: string, units: number, price: number }[],
       isInitializingComputePrices: false,
       computePrices: [],
       isInitializingStoragePrices: false,
@@ -64,90 +67,166 @@ export default defineComponent({
       machines: [],
       isInitializingAvailableGpus: false,
       availableGpus: [],
-      
 
-      items: ['foo', 'bar', 'fizz', 'buzz', 'fizzbuzz', 'foobar'],
-      value: ['foo', 'bar', 'fizz'],
-      gbValues: ['10GB', '20GB', '30GB', '40GB', '50GB', '60GB', '70GB', '80GB', '90GB', '100GB']
+      labPrices: [],
+
+      totalCompute: {
+        price: 0.0,
+      },
+      totalStorage: 0.0,
+      totalPriceItems: [],
+      sumInTotal: 0.0,
     }
   },
   created() {
-    this.initializeFlavors();
-    this.initializeStoragePrices();
-    this.initializeGpuPrices();
-    this.initializeMachines();
-    this.initializeAvailableGpus();
+    this.initializeAll()
   },
 
-  
-
   methods: {
-    initializeFlavors() {
-      this.isInitializingComputePrices = true;
-      const uponFlavors = csvApi.getComputeFlavors();
-      uponFlavors.then((flavors) => {
-        this.computePrices = flavors.filter((item) => item['service.group'] === 'cpu');
-        this.isInitializingComputePrices = false;
-      });
+    initializeAll() {
+      this.isInitializingComputePrices = true
+      const getPriceList = csvApi.getComputeFlavors()
+      console.log(getPriceList)
+      getPriceList.then(json => {
+        this.computePrices = json.filter(item => item["service.group"] === "cpu")
+        this.isInitializingComputePrices = false
+      })
+      //GPUS
+      this.initializeAvailableGpus()
+      //MACHINES
+      this.initializeMachines()
+      //STORAGE
+      getPriceList.then(json => {
+        this.storagePrices = json.filter(item => item["service.family"] === "store")
+        this.isInitializingStoragePrices = false
+      })
+      //GPUS
+      getPriceList.then(json => {
+        this.gpuPrices = json.filter(item => item["service.group"] === "gpu")
+        this.isInitializingGpuPrices = false
+      })
+      //LabPrice
+      getPriceList.then(json =>{
+        this.labPrices = json.filter(item => item["service.group"] === "lab")
+        this.isInitializingLabPrices = false
+      })
+      
     },
     initializeAvailableGpus() {
-      this.isInitializingAvailableGpus = true;
-      const uponGpus = csvApi.getAvailableGPUS();
-      uponGpus.then((gpus) => {
-        this.availableGpus = gpus;
-        this.isInitializingAvailableGpus = false;
-      });
+      this.isInitializingAvailableGpus = true
+      const uponGpus = csvApi.getAvailableGPUS()
+      uponGpus.then(gpus => {
+        this.availableGpus = gpus
+        this.isInitializingAvailableGpus = false
+      })
     },
     initializeMachines() {
-      this.isInitializingMachines = true;
-      const machines = csvApi.getMachines();
-      machines.then((machine) => {
-        this.machines = machine;
-        this.isInitializingMachines = false;
-      });
-    },
-    initializeStoragePrices() {
-      this.isInitializingStoragePrices = true;
-      const uponStorage = csvApi.getStoragePrices();
-      uponStorage.then((storage) => {
-        this.storagePrices = storage.filter((item) => item['service.family'] === 'store');
-        this.isInitializingStoragePrices = false;
-      });
-    },
-    initializeGpuPrices() {
-      this.isInitializingGpuPrices = true;
-      const uponGpu = csvApi.getGpuPrices();
-      uponGpu.then((gpu) => {
-        this.gpuPrices = gpu.filter((item) => item['service.group'] === 'gpu');
-        this.isInitializingGpuPrices = false;
-      });
+      this.isInitializingMachines = true
+      const machines = csvApi.getMachines()
+      machines.then(machine => {
+        this.machines = machine
+        this.isInitializingMachines = false
+      })
     },
 
     addLabCard() {
-  // Add a new lab card with specific data
-    const newLabCard = {
-    id: this.LabCards.length + 1, // Assign a unique ID to the new lab card
-    title: `Lab ${this.LabCards.length + 1}`,
-    // Add more properties if needed
-    };
+      // Add a new lab card with specific data
+      const newLabCard = {
+        id: this.labCards.length + 1, // Assign a unique ID to the new lab card
+        title: `Lab ${this.labCards.length + 1}`,
+        // Add more properties if needed
+      }
+      // Push the new lab card to the labCards array
+      this.labCards.push(newLabCard)
+      console.log(this.labCards)
+      this.setPriceItems()
+    },
 
-    // Push the new lab card to the LabCards array
-    this.LabCards.push(newLabCard);
-    }
+    updateLabCardStorage(id, storage) {
+      console.log(id)
+      console.log("jejre")
+      console.log(this.labCards)
+      // Find the lab card with the specific ID
+      const labCard = this.labCards.find(lab => lab.id === id)
+      // Update the storage property of the lab card
+      if (labCard) {
+        labCard.storage = storage
+      }
+      console.log(this.labCards)
+      this.totalStorage = this.labCards.reduce((total, lab) => total + lab.storage.size, 0)
+      this.setPriceItems()
+    },
+    updateLabCardCompute(id, priceCompute) {
+      // Find the lab card with the specific ID
+      const labCard = this.labCards.find(lab => lab.id === id)
+      // Update the storage property of the lab card
+      if (labCard) {
+        labCard.priceCompute = priceCompute["price"]
+        labCard.numCompute = priceCompute["numCompute"]
+      }
+      //Updating the total amout of compute
+      this.totalCompute.price = this.labCards.reduce((total, lab) => total + lab.priceCompute, 0)
+      this.setPriceItems();
+    },
+    storageCost(totalSize, level1, level2, level3) {
+      // Different equation used if total size is below 10 TB / 10 < totalSize <= 100 / above 100 TB
+      let price
+      if (totalSize <= 10000) {
+        price = level1 * totalSize
+      } else if (totalSize > 10000 && totalSize <= 100000) {
+        price = level1 * 10000 + level2 * (totalSize - 10000)
+      } else if (totalSize > 100000) {
+        price = level1 * 10000 + level2 * 90000 + level3 * (totalSize - 100000)
+      }
+      return price
+    },
+
+    setPriceItems() {
+      let priceItems: { name: string, subscription: string | null, units: number | string, price: number }[] = []
+      if (this.labCards) {
+        this.labCards.forEach(item => {
+          priceItems.push({
+            name: item.title,
+            subscription: "1 Year",
+            units: 1,
+            price: this.labPrices[0]['price.nok.ex.vat'],
+          });
+        }); 
+      }
+      let numOfCompute = this.labCards.reduce((total, lab) => total + lab.numCompute, 0)
+      priceItems.push({
+        name: "Compute",
+        subscription: null,
+        units: numOfCompute || 0, 
+        price: this.totalCompute.price,
+      })
+      console.log(this.totalStorage)
+      let storagePrice = this.storageCost(this.totalStorage, 0.1, 0.05, 0.01)
+      priceItems.push({
+        name: "Storage",
+        subscription: "Commitment",
+        units: `${this.totalStorage} TB`,
+        price: storagePrice,
+      })
+      this.totalPriceItems = priceItems
+      this.sumInTotal = priceItems.reduce((total, item) => total + item.price, 0)
+      
+    },
   },
 })
 </script>
 
 <template>
   <v-sheet class="group-slider-wrapper ma-auto" elevation="0" max-width="920">
-    <h3> Dataspace</h3>
-    <v-select 
+    <h3>Dataspace</h3>
+    <v-select
       v-model="selectedDataSpaceSub"
-      :items="dataspaceSubscriptions" 
-      item-title="label" 
+      :items="dataspaceSubscriptions"
+      item-title="label"
       label="Choose a subscription"
       clearable
-      >
+      @update:model-value="setPriceItems"
+    >
       <template v-slot:item="{ props, item }">
         <v-list-item v-bind="props" :subtitle="item.raw.price"></v-list-item>
       </template>
@@ -160,28 +239,24 @@ export default defineComponent({
         </v-col>
       </v-row>
     </v-container>
-    <!-- Loop through LabCards array and render LabCard component -->
+    <!-- Loop through labCards array and render LabCard component -->
     <v-row>
-      <v-col v-for="(lab, index) in LabCards" :key="index" cols="12">
+      <v-col v-for="(lab, index) in labCards" :key="index" cols="12">
         <LabCard
           :key="lab.id"
           :title="lab.title"
           :compute-prices="computePrices"
           :gpu-prices="gpuPrices"
-          :storage-prices="storagePrices"
           :machines="machines"
           :available-gpus="availableGpus"
+          @updateStorage="updateLabCardStorage(lab.id, $event)"
+          @updateCompute="updateLabCardCompute(lab.id, $event)"
         />
       </v-col>
     </v-row>
-    <!-- Other components -->
-
-    <div class="text-caption">GB</div>
-    <v-slider show-ticks="always" step="100" tick-size="4"
-      min="100"
-      max="25000"
-      thumb-size="24" thumb-label track-color="primary" multiple
-    ></v-slider>
+    <v-row v-if="labCards.length !== 0">
+      <TotalBlock :total-items="totalPriceItems" :sum-in-total="sumInTotal" />
+    </v-row>
   </v-sheet>
 </template>
 

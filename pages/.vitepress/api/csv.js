@@ -4,7 +4,7 @@ import axios from "axios";
 export default {
   async getComputeFlavors() {
     try {
-      const res = await axios.get("https://assets.hdc.ntnu.no/assets/prices/v4/hunt-cloud-price-list-4-0.json")
+      const res = await axios.get("https://assets.hdc.ntnu.no/assets/prices/v4/hunt-cloud-price-list-4-1.json")
       return res.data
     } catch (error) {
       console.error("Error fetching compute flavors:", error);
@@ -14,7 +14,7 @@ export default {
   },
   async getStoragePrices() {
     try {
-      const res = await axios.get("https://assets.hdc.ntnu.no/assets/prices/v4/hunt-cloud-price-list-4-0.json")
+      const res = await axios.get("https://assets.hdc.ntnu.no/assets/prices/v4/hunt-cloud-price-list-4-1.json")
       return res.data
     } catch (error) {
       console.error("Error fetching compute flavors:", error);
@@ -23,7 +23,7 @@ export default {
   },
   async getGpuPrices() {
     try {
-      const res = await axios.get("https://assets.hdc.ntnu.no/assets/prices/v4/hunt-cloud-price-list-4-0.json")
+      const res = await axios.get("https://assets.hdc.ntnu.no/assets/prices/v4/hunt-cloud-price-list-4-1.json")
       return res.data
     } catch (error) {
       console.error("Error fetching compute flavors:", error);

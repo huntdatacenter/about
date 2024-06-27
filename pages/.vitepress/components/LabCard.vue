@@ -1,16 +1,17 @@
 <script lang="ts">
 export default {
   name: "LabCard",
+  emits:['updateStorage','updateCompute'],
   props: {
     title: { type: String, required: true, default: "Lab " },
     computePrices: { type: Array, default: () => [] },
     gpuPrices: { type: Array, default: () => [] },
-    storagePrices: { type: Array, default: () => [] },
     machines: { type: Array, default: () => [] },
     availableGpus: { type: Array, default: () => [] },
   },
   data() {
     return {
+      /* These are the variables used to manage the compute machines */
       computeId: 0,
       isComputeModalOpen: false,
       datasetCompute: [],
@@ -26,43 +27,116 @@ export default {
         { title: "Price", align: "start", sortable: true, key: "price", },
       ],
       totalPriceItems: 0.0,
-      priceHeaders: [
-        { title: "Name", key: "name" },
-        { title: "Price", key: "price" },
+      computeLabSum: {cpu_count: 0.0, ram: 0.0, price: 0.0},
+
+      /* These are the variables used to manage the storage */
+      storageId: 0,
+      isStorageModalOpen: false,
+      datasetStorage: [],
+      selectedStorage: [],
+      isInitializingStoragePrices: false,
+      storageHeaders: [
+        { title: "Name", align: "start", sortable: true, key: "name" },
+        { title: "Usage", align: "start", sortable: true, key: "usage"},
+        { title: "Type", align: "start", sortable: true, key: "type" },
+        { title: "Size [GB]", align: "start", sortable: true, key: "size" },
       ],
+      storageLabSum: {
+        size: 0.0, 
+        Type: null
+      }
     }
   },
 
   methods: {
+    updateLabSum() {
+      this.computeLabSum.cpu_count = this.datasetCompute.reduce((acc, item) => acc + item.core_count, 0)
+      this.computeLabSum.ram = this.datasetCompute.reduce((acc, item) => acc + item.ram, 0)
+      this.computeLabSum.price = this.datasetCompute.reduce((acc, item) => acc + item.price, 0)
+      console.log(this.computeLabSum.price)
+      this.$emit('updateCompute', 
+        {
+          price: this.computeLabSum.price,
+          numCompute: this.datasetCompute.length || 0,
+        }
+      )
+    },
+    updateLabSumStorage() {
+      this.storageLabSum.size = this.datasetStorage.reduce((acc, item) => acc + item.size, 0)
+      this.$emit('updateStorage', 
+        {
+          size: this.storageLabSum.size
+        }
+      )
+    },
+
     addMachine() {
       this.isComputeModalOpen = true
+    },  
+    addStorage() {
+      this.isStorageModalOpen = true
     },
     closeComputeModal(payload: any) {
-      console.log(payload)
       if (payload) {
         this.computeId = this.computeId + 1
         this.datasetCompute.push(payload)
+        this.updateLabSum()
       }
       this.isComputeModalOpen = false
+
     },
-    removeSelected() {
-        this.datasetCompute = this.datasetCompute.filter((item) => !this.selectedCompute.includes(item))
+    closeStorageModal(payload: any) {
+      if (payload) {
+        this.storageId = this.storageId + 1
+        this.datasetStorage.push(payload)
+        this.updateLabSumStorage()
+      }
+      this.isStorageModalOpen = false
+    },
+    removeSelectedCompute() {
+        if (this.selectedCompute.length === 0) {
+          return
+        }
+        for (let i = 0; i < this.selectedCompute.length; i++) {
+          this.datasetCompute = this.datasetCompute.filter(item => {
+            return item['id'] !== this.selectedCompute[i]
+          })
+          }
+        this.updateLabSum()
         this.selectedCompute = []
     },
-    updateSelected(items: any) {
-      this.selectedCompute = items;
-      console.log(this.selectedCompute)
-    }
+    //remember to emit the updateStorage event
+
+    removeSelectedStorage() {
+        if (this.selectedStorage.length === 0) {
+          return
+        }
+        for (let i = 0; i < this.selectedStorage.length; i++) {
+          this.datasetStorage = this.datasetStorage.filter(item => {
+            return item['id'] !== this.selectedStorage[i]
+          })
+          }
+        this.updateLabSumStorage()
+        this.selectedStorage = []
+    },
+    getTotalSize() {
+      return 1
+    },
+
   },
   created() {},
+  
 }
 </script>
 
 <template>
+  <v-container>
   <v-sheet class="lab-card">
     <v-card class="ma-0">
       <v-card-title>{{ title }}</v-card-title>
-      <v-card-subtitle>Add a machine</v-card-subtitle>
+      <v-card>
+        <v-card-title> Compute</v-card-title>
+      <v-card-subtitle> {{ "Add a machine to " + title}}</v-card-subtitle>
 
       <v-col cols="auto">
         <v-btn icon="mdi-plus" size="small" @click="addMachine"></v-btn>
@@ -77,7 +151,6 @@ export default {
         @close="closeComputeModal"
       />
 
-      <v-card class="mb-6" elevation="1" dense>
         <v-data-table-virtual
           v-model="selectedCompute"
           :items="datasetCompute"
@@ -87,32 +160,68 @@ export default {
           hover
           hide-default-footer
           item-value="id"
-          @update:selection="updateSelected"
-        ></v-data-table-virtual>
-        <v-card class="mb-6" elevation="1" dense>
-          <v-row dense>
+        >
+      <template v-slot:body.append="{}" v-if="this.computeLabSum['price'] !== 0">
+        <tr>
+          <th role="columnheader" class="pt-4 pb-2">
+          <span><strong>Total</strong> </span>
+          </th>
+          <th></th>
+          <th></th>
+          <th>  <strong>{{ this.computeLabSum['cpu_count'] }}</strong></th>
+          <th>  <strong> {{ this.computeLabSum['ram'] }}</strong></th>
+          <th></th>
+          <th></th>
+          <th>  <strong>{{ this.computeLabSum['price'] + ' kr'}} </strong></th>
+        </tr>
+      </template>
+      </v-data-table-virtual>
             <v-col cols="4">
-              <v-btn @click="removeSelected" >Remove selected</v-btn>
+              <v-btn @click="removeSelectedCompute" >Remove selected</v-btn>
             </v-col>
-
-
-            <v-col cols="4">
-              <v-card-title>Total</v-card-title>
-            </v-col>
-            <v-col cols="auto">
-              <v-card-subtitle> TODODODODO </v-card-subtitle>
-            </v-col>
-
-            <v-col cols="8"></v-col>
-          </v-row>
         </v-card>
-      </v-card>
-      <v-card-subtitle> Add storage </v-card-subtitle>
+        <v-card>
+          
+        <v-card-title> Storage</v-card-title>
+        <v-card-subtitle> Add storage to {{ title }} </v-card-subtitle>
       <v-col cols="auto">
-        <v-btn icon="mdi-plus" size="small"></v-btn>
+        <v-btn icon="mdi-plus" size="small" @click="addStorage"></v-btn>
       </v-col>
+      <v-data-table-virtual
+        v-model="selectedStorage"
+        :items="datasetStorage"
+        :headers="storageHeaders"
+        :loading="isInitializingStoragePrices"
+        show-select
+        hover
+        hide-default-footer
+        item-value="id"
+      >
+      <template v-slot:body.append="{}" v-if="this.storageLabSum['size'] !== 0">
+        <tr>
+          <th role="columnheader" class="pt-4 pb-2">
+          <span><strong>Total</strong> </span>
+          </th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>  <strong>{{ this.storageLabSum['size'] + ' GB'}}</strong></th>
+
+        </tr>
+      </template>
+    </v-data-table-virtual>
+    <v-col cols="4">
+              <v-btn @click="removeSelectedStorage" >Remove selected</v-btn>
+            </v-col>
+      </v-card>
     </v-card>
   </v-sheet>
+  <Storage
+        v-if="isStorageModalOpen"
+        :storage-id="storageId"
+        @close="closeStorageModal"
+      />
+  </v-container>
 </template>
 
 <style scoped>

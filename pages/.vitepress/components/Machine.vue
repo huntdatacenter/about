@@ -1,5 +1,10 @@
 <script>
 export default {
+  /*
+  * This vue component is used to add a new compute machine to the specific lab.
+  **/
+
+
   name: 'Machine',
   props: {
     computeId: { type: Number, default: () => 0 },
@@ -41,6 +46,7 @@ export default {
       BLUE1M: "1 Month",
       BLUE1Y: "1 Year",
     },
+    /* This subscriptions are used to translate into the correct subscription type in the api */
     subscriptions: [
       { text: "Commitment (1 Year)", value: "COMMITMENT1Y" },
       { text: "Commitment (3 Years)", value: "COMMITMENT3Y" },
@@ -158,7 +164,6 @@ export default {
       const subscriptionType = this.formData.subscription.slice(0, -2);
       /* Splitting up the "default.b3 - 8 CPUs / 16 GB RAM" to get number of CPUs and GB of RAM**/
       const machinetitle = this.machines.filter((item) => item["value"] === this.formData.flavor)[0]["title"].split(" - ")[1].split(" / ")  
-      console.log(machinetitle)
       const core_count = parseInt(machinetitle[0].slice(0, 2))
       const ram = parseInt(machinetitle[1].slice(0, 3))
       const commitmentLength = this.periods[this.formData.subscription]
@@ -276,8 +281,8 @@ export default {
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="blue darken-1" text @click="close()"> Close </v-btn>
-        <v-btn color="blue darken-1" text @click="save()"> Save </v-btn>
+        <v-btn color="red darken-2" text @click="close()"> Close </v-btn>
+        <v-btn color="green darken-2" text @click="save()"> Save </v-btn>
       </v-card-actions>
     </v-card>
   </v-overlay>
