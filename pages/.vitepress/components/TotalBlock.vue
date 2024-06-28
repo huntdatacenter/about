@@ -47,7 +47,7 @@ export default {
         <v-col cols="7">
           <v-list dense>
             <v-list-item>
-              <v-list-item-title> <strong> Total Price: </strong></v-list-item-title>
+              <v-list-item-title> <strong> Estimated total price: </strong></v-list-item-title>
               <v-list-item-subtitle class="align-end"> {{ this.sumInTotal }} NOK ex. VAT / Year </v-list-item-subtitle>
             </v-list-item>
           </v-list>
