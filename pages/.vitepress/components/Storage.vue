@@ -41,7 +41,7 @@ export default {
 </script>
 
 <template>
-  <v-overlay v-model="overlay" >
+  <v-overlay v-model="overlay" class="d-flex justify-center align-center">
     <v-card>
       <v-card-title>
         <span class="headline">Storage</span>

@@ -8,7 +8,7 @@ export default {
     gpuPrices: { type: Array, default: () => [] },
     machines: { type: Array, default: () => [] },
     availableGpus: { type: Array, default: () => [] },
-    selectedRadio: { type: String, default: "1Y" },
+    storagePrices: { type: Array, default: () => [] },
   },
   data() {
     return {
@@ -42,10 +42,12 @@ export default {
         { title: "Usage", align: "start", sortable: true, key: "usage"},
         { title: "Type", align: "start", sortable: true, key: "type" },
         { title: "Size [TB]", align: "start", sortable: true, key: "size" },
+        { title: "Price", align: "start", sortable: true, key: "price" },
       ],
       storageLabSum: {
         size: 0.0, 
-        Type: null
+        type: null,
+        price: 0.0,
       },
       snackbar: {
         show: false,
@@ -53,12 +55,32 @@ export default {
       },
     }
   },
+  computed: {
+    displayStorageSumPrice() {
+      return this.storageLabSum.price.toFixed(0) + " kr"
+    },
+    displayDatasetStorage() {
+      return this.datasetStorage.map(item => {
+        return {
+          id: item.id,
+          name: item.name,
+          usage: item.usage,
+          type: item.type,
+          size: item.size + " TB",
+          price: item.price.toFixed(0) + " kr",
+        }
+      })
+    },
+
+  },
 
 
   methods: {
+    
+
     updateLabSum() {
-      this.computeLabSum.monthlyPrice = (this.datasetCompute.reduce((acc, item) => parseFloat(acc) + parseFloat(item.monthlyPrice), 0)).toFixed(0)
-      this.computeLabSum.yearlyPrice = (this.datasetCompute.reduce((acc, item) => parseFloat(acc) + parseFloat(item.yearlyPrice), 0)).toFixed(0)
+      this.computeLabSum.monthlyPrice = (this.datasetCompute.reduce((acc, item) => parseFloat(acc) + parseFloat(item.monthlyPrice), 0))
+      this.computeLabSum.yearlyPrice = (this.datasetCompute.reduce((acc, item) => parseFloat(acc) + parseFloat(item.yearlyPrice), 0))
       this.computeLabSum.ram = this.datasetCompute.reduce((acc, item) => acc + item.ram, 0)
       this.computeLabSum.cpu_count = this.datasetCompute.reduce((acc, item) => acc + item.core_count, 0)
       this.$emit('updateCompute', 
@@ -71,9 +93,14 @@ export default {
     },
     updateLabSumStorage() {
       this.storageLabSum.size = this.datasetStorage.reduce((acc, item) => acc + item.size, 0)
+
+      this.updateAddedStorage()
+      this.storageLabSum.price = this.datasetStorage.reduce((acc, item) => acc + item.price, 0)
+
       this.$emit('updateStorage', 
         {
-          size: this.storageLabSum.size
+          size: this.storageLabSum.size,
+          price: this.storageLabSum.price
         }
       )
     },
@@ -89,7 +116,9 @@ export default {
         this.computeId = this.computeId + 1
         this.datasetCompute.push(payload)
         this.updateLabSum()
-        this.pushDefaultStorage()
+        if (this.datasetCompute.length > this.datasetStorage.length) {
+            this.pushDefaultStorage()
+        }
       }
       this.isComputeModalOpen = false
 
@@ -97,7 +126,18 @@ export default {
     closeStorageModal(payload: any) {
       if (payload) {
         this.storageId = this.storageId + 1
-        this.datasetStorage.push(payload)
+        let price = this.calculateStoragePriceForVolume(payload.size, true)
+        this.datasetStorage.push(
+          {
+            id: this.storageId,
+            name: payload.name,
+            usage: payload.usage,
+            type: payload.type,
+            size: payload.size,
+            price: price,
+          }
+        )
+        this.updateAddedStorage()
         this.updateLabSumStorage()
       }
       this.isStorageModalOpen = false
@@ -117,12 +157,11 @@ export default {
             this.openSnackbar("Cannot remove the default machine")
             continue
           }
-          else (
+          else {
             this.datasetCompute = this.datasetCompute.filter(item => {
               return item['id'] !== this.selectedCompute[i]
             })
-          )
-
+          }
           }
         this.updateLabSum()
         this.selectedCompute = []
@@ -140,9 +179,6 @@ export default {
           }
         this.updateLabSumStorage()
         this.selectedStorage = []
-    },
-    getTotalSize() {
-      return 1
     },
     pushDefaultComputeUnit() {
       let defaultUnit = this.computePrices.find(item => item["service.unit"] === "default.c2" && item["service.level"] === "COMMITMENT" && item['service.commitment'] === "1Y")
@@ -171,19 +207,67 @@ export default {
         usage: "Archive",
         type: "HDD",
         size: 1,
+        price: 0, //price is zero, because it will be updated later, after calculating the total storage
       }
+
       this.datasetStorage.push(defaultStorage)
+      //need to update all the existing storages, except the last one added. 
       this.storageId += 1
-    }
+      this.updateLabSumStorage()
+    },
+    updateAddedStorage() {
+      this.datasetStorage.forEach((item, index) => {
+        let price = this.calculateStoragePriceForVolume(item.size)
+        item.price = price
+      })
+    },
 
-  },
-  created() {
-    this.pushDefaultComputeUnit()
-    this.pushDefaultStorage();
-    this.updateLabSum()
-  },
+    calculateStoragePriceForVolume(volumeSize: number) {
+      let fraction = volumeSize / this.storageLabSum.size
+      this.calculateTotalStoragePrice()
+      return fraction * this.totalStoragePrice
+    },
+    
+    
+    calculateTotalStoragePrice() {
 
+      let totalStorageSize = this.storageLabSum.size
+      this.totalStoragePrice = this.storageCost(totalStorageSize)
+    },
+    storageCost(totalSize) {
+      totalSize = parseFloat(totalSize)
+      let level1 = this.storagePrices.find(item => {
+        return item["service.commitment"] === "1Y" && item["service.unit"] === "First 10 TB"})
+      level1 = level1["price.nok.ex.vat"]
+      let level2 = this.storagePrices.find(item => item["service.commitment"] === "1Y" && item["service.unit"] === "Next 90 TB")
+      level2 = level2["price.nok.ex.vat"]
+      let level3 = this.storagePrices.find(item => item["service.commitment"] === "1Y" && item["service.unit"] === "Over 100 TB")
+      level3 = level3["price.nok.ex.vat"]
+      // Different equation used if total size is below 10 TB / 10 < totalSize <= 100 / above 100 TB
+      let price
+      //create a bunch of console log which will help you debug the issue
+
+
+      if (totalSize <= 10) {
+        price = parseFloat(level1) * totalSize
+
+      } else if (totalSize > 10 && totalSize <= 100) {
+        price = parseFloat(level1) * 10 + parseFloat(level2) * (totalSize - 10)
+      } else if (totalSize > 100) {
+        price = parseFloat(level1) * 10 + parseFloat(level2) * 90 + parseFloat(level3) * (totalSize - 100)
+
+      }
+      return price
+    },
+  },
   
+  created() {
+    this.pushDefaultComputeUnit();
+    this.pushDefaultStorage();
+    this.updateLabSum();
+  },
+
+
 }
 </script>
 
@@ -199,17 +283,6 @@ export default {
       <v-col cols="auto">
         <v-btn icon="mdi-plus" size="small" @click="addMachine"></v-btn>
       </v-col>
-      <Machine
-        v-if="isComputeModalOpen"
-        :compute-id="computeId"
-        :flavors="computePrices"
-        :gpus="gpuPrices"
-        :machines="machines"
-        :available-gpus="availableGpus"
-        :selected-radio="selectedRadio"
-        @close="closeComputeModal"
-        @open-snackbar="openSnackbar"
-      />
 
         <v-data-table-virtual
           v-model="selectedCompute"
@@ -250,7 +323,7 @@ export default {
       </v-col>
       <v-data-table-virtual
         v-model="selectedStorage"
-        :items="datasetStorage"
+        :items="displayDatasetStorage"
         :headers="storageHeaders"
         :loading="isInitializingStoragePrices"
         show-select
@@ -266,8 +339,8 @@ export default {
           <th></th>
           <th></th>
           <th></th>
-          <th>  <strong>{{ this.storageLabSum['size'] + ' TB'}}</strong></th>
-
+          <th>  <strong>{{ this.storageLabSum.size + ' TB'}}</strong></th>
+          <th><strong> {{ this.displayStorageSumPrice }}</strong></th>
         </tr>
       </template>
     </v-data-table-virtual>
@@ -277,6 +350,16 @@ export default {
       </v-card>
     </v-card>
   </v-sheet>
+  <Machine
+        v-if="isComputeModalOpen"
+        :compute-id="computeId"
+        :flavors="computePrices"
+        :gpus="gpuPrices"
+        :machines="machines"
+        :available-gpus="availableGpus"
+        @close="closeComputeModal"
+        @open-snackbar="openSnackbar"
+      />
   <Storage
         v-if="isStorageModalOpen"
         :storage-id="storageId"
