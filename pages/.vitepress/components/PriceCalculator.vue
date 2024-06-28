@@ -7,7 +7,8 @@ interface labCard {
   title: string
   // Add more properties if needed
   storage: number
-  priceCompute: number
+  priceComputeYearlyMonthly: number
+  priceComputeYearlyYearly: number
   numCompute: number
 }
 
@@ -76,6 +77,12 @@ export default defineComponent({
       totalStorage: 0.0,
       totalPriceItems: [],
       sumInTotal: 0.0,
+
+    
+
+      selectedRadio: "1Y",
+
+      // Unsure about this yet. Did we agree on radio buttons, or shall i display 1 Month and 1 year prices. Anyway
     }
   },
   created() {
@@ -86,9 +93,9 @@ export default defineComponent({
     initializeAll() {
       this.isInitializingComputePrices = true
       const getPriceList = csvApi.getComputeFlavors()
-      console.log(getPriceList)
       getPriceList.then(json => {
         this.computePrices = json.filter(item => item["service.group"] === "cpu")
+        this.computePrices = this.computePrices.map(this.preparePricesToYearly)
         this.isInitializingComputePrices = false
       })
       //GPUS
@@ -99,10 +106,12 @@ export default defineComponent({
       getPriceList.then(json => {
         this.storagePrices = json.filter(item => item["service.family"] === "store")
         this.isInitializingStoragePrices = false
+        console.log(this.storagePrices)
       })
       //GPUS
       getPriceList.then(json => {
         this.gpuPrices = json.filter(item => item["service.group"] === "gpu")
+        this.gpuPrices.map(this.preparePricesToYearly)
         this.isInitializingGpuPrices = false
       })
       //LabPrice
@@ -128,6 +137,17 @@ export default defineComponent({
         this.isInitializingMachines = false
       })
     },
+    preparePricesToYearly(item: any ){
+        /*
+        *This function will change all items which have the service.commitment as 1D to 1Y by multiplying with 365 and renaming the service.commitment to 1Y
+        */
+        // If the item is a commitment of 1 day or 1 month, delete it. If time, implement this
+        if (item["service.commitment"] === "1D") {
+            item["service.commitment"] = "1Y"
+            item["price.nok.ex.vat"] = item["price.nok.ex.vat"] * 365
+        }
+        return item
+    },
 
     addLabCard() {
       // Add a new lab card with specific data
@@ -143,34 +163,31 @@ export default defineComponent({
     },
 
     updateLabCardStorage(id, storage) {
-      console.log(id)
-      console.log("jejre")
-      console.log(this.labCards)
       // Find the lab card with the specific ID
       const labCard = this.labCards.find(lab => lab.id === id)
       // Update the storage property of the lab card
       if (labCard) {
         labCard.storage = storage
       }
-      console.log(this.labCards)
-      this.totalStorage = this.labCards.reduce((total, lab) => total + lab.storage.size, 0)
+      this.totalStorage = this.labCards.reduce((total, lab) => total + lab.storage.size, 0).toFixed(2)
       this.setPriceItems()
     },
-    updateLabCardCompute(id, priceCompute) {
+    updateLabCardCompute(id, prices) {
       // Find the lab card with the specific ID
       const labCard = this.labCards.find(lab => lab.id === id)
       // Update the storage property of the lab card
       if (labCard) {
-        labCard.priceCompute = priceCompute["price"]
-        labCard.numCompute = priceCompute["numCompute"]
+        labCard.priceComputeYearly = parseFloat(prices.yearlyPrice)
+        labCard.numCompute = parseFloat(prices.numCompute)
       }
       //Updating the total amout of compute
-      this.totalCompute.price = this.labCards.reduce((total, lab) => total + lab.priceCompute, 0)
+      this.totalCompute.price = this.labCards.reduce((total, lab) => total + lab.priceComputeYearly, 0)
       this.setPriceItems();
     },
     storageCost(totalSize, level1, level2, level3) {
       // Different equation used if total size is below 10 TB / 10 < totalSize <= 100 / above 100 TB
       let price
+      totalSize = totalSize * 1024 // Convert TB to GB
       if (totalSize <= 10000) {
         price = level1 * totalSize
       } else if (totalSize > 10000 && totalSize <= 100000) {
@@ -217,9 +234,10 @@ export default defineComponent({
 </script>
 
 <template>
-  <v-sheet class="group-slider-wrapper ma-auto" elevation="0" max-width="920">
-    <h3>Dataspace</h3>
-    <v-select
+  <v-sheet class="group-slider-wrapper ma-auto" elevation="0" max-width="1120">
+    <v-card-title>Price calculator for HUNT Cloud</v-card-title>
+    <v-card-subtitle> This calculator gives a rough estimate of how much our services cost</v-card-subtitle>
+    <!-- <v-select
       v-model="selectedDataSpaceSub"
       :items="dataspaceSubscriptions"
       item-title="label"
@@ -230,7 +248,8 @@ export default defineComponent({
       <template v-slot:item="{ props, item }">
         <v-list-item v-bind="props" :subtitle="item.raw.price"></v-list-item>
       </template>
-    </v-select>
+    </v-select> -->
+
     <v-container>
       <v-row lex-direction="row-reverse">
         <v-col cols="auto">
@@ -245,6 +264,7 @@ export default defineComponent({
         <LabCard
           :key="lab.id"
           :title="lab.title"
+          :selected-radio="selectedRadio"
           :compute-prices="computePrices"
           :gpu-prices="gpuPrices"
           :machines="machines"

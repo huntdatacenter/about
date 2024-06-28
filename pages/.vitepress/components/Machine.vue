@@ -12,9 +12,10 @@ export default {
     gpus: { type: Array, default: () => [] },
     machines: { type: Array, default: () => [] },
     availableGpus: { type: Array, default: () => [] },
+    selectedRadio: { type: String, default: "1Y" },
   },
 
-  emits: ["close"],
+  emits: ["close", "open-snackbar"],
 
   data() {
     return {
@@ -26,36 +27,11 @@ export default {
       subscription: null,
     },
     overlay: true,
-    multipliers: {
-      COMMITMENT1Y: 1,
-      COMMITMENT3Y: 1 / 3,
-      ONDEMAND1D: 365,
-      ONDEMAND1M: 365,
-      ONDEMAND1Y: 365,
-      BLUE1D: 365,
-      BLUE1M: 365,
-      BLUE1Y: 365,
-    },
-    periods: {
-      COMMITMENT1Y: "1 Year",
-      COMMITMENT3Y: "3 Years",
-      ONDEMAND1D: "1 Day",
-      ONDEMAND1M: "1 Month",
-      ONDEMAND1Y: "1 Year",
-      BLUE1D: "1 Day",
-      BLUE1M: "1 Month",
-      BLUE1Y: "1 Year",
-    },
     /* This subscriptions are used to translate into the correct subscription type in the api */
     subscriptions: [
-      { text: "Commitment (1 Year)", value: "COMMITMENT1Y" },
-      { text: "Commitment (3 Years)", value: "COMMITMENT3Y" },
-      { text: "On demand (1 Day)", value: "ONDEMAND1D" },
-      { text: "On demand (1 Month)", value: "ONDEMAND1M" },
-      { text: "On demand (1 Year)", value: "ONDEMAND1Y" },
-      { text: "Blue (1 Day)", value: "BLUE1D" },
-      { text: "Blue (1 Month)", value: "BLUE1M" },
-      { text: "Blue (1 Year)", value: "BLUE1Y" },
+      { text: "Commitment", value: "COMMITMENT" },
+      { text: "On demand", value: "ONDEMAND" },
+      { text: "Blue", value: "BLUE" },
     ],
   };
   },  
@@ -68,42 +44,28 @@ export default {
     },
 
     //Lurer på om jeg skal endre denne til å bli noe som getFlavor som henter ut det itemet, så kan jeg bruke den rundt om kring i koden
-    getPrice() {
+    getComputePriceYear() {
       if (!this.formData.flavor && !this.formData.subscription) {
         return 0;
       }
-      const subscriptionType = this.formData.subscription.slice(0, -2);
-      const commitmentLength = this.formData.subscription.slice(-2);
-      if (subscriptionType === "ONDEMAND" || subscriptionType === "BLUE") {
-          const price = this.flavors.find((item) => item["service.unit"] === this.formData.flavor && item["service.level"] === subscriptionType)
-          return price ? parseInt(price["price.nok.ex.vat"]) : 0;
-      }
       const price = this.flavors.find(
-        (item) => item["service.unit"] === this.formData.flavor && item["service.level"] === subscriptionType && item["service.commitment"] === commitmentLength)
-
-      return price ? parseInt(price["price.nok.ex.vat"]) : 0;
-
+        (item) => item["service.unit"] === this.formData.flavor && item["service.level"] === this.formData.subscription)
+      return price ? parseInt(price["price.nok.ex.vat"]).toFixed(2) : 0;
     },
+    getComputePriceMonth() {
+      return parseFloat(this.getComputePriceYear / 12).toFixed(2);
+    },  
+
+
     // Litt bugs her med blue og ONDEMAND
     getGpuPrice() {
       if (!this.formData.flavor && !this.formData.subscription) {
         return 0;
       }
-      const subscriptionType = this.formData.subscription.slice(0, -2);
       const price = this.gpus.find(
-        (item) => item["service.unit"] === this.formData.gpu && item["service.level"] === subscriptionType)
+        (item) => item["service.unit"] === this.formData.gpu && item["service.level"] === this.getGpuSubscription)
 
-      return price ? parseInt(price["price.nok.ex.vat"]) : 0;
-    },
-    getYearPrice() {
-      return this.formData.flavor && this.formData.subscription
-        ? parseFloat(
-            (
-              this.getPrice *
-              this.multipliers[this.formData.subscription]
-            ).toFixed(2)
-          )
-        : 0;
+      return price ? parseFloat(price["price.nok.ex.vat"]).toFixed(2) : 0;
     },
     getGpuSubscription() {
       // NOTE GPU does not have blue subscription hence taken as on demand in case blue is selected for compute
@@ -111,15 +73,8 @@ export default {
         ? this.formData.subscription.replace("BLUE", "ONDEMAND")
         : this.formData.subscription;
     },
-    getGpuYearPrice() {
-      return this.formData.gpu && this.getGpuSubscription
-        ? parseFloat(
-            (
-              parseInt(this.getGpuPrice) *
-              this.multipliers[this.getGpuSubscription]
-            ).toFixed(2)
-          )
-        : 0;
+    getGpuMonthPrice() {
+      return parseFloat(this.getGpuPrice / 12).toFixed(2);
     },
     getFlavors() {
       if (!this.formData.subscription) {
@@ -144,29 +99,29 @@ export default {
   },
 
   methods: {
+    getSummedPrice(num1, num2) {
+      return (parseFloat(num1) + parseFloat(num2)).toFixed(0);
+    },
     close() {
       this.$emit("close");
     },
     save() {
       if (!this.formData.flavor) {
         console.log("No machine type selected");
+        this.$emit("open-snackbar", "No machine type selected");
         return;
       }
 
       const name = this.formData.gpu
         ? `${this.formData.name} (incl. GPU)`
         : this.formData.name;
-
-
-      
-      const totalPrice = this.getYearPrice + this.getGpuYearPrice;
-      const type = null;
-      const subscriptionType = this.formData.subscription.slice(0, -2);
+    
+      let monthlyPrice = this.getSummedPrice(this.getComputePriceMonth, this.getGpuMonthPrice);
+      let yearlyPrice = this.getSummedPrice(this.getComputePriceYear, this.getGpuPrice);
       /* Splitting up the "default.b3 - 8 CPUs / 16 GB RAM" to get number of CPUs and GB of RAM**/
-      const machinetitle = this.machines.filter((item) => item["value"] === this.formData.flavor)[0]["title"].split(" - ")[1].split(" / ")  
-      const core_count = parseInt(machinetitle[0].slice(0, 2))
-      const ram = parseInt(machinetitle[1].slice(0, 3))
-      const commitmentLength = this.periods[this.formData.subscription]
+      const machinetitle = this.machines.filter((item) => item["value"] === this.formData.flavor)[0]["title"].split(" - ")[1].split(" / ") 
+      const core_count = parseInt(machinetitle[0].split(" ")[0])
+      const ram = parseInt(machinetitle[1].split(" ")[0])
       const flavorWithGpu = this.formData.gpu ? this.formData.flavor + " + " + this.formData.gpu : this.formData.flavor;
       this.$emit("close", {
         id: this.formData.id,
@@ -175,8 +130,9 @@ export default {
         gpu: this.formData.gpu ? this.formData.gpu : null,
         core_count: core_count,
         ram: ram,
-        period: commitmentLength,
-        price: totalPrice,
+        monthlyPrice: monthlyPrice, 
+        yearlyPrice: yearlyPrice, 
+        type: this.formData.subscription,
       });
     },
   },
@@ -232,8 +188,8 @@ export default {
             </v-col>
             <v-col v-show="formData.flavor" cols="12" sm="6">
               <v-text-field
-                v-model="getPrice"
-                label="Compute Price"
+                v-model="getComputePriceMonth"
+                label="Compute Price / Month"
                 suffix="NOK ex. VAT"
                 readonly
                 outlined
@@ -241,7 +197,7 @@ export default {
             </v-col>
             <v-col v-show="formData.flavor" cols="12" sm="6">
               <v-text-field
-                v-model="getYearPrice"
+                v-model="getComputePriceYear"
                 label="Compute Price / Year"
                 suffix="NOK ex. VAT / Year"
                 readonly
@@ -260,8 +216,8 @@ export default {
             </v-col>
             <v-col v-show="formData.gpu" cols="12" sm="6">
               <v-text-field
-                v-model="getGpuPrice"
-                label="GPU Price"
+                v-model="getGpuMonthPrice"
+                label="GPU Price / Month"
                 suffix="NOK ex. VAT"
                 readonly
                 outlined
@@ -269,7 +225,7 @@ export default {
             </v-col>
             <v-col v-show="formData.gpu" cols="12" sm="6">
               <v-text-field
-                v-model="getGpuYearPrice"
+                v-model="getGpuPrice"
                 label="GPU Price / Year"
                 suffix="NOK ex. VAT / Year"
                 readonly

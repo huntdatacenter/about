@@ -8,12 +8,14 @@ export default {
     gpuPrices: { type: Array, default: () => [] },
     machines: { type: Array, default: () => [] },
     availableGpus: { type: Array, default: () => [] },
+    selectedRadio: { type: String, default: "1Y" },
   },
   data() {
     return {
       /* These are the variables used to manage the compute machines */
       computeId: 0,
       isComputeModalOpen: false,
+      //Add a default entry to datasetCompute with name, flavor, core_count, ram, type, period, price
       datasetCompute: [],
       selectedCompute: [],
       isInitializingComputePrices: false,
@@ -21,13 +23,13 @@ export default {
         { title: "Name", align: "start", sortable: true, key: "name" },
         { title: "Machine type", align: "start", sortable: true, key: "flavor" },
         { title: "cpu cores", align: "start", sortable: true, key: "core_count" },
-        { title: "Memory [GB]", align: "start", sortable: true, key: "ram" },
+        { title: "Memory [TB]", align: "start", sortable: true, key: "ram" },
         { title: "Type", align: "start", sortable: true, key: "type" },
-        { title: "Period", align: "start", sortable: true, key: "period" },
-        { title: "Price", align: "start", sortable: true, key: "price", },
+        { title: "Price / month", align: "start", sortable: true, key: "monthlyPrice" },
+        { title: "Price / year", align: "start", sortable: true, key: "yearlyPrice", },
       ],
       totalPriceItems: 0.0,
-      computeLabSum: {cpu_count: 0.0, ram: 0.0, price: 0.0},
+      computeLabSum: {monthlyPrice: 0.0, yearlyPrice: 0.0, ram: 0, cpu_count: 0},
 
       /* These are the variables used to manage the storage */
       storageId: 0,
@@ -39,24 +41,30 @@ export default {
         { title: "Name", align: "start", sortable: true, key: "name" },
         { title: "Usage", align: "start", sortable: true, key: "usage"},
         { title: "Type", align: "start", sortable: true, key: "type" },
-        { title: "Size [GB]", align: "start", sortable: true, key: "size" },
+        { title: "Size [TB]", align: "start", sortable: true, key: "size" },
       ],
       storageLabSum: {
         size: 0.0, 
         Type: null
-      }
+      },
+      snackbar: {
+        show: false,
+        message: "",
+      },
     }
   },
 
+
   methods: {
     updateLabSum() {
-      this.computeLabSum.cpu_count = this.datasetCompute.reduce((acc, item) => acc + item.core_count, 0)
+      this.computeLabSum.monthlyPrice = (this.datasetCompute.reduce((acc, item) => parseFloat(acc) + parseFloat(item.monthlyPrice), 0)).toFixed(0)
+      this.computeLabSum.yearlyPrice = (this.datasetCompute.reduce((acc, item) => parseFloat(acc) + parseFloat(item.yearlyPrice), 0)).toFixed(0)
       this.computeLabSum.ram = this.datasetCompute.reduce((acc, item) => acc + item.ram, 0)
-      this.computeLabSum.price = this.datasetCompute.reduce((acc, item) => acc + item.price, 0)
-      console.log(this.computeLabSum.price)
+      this.computeLabSum.cpu_count = this.datasetCompute.reduce((acc, item) => acc + item.core_count, 0)
       this.$emit('updateCompute', 
         {
-          price: this.computeLabSum.price,
+          monthlyPrice: this.computeLabSum.monthlyPrice,
+          yearlyPrice: this.computeLabSum.yearlyPrice,
           numCompute: this.datasetCompute.length || 0,
         }
       )
@@ -81,6 +89,7 @@ export default {
         this.computeId = this.computeId + 1
         this.datasetCompute.push(payload)
         this.updateLabSum()
+        this.pushDefaultStorage()
       }
       this.isComputeModalOpen = false
 
@@ -93,14 +102,27 @@ export default {
       }
       this.isStorageModalOpen = false
     },
+    openSnackbar(message: string) {
+      this.snackbar.message = message
+      this.snackbar.show = true
+    },
+
     removeSelectedCompute() {
         if (this.selectedCompute.length === 0) {
+          this.selectedCompute = []
           return
         }
         for (let i = 0; i < this.selectedCompute.length; i++) {
-          this.datasetCompute = this.datasetCompute.filter(item => {
-            return item['id'] !== this.selectedCompute[i]
-          })
+          if (this.selectedCompute[i] === 0) {
+            this.openSnackbar("Cannot remove the default machine")
+            continue
+          }
+          else (
+            this.datasetCompute = this.datasetCompute.filter(item => {
+              return item['id'] !== this.selectedCompute[i]
+            })
+          )
+
           }
         this.updateLabSum()
         this.selectedCompute = []
@@ -122,9 +144,45 @@ export default {
     getTotalSize() {
       return 1
     },
+    pushDefaultComputeUnit() {
+      let defaultUnit = this.computePrices.find(item => item["service.unit"] === "default.c2" && item["service.level"] === "COMMITMENT" && item['service.commitment'] === "1Y")
+      const machinetitle = this.machines.filter((item) => item["value"] === defaultUnit['service.unit'])[0]["title"].split(" - ")[1].split(" / ") 
+      const core_count = parseInt(machinetitle[0].split(" ")[0])
+      const ram = parseInt(machinetitle[1].split(" ")[0])
+        this.datasetCompute.push(
+      {
+        id: this.computeId,
+        name: "machine-0",
+        flavor: defaultUnit["service.unit"],
+        core_count: core_count,
+        ram: ram,
+        type: "COMMITMENT",
+        period: "1 Years",
+        monthlyPrice: defaultUnit["price.nok.ex.vat"] /12,
+        yearlyPrice: defaultUnit["price.nok.ex.vat"],
+      }
+    ) 
+      this.computeId +=1
+    },
+    pushDefaultStorage(){
+      let defaultStorage = {
+        id: this.storageId,
+        name: "volume-" + this.storageId,
+        usage: "Archive",
+        type: "HDD",
+        size: 1,
+      }
+      this.datasetStorage.push(defaultStorage)
+      this.storageId += 1
+    }
 
   },
-  created() {},
+  created() {
+    this.pushDefaultComputeUnit()
+    this.pushDefaultStorage();
+    this.updateLabSum()
+  },
+
   
 }
 </script>
@@ -148,7 +206,9 @@ export default {
         :gpus="gpuPrices"
         :machines="machines"
         :available-gpus="availableGpus"
+        :selected-radio="selectedRadio"
         @close="closeComputeModal"
+        @open-snackbar="openSnackbar"
       />
 
         <v-data-table-virtual
@@ -161,18 +221,18 @@ export default {
           hide-default-footer
           item-value="id"
         >
-      <template v-slot:body.append="{}" v-if="this.computeLabSum['price'] !== 0">
+      <template v-slot:body.append="{}" v-if="this.computeLabSum.yearlyPrice !== 0">
         <tr>
           <th role="columnheader" class="pt-4 pb-2">
           <span><strong>Total</strong> </span>
           </th>
           <th></th>
           <th></th>
-          <th>  <strong>{{ this.computeLabSum['cpu_count'] }}</strong></th>
-          <th>  <strong> {{ this.computeLabSum['ram'] }}</strong></th>
+          <th>  <strong>{{ this.computeLabSum.cpu_count }}</strong></th>
+          <th>  <strong> {{ this.computeLabSum.ram }}</strong></th>
           <th></th>
-          <th></th>
-          <th>  <strong>{{ this.computeLabSum['price'] + ' kr'}} </strong></th>
+          <th> <strong>{{ this.computeLabSum.monthlyPrice + ' kr'}} </strong></th>
+          <th>  <strong>{{ this.computeLabSum.yearlyPrice + ' kr'}} </strong></th>
         </tr>
       </template>
       </v-data-table-virtual>
@@ -184,6 +244,7 @@ export default {
           
         <v-card-title> Storage</v-card-title>
         <v-card-subtitle> Add storage to {{ title }} </v-card-subtitle>
+        <v-card-subtitle> Each compute unit needs a volume of storage of atleast 1 TB</v-card-subtitle>
       <v-col cols="auto">
         <v-btn icon="mdi-plus" size="small" @click="addStorage"></v-btn>
       </v-col>
@@ -205,7 +266,7 @@ export default {
           <th></th>
           <th></th>
           <th></th>
-          <th>  <strong>{{ this.storageLabSum['size'] + ' GB'}}</strong></th>
+          <th>  <strong>{{ this.storageLabSum['size'] + ' TB'}}</strong></th>
 
         </tr>
       </template>
@@ -221,6 +282,7 @@ export default {
         :storage-id="storageId"
         @close="closeStorageModal"
       />
+    <v-snackbar v-model="snackbar.show"> {{ snackbar.message }}</v-snackbar>
   </v-container>
 </template>
 

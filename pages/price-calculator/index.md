@@ -5,8 +5,6 @@ sidebar: false
 
 ---
 
-# Price Calculator
-
 
 
 <PriceCalculator />

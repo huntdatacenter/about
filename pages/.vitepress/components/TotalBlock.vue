@@ -60,8 +60,7 @@ export default {
 <style scoped>
 /* Your component styles go here */
 .lab-card {
-  width: 90%;
-  max-width: 850px;
+  width: 94%;
   margin: auto;
 }
 
