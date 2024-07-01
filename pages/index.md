@@ -168,11 +168,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           </a>
         </v-col>
       </v-row>
-      <v-row>
+      <!-- <v-row>
         <v-col align="center">
           <SimpleButton title="Read more" href="https://docs.hdc.ntnu.no/do-science/tools/" target="_blank" size="large" elevation="2" />
         </v-col>
-      </v-row>
+      </v-row> -->
     </div>
   </div>
 
@@ -234,9 +234,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         </v-col>
       </v-row>
       <br>
-    <div class="hc-section">
+    <!-- <div class="hc-section">
       <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
-    </div>
+    </div> -->
     </div>
   </div>
 
@@ -323,7 +323,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
       <v-row>
         <v-col align="center">
-          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+          <SimpleButton title="Read more" href="https://docs.hdc.ntnu.no/govern-science/compliance/" target="_blank" size="large" elevation="2" />
         </v-col>
       </v-row>
     </div>
@@ -480,12 +480,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
+                  We believe a solid framework of documented responsibilities is a key success factor to enable your scientists with the freedom to explore. This page holds an overview of the administrative agreements in HUNT Cloud.
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="https://docs.hdc.ntnu.no/administer-science/agreements/" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -498,12 +498,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our information security management system (ISO 27001) add an exstensive list of security controls to protect your data and activities.
+                  Your total cost will include a combination of fixed subscription costs and running costs for the resources your attached to your labs. The fees across all labs inside one data space are summarized and billed to the data spaces' billing accounts.
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="https://docs.hdc.ntnu.no/administer-science/prices/introduction/" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -516,12 +516,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                  These pages contain the official user documentation for HUNT Cloud. HUNT Cloud is a cross-organizational scientific infrastructure for sensitive data analysis located at NTNU, Norway.
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="https://docs.hdc.ntnu.no/" href="place-link" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -534,12 +534,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                  Collaborations elevate science. All lab users in HUNT Cloud are invited to join our HUNT Cloud community as part of your onboarding process.
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="https://docs.hdc.ntnu.no/do-science/community/" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -552,12 +552,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                  This page list predefined service orders that you can request as an active lab user in HUNT Cloud.
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="https://docs.hdc.ntnu.no/do-science/service-desk/" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
@@ -570,12 +570,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                  We appoint time three times per year to meet for information, feedback and discussions on how to develop the services in HUNT Cloud to better elevate science. We call these gatherings Tings.
                 </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="place-link" title="Read more" />
+                  <SimpleButton size="small" href="https://docs.hdc.ntnu.no/govern-science/tingweek/" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
