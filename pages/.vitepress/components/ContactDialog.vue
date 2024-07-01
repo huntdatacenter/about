@@ -182,7 +182,7 @@ export default {
                   </v-col>
                 </v-row>
                 <v-row justify="center">
-                  <v-col cols="6">
+                  <v-col cols="12" class="v-col-xs-12 v-col-sm-8 v-col-md-4">
                     <v-btn
                       color="success"
                       block
@@ -249,12 +249,12 @@ export default {
                 </v-row>
 
                 <v-row justify="center">
-                  <v-col cols="4">
+                  <v-col cols="12" class="v-col-xs-10 v-col-sm-6 v-col-md-5">
                     <v-btn color="link" block :disabled="loadingEmailButtons" @click="actionSend">
                       Open in Email Client
                     </v-btn>
                   </v-col>
-                  <v-col cols="4">
+                  <v-col cols="12" class="v-col-xs-10 v-col-sm-6 v-col-md-5">
                     <v-btn color="link" block :disabled="loadingEmailButtons" @click="actionSendOutlookPopup">
                     <!-- <v-btn color="primary" block disabled @click="actionSendOutlookPopup"> -->
                       Open in Outlook Web
@@ -287,18 +287,18 @@ export default {
                     </p>
                   </v-col>
                 </v-row>
-                <v-row justify="center">
-                  <v-col cols="3">
+                <v-row justify="center" dense>
+                  <v-col cols="12" class="v-col-xs-10 v-col-sm-3 v-col-md-3">
                     <v-btn color="primary" block @click="panel = panel - 1">
                       Review
                     </v-btn>
                   </v-col>
-                  <v-col cols="4">
+                  <v-col cols="12" class="d-none d-xs-none d-sm-inline v-col-sm-6 v-col-md-4">
                     <v-btn color="link" block @click="panel = panel - 1">
                       No default email client
                     </v-btn>
                   </v-col>
-                  <v-col cols="3">
+                  <v-col cols="12" class="v-col-xs-10 v-col-sm-3 v-col-md-3">
                     <v-btn color="link" block @click="closeBtn">
                       Close
                     </v-btn>
