@@ -330,7 +330,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Roles -->
 <!----------------------------------------------->
 
-  <div class="hc-block">
+  <!-- <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         {{ $frontmatter.overview_by_role.title }}
@@ -359,7 +359,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         </v-col>
       </v-row>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -614,11 +614,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         We work closely with data providers to make sure data is activated for impact.
       </div>
-      <v-row>
-        <v-col align="center">
-          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
-        </v-col>
-      </v-row>
+      <div class="hc-section">
+        <ContactDialog title="Activate your data" subject="Activate my data" size="x-large" elevation="2" />
+      </div>
     </div>
   </div>
 
@@ -682,11 +680,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           </v-card>
         </v-col>
       </v-row>
-      <v-row>
+      <!-- <v-row>
         <v-col align="center">
           <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
         </v-col>
-      </v-row>
+      </v-row> -->
     </div>
   </div>
 
@@ -750,11 +748,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           </v-card>
         </v-col>
       </v-row>
-      <v-row>
+      <!-- <v-row>
         <v-col align="center">
           <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
         </v-col>
-      </v-row>
+      </v-row> -->
     </div>
   </div>
 
@@ -766,7 +764,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: activate your data -->
 <!----------------------------------------------->
 
-  <div class="hc-block">
+  <!-- <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Norwegian trust domain
@@ -780,7 +778,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         </v-col>
       </v-row>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -798,11 +796,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Ready to start your journey?
       </div>
       <br>
-      <v-row>
-        <v-col align="center">
-          <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
-        </v-col>
-      </v-row>
+      <div class="hc-section">
+        <ContactDialog title="Contact us" subject="You got me at sensitive data" size="x-large" elevation="2" />
+      </div>
     </div>
   </div>
 
