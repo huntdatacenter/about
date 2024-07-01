@@ -55,7 +55,6 @@ export default {
       <template v-slot:default="{ isHovering, props }">
         <!-- rgba(37, 58, 85, 1) -->
         <v-btn
-          class="mx-4"
           v-bind="props"
           rounded="sm"
           :block="block"
