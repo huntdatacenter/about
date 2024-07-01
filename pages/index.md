@@ -684,7 +684,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Technology changes fast and brings with it new solutionos and new oportunities. At NTNU we have a strong traditioon for experimentation and adoption of new technologies. Our dreamers and tinkerers work closely with scientists to ensure we know what moves and what will be available in the years to come.
+                  Your experiences in HUNT Cloud are shaped and molded by a small team of scientific instrument makers located at NTNU, Norway.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -697,7 +697,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Trust is the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We have continued the tradition with third-party verified trust, caring deeply for study participants and their data.
+                  Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world».
                 </v-col>
               </v-row>
             </v-card-text>
@@ -706,11 +706,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Artworks</v-card-title>
+            <v-card-title>Illustrations</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
+                  Our magical world of data science is filled with abstract ideas. Here, we aim to present illustrations where we imagine such ideas in practical forms to ease dialogues and strengthen cooperation.
                 </v-col>
               </v-row>
             </v-card-text>
