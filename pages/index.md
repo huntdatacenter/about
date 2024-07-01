@@ -75,6 +75,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <div class="hc-section">
         <ContactDialog title="Book a demo" subject="Book a demo" size="x-large" elevation="2" />
+        <CallDialog title="Talk to an expert" size="x-large" elevation="2" />
       </div>
     </div>
   </div>
@@ -101,20 +102,20 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Contact us -->
 <!----------------------------------------------->
 
-  <!-- <div class="hc-block">
+<!--
+  <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Contact us
       </div>
-      <div class="hc-container-subtitle">
-        Contact us to get started, ask how your science may benefit from our services, or just share the joy of data-driven science!
+      <div class="hc-container-text">
+        At HUNT Cloud, our mission is to empower you with the creative freedom you need to excel in sensitive data research. We ensure that your data is secure so your team can explore, innovate, try new things and collaborate effectively. In our cloud environments, you get access to digital labs for storing, analyzing, and collaborating on your data.
       </div>
       <div class="hc-section">
-        <SimpleButton title="Contact us" :href="$frontmatter.contact" target="_blank" size="x-large" elevation="2" />
+        <ContactDialog title="Contact us" subject="You got me at sensitive data" size="x-large" elevation="2" />
       </div>
     </div>
   </div> -->
-
 
 <!----------------------------------------------->
 <!-- Content: Scientific tools -->
@@ -163,11 +164,14 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
       <v-row>
         <v-col align="center">
-          <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+          <SimpleButton title="Read more" href="https://docs.hdc.ntnu.no/do-science/tools/" target="_blank" size="large" elevation="2" />
         </v-col>
       </v-row>
     </div>
   </div>
+
+
+
 
 
 <!----------------------------------------------->
@@ -229,7 +233,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
     </div>
   </div>
-
 
 
 
@@ -325,6 +328,24 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
+<!----------------------------------------------->
+<!-- Block: activate your data -->
+<!----------------------------------------------->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Activate your data
+      </div>
+      <div class="hc-container-subtitle">
+        We work closely with data providers to make sure data is activated for impact.
+      </div>
+      <div class="hc-section">
+        <ContactDialog title="Activate your data" subject="Activate my data" size="x-large" elevation="2" />
+      </div>
+    </div>
+  </div>
+
 
 <!----------------------------------------------->
 <!-- Block: Roles -->
@@ -371,6 +392,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Content: Supportive products -->
 <!----------------------------------------------->
 
+<!--
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
@@ -381,7 +403,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Teach</v-card-title>
             <v-card-text>
@@ -399,7 +420,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           </v-card>
         </v-col>
         <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Partner</v-card-title>
             <v-card-text>
@@ -417,7 +437,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           </v-card>
         </v-col>
         <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
             <v-card-title>Enterprise</v-card-title>
             <v-card-text>
@@ -436,20 +455,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         </v-col>
       </v-row>
     </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div> -->
 
 
 
@@ -576,49 +582,10 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
-
-
-
-
-
-
-
-
-
 <!----------------------------------------------->
 <!-- Block: Agreements and multiblock -->
 <!----------------------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!----------------------------------------------->
-<!-- Block: activate your data -->
-<!----------------------------------------------->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Activate your data
-      </div>
-      <div class="hc-container-subtitle">
-        We work closely with data providers to make sure data is activated for impact.
-      </div>
-      <div class="hc-section">
-        <ContactDialog title="Activate your data" subject="Activate my data" size="x-large" elevation="2" />
-      </div>
-    </div>
-  </div>
 
 
 
@@ -691,10 +658,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
-
-
-
-
 <!----------------------------------------------->
 <!-- Content: About -->
 <!----------------------------------------------->
@@ -704,9 +667,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-title">
         About HUNT Cloud
       </div>
-      <div class="hc-container-subtitle">
+      <!-- <div class="hc-container-subtitle">
         HUNT Cloud's sensitive data philosophy builds on three pillars.
-      </div>
+      </div> -->
       <v-row align="center">
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
@@ -787,6 +750,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: activate your data -->
 <!----------------------------------------------->
 
+<!--
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
@@ -800,7 +764,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <ContactDialog title="Contact us" subject="You got me at sensitive data" size="x-large" elevation="2" />
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 <!----------------------------------------------->

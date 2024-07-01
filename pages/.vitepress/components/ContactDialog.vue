@@ -139,6 +139,7 @@ export default {
       <template v-slot:default="{ isHovering, props }">
         <!-- rgba(37, 58, 85, 1) -->
         <v-btn
+          class="mx-4"
           v-bind="props"
           rounded="sm"
           :block="block"
@@ -172,9 +173,9 @@ export default {
           <v-expansion-panels v-model="panel">
             <v-expansion-panel>
               <v-expansion-panel-title>
-                Request details
+                Privacy policy
               </v-expansion-panel-title>
-              <v-expansion-panel-text class="mt-2">
+              <v-expansion-panel-text class="mt-6">
                 <v-row justify="center">
                   <v-col v-for="item in requirements" class="pb-0 pt-0" cols="12" :key="item" dense>
                     <p class="mb-2" v-html="item"></p>
