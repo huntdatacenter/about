@@ -45,20 +45,19 @@ export default {
 <template>
   <div class="hc-block hc-blue-block">
     <div class="hc-block-container">
-<!--        
+
       <v-row class="my-4 px-4">
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
-<b>Ready to get started on your journey?</b>
-           <br />
-           Reach out to arrange a&nbsp;call.
+          <b>Ready to get started on your journey?</b>
+          <br />
+          Reach out to arrange a&nbsp;call.
         </v-col>
--->
-<!--        
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
-          <SimpleButton title="Contact us" :href="contact" target="_blank" size="large" elevation="2" />
+          <!-- <SimpleButton title="Contact us" :href="contact" target="_blank" size="large" elevation="2" /> -->
+          <ContactDialog title="Contact us" subject="You got me at sensitive data" size="x-large" elevation="2" />
         </v-col>
       </v-row>
--->
+
       <!-- <v-divider class="my-4"></v-divider> -->
       <v-row>
         <v-col v-for="(list, i) in lists" :key="i" cols="12" class="v-col-sm-6 v-col-md-4">
@@ -96,16 +95,16 @@ export default {
             Our overarching goal is to facilitate seamless exploration across various fields and geographical borders,
             fostering collaboration and innovation on a&nbsp;global scale.
           </div>
--->          
+-->
         </v-col>
-        <v-col cols="12" class="v-col-sm-12 v-col-md-4">
+
+        <!-- <v-col cols="12" class="v-col-sm-12 v-col-md-4">
           <v-img
             class="mx-auto"
             max-width="200"
             max-height="200"
             :src="image"
           >
-            <!-- src="https://docs.hdc.ntnu.no/img/hunt-cloud_bot_250_2.png" -->
             <template v-slot:placeholder>
               <div class="d-flex align-center justify-center fill-height">
                 <v-progress-circular
@@ -115,7 +114,7 @@ export default {
               </div>
             </template>
           </v-img>
-        </v-col>
+        </v-col> -->
       </v-row>
     </div>
     <div class="hc-block-container">
