@@ -98,13 +98,13 @@ export default {
                   </v-col>
                 </v-row>
                 <v-row justify="center">
-                  <v-col cols="6">
+                  <v-col cols="12" class="v-col-xs-12 v-col-sm-8 v-col-md-4">
                     <v-btn
                       color="success"
                       block
                       @click="confirmRequirements"
                     >
-                      I want to talk to an expert
+                      Continue
                     </v-btn>
                   </v-col>
                 </v-row>
@@ -119,7 +119,7 @@ export default {
                 <v-row justify="center">
                   <v-col cols="10">
                     <p class="text-h6 body-1">
-                      Hi, my name is Signe Elisabeth Åsberg.
+                      Hi, my name is Signe&nbsp;Elisabeth&nbsp;Åsberg.
                     </p>
                     <br />
                     <p>
@@ -128,17 +128,17 @@ export default {
                     <p>
                       Our digital labs can be set-up to according to your ambitions and budget.
                     </p>
-                    <v-row class="mt-8 mb-8" justify="center">
-                      <v-col cols="6">
-                        <v-btn size="x-large" color="primary" block :href="`tel:+${part0prefix}${part1}${part2}${part3}`">
-                          <v-icon>{{ btnIcon }}</v-icon>&nbsp; Call (+{{ part0prefix }}) {{ part1 }} {{ part2 }} {{ part3 }}
-                        </v-btn>
-                      </v-col>
-                    </v-row>
+                  </v-col>
+                </v-row>
+                <v-row class="mt-8 mb-8" justify="center">
+                  <v-col cols="12" class="v-col-xs-10 v-col-sm-8 v-col-md-6">
+                    <v-btn size="x-large" color="primary" block :href="`tel:+${part0prefix}${part1}${part2}${part3}`">
+                      <v-icon>{{ btnIcon }}</v-icon>&nbsp; Call (+{{ part0prefix }}) {{ part1 }} {{ part2 }} {{ part3 }}
+                    </v-btn>
                   </v-col>
                 </v-row>
                 <v-row justify="center">
-                  <v-col cols="4">
+                  <v-col cols="10" class="v-col-xs-8 v-col-sm-6 v-col-md-4">
                     <v-btn color="link" block @click="closeBtn">
                       Close
                     </v-btn>
