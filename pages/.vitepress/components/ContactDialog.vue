@@ -6,6 +6,7 @@ export default {
     title: { type: String, required: true, default: "Title" },
     elevation: { type: String, default: "1" },
     size: { type: String, default: "" },
+    subject: { type: String, default: "" },
     block: { type: Boolean, default: false },
     blue: { type: Boolean, default: false },
   },
@@ -19,13 +20,17 @@ export default {
       requirements: ["<b>We care about your privacy.</b> Read our <a href='https://docs.hdc.ntnu.no/govern-science/privacy-statement/#privacy-statement-for-services-users' target='_blank' style='color: #00509e; font-weight: bold;;'>privacy statement</a> to learn how we process your personal data when you send us a request."],
       fields: [{ label: "Request topic", key: "topic", field: "textfield" }],
       attachments: [],
-      messageSubject: "Remember to write something in a subject",
+      messageSubject: "",
+      subjectPlaceholder: "Remember to write something in a subject",
       messageBody: `Hi HUNT Cloud team,
 
+...
 `,
       loadingEmailButtons: true,
       panel: 0,
       dialog: false,
+      sendClicked: false,
+      confirmedRequirements: false,
       formData: {},
     }
   },
@@ -37,6 +42,7 @@ export default {
   mounted() {
     this.panel = 0;
     this.loadingEmailButtons = true;
+    this.messageSubject = this.subject
   },
   computed: {
     // formFilled() {
@@ -84,9 +90,11 @@ export default {
     activateSendButtons() {
       this.loadingEmailButtons = false
     },
-    submit() {
+    confirmRequirements() {
+      this.confirmedRequirements = true
       this.panel = 1
-      setTimeout(this.activateSendButtons, 1200)
+      // setTimeout(this.activateSendButtons, 1200)
+      setTimeout(this.activateSendButtons, 100)
     },
     actionSend() {
       this.sendClicked = true;
@@ -168,7 +176,7 @@ export default {
               </v-expansion-panel-title>
               <v-expansion-panel-text class="mt-2">
                 <v-row justify="center">
-                  <v-col v-for="item in requirements" class="pb-0 pt-0" cols="12" :key="item.key" dense>
+                  <v-col v-for="item in requirements" class="pb-0 pt-0" cols="12" :key="item" dense>
                     <p class="mb-2" v-html="item"></p>
                   </v-col>
                 </v-row>
@@ -177,7 +185,7 @@ export default {
                     <v-btn
                       color="success"
                       block
-                      @click.stop="submit"
+                      @click="confirmRequirements"
                     >
                       Continue
                     </v-btn>
@@ -185,7 +193,7 @@ export default {
                 </v-row>
               </v-expansion-panel-text>
             </v-expansion-panel>
-            <v-expansion-panel>
+            <v-expansion-panel :disabled="!confirmedRequirements">
               <v-expansion-panel-title>
                 Email request
               </v-expansion-panel-title>
@@ -194,19 +202,23 @@ export default {
                   <v-col cols="10">
                     <v-text-field
                       :value="emailRecipient"
-                      label="Email recipient (TO)"
+                      label="HUNT Cloud email address"
                       class="py-2"
-                      prepend-inner-icon="mail"
                       placeholder=""
                       persistent-placeholder
                       variant="outlined"
                       dense
                       readonly
                       hide-details
-                    />
+                    >
+                      <template v-slot:prepend-inner>
+                        <v-icon>mdi-mail</v-icon>
+                      </template>
+                    </v-text-field>
                     <v-text-field
-                      label="Email subject"
-                      :placeholder="messageSubject"
+                      label="Your email subject"
+                      v-model="messageSubject"
+                      :placeholder="subjectPlaceholder"
                       persistent-placeholder
                       class="py-2"
                       variant="outlined"
@@ -214,8 +226,8 @@ export default {
                       hide-details
                     />
                     <v-textarea
-                      :value="messageBody"
-                      label="Body"
+                      v-model="messageBody"
+                      label="Your message"
                       class="py-2"
                       rows="8"
                       placeholder=""
@@ -228,21 +240,29 @@ export default {
                 </v-row>
 
                 <v-row justify="center">
+                  <v-col cols="10">
+                    <p class="text-center body-1">
+                      Send the email using your email client or use one of our shortcuts.
+                    </p>
+                  </v-col>
+                </v-row>
+
+                <v-row justify="center">
                   <v-col cols="4">
-                    <v-btn color="success" block :loading="loadingEmailButtons" :disabled="loadingEmailButtons" @click="actionSend">
+                    <v-btn color="link" block :disabled="loadingEmailButtons" @click="actionSend">
                       Open in Email Client
                     </v-btn>
                   </v-col>
                   <v-col cols="4">
-                    <v-btn color="primary" block :loading="loadingEmailButtons" :disabled="loadingEmailButtons" @click="actionSendOutlookPopup">
-                    <!-- <v-btn color="primary" block :loading="loadingEmailButtons" disabled @click="actionSendOutlookPopup"> -->
+                    <v-btn color="link" block :disabled="loadingEmailButtons" @click="actionSendOutlookPopup">
+                    <!-- <v-btn color="primary" block disabled @click="actionSendOutlookPopup"> -->
                       Open in Outlook Web
                     </v-btn>
                   </v-col>
                 </v-row>
               </v-expansion-panel-text>
             </v-expansion-panel>
-            <v-expansion-panel>
+            <v-expansion-panel :disabled="!sendClicked">
               <v-expansion-panel-title>
                 Review
               </v-expansion-panel-title>
@@ -267,12 +287,17 @@ export default {
                   </v-col>
                 </v-row>
                 <v-row justify="center">
-                  <v-col cols="4">
+                  <v-col cols="3">
                     <v-btn color="primary" block @click="panel = panel - 1">
                       Review
                     </v-btn>
                   </v-col>
                   <v-col cols="4">
+                    <v-btn color="link" block @click="panel = panel - 1">
+                      No default email client
+                    </v-btn>
+                  </v-col>
+                  <v-col cols="3">
                     <v-btn color="link" block @click="closeBtn">
                       Close
                     </v-btn>
