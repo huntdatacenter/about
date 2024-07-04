@@ -60,11 +60,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 96px;
-    margin-bottom: 32px;
-    padding-bottom: 32px;
+    margin-top: 48px;
+    margin-bottom: 64px;
+    padding-bottom: 24px;
     font-weight: bold;
-    font-size: min(6em, calc(18px + 8vw));
+    font-size: min(6em, calc(16px + 3vw));
     line-height: 1.5;
     /* @media screen and (max-width: 960px) {
       font-size: 8vw;
@@ -99,11 +99,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 64px;
-    padding-bottom: 18px;
+    padding-top: 56px;
+    padding-bottom: 24px;
     line-height: 1.5;
     font-weight: 500;
-    font-size: min(3.5em, calc(10px + 6vw));
+    font-size: min(3.5em, calc(20px + 1vw));
 }
 
 .hc-container-subtitle {
