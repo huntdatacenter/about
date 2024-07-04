@@ -51,7 +51,6 @@ export default {
       { text: "Home", link: "/" },
       { text: "Researchers", link: "/en/researchers/" },
       { text: "Organizations", link: "/en/organizations/" },
-      { text: "Forskningsdeltakere", link: "/no/forskningsdeltakere/" },
       // {
       //   text: 'Products',
       //   items: [
@@ -116,7 +115,7 @@ export default {
       //   ],
       // },
       {
-        text: 'About',
+        text: 'About us',
         items: [
           { text: "Team", link: "/team" },
           { text: 'Products', link: '/products/' },
@@ -124,6 +123,12 @@ export default {
           { text: 'Pillars', link: '/pillars/' },
           { text: 'Tools', link: '/tools/' },
           { text: 'Resources', link: '/resources/' },
+        ],
+      },
+      {
+        text: '🇳🇴',
+        items: [
+          { text: "Forskningsdeltakere", link: "/no/forskningsdeltakere/" },
         ],
       },
     ],
