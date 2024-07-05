@@ -76,7 +76,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-section">
         <v-row justify="center">
           <v-col cols="12" class="v-col-xs-12 v-col-sm-4 v-col-md-4">
-            <ContactDialog title="Book a demo" subject="Book a demo" size="x-large" elevation="2" block />
+            <ContactDialog title="Contact us" subject="Activate my data" size="x-large" elevation="2" block />
           </v-col>
           <v-col cols="12" class="v-col-xs-12 v-col-sm-5 v-col-md-4">
             <CallDialog title="Talk to an expert" size="x-large" elevation="2" block />
