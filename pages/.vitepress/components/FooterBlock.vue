@@ -4,6 +4,7 @@ export default {
   props: {
     contact: { type: String, required: true },
     image: { type: String, default: '/img/robot-2-square-250.png' },
+    listmenus: { type: String, default: false },
   },
   data() {
     return {
@@ -44,7 +45,7 @@ export default {
 
 <template>
   <div class="hc-block hc-footer-block">
-    <div class="hc-block-container">
+    <div class="hc-block-container pb-8">
 
       <v-row class="my-4 px-4">
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
@@ -59,7 +60,7 @@ export default {
       </v-row>
 
       <!-- <v-divider class="my-4"></v-divider> -->
-      <!-- <v-row>
+      <v-row v-if="listmenus">
         <v-col v-for="(list, i) in lists" :key="i" cols="12" class="v-col-sm-6 v-col-md-4">
           <v-list bg-color="transparent">
             <v-list-subheader style="color: #fff;">{{ list.title }}</v-list-subheader>
@@ -76,29 +77,13 @@ export default {
             </v-list-item>
           </v-list>
         </v-col>
-      </v-row> -->
-      <!-- <v-divider class="my-4"></v-divider> -->
-      <!-- <div class="hc-container-title">
-        About HUNT Cloud
-      </div> -->
-      <v-row class="mt-4 px-4">
-        <v-col cols="12">
-<!--
-          <b>HUNT Cloud provides high-trust and flexible cloud computing for scientific explorations</b>
-        </v-col>
-        <v-col cols="12" class="v-col-sm-12 v-col-md-8">
-          <div class="hc-container-text" style="text-align: justify">
-            Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for
-            both national and international scientific initiatives under the vision «data&nbsp;for&nbsp;a&nbsp;better&nbsp;world».
-            Our aim is to empower scientists by offering them the freedom to explore in digital laboratories,
-            where they bring their own sensitive data, tools and collaborators.
-            Our overarching goal is to facilitate seamless exploration across various fields and geographical borders,
-            fostering collaboration and innovation on a&nbsp;global scale.
-          </div>
--->
-        </v-col>
+      </v-row>
 
-        <!-- <v-col cols="12" class="v-col-sm-12 v-col-md-4">
+      <!-- <v-divider class="my-4"></v-divider> -->
+
+      <!--
+      <v-row class="mt-4 px-4">
+        <v-col cols="12" class="v-col-sm-12 v-col-md-4">
           <v-img
             class="mx-auto"
             max-width="200"
@@ -114,15 +99,25 @@ export default {
               </div>
             </template>
           </v-img>
-        </v-col> -->
-      </v-row>
-    </div>
-    <div class="hc-block-container">
-      <v-row class="px-4">
-        <v-col cols="12">
-          <a href="https://docs.hdc.ntnu.no/administer-science/privacy-statement/" target="_blank">Privacy statement</a>
         </v-col>
-      </v-row>
+      </v-row> -->
+
+      <v-row class="mt-16"></v-row>
+      <v-divider class="my-4"></v-divider>
+      <div class="d-flex">
+        <div class="me-auto">
+          <v-sheet class="ma-2 px-2" color="transparent">
+            NTNU | HUNT Cloud
+          </v-sheet>
+        </div>
+        <div>
+          <a href="https://docs.hdc.ntnu.no/administer-science/privacy-statement/" target="_blank">
+            <v-sheet class="ma-2 px-2" color="transparent">
+              Privacy statement
+            </v-sheet>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
