@@ -67,7 +67,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-title-main font-weight-black">
+      <div class="hc-title-main text-h2 font-weight-black">
         Freedom to explore sensitive data within a&nbsp;trustworthy framework.
       </div>
       <!-- <div class="hc-subtitle-main">

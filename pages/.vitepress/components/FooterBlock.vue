@@ -48,7 +48,7 @@ export default {
     <div class="hc-block-container pb-8">
 
       <v-row class="my-4 px-4">
-        <v-col cols="12" class="v-col-sm-6 v-col-md-4">
+        <v-col cols="12" class="v-col-sm-6 v-col-md-4 text-body-1">
           <b>Ready to get started on your journey?</b>
           <br />
           Reach out to arrange a&nbsp;call.
@@ -104,15 +104,15 @@ export default {
 
       <v-row class="mt-16"></v-row>
       <v-divider class="my-4"></v-divider>
-      <div class="d-flex">
-        <div class="me-auto">
-          <v-sheet class="ma-2 px-2" color="transparent">
+      <div class="d-flex flex-wrap">
+        <div class="me-auto mb-2">
+          <v-sheet class="ma-2 px-2 text-no-wrap text-body-1" color="transparent">
             NTNU | HUNT Cloud
           </v-sheet>
         </div>
-        <div>
+        <div class="mb-2">
           <a href="https://docs.hdc.ntnu.no/administer-science/privacy-statement/" target="_blank">
-            <v-sheet class="ma-2 px-2" color="transparent">
+            <v-sheet class="ma-2 px-2 text-no-wrap text-body-1" color="transparent">
               Privacy statement
             </v-sheet>
           </a>
