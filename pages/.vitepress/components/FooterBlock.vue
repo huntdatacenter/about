@@ -43,7 +43,7 @@ export default {
 </script>
 
 <template>
-  <div class="hc-block hc-blue-block">
+  <div class="hc-block hc-footer-block">
     <div class="hc-block-container">
 
       <v-row class="my-4 px-4">
