@@ -16,12 +16,12 @@ sidebar: false
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <!-- <div class="hc-title-main font-weight-black">
+      <div class="hc-title-main font-weight-black">
         For organizations
-      </div> -->
-      <div class="hc-subtitle-main">
-        Empower your scientists with our flexible cloud services for sensitive data, while staying confident that both data and users are secure and compliant in our high-trust framework.
       </div>
+      <!-- <div class="hc-subtitle-main">
+        Empower your scientists with our flexible cloud services for sensitive data, while staying confident that both data and users are secure and compliant in our high-trust framework.
+      </div> -->
       <div class="hc-section">
         <v-row justify="center">
           <v-col cols="12" class="v-col-xs-12 v-col-sm-4 v-col-md-4">
