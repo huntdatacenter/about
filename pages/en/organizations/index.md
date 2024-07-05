@@ -47,9 +47,9 @@ sidebar: false
       <div class="hc-container-title">
         HUNT Cloud offers digital labs for sensitive data science.
       </div>
-      <!-- <div class="hc-container-subtitle">
+      <div class="hc-container-subtitle">
         Empower your scientists with our flexible cloud services for sensitive data, while staying confident that both data and users are secure and compliant in our high-trust framework.
-      </div> -->
+      </div>
       <div class="hc-container-text" style="text-align: left;">
         In today’s data-driven science, organizations need secure, compliant and trustworthy solutions to easily manage sensitive data from many different research projects. At HUNT Cloud, we provide organizations with a comprehensive solution that:
       </div>
