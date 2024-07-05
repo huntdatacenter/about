@@ -280,9 +280,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         </v-col>
       </v-row>
       <br>
-    <!-- <div class="hc-section">
-      <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
-    </div> -->
+      <div class="hc-section">
+        <ContactDialog title="Ask for more information" subject="Sensitive AI" size="x-large" elevation="2" />
+      </div>
+      <!-- <div class="hc-section">
+        <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
+      </div> -->
     </div>
   </div>
 

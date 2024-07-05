@@ -118,11 +118,11 @@ export default {
         text: 'About us',
         items: [
           { text: "Team", link: "/team" },
-          { text: 'Products', link: '/products/' },
-          { text: 'Compliance', link: '/compliance/' },
-          { text: 'Pillars', link: '/pillars/' },
-          { text: 'Tools', link: '/tools/' },
-          { text: 'Resources', link: '/resources/' },
+          // { text: 'Products', link: '/products/' },
+          // { text: 'Compliance', link: '/compliance/' },
+          // { text: 'Pillars', link: '/pillars/' },
+          // { text: 'Tools', link: '/tools/' },
+          // { text: 'Resources', link: '/resources/' },
         ],
       },
       {

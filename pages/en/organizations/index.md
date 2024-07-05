@@ -5,11 +5,11 @@ sidebar: false
 ---
 
 <div class="hc-home-page">
-  <div class="hc-header">
+  <!-- <div class="hc-header">
     <div class="hc-header-img"></div>
-  </div>
+  </div> -->
 
-
+  <div class="hc-block" style="display: none;"></div>
 <!----------------------------------------------->
 <!-- Block: Freedom to explore -->
 <!----------------------------------------------->

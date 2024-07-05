@@ -59,7 +59,7 @@ export default {
       </v-row>
 
       <!-- <v-divider class="my-4"></v-divider> -->
-      <v-row>
+      <!-- <v-row>
         <v-col v-for="(list, i) in lists" :key="i" cols="12" class="v-col-sm-6 v-col-md-4">
           <v-list bg-color="transparent">
             <v-list-subheader style="color: #fff;">{{ list.title }}</v-list-subheader>
@@ -76,8 +76,8 @@ export default {
             </v-list-item>
           </v-list>
         </v-col>
-      </v-row>
-      <v-divider class="my-4"></v-divider>
+      </v-row> -->
+      <!-- <v-divider class="my-4"></v-divider> -->
       <!-- <div class="hc-container-title">
         About HUNT Cloud
       </div> -->
