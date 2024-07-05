@@ -101,55 +101,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         Explore, collaborate, and create while knowing that your data is secure within flexible and ISO-certified cloud environments.
       </div>
-      <v-row class="my-5" style="justify-content: center; align-items: center;">
-        <v-col cols="6">
-          <v-card
-            append-icon="mdi-chevron-right"
-            color="rgb(62,98,138)"
-            variant="tonal"
-            title="Researchers"
-            href="/en/researchers/"
-            link
-          >
-            <v-card-text>
-              <v-row>
-                <v-col cols="12">
-                  We ensure that your data is secure so your team can successfully explore, innovate and collaborate on sensitive data. Our scalable solution caters to your specific requirements, with flexible options for storage, CPUs, or GPUs.
-                </v-col>
-              </v-row>
-              <br />
-              <!-- <v-row>
-                <v-col align="left">
-                  <SimpleButton title="Read more" href="https://docs.hdc.ntnu.no/govern-science/compliance/" target="_blank" size="large" elevation="2" />
-                </v-col>
-              </v-row> -->
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="6">
-          <v-card
-            append-icon="mdi-chevron-right"
-            color="rgb(62,98,138)"
-            variant="tonal"
-            title="Organizations"
-            href="/en/organizations/"
-            link
-          >
-            <v-card-text>
-              <v-row>
-                <v-col cols="12">
-                  Our cloud solutions provide easy overview and portfolio management for your sensitive data activities. Empower your scientists with the flexibility they need while ensuring robust data safety and compliance.
-                </v-col>
-              </v-row>
-              <br />
-              <!-- <v-row>
-                <v-col align="left">
-                  <SimpleButton title="Read more" href="https://docs.hdc.ntnu.no/govern-science/compliance/" target="_blank" size="large" elevation="2" />
-                </v-col>
-              </v-row> -->
-            </v-card-text>
-          </v-card>
-        </v-col>
+      <v-row class="my-5 d-flex" style="justify-content: center; align-items: center;">
+        <CardElement title="Researchers" href="/en/researchers/" text="We ensure that your data is secure so your team can successfully explore, innovate and collaborate on sensitive data. Our scalable solution caters to your specific requirements, with flexible options for storage, CPUs, or GPUs." />
+        <CardElement title="Organizations" href="/en/organizations/" text="Our cloud solutions provide easy overview and portfolio management for your sensitive data activities. Empower your scientists with the flexibility they need while ensuring robust data safety and compliance." />
       </v-row>
     </div>
   </div>
