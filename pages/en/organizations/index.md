@@ -73,16 +73,16 @@ sidebar: false
       <!-- <div class="hc-container-subtitle">
         Empower your scientists with our flexible cloud services for sensitive data, while staying confident that both data and users are secure and compliant in our high-trust framework.
       </div> -->
-      <v-list lines="two" variant="tonal" bg-color="rgb(62,98,138)">
-        <v-list-item title="Solid agreement framework" subtitle="Our comprehensive agreement framework ensures that you can trust your scientists to securely use sensitive data."></v-list-item>
-        <v-list-item title="Organization report" subtitle="Simply the management of your projects by easy overview of data, user access, key personnel, resource consumption and maturity measures."></v-list-item>
-        <v-list-item title="Develop your research culture for sensitive data" subtitle="We work closely with you in capacity building at all levels, from scientists to administration and leadership."></v-list-item>
-        <v-list-item title="Explore Data Space" subtitle="The home of your digital labs gives you easy management and governance of your sensitive data activities."></v-list-item>
-        <v-list-item title="Archive lab" subtitle="The Archive lab gives your organisation a secure place to store data from completed projects and control of the deletion process. The first 1TB of storage is free."></v-list-item>
-        <v-list-item title="Digital labs" subtitle="Your scientists get access to digital labs where they can analyze, collaborate and store their sensitive data. The cost of each lab is covered by the project’s own fund."></v-list-item>
-        <v-list-item title="ISO certificate" subtitle="We are certified according to the ISO standard for quality management, information technology and privacy."></v-list-item>
-        <v-list-item title="Opportunities for partnership" subtitle="The sensitive data community is growing and flourishing with new ideas. We provide meeting places for scientists, administrators and research leaders to ensure that the community has a voice."></v-list-item>
-      </v-list>
+      <v-row>
+        <CardElement title="Solid agreement framework" text="Our comprehensive agreement framework ensures that you can trust your scientists to securely use sensitive data." />
+        <CardElement title="Organization report" text="Simply the management of your projects by easy overview of data, user access, key personnel, resource consumption and maturity measures." />
+        <CardElement title="Develop your research culture for sensitive data" text="We work closely with you in capacity building at all levels, from scientists to administration and leadership." />
+        <CardElement title="Explore Data Space" text="The home of your digital labs gives you easy management and governance of your sensitive data activities." />
+        <CardElement title="Archive lab" text="The Archive lab gives your organisation a secure place to store data from completed projects and control of the deletion process. The first 1TB of storage is free." />
+        <CardElement title="Digital labs" text="Your scientists get access to digital labs where they can analyze, collaborate and store their sensitive data. The cost of each lab is covered by the project’s own fund." />
+        <CardElement title="ISO certificate" text="We are certified according to the ISO standard for quality management, information technology and privacy." />
+        <CardElement title="Opportunities for partnership" text="The sensitive data community is growing and flourishing with new ideas. We provide meeting places for scientists, administrators and research leaders to ensure that the community has a voice." />
+      </v-row>
     </div>
   </div>
 

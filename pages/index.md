@@ -102,8 +102,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Explore, collaborate, and create while knowing that your data is secure within flexible and ISO-certified cloud environments.
       </div>
       <v-row class="my-5 d-flex" style="justify-content: center; align-items: center;">
-        <CardElement title="Researchers" href="/en/researchers/" text="We ensure that your data is secure so your team can successfully explore, innovate and collaborate on sensitive data. Our scalable solution caters to your specific requirements, with flexible options for storage, CPUs, or GPUs." />
-        <CardElement title="Organizations" href="/en/organizations/" text="Our cloud solutions provide easy overview and portfolio management for your sensitive data activities. Empower your scientists with the flexibility they need while ensuring robust data safety and compliance." />
+        <CardElement title="Researchers" href="/en/researchers/" text="We ensure that your data is secure so your team can successfully explore, innovate and collaborate on sensitive data. Our scalable solution caters to your specific requirements, with flexible options for storage, CPUs, or GPUs." link />
+        <CardElement title="Organizations" href="/en/organizations/" text="Our cloud solutions provide easy overview and portfolio management for your sensitive data activities. Empower your scientists with the flexibility they need while ensuring robust data safety and compliance." link />
       </v-row>
     </div>
   </div>

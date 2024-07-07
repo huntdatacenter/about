@@ -6,6 +6,7 @@ export default {
     subtitle: { type: String, required: false, default: "" },
     text: { type: String, required: true, default: "" },
     href: { type: String, required: false, default: "" },
+    link: { type: Boolean, required: false, default: false },
   },
   data() {
     return {
@@ -23,6 +24,11 @@ export default {
   computed: {
     // TODO
   },
+  methods: {
+    hoverIcon (isHovering: Boolean) {
+      return isHovering ? 'mdi-chevron-triple-right' : 'mdi-chevron-right'
+    },
+  },
 }
 </script>
 
@@ -38,8 +44,8 @@ export default {
           :title="title"
           :subtitle="subtitle"
           :href="href"
-          link
-          :append-icon="isHovering ? 'mdi-chevron-triple-right' : 'mdi-chevron-right'"
+          :link="link ? true : false"
+          :append-icon="link ? hoverIcon(isHovering) : ''"
         >
           <v-card-text>
             <v-row>
