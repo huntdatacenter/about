@@ -501,7 +501,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Your total cost will include a combination of fixed subscription costs and running costs for the resources your attached to your labs. The fees across all labs inside one data space are summarized and billed to the data spaces' billing accounts.
+                  Your total cost will include a combination of fixed subscription costs and running costs for the resources attached to your labs. The fees across all labs inside one data space are summarized and billed to the data spaces' billing accounts.
                 </v-col>
               </v-row>
               <v-row dense>
