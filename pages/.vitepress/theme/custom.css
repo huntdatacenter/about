@@ -3,6 +3,18 @@
 :root {
   --vp-home-hero-name-color: #00509E;
   --vp-c-brand-1: #00509E;
+  --vp-page-texts-dark: #3C3C44;
+  --vp-page-texts-light: #FFFFFF;
+  --vp-block-background-blue: #3E628A;  /* #3E628A == rgb(62,98,138) */
+  --vp-block-background-light: #F2F2F2;
+}
+
+.hc-text-dark {
+  color: var(--vp-page-texts-dark) !important;
+}
+
+.hc-text-light {
+  color: var(--vp-page-texts-light) !important;
 }
 
 .hc-home-page {
@@ -31,32 +43,32 @@
 /* Odd=light block */
 .hc-block:nth-child(odd) {
   box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
-  background-color: #f2f2f2;
-  color: rgb(60, 60, 68);
+  background-color: var(--vp-block-background-light);
+  color: var(--vp-page-texts-dark);
 }
 
 /* Even=blue block */
 .hc-block:nth-child(even) {
   /* background-color: rgb(238, 238, 238); */
-  background-color: rgb(62,98,138);
+  background-color: var(--vp-block-background-blue);
   color: rgb(255, 255, 255);
 }
 
 .hc-blue-block {
-  background-color: rgb(62,98,138) !important;
+  background-color: var(--vp-block-background-blue) !important;
   color: rgb(255, 255, 255) !important;
 }
 
 .hc-light-block {
   /* background-color: rgb(255, 255, 255) !important; */
-  background-color: #f2f2f2 !important;
-  color: rgb(60, 60, 68) !important;
+  background-color: var(--vp-block-background-light) !important;
+  color: var(--vp-page-texts-dark) !important;
   /* background-color: unset !important; */
 }
 
 .hc-footer-block {
-  background-color: rgb(40,45,55) !important;
-  /* color: rgb(60, 60, 68) !important; */
+  background-color: #282D37 !important;
+  /* color: var(--vp-page-texts-dark) !important; */
   color: rgb(255, 255, 255) !important;
 }
 

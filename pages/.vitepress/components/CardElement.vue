@@ -39,7 +39,7 @@ export default {
         <v-card
           v-bind="props"
           class="h-100"
-          color="rgb(62,98,138)"
+          color="#3E628A"
           variant="tonal"
           :title="title"
           :subtitle="subtitle"
