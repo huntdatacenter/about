@@ -76,7 +76,7 @@ sidebar: false
       <v-row>
         <CardElement title="Solid agreement framework" text="Our comprehensive agreement framework ensures that you can trust your scientists to securely use sensitive data." />
         <CardElement title="Organization report" text="Simply the management of your projects by easy overview of data, user access, key personnel, resource consumption and maturity measures." />
-        <CardElement title="Develop your research culture for sensitive data" text="We work closely with you in capacity building at all levels, from scientists to administration and leadership." />
+        <CardElement title="Develop your research culture" text="We work closely with you in capacity building at all levels, from scientists to administration and leadership." />
         <CardElement title="Explore Data Space" text="The home of your digital labs gives you easy management and governance of your sensitive data activities." />
         <CardElement title="Archive lab" text="The Archive lab gives your organisation a secure place to store data from completed projects and control of the deletion process. The first 1TB of storage is free." />
         <CardElement title="Digital labs" text="Your scientists get access to digital labs where they can analyze, collaborate and store their sensitive data. The cost of each lab is covered by the project’s own fund." />
