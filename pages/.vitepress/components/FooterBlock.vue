@@ -2,7 +2,7 @@
 
 export default {
   props: {
-    contact: { type: String, required: true },
+    contact: { type: Object, required: false },
     image: { type: String, default: '/img/robot-2-square-250.png' },
     listmenus: { type: String, default: false },
   },

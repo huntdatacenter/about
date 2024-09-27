@@ -26,11 +26,28 @@ import 'vuetify/styles';
 
 import { vuetify } from '../plugins/vuetify';
 
+// Search for FREE icons: https://fontawesome.com/search?o=r&m=free
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import {
+  faClipboardCheck,
+  faFolderOpen,
+  faPeopleArrows,
+  faBrain,
+} from '@fortawesome/free-solid-svg-icons';
+
+library.add(faClipboardCheck)
+library.add(faFolderOpen)
+library.add(faPeopleArrows)
+library.add(faBrain)
+
 export default {
   extends: DefaultTheme,
   enhanceApp(context: EnhanceAppContext) {
     context.app.use(vuetify)
 
+    // Search for FREE icons: https://fontawesome.com/search?o=r&m=free
+    context.app.component('font-awesome-icon', FontAwesomeIcon);
     context.app.component('ContactDialog', ContactDialog);
     context.app.component('CallDialog', CallDialog);
     context.app.component('SimpleButton', SimpleButton);

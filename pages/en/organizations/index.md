@@ -51,22 +51,83 @@ sidebar: false
         Empower your scientists with our flexible cloud services for sensitive data, while staying confident that both data and users are secure and compliant in our high-trust framework.
       </div>
       <div class="hc-container-text" style="text-align: left;">
-        In today’s data-driven science, organizations need secure, compliant and trustworthy solutions to easily manage sensitive data from many different research projects. At HUNT Cloud, we provide organizations with a comprehensive solution that:
+        In today’s data-driven science, organizations need secure, compliant and trustworthy solutions to easily manage sensitive data from many different research projects.
       </div>
-      <v-list lines="one" bg-color="transparent">
-        <v-list-item>Ensures that your sensitive data is protected within ISO-certified cloud environments</v-list-item>
-        <v-list-item>Enables comprehensive and easy overview and portfolio management of your research projects and data</v-list-item>
-        <v-list-item>Provides structured follow-up in developing your research culture for sensitive data</v-list-item>
-        <v-list-item>Give access to AI-ready infrastructure</v-list-item>
-      </v-list>
-    <!-- </div>
+    </div>
   </div>
 
 
 
 
   <div class="hc-block">
-    <div class="hc-block-container"> -->
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        At HUNT Cloud, we provide organizations with a comprehensive solution.
+      </div>
+      <v-row>
+        <v-col cols="3">
+          <v-card variant="outlined" style="height: 100%">
+            <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="200px" width="100%" color="transparent">
+              <font-awesome-icon icon="fas fa-clipboard-check" size="8x" />
+            </v-sheet>
+            <v-card-text class="text-center font-weight-bold">
+              ISO-certified cloud environments
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="3">
+          <v-card variant="outlined" style="height: 100%">
+            <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="200px" width="100%" color="transparent">
+              <font-awesome-icon icon="fas fa-folder-open" size="8x" />
+            </v-sheet>
+            <v-card-text class="text-center font-weight-bold">
+              Portfolio management
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="3">
+          <v-card variant="outlined" style="height: 100%">
+            <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="200px" width="100%" color="transparent">
+              <font-awesome-icon icon="fas fa-people-arrows" size="8x" />
+            </v-sheet>
+            <v-card-text class="text-center font-weight-bold">
+              Structured follow-up
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="3">
+          <v-card variant="outlined" style="height: 100%">
+            <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="200px" width="100%" color="transparent">
+              <font-awesome-icon icon="fas fa-brain" size="8x" />
+            </v-sheet>
+            <v-card-text class="text-center font-weight-bold">
+              AI-ready infrastructure
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="3" class="text-subtitle-2 px-6">
+          Ensures that your sensitive data is protected within ISO-certified cloud environments
+        </v-col>
+        <v-col cols="3" class="text-subtitle-2 px-6">
+          Enables comprehensive and easy overview and portfolio management of your research projects and data
+        </v-col>
+        <v-col cols="3" class="text-subtitle-2 px-6">
+          Provides structured follow-up in developing your research culture for sensitive data
+        </v-col>
+        <v-col cols="3" class="text-subtitle-2 px-6">
+          Give access to AI-ready infrastructure
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+
+
+  <div class="hc-block">
+    <div class="hc-block-container">
       <div class="hc-container-title">
         Features
       </div>
