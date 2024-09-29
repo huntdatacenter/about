@@ -1,5 +1,7 @@
 <script lang="ts">
 
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
 export default {
   name: 'ContactDialog',
   props: {
@@ -32,6 +34,7 @@ export default {
       sendClicked: false,
       confirmedRequirements: false,
       formData: {},
+      isMobile: false,
     }
   },
   // watch: {
@@ -43,6 +46,21 @@ export default {
     this.panel = 0;
     this.loadingEmailButtons = true;
     this.messageSubject = this.subject
+
+    this.isMobile = ref(window.innerWidth <= 540)
+
+    // Update the value on resize
+    const checkScreenSize = () => {
+      this.isMobile = ref(window.innerWidth <= 540)
+    };
+
+    // onMounted(() => {
+    window.addEventListener('resize', checkScreenSize) // Listen to window resize
+    // });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener('resize', checkScreenSize) // Clean up event listener
+    });
   },
   computed: {
     // formFilled() {
@@ -79,6 +97,9 @@ export default {
       const redir = `${url}?to=${this.wrapRecipient}&subject=${this.encodedSubject}&body=${this.encodedBody}`;
       console.log(redir);
       return redir;
+    },
+    isPhone() {
+      return
     },
   },
   methods: {
@@ -163,6 +184,7 @@ export default {
       v-model="dialog"
       transition="dialog-bottom-transition"
       max-width="960px"
+      :fullscreen="isMobile"
     >
       <v-card>
         <v-toolbar dark color="#00509e">
