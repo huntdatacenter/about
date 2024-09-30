@@ -65,59 +65,65 @@ sidebar: false
         At HUNT Cloud, we provide organizations with a comprehensive solution.
       </div>
       <v-row>
-        <v-col cols="3">
-          <v-card variant="outlined" style="height: 100%">
-            <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="200px" width="100%" color="transparent">
-              <font-awesome-icon icon="fas fa-clipboard-check" size="8x" />
+        <v-col cols="12" class="align-self-start v-col-xs-6 v-col-sm-6 v-col-md-3">
+          <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
+            <v-card class="pt-8" variant="outlined" height="220px" width="100%">
+              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="120px" color="transparent">
+                <font-awesome-icon icon="fas fa-clipboard-check" size="8x" />
+              </v-sheet>
+              <v-card-text class="text-center font-weight-bold">
+                ISO-certified cloud environments
+              </v-card-text>
+            </v-card>
+            <v-sheet class="text-subtitle-2 px-4 pt-6" color="transparent">
+              Ensures that your sensitive data is protected within ISO-certified cloud environments
             </v-sheet>
-            <v-card-text class="text-center font-weight-bold">
-              ISO-certified cloud environments
-            </v-card-text>
-          </v-card>
+          </v-sheet>
         </v-col>
-        <v-col cols="3">
-          <v-card variant="outlined" style="height: 100%">
-            <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="200px" width="100%" color="transparent">
-              <font-awesome-icon icon="fas fa-folder-open" size="8x" />
+        <v-col cols="12" class="align-self-start v-col-xs-6 v-col-sm-6 v-col-md-3">
+          <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
+            <v-card class="pt-8" variant="outlined" height="220px" width="100%">
+              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="120px" color="transparent">
+                <font-awesome-icon icon="fas fa-folder-open" size="8x" />
+              </v-sheet>
+              <v-card-text class="text-center font-weight-bold">
+                Portfolio management
+              </v-card-text>
+            </v-card>
+            <v-sheet class="text-subtitle-2 px-4 pt-6" color="transparent">
+              Enables comprehensive and easy overview and portfolio management of your research projects and data
             </v-sheet>
-            <v-card-text class="text-center font-weight-bold">
-              Portfolio management
-            </v-card-text>
-          </v-card>
+          </v-sheet>
         </v-col>
-        <v-col cols="3">
-          <v-card variant="outlined" style="height: 100%">
-            <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="200px" width="100%" color="transparent">
-              <font-awesome-icon icon="fas fa-people-arrows" size="8x" />
+        <v-col cols="12" class="align-self-start v-col-xs-6 v-col-sm-6 v-col-md-3">
+          <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
+            <v-card class="pt-8" variant="outlined" height="220px" width="100%">
+              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="120px" color="transparent">
+                <font-awesome-icon icon="fas fa-people-arrows" size="8x" />
+              </v-sheet>
+              <v-card-text class="text-center font-weight-bold">
+                Structured follow-up
+              </v-card-text>
+            </v-card>
+            <v-sheet class="text-subtitle-2 px-4 pt-6" color="transparent">
+              Provides structured follow-up in developing your research culture for sensitive data
             </v-sheet>
-            <v-card-text class="text-center font-weight-bold">
-              Structured follow-up
-            </v-card-text>
-          </v-card>
+          </v-sheet>
         </v-col>
-        <v-col cols="3">
-          <v-card variant="outlined" style="height: 100%">
-            <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="200px" width="100%" color="transparent">
-              <font-awesome-icon icon="fas fa-brain" size="8x" />
+        <v-col cols="12" class="align-self-start v-col-xs-6 v-col-sm-6 v-col-md-3">
+          <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
+            <v-card class="pt-8" variant="outlined" height="220px" width="100%">
+              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="120px" color="transparent">
+                <font-awesome-icon icon="fas fa-brain" size="8x" />
+              </v-sheet>
+              <v-card-text class="text-center font-weight-bold">
+                AI-ready infrastructure
+              </v-card-text>
+            </v-card>
+            <v-sheet class="text-subtitle-2 px-4 pt-6" color="transparent">
+              Give access to AI-ready infrastructure
             </v-sheet>
-            <v-card-text class="text-center font-weight-bold">
-              AI-ready infrastructure
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="3" class="text-subtitle-2 px-6">
-          Ensures that your sensitive data is protected within ISO-certified cloud environments
-        </v-col>
-        <v-col cols="3" class="text-subtitle-2 px-6">
-          Enables comprehensive and easy overview and portfolio management of your research projects and data
-        </v-col>
-        <v-col cols="3" class="text-subtitle-2 px-6">
-          Provides structured follow-up in developing your research culture for sensitive data
-        </v-col>
-        <v-col cols="3" class="text-subtitle-2 px-6">
-          Give access to AI-ready infrastructure
+          </v-sheet>
         </v-col>
       </v-row>
     </div>
