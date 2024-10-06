@@ -73,11 +73,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-section">
         <v-row justify="center">
           <v-col cols="12" class="v-col-xs-12 v-col-sm-4 v-col-md-4">
-            <ContactDialog title="Contact us" subject="Activate my data" size="x-large" elevation="2" block />
+            <ContactDialog title="Contact us" subject="Information about HUNT Cloud" size="x-large" elevation="2" block />
           </v-col>
-          <v-col cols="12" class="v-col-xs-12 v-col-sm-5 v-col-md-4">
+<!--          <v-col cols="12" class="v-col-xs-12 v-col-sm-5 v-col-md-4">
             <CallDialog title="Talk to an expert" size="x-large" elevation="2" block />
-          </v-col>
+          </v-col> 
+-->
         </v-row>
       </div>
     </div>
@@ -93,14 +94,14 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        HUNT Cloud offers digital labs for sensitive data science.
+        HUNT Cloud offers digital labs for sensitive data science
       </div>
       <div class="hc-container-subtitle">
-        Explore, collaborate, and create while knowing that your data is secure within flexible and ISO-certified cloud environments.
+        Explore, collaborate, and create <br /> while your data is secured within a flexible <br /> and ISO-certified cloud environment located in Norway.
       </div>
       <v-row class="my-5 d-flex" style="justify-content: center; align-items: center;">
-        <CardElement title="Researchers" href="/en/researchers/" text="We ensure that your data is secure so your team can successfully explore, innovate and collaborate on sensitive data. Our scalable solution caters to your specific requirements, with flexible options for storage, CPUs, or GPUs." link />
-        <CardElement title="Organizations" href="/en/organizations/" text="Our cloud solutions provide easy overview and portfolio management for your sensitive data activities. Empower your scientists with the flexibility they need while ensuring robust data safety and compliance." link />
+        <CardElement title="For researchers" href="/en/researchers/" text="We ensure that your data is secure so your team can successfully explore, innovate and collaborate on sensitive data. Our scalable solution caters to your specific requirements, with flexible options for storage, CPU and GPU utilization." link />
+        <CardElement title="For organizations" href="/en/organizations/" text="Our cloud solutions provide easy overview and portfolio management for your sensitive data activities. Empower your scientists with the flexibility they need while ensuring robust data safety and compliance." link />
       </v-row>
     </div>
   </div>
