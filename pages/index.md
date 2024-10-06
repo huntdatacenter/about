@@ -100,8 +100,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Explore, collaborate, and create <br /> while your data is secured within a flexible <br /> and ISO-certified cloud environment located in Norway.
       </div>
       <v-row class="my-5 d-flex" style="justify-content: center; align-items: center;">
-        <CardElement title="For researchers" href="/en/researchers/" text="We ensure that your data is secure so your team can successfully explore, innovate and collaborate on sensitive data. Our scalable solution caters to your specific requirements, with flexible options for storage, CPU and GPU utilization." link />
-        <CardElement title="For organizations" href="/en/organizations/" text="Our cloud solutions provide easy overview and portfolio management for your sensitive data activities. Empower your scientists with the flexibility they need while ensuring robust data safety and compliance." link />
+        <CardElement title="For researchers" href="/en/researchers/" text="Get access to your own digital lab where your team can meet to explore, innovate and collaborate. Bring your own data, get instant access to major scientific tools and scale storage, CPU and GPU to your needs." link />
+        <CardElement title="For organizations" href="/en/organizations/" text="Enable your scientists with needed flexibility while protecting your data safety with trustworthy compliance. And get easy overview and portfolio management for your sensitive data science." link />
       </v-row>
     </div>
   </div>
