@@ -101,7 +101,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <v-row class="my-5 d-flex" style="justify-content: center; align-items: center;">
         <CardElement title="For researchers" href="/en/researchers/" text="Get access to your own digital lab where your team can meet to explore, innovate and collaborate. Bring your own data, get instant access to major scientific tools and scale storage, CPU and GPU to your needs." link />
-        <CardElement title="For organizations" href="/en/organizations/" text="Enable your scientists with needed flexibility while protecting your data safety with trustworthy compliance. And get easy overview and portfolio management for your sensitive data science." link />
+        <CardElement title="For organizations" href="/en/organizations/" text="Enable your researchers with needed flexibility while also protecting your data safety with trustworthy compliance. Get easy overview and portfolio management for your sensitive data science at the same time." link />
       </v-row>
     </div>
   </div>
@@ -190,54 +190,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle">
         Enjoy accelerated computing in environments made for sensitive AI.
       </div>
-      <v-row align="center">
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Get your GPUs</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                    Select your preferred GPU and compute resources, or use our default setups.
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Run your models</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Train or bring your favorite models, such as large language models.
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
-            <v-card-title>Explore and Evolve</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Explore AI in easy to use labs or go big with large and advanced experiments.
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
+     <v-row>
+        <v-col align="center">
+          <SimpleButton title="Read more" href="en/researchers/" target="_blank" size="large" elevation="2" />
         </v-col>
       </v-row>
-      <br>
-      <div class="hc-section">
-        <ContactDialog title="Ask for more information" subject="Sensitive AI" size="x-large" elevation="2" />
-      </div>
-      <!-- <div class="hc-section">
-        <SimpleButton title="Read more" :href="$frontmatter.contact" target="_blank" size="large" elevation="2" />
-      </div> -->
     </div>
   </div>
 
@@ -253,7 +210,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         ISO certificates
       </div>
       <div class="hc-container-subtitle">
-        Trust builds relations. HUNT Cloud follows international standards for quality, security and privacy.
+        Trust builds relations. We follow renowned international standards.
       </div>
       <!-- <v-row>
         <v-col cols="2" class="v-col-sm-4 v-col-md-4">
@@ -283,7 +240,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
                   <a href="https://about.hdc.ntnu.no/compliance/">
                     <v-img class="mb-5" max-height="160px" src="/img/kiwa-iso-9001-2017.svg" />
                   </a>
-                  Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
+                  Our quality management system (ISO 9001) aims to provide predictable and high-quality services.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -299,7 +256,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
                   <a href="https://about.hdc.ntnu.no/compliance/">
                     <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
                   </a>
-                  Our information security management system (ISO 27001) add an exstensive list of security controls to protect your data and activities.
+                  Our information security management system (ISO 27001) adds an exstensive list of controls to protect your activities.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -315,7 +272,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
                   <a href="https://about.hdc.ntnu.no/compliance/">
                     <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
                   </a>
-                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
+                  Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect data under your control.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -345,10 +302,10 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Activate your data
       </div>
       <div class="hc-container-subtitle">
-        We work closely with data providers to make sure data is activated for impact.
+        We collaborate with data controllers to activate data under their control. Our aim is to enable impact discoveries on your the data from the broadest set of scientists.
       </div>
       <div class="hc-section">
-        <ContactDialog title="Activate your data" subject="Activate my data" size="x-large" elevation="2" />
+        <ContactDialog title="Activate your data" subject="Data activation" size="x-large" elevation="2" />
       </div>
     </div>
   </div>
@@ -481,7 +438,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  We believe a solid framework of documented responsibilities is a key success factor to enable your scientists with the freedom to explore. This page holds an overview of the administrative agreements in HUNT Cloud.
+                  A solid framework of documented responsibilities is a key success factor to enable your team with the freedom to explore data. Read more on the administrative agreements in HUNT Cloud.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -499,7 +456,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Your total cost will include a combination of fixed subscription costs and running costs for the resources attached to your labs. The fees across all labs inside one data space are summarized and billed to the data spaces' billing accounts.
+                  Cost includes running costs for the store and compute resources your attach to your lab. Fees across several labs can be billed individually or in combined in invoice profile.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -517,8 +474,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  These pages contain the official user documentation for HUNT Cloud. HUNT Cloud is a cross-organizational scientific infrastructure for sensitive data analysis located at NTNU, Norway.
-                </v-col>
+                  Scientists and administrators gets access to an extensive body of user documentation (>100,000 words). All to ensure quick access to information that keeps your science fly.  
+              </v-col>
               </v-row>
               <v-row dense>
                 <v-col cols="12">
@@ -535,7 +492,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Collaborations elevate science. All lab users in HUNT Cloud are invited to join our HUNT Cloud community as part of your onboarding process.
+                  Collaborations elevate science. All scientits in labs are invited to join our HUNT Cloud community as part of their onboarding process.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -553,7 +510,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  This page list predefined service orders that you can request as an active lab user in HUNT Cloud.
+                   We have predefined a range of common support requests to ensure speedy delivery in our Service desks. See the orders that active lab users can order here.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -571,7 +528,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  We appoint time three times per year to meet for information, feedback and discussions on how to develop the services in HUNT Cloud to better elevate science. We call these gatherings Tings.
+                  We all meet three times per year for information, feedback and discussions on how to develop our services to better elevate science. We call these gatherings Tings.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -585,19 +542,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
     </div>
   </div>
-
-
-
-
-<!----------------------------------------------->
-<!-- Block: Agreements and multiblock -->
-<!----------------------------------------------->
-
-
-
-
-
-
 
 
 
@@ -621,7 +565,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Technology changes fast and brings with it new solutionos and new oportunities. At NTNU we have a strong traditioon for experimentation and adoption of new technologies. Our dreamers and tinkerers work closely with scientists to ensure we know what moves and what will be available in the years to come.
+                  Technology changes fast and brings with it new solutions and new oportunities. At NTNU in Norway we have a long tradition for experimentation and adoption of new technologies. In this spirit, we collaborate closely with scientists to ensure continuous develop of products and services.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -634,7 +578,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Trust is the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We have continued the tradition with third-party verified trust, caring deeply for study participants and their data.
+                  Trust is the currency in science and the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We have expanded this tradition with third-party verified trust, caring deeply for study participants and their data.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -647,7 +591,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Truly impactful science takes place accross traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
+                  Truly impactful science takes place across traditional borders: across fields, sectors and countries. HUNT Cloud is tailored for such collaborations. We strongly support scientists who dream on a global scale and who are eager for international explorations.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -681,19 +625,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Team</v-card-title>
-            <v-card-text>
-              <v-row dense>
-                <v-col cols="12">
-                  Your experiences in HUNT Cloud are shaped and molded by a small team of scientific instrument makers located at NTNU, Norway.
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" class="align-self-start v-col-sm-4">
-          <!-- https://vuetifyjs.com/en/components/cards/ -->
-          <v-card color="transparent" elevation="0">
             <v-card-title>History</v-card-title>
             <v-card-text>
               <v-row dense>
@@ -707,12 +638,28 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Illustrations</v-card-title>
+            <v-card-title>Team</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our magical world of data science is filled with abstract ideas. Here, we aim to present illustrations where we imagine such ideas in practical forms to ease dialogues and strengthen cooperation.
+                  Your experiences in HUNT Cloud are shaped and molded by a small team of seven scientific instrument makers located in Trondheim, Norway. 
                 </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col cols="12" class="align-self-start v-col-sm-4">
+          <!-- https://vuetifyjs.com/en/components/cards/ -->
+          <v-card color="transparent" elevation="0">
+            <v-card-title>Imagination</v-card-title>
+            <v-card-text>
+              <v-row dense>
+                <v-col cols="12">
+                  Our magical world of data science is filled with abstract ideas. Check out of work to imagine such ideas in practical forms to ease dialogues and strengthen cooperation.
+                </v-col>
+       <v-col cols="12">
+                  <SimpleButton size="small" href="https://docs.hdc.ntnu.no/about/illustrations/" title="Read more" />
+                </v-col>  
               </v-row>
             </v-card-text>
           </v-card>
