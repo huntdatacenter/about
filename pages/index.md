@@ -452,7 +452,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-col cols="12" class="align-self-start v-col-sm-4">
           <!-- https://vuetifyjs.com/en/components/cards/ -->
           <v-card color="transparent" elevation="0">
-            <v-card-title>Price</v-card-title>
+            <v-card-title>Cost</v-card-title>
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
