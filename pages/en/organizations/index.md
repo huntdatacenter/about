@@ -146,7 +146,7 @@ sidebar: false
         <CardElement title="Organization report" text="Simply the management of your projects by easy overview of data, user access, key personnel, resource consumption and maturity measures." />
         <CardElement title="Develop your research culture" text="We work closely with you in capacity building at all levels, from scientists to administration and leadership." />
         <CardElement title="Explore Data Space" text="The home of your digital labs gives you easy management and governance of your sensitive data activities." />
-        <CardElement title="Archive lab" text="The Archive lab gives your organisation a secure place to store data from completed projects and control of the deletion process. The first 1TB of storage is free." />
+        <CardElement title="Archive lab" text="The Archive lab gives your organization a secure place to store data from completed projects and control of the deletion process. The first 1TB of storage is free." />
         <CardElement title="Digital labs" text="Your scientists get access to digital labs where they can analyze, collaborate and store their sensitive data. The cost of each lab is covered by the project’s own fund." />
         <CardElement title="ISO certificate" text="We are certified according to the ISO standard for quality management, information technology and privacy." />
         <CardElement title="Opportunities for partnership" text="The sensitive data community is growing and flourishing with new ideas. We provide meeting places for scientists, administrators and research leaders to ensure that the community has a voice." />
@@ -273,7 +273,7 @@ sidebar: false
                   <a href="https://about.hdc.ntnu.no/compliance/">
                     <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
                   </a>
-                  Our information security management system (ISO 27001) add an exstensive list of security controls to protect your data and activities.
+                  Our information security management system (ISO 27001) adds an extensive list of security controls to protect your data and activities.
                 </v-col>
               </v-row>
             </v-card-text>

@@ -256,7 +256,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
                   <a href="https://about.hdc.ntnu.no/compliance/">
                     <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
                   </a>
-                  Our information security management system (ISO 27001) adds an exstensive list of controls to protect your activities.
+                  Our information security management system (ISO 27001) adds an extensive list of controls to protect your activities.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -302,7 +302,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Activate your data
       </div>
       <div class="hc-container-subtitle">
-        We collaborate with data controllers to activate data under their control. Our aim is to enable impact discoveries on your the data from the broadest set of scientists.
+        We collaborate with data controllers to activate data under their control. Our aim is to enable impact discoveries on your data from the broadest set of scientists.
       </div>
       <div class="hc-section">
         <ContactDialog title="Activate your data" subject="Data activation" size="x-large" elevation="2" />
@@ -456,7 +456,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Cost includes running costs for the store and compute resources your attach to your lab. Fees across several labs can be billed individually or in combined in invoice profile.
+                  You pay for the resources you attach to your lab. Fees across several labs can be billed individually or in combination. See examples or estimate cost in our price calculator.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -492,7 +492,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Collaborations elevate science. All scientits in labs are invited to join our HUNT Cloud community as part of their onboarding process.
+                  Collaborations elevate science. All scientists in labs are invited to join our HUNT Cloud community as part of their onboarding process.
                 </v-col>
               </v-row>
               <v-row dense>
@@ -565,7 +565,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Technology changes fast and brings with it new solutions and new oportunities. At NTNU in Norway we have a long tradition for experimentation and adoption of new technologies. In this spirit, we collaborate closely with scientists to ensure continuous develop of products and services.
+                  Technology changes fast and brings with it new solutions and new opportunities. At NTNU in Norway we have a long tradition for experimentation and adoption of new technologies. In this spirit, we collaborate closely with scientists to ensure continuous development of products and services.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -578,7 +578,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Trust is the currency in science and the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We have expanded this tradition with third-party verified trust, caring deeply for study participants and their data.
+                  Trust is the currency in science and the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We are building on this tradition with our third-party certificates and our deep care for your study participants and their data.
                 </v-col>
               </v-row>
             </v-card-text>

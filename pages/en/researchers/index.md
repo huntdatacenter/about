@@ -64,7 +64,7 @@ sidebar: false
         High flexibility
       </div>
       <div class="hc-container-subtitle">
-      We understand that every research project is unique, and every scientist needs a personalized setup.<br /><br />That is why you can tailored our scalable solutions to your specific requirements for storage, CPUs, or GPUs.
+      We understand that every research project is unique, and every scientist needs a personalized setup.<br /><br />That is why you can tailor our scalable solutions to your specific requirements for storage, CPUs, or GPUs.
       </div>
     </div>
   </div>
@@ -275,7 +275,7 @@ sidebar: false
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                   Find predefined support requests that ensures speedy delivery in our Service desks, or ask a general requests if you cant' find what you are looking for. 
+                   Find predefined support requests that ensures speedy delivery in our Service desks, or ask a general requests if you can't find what you are looking for. 
                 </v-col>
               </v-row>
               <v-row dense>
