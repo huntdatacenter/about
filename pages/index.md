@@ -75,9 +75,10 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-col cols="12" class="v-col-xs-12 v-col-sm-4 v-col-md-4">
             <ContactDialog title="Contact us" subject="Information about HUNT Cloud" size="x-large" elevation="2" block />
           </v-col>
-<!--          <v-col cols="12" class="v-col-xs-12 v-col-sm-5 v-col-md-4">
+<!--
+          <v-col cols="12" class="v-col-xs-12 v-col-sm-5 v-col-md-4">
             <CallDialog title="Talk to an expert" size="x-large" elevation="2" block />
-          </v-col> 
+          </v-col>
 -->
         </v-row>
       </div>
@@ -474,7 +475,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Scientists and administrators gets access to an extensive body of user documentation (>100,000 words). All to ensure quick access to information that keeps your science fly.  
+                  Scientists and administrators gets access to an extensive body of user documentation (>100,000 words). All to ensure quick access to information that keeps your science fly.
               </v-col>
               </v-row>
               <v-row dense>
@@ -642,7 +643,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Your experiences in HUNT Cloud are shaped and molded by a small team of seven scientific instrument makers located in Trondheim, Norway. 
+                  Your experiences in HUNT Cloud are shaped and molded by a small team of seven scientific instrument makers located in Trondheim, Norway.
                 </v-col>
               </v-row>
             </v-card-text>
@@ -659,7 +660,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
                 </v-col>
        <v-col cols="12">
                   <SimpleButton size="small" href="https://docs.hdc.ntnu.no/about/illustrations/" title="Read more" />
-                </v-col>  
+                </v-col>
               </v-row>
             </v-card-text>
           </v-card>
