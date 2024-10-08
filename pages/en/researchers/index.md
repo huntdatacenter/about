@@ -239,7 +239,7 @@ sidebar: false
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  Our web documentation is an extensive library of questions, troubleshooting and guides compiled in close collaboration with our community.  
+                  Our web documentation is an extensive library of questions, troubleshooting and guides compiled in close collaboration with our community.
               </v-col>
               </v-row>
               <v-row dense>
@@ -275,7 +275,7 @@ sidebar: false
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                   Find predefined support requests that ensures speedy delivery in our Service desks, or ask a general requests if you can't find what you are looking for. 
+                   Find predefined support requests that ensures speedy delivery in our Service desks, or ask a general requests if you can't find what you are looking for.
                 </v-col>
               </v-row>
               <v-row dense>
