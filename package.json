@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "About HUNT Cloud",
   "main": "index.js",
+  "type": "module",
   "repository": "git@github.com:huntdatacenter/about.git",
   "author": "HUNT Cloud <cloud@hunt.ntnu.no>",
   "license": "MIT",
