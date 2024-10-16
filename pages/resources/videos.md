@@ -14,10 +14,9 @@ sidebar: false
   Your browser does not support the video tag.
 </video>
 
-<br />
+<!-- <br />
 
 <video autoplay loop muted disablepictureinpicture disableremoteplayback preload width="100%">
   <source src="https://assets.hdc.ntnu.no/assets/artworks/videos/guiding-lights_1.webm" type="video/webm">
-  <!-- <source src="https://assets.hdc.ntnu.no/assets/artworks/videos/guiding-lights_1.mb4" type="video/mp4"> -->
   Your browser does not support the video tag.
-</video>
+</video> -->
