@@ -11,7 +11,8 @@ const customHead: HeadConfig[] = [
   ["meta", { name: "keywords", content: "HUNT Cloud,services,prices,about" }],
 
   ["meta", { name: "theme-color", content: "#00509e" }],
-  ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+  ["meta", { name: "mobile-web-app-capable", content: "yes" }],
+  ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],  // DEPRECATED
   ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
   ["meta", { name: "msapplication-TileColor", content: "#00509e" }],
 
