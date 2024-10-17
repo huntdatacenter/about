@@ -4,7 +4,7 @@ export default {
   props: {
     contact: { type: Object, required: false },
     image: { type: String, default: '/img/robot-2-square-250.png' },
-    listmenus: { type: String, default: false },
+    listmenus: { type: Boolean, default: false },
   },
   data() {
     return {
