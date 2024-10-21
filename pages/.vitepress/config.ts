@@ -21,7 +21,7 @@ const customHead: HeadConfig[] = [
 
   ["link", { rel: "icon", type: "image/svg+xml", href: "/img/hunt-cloud-logo.svg", sizes: "any" }],
   ["link", { rel: "mask-icon", type: "image/svg+xml", href: "/img/hunt-cloud-logo.svg", color: "#00509e" }],
-  ["script", { src: "https://plausible.io/js/script.js", 'data-domain': "hdc.ntnu.no", defer: "" }],
+  ["script", { src: "https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js", 'data-domain': "hdc.ntnu.no", defer: "" }],
 ];
 
 export default {
