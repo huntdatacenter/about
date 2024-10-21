@@ -9,15 +9,16 @@
   --vp-block-background-light: #F2F2F2;
 }
 
+/*
 .v-theme--light {
   --v-theme-surface: rgba(255, 255, 255,0) !important;
-}
+} */
 
-/*
+
 .v-table .v-theme--light {
   background-color: rgba(255, 255, 255,0) !important;
 }
-*/
+
 
 .hc-text-dark {
   color: var(--vp-page-texts-dark) !important;
