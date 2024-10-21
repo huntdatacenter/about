@@ -11,6 +11,7 @@ import RoleSlider from '../components/RoleSlider.vue';
 import ToolsSlider from '../components/ToolsSlider.vue';
 import WindowSlider from '../components/WindowSlider.vue';
 import CardElement from '../components/CardElement.vue';
+import ExpandTable from '../components/ExpandTable.vue';
 import ViewDataControllers from '../components/ViewDataControllers.vue';
 import PriceCalculator from '../components/PriceCalculator.vue';
 
@@ -27,6 +28,7 @@ import 'vuetify/styles';
 
 import { vuetify } from '../plugins/vuetify';
 
+
 // Search for FREE icons: https://fontawesome.com/search?o=r&m=free
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -35,12 +37,16 @@ import {
   faFolderOpen,
   faPeopleArrows,
   faBrain,
+  faCheck,
+  faInfinity,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faClipboardCheck)
 library.add(faFolderOpen)
 library.add(faPeopleArrows)
 library.add(faBrain)
+library.add(faCheck)
+library.add(faInfinity)
 
 export default {
   extends: DefaultTheme,
@@ -59,6 +65,7 @@ export default {
     context.app.component('ToolsSlider', ToolsSlider);
     context.app.component('WindowSlider', WindowSlider);
     context.app.component('CardElement', CardElement);
+    context.app.component('ExpandTable', ExpandTable);
     context.app.component('ViewDataControllers', ViewDataControllers);
     context.app.component('PriceCalculator', PriceCalculator);
     context.app.component('VPButton', VPButton);

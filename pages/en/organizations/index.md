@@ -327,6 +327,19 @@ sidebar: false
     </div>
   </div>
 
+<!--
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Review all features
+      </div>
+      <div class="hc-container-subtitle"></div>
+      <div class="hc-section">
+        <ExpandTable />
+      </div>
+    </div>
+  </div>
+-->
 
 
 <!----------------------------------------------->
