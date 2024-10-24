@@ -17,23 +17,77 @@ sidebar: false
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-title-main font-weight-black">
+      <v-row>
+        <v-col cols="6">
+          <div class="hc-subsection-title" style="text-wrap: nowrap;">
+            For researchers
+          </div>
+          <div class="hc-subsection-subtitle">
+            Digital labs for sensitive&nbsp;data science
+          </div>
+          <div class="hc-subsection-text">
+            Focus on your research with confidence, assured that your data is secure and compliant with all regulations.
+            <br/><br/>
+            Our labs provide you with the creative freedom you need, secured within our high-trust framework.
+          </div>
+          <div class="hc-section">
+            <!-- <v-row justify="center"> -->
+            <v-row>
+              <v-col cols="12" style="max-width: 250px">
+                <ContactDialog title="Contact us" subject="More information" size="x-large" elevation="2" block />
+              </v-col>
+            </v-row>
+          </div>
+        </v-col>
+        <v-col cols="6">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="250"
+              max-height="400"
+              src="/img/sekstant_250.png"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12">
+          <!-- social proof -->
+        </v-col>
+      </v-row>
+      <!-- <div class="hc-title-main font-weight-black">
         For researchers
-      </div>
+      </div> -->
       <!-- <div class="hc-subtitle-main">
         Freedom to explore sensitive data within a trustworthy framework.
       </div> -->
+      <!--
       <div class="hc-section">
         <v-row justify="center">
           <v-col cols="12" class="v-col-xs-12 v-col-sm-4 v-col-md-4">
             <ContactDialog title="Contact us" subject="More information" size="x-large" elevation="2" block />
           </v-col>
-<!--          <v-col cols="12" class="v-col-xs-12 v-col-sm-5 v-col-md-4">
+          <v-col cols="12" class="v-col-xs-12 v-col-sm-5 v-col-md-4">
             <CallDialog title="Talk to an expert" size="x-large" elevation="2" block />
           </v-col>
--->
         </v-row>
       </div>
+      -->
     </div>
   </div>
 
@@ -43,85 +97,73 @@ sidebar: false
 <!-- Block: Offer -->
 <!----------------------------------------------->
 
-
+<!--
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Digital labs for sensitive data science
       </div>
       <div class="hc-container-subtitle">
-        <!-- Using sensitive data comes with many challenges, but leveraging real-world data is curcial for solving today’s grand challenges. -->
+        Using sensitive data comes with many challenges, but leveraging real-world data is curcial for solving today’s grand challenges.
         As a scientist, you should be able to focus on your research with confidence, assured that your data is secure and compliant with all regulations. <br /><br />Our labs provide you with the creative freedom you need, secured within our high-trust framework.
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-container-title">
-        High flexibility
-      </div>
-      <div class="hc-container-subtitle">
-      We understand that every research project is unique, and every scientist needs a personalized setup.<br /><br />That is why you can tailor our scalable solutions to your specific requirements for storage, CPUs, or GPUs.
-      </div>
-    </div>
-  </div>
-
-
-
-
-<!----------------------------------------------->
-<!-- Content: Scientific tools -->
-<!----------------------------------------------->
-
-<!-- <ToolsSlider /> -->
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Scientific tools
-      </div>
-      <div class="hc-container-subtitle">
-        Get instant access to major scientific tools in HUNT Workbench, or install your favorites directly in your lab.
-      </div>
-      <v-row class="my-5" style="justify-content: center; align-items: center;">
-        <v-col cols="6" class="v-col-sm-4 v-col-md-1">
-          <a href="https://about.hdc.ntnu.no/tools/">
-            <v-img max-height="80px" src="/img/logos-tools/jupyter.png" />
-          </a>
+      <v-row>
+        <v-col cols="12" class="align-self-start v-col-sm-6">
+          <div class="hc-container-title" style="text-align: left;">
+            High flexibility
+          </div>
+          <div class="hc-container-text" style="text-align: left;">
+            We understand that every research project is unique, and every scientist needs a personalized setup.
+            <br/><br/>
+            That is why you can tailor our scalable solutions to your specific requirements for storage, CPUs, or GPUs.
+          </div>
         </v-col>
-        <v-col cols="6" class="v-col-sm-4 v-col-md-2" style="justify-content: center;">
-          <a href="https://about.hdc.ntnu.no/tools/">
-            <v-img max-height="80px" src="/img/logos-tools/pandas.svg" />
-          </a>
-        </v-col>
-        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
-          <a href="https://about.hdc.ntnu.no/tools/">
-            <v-img max-height="80px" src="/img/logos-tools/python.svg" />
-          </a>
-        </v-col>
-        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
-          <a href="https://about.hdc.ntnu.no/tools/">
-            <v-img max-height="80px" src="/img/logos-tools/pytorch.svg" />
-          </a>
-        </v-col>
-        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
-          <a href="https://about.hdc.ntnu.no/tools/">
-            <v-img max-height="80px" src="/img/logos-tools/rstudio.png" />
-          </a>
-        </v-col>
-        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
-          <a href="https://about.hdc.ntnu.no/tools/">
-            <v-img max-height="80px" src="/img/logos-tools/vscode.png" />
-          </a>
+        <v-col cols="12" class="align-self-start v-col-sm-6">
+          <div class="pt-6 pl-16">
+            <v-row class="flex-nowrap">
+              <v-col cols="1" style="min-width: 35px">
+                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+              </v-col>
+              <v-col class="font-size-medium pt-4" cols="10">
+                Creative freedom
+              </v-col>
+            </v-row>
+            <v-row class="flex-nowrap">
+              <v-col cols="1" style="min-width: 35px">
+                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+              </v-col>
+              <v-col class="font-size-medium pt-4" cols="10">
+                Personalized setup
+              </v-col>
+            </v-row>
+            <v-row class="flex-nowrap">
+              <v-col cols="1" style="min-width: 35px">
+                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+              </v-col>
+              <v-col class="font-size-medium pt-4" cols="10">
+                Scalable solutions
+              </v-col>
+            </v-row>
+            <v-row class="flex-nowrap">
+              <v-col cols="1" style="min-width: 35px">
+                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+              </v-col>
+              <v-col class="font-size-medium pt-4" cols="10">
+                Collaborative environment
+              </v-col>
+            </v-row>
+          </div>
         </v-col>
       </v-row>
     </div>
   </div>
-
-
 
 
 
@@ -184,6 +226,60 @@ sidebar: false
     </div> -->
     </div>
   </div>
+
+
+
+<!----------------------------------------------->
+<!-- Content: Scientific tools -->
+<!----------------------------------------------->
+
+<!-- <ToolsSlider /> -->
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Scientific tools
+      </div>
+      <div class="hc-container-subtitle">
+        Get instant access to major scientific tools in HUNT Workbench, or install your favorites directly in your lab.
+      </div>
+      <v-row class="my-5" style="justify-content: center; align-items: center;">
+        <v-col cols="6" class="v-col-sm-4 v-col-md-1">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/jupyter.png" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2" style="justify-content: center;">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/pandas.svg" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/python.svg" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/pytorch.svg" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/rstudio.png" />
+          </a>
+        </v-col>
+        <v-col cols="6" class="v-col-sm-4 v-col-md-2">
+          <a href="https://about.hdc.ntnu.no/tools/">
+            <v-img max-height="80px" src="/img/logos-tools/vscode.png" />
+          </a>
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+
 
 
 <!----------------------------------------------->

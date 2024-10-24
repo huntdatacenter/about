@@ -7,6 +7,7 @@
   --vp-page-texts-light: #FFFFFF;
   --vp-block-background-blue: #3E628A;  /* #3E628A == rgb(62,98,138) */
   --vp-block-background-light: #F2F2F2;
+  --brand-highlight-color: #ef8114;
 }
 
 /*
@@ -89,7 +90,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 48px;
+    margin-top: 16px;
     margin-bottom: 64px;
     padding-bottom: 24px;
     font-weight: bold;
@@ -116,10 +117,47 @@
     padding-top: 32px;
 }
 
+.hc-subsection-title {
+  /* color: rgb(0, 0, 0); */
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: min(4em, calc(16px + 3vw));
+}
+
+.hc-subsection-subtitle {
+  /* color: rgb(0, 0, 0); */
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 32px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: min(2.2em, calc(8px + 2vw));
+}
+
+.hc-subsection-text {
+  /* color: rgb(0, 0, 0); */
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 32px;
+  line-height: 1.5;
+  font-size: min(1.1em, calc(8px + 1vw));
+}
+
 .hc-block-container {
     max-width: 960px;
     margin: 0 auto !important;
-    padding: 32px 0px 64px 0px;
+    padding: 96px 0px 96px 0px;
 }
 
 .hc-container-title {
@@ -128,7 +166,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 56px;
+    padding-top: 16px;
     padding-bottom: 24px;
     line-height: 1.5;
     font-weight: 500;
@@ -284,6 +322,17 @@
     justify-content: center;
     text-align: center;
     gap: 1rem;
+}
+
+.font-size-medium {
+  /* color: rgb(0, 0, 0); */
+  font-size: min(1.1em, calc(8px + 3vw));
+  line-height: 1.5;
+}
+
+.highlight-color {
+  /* background-color: var(--brand-highlight-color)!important; */
+  color: var(--brand-highlight-color) !important;
 }
 
 .v-slide-group__content {

@@ -68,7 +68,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-title-main font-weight-black">
-        Freedom to explore sensitive data <br /> within a&nbsp;trustworthy framework
+        Freedom to explore sensitive&nbsp;data within a&nbsp;trustworthy framework
       </div>
       <div class="hc-section">
         <v-row justify="center">
