@@ -159,6 +159,14 @@ sidebar: false
                 Collaborative environment
               </v-col>
             </v-row>
+            <!-- <v-row class="flex-nowrap">
+              <v-col cols="1" style="min-width: 35px">
+                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+              </v-col>
+              <v-col class="font-size-medium pt-4" cols="10">
+                <a href="https://docs.hdc.ntnu.no/" target="_blank">Extensive documentation</a>
+              </v-col>
+            </v-row> -->
           </div>
         </v-col>
       </v-row>
