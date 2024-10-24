@@ -18,7 +18,7 @@ sidebar: false
   <div class="hc-block">
     <div class="hc-block-container">
       <v-row>
-        <v-col cols="6">
+        <v-col cols="12" class="v-col-sm-6">
           <div class="hc-subsection-title" style="text-wrap: nowrap;">
             For researchers
           </div>
@@ -39,7 +39,7 @@ sidebar: false
             </v-row>
           </div>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="6" class="d-none d-sm-flex">
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
