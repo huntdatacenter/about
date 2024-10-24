@@ -49,9 +49,9 @@ sidebar: false
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="250"
+              max-width="400"
               max-height="400"
-              src="/img/sekstant_250.png"
+              src="/img/teach_500px.png"
             >
               <template v-slot:placeholder>
                 <div class="d-flex align-center justify-center fill-height">
