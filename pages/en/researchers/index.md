@@ -65,11 +65,6 @@ sidebar: false
           </v-sheet>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="12">
-          <!-- social proof -->
-        </v-col>
-      </v-row>
       <!-- <div class="hc-title-main font-weight-black">
         For researchers
       </div> -->
@@ -114,7 +109,7 @@ sidebar: false
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <v-row>
+      <v-row class="pb-16">
         <v-col cols="12" class="align-self-start v-col-sm-6">
           <div class="hc-container-title" style="text-align: left;">
             High flexibility
@@ -168,6 +163,22 @@ sidebar: false
               </v-col>
             </v-row> -->
           </div>
+        </v-col>
+      </v-row>
+      <v-row class="flex-nowrap mt-16">
+        <v-col cols="1" style="min-width: 70px">
+          <font-awesome-icon class="highlight-color" icon="fas fa-quote-left" size="4x" />
+        </v-col>
+        <v-col>
+          <div class="hc-quote-text">
+            HUNT cloud has brought our productivity to new levels. I&nbsp;would never have imagined that we would analyze so much data on a&nbsp;daily basis. Everything is secure and transparent. And if we have a&nbsp;problem, the HUNT Cloud community is always here to help!
+          </div>
+          <div class="hc-quote-author">
+            Marc Vaudel, University&nbsp;of&nbsp;Bergen and&nbsp;Norwegian&nbsp;Institute&nbsp;of&nbsp;Public&nbsp;Health
+          </div>
+        </v-col>
+        <v-col cols="1" style="min-width: 70px">
+          <font-awesome-icon class="highlight-color" icon="fas fa-quote-right" size="4x" />
         </v-col>
       </v-row>
     </div>

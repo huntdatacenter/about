@@ -39,6 +39,8 @@ import {
   faBrain,
   faCheck,
   faInfinity,
+  faQuoteLeft,
+  faQuoteRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faClipboardCheck)
@@ -47,6 +49,8 @@ library.add(faPeopleArrows)
 library.add(faBrain)
 library.add(faCheck)
 library.add(faInfinity)
+library.add(faQuoteLeft)
+library.add(faQuoteRight)
 
 export default {
   extends: DefaultTheme,
