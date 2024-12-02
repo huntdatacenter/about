@@ -73,11 +73,11 @@ sidebar: false
                 <font-awesome-icon icon="fas fa-clipboard-check" size="8x" />
               </v-sheet>
               <v-card-text class="text-center font-weight-bold">
-                ISO-certified cloud environments
+                ISO-certified and GDPR-compliant cloud environments
               </v-card-text>
             </v-card>
             <v-sheet class="text-subtitle-2 px-4 pt-6" color="transparent">
-              Ensures that your sensitive data is protected within ISO-certified cloud environments
+              Ensures that your sensitive data is protected within ISO-certified cloud environments.
             </v-sheet>
           </v-sheet>
         </v-col>
@@ -92,7 +92,7 @@ sidebar: false
               </v-card-text>
             </v-card>
             <v-sheet class="text-subtitle-2 px-4 pt-6" color="transparent">
-              Enables comprehensive and easy overview and portfolio management of your research projects and data
+              Enables comprehensive and easy overview and portfolio management of your research projects and data.
             </v-sheet>
           </v-sheet>
         </v-col>
@@ -107,7 +107,7 @@ sidebar: false
               </v-card-text>
             </v-card>
             <v-sheet class="text-subtitle-2 px-4 pt-6" color="transparent">
-              Provides structured follow-up in developing your research culture for sensitive data
+              Provides structured follow-up in developing your research culture for sensitive data.
             </v-sheet>
           </v-sheet>
         </v-col>
@@ -122,7 +122,7 @@ sidebar: false
               </v-card-text>
             </v-card>
             <v-sheet class="text-subtitle-2 px-4 pt-6" color="transparent">
-              Give access to AI-ready infrastructure
+              Give access to AI-ready infrastructure.
             </v-sheet>
           </v-sheet>
         </v-col>
