@@ -69,22 +69,22 @@ sidebar: false
         <v-col cols="12" class="align-self-start v-col-xs-6 v-col-sm-6 v-col-md-3">
           <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
             <v-card class="pt-8" variant="outlined" height="220px" width="100%">
-              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="120px" color="transparent">
+              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="110px" color="transparent">
                 <font-awesome-icon icon="fas fa-clipboard-check" size="8x" />
               </v-sheet>
               <v-card-text class="text-center font-weight-bold">
-                ISO-certified and GDPR-compliant cloud environments
+                ISO&#8209;certified and GDPR&#8209;compliant cloud environments
               </v-card-text>
             </v-card>
             <v-sheet class="text-subtitle-2 px-4 pt-6" color="transparent">
-              Ensures that your sensitive data is protected within ISO-certified cloud environments.
+              Ensures that your sensitive data is protected within ISO&#8209;certified cloud environments.
             </v-sheet>
           </v-sheet>
         </v-col>
         <v-col cols="12" class="align-self-start v-col-xs-6 v-col-sm-6 v-col-md-3">
           <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
             <v-card class="pt-8" variant="outlined" height="220px" width="100%">
-              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="120px" color="transparent">
+              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="110px" color="transparent">
                 <font-awesome-icon icon="fas fa-folder-open" size="8x" />
               </v-sheet>
               <v-card-text class="text-center font-weight-bold">
@@ -99,7 +99,7 @@ sidebar: false
         <v-col cols="12" class="align-self-start v-col-xs-6 v-col-sm-6 v-col-md-3">
           <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
             <v-card class="pt-8" variant="outlined" height="220px" width="100%">
-              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="120px" color="transparent">
+              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="110px" color="transparent">
                 <font-awesome-icon icon="fas fa-people-arrows" size="8x" />
               </v-sheet>
               <v-card-text class="text-center font-weight-bold">
@@ -114,7 +114,7 @@ sidebar: false
         <v-col cols="12" class="align-self-start v-col-xs-6 v-col-sm-6 v-col-md-3">
           <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
             <v-card class="pt-8" variant="outlined" height="220px" width="100%">
-              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="120px" color="transparent">
+              <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="110px" color="transparent">
                 <font-awesome-icon icon="fas fa-brain" size="8x" />
               </v-sheet>
               <v-card-text class="text-center font-weight-bold">
