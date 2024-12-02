@@ -171,7 +171,7 @@ sidebar: false
         </v-col>
         <v-col>
           <div class="hc-quote-text">
-            HUNT cloud has brought our productivity to new levels. I&nbsp;would never have imagined that we would analyze so much data on a&nbsp;daily basis. Everything is secure and transparent. And if we have a&nbsp;problem, the HUNT Cloud community is always here to help!
+            HUNT Cloud has brought our productivity to new levels. I&nbsp;would never have imagined that we would analyze so much data on a&nbsp;daily basis. Everything is secure and transparent. And if we have a&nbsp;problem, the HUNT Cloud community is always here to help!
           </div>
           <div class="hc-quote-author">
             Marc Vaudel, University&nbsp;of&nbsp;Bergen and&nbsp;Norwegian&nbsp;Institute&nbsp;of&nbsp;Public&nbsp;Health
