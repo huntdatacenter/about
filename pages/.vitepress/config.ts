@@ -143,21 +143,20 @@ export default {
           items: [
             { text: "Home", link: "/" },
             { text: "Team", link: "/team" },
-            { text: "Products", link: "/products/" },
-            { text: "Overview by role", link: "/overview-by-role/" },
-            { text: "Overview by field", link: "/overview-by-field/" },
-            { text: "Compliance", link: "/compliance/" },
-            { text: "Pillars", link: "/pillars/" },
-            { text: "Tools", link: "/tools/" },
-            {
-              text: 'Resources',
-              link: '/resources/',
-              items: [
-                { text: "Agreements", link: "/resources/agreements" },
-                { text: "Prices", link: "/resources/prices" },
-              ]
-            },
-            { text: "Price calculator", link: "/price-calculator" },
+            // { text: "Products", link: "/products/" },
+            // { text: "Overview by role", link: "/overview-by-role/" },
+            // { text: "Overview by field", link: "/overview-by-field/" },
+            // { text: "Compliance", link: "/compliance/" },
+            // { text: "Pillars", link: "/pillars/" },
+            // { text: "Tools", link: "/tools/" },
+            // {
+            //   text: 'Resources',
+            //   link: '/resources/',
+            //   items: [
+            //     { text: "Agreements", link: "/resources/agreements" },
+            //     { text: "Prices", link: "/resources/prices" },
+            //   ]
+            // },
           ]
         }
       ],
@@ -166,6 +165,7 @@ export default {
           items: [
             { text: "Researchers", link: "/en/researchers/" },
             { text: "Organizations", link: "/en/organizations/" },
+            { text: "Price estimator", link: "/en/price-calculator/" },
           ]
         },
       ],
@@ -176,14 +176,6 @@ export default {
           ]
         },
       ],
-      // "/price-calculator": {},
-      "/price-calculator/": [{
-        text: "Price calculator",
-        link: "/price-calculator/",
-        items: [
-          { text: "Introduction", link: "/price-calculator/" },
-        ]
-      }],
       // "/products/": [
       //   {
       //     text: "Products",
