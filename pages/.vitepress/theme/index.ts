@@ -14,6 +14,10 @@ import CardElement from '../components/CardElement.vue';
 import ExpandTable from '../components/ExpandTable.vue';
 import ViewDataControllers from '../components/ViewDataControllers.vue';
 import PriceCalculator from '../components/PriceCalculator.vue';
+import LabCard from '../components/LabCard.vue';
+import Machine from '../components/Machine.vue';
+import Storage from '../components/Storage.vue';
+import TotalBlock from '../components/TotalBlock.vue';
 
 // 'vitepress/theme' == 'vitepress/dist/client/theme-default/components/VPButton.vue'
 import { VPButton } from 'vitepress/theme';
@@ -73,6 +77,10 @@ export default {
     context.app.component('ViewDataControllers', ViewDataControllers);
     context.app.component('PriceCalculator', PriceCalculator);
     context.app.component('VPButton', VPButton);
+    context.app.component('LabCard', LabCard);
+    context.app.component('Machine', Machine);
+    context.app.component('Storage', Storage);
+    context.app.component('TotalBlock', TotalBlock)
     // context.app.component('VPImage', VPImage);
   }
 }

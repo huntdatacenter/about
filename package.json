@@ -29,6 +29,8 @@
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/vue-fontawesome": "^3.0.8",
-    "@mdi/font": "^7.4.47"
+    "@mdi/font": "^7.4.47",
+    "axios": "^1.6.8",
+    "buffer": "^6.0.3"
   }
 }
