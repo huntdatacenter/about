@@ -67,7 +67,7 @@ const members = [
   {
     avatar: 'https://media.licdn.com/dms/image/D4D03AQGSQuBs7V3E1A/profile-displayphoto-shrink_800_800/0/1686077802255?e=2147483647&v=beta&t=7nxuIaMBqimkKiKX97dLuUC-HkixH7gNVEgFSbHU0M0',
     name: 'Ingunn Berg Ferstad',
-    title: 'Communication',
+    title: 'Marketing Manager',
     //links: []
   },
 ]
