@@ -117,9 +117,10 @@ export default {
       //   ],
       // },
       {
-        text: 'About us',
+        text: 'About',
         items: [
-          { text: "Team", link: "/team" },
+          { text: "About us", link: "/en/about/about-us" },
+          { text: "Careers", link: "/en/about/careers" },
           // { text: 'Products', link: '/products/' },
           // { text: 'Compliance', link: '/compliance/' },
           // { text: 'Pillars', link: '/pillars/' },
@@ -142,7 +143,8 @@ export default {
           text: "Welcome",
           items: [
             { text: "Home", link: "/" },
-            { text: "Team", link: "/team" },
+            { text: "About us", link: "/en/about/about-us" },
+            { text: "Careers", link: "/en/about/careers" },
             // { text: "Products", link: "/products/" },
             // { text: "Overview by role", link: "/overview-by-role/" },
             // { text: "Overview by field", link: "/overview-by-field/" },
