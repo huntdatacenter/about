@@ -2,6 +2,7 @@
 title: Careers
 layout: page
 sidebar: false
+contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 
 <div class="hc-home-page">
@@ -162,9 +163,25 @@ sidebar: false
   </div>
 
 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <v-row align="center" no-gutters>
+        <v-col class="text-center">
+          <v-btn
+            href="https://www.linkedin.com/company/huntcloud/"
+            target="_blank"
+            icon="mdi-linkedin"
+            size="88"
+            style="font-size: 40px !important;"
+          >
+          </v-btn>
+        </v-col>
+      </v-row>
+    </div>
+  </div>
 
 
-
+<FooterBlock :contact="$frontmatter.contact" />
 </div> <!-- END OF CONTENT - keep empty line before and after -->
 
 <style scoped>
