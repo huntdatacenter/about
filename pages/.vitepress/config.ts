@@ -121,6 +121,7 @@ export default {
         items: [
           { text: "About us", link: "/en/about/about-us" },
           { text: "Careers", link: "/en/about/careers" },
+          { text: "Glossary", link: "/en/about/glossary" },
           // { text: 'Products', link: '/products/' },
           // { text: 'Compliance', link: '/compliance/' },
           // { text: 'Pillars', link: '/pillars/' },
