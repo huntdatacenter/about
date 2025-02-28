@@ -25,15 +25,6 @@ const members = [
       { icon: 'github', link: 'https://github.com/oddgeih-ntnu' },
     ]
   },
-  // {
-  //   //avatar: 'https://github.com/tommentnu.png',
-  //   avatar: 'https://yt3.googleusercontent.com/ytc/AL5GRJWCXIGqWNDtr7y9pFGHrnH7KfBS_0s-DIKi3nxGyg=s88-c-k-c0x00ffffff-no-rj',
-  //   name: 'Tom-Erik Røberg',
-  //   title: 'CTO',
-  //   links: [
-  //     { icon: 'github', link: 'https://github.com/tommentnu' },
-  //   ]
-  // },
   {
     avatar: 'https://github.com/matuskosut.png',
     name: 'Matus Kosut',
