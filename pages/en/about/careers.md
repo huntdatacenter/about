@@ -137,11 +137,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <!-- <div class="hc-container-title">
-        Title
-      </div> -->
-      <div class="hc-container-subtitle">
-        Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world».
+      <div class="hc-container-title">
+        HUNT Cloud
+      </div>
+      <div class="hc-container-subtitle" style="text-align: left">
+      <v-row>
+          <v-col cols="12">
+            Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world».
+          </v-col>
+        </v-row>
       </div>
     </div>
   </div>
@@ -152,12 +156,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-title">
         NTNU
       </div>
-      <div class="hc-container-subtitle">
-        HUNT Cloud is part of <a href="https://www.ntnu.edu/" target="_blank">Norwegian University of Science and Technology (NTNU)</a>.
-        <br/><br/>
-        NTNU is an international oriented university with headquarters in Trondheim and campuses in Gjøvik and Ålesund.
-        <br/><br/>
-        The university's root goes back to 1760 with the foundation of Det Trondhiemske Selskab (Trondheim Academy). A merger in 2016 made NTNU Norway's largest single university.
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="12">
+            HUNT Cloud is part of <a href="https://www.ntnu.edu/" target="_blank">Norwegian University of Science and Technology (NTNU)</a>.
+            <br/><br/>
+            NTNU is an international oriented university with headquarters in Trondheim and campuses in Gjøvik and Ålesund.
+            <br/><br/>
+            The university's root goes back to 1760 with the foundation of Det Trondhiemske Selskab (Trondheim Academy). A merger in 2016 made NTNU Norway's largest single university.
+          </v-col>
+        </v-row>
       </div>
     </div>
   </div>
