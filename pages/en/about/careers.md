@@ -117,7 +117,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
                   class="text-h2"
                   cols="8"
                 >
-                  35+ GPUs
+                  70+ GPUs
                 </v-col>
                 <v-col class="text-right" cols="4">
                   <v-icon
