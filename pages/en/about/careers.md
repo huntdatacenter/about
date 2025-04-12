@@ -62,7 +62,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
           <v-col cols="12">
-            Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world».
+            Research services for sensitive data and high impact international science.
           </v-col>
         </v-row>
       </div>
