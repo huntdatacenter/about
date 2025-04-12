@@ -64,6 +64,21 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-col cols="12">
             Research services for sensitive data and high impact international science.
           </v-col>
+          <v-col cols="12">
+            Open infrastructure run by open source and open science principles.
+          </v-col>
+          <v-col cols="12">
+            Cloud installations using OpenStack, Ceph, and Ubuntu linux.
+          </v-col>
+          <v-col cols="12">
+            Infrastructure as code (IaC) with tools such as Ansible and Juju
+          </v-col>
+          <!-- <v-col cols="12">
+            .
+          </v-col>
+          <v-col cols="12">
+            .
+          </v-col> -->
         </v-row>
       </div>
       <v-row class="pt-10 pb-6">
