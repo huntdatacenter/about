@@ -6,11 +6,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 
 <div class="hc-home-page">
-  <!-- <div class="hc-header">
-    <div class="hc-header-img"></div>
-  </div> -->
 
   <div class="hc-block" style="display: none;"></div>
+
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title" style="text-wrap: nowrap;">
@@ -46,24 +44,26 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
           <v-col cols="12">
-            <strong>Our fundamental passion is to make science happen.</strong> Scientists are the heroes of this story. We are here to help them along on their journey. If it means guiding them in using GPUs, building brand new tools or helping a very nervous student who’s never used Linux before – each step is equally important.
+            <strong>Our fundamental passion is to make science happen.</strong>
+            Scientists are the heroes of this story. We are here to help them along on their journey. If it means guiding them in using GPUs, building brand new tools or helping a very nervous student who’s never used Linux before – each step is equally important.
           </v-col>
           <v-col cols="12">
-            <strong>Open source.</strong> We encourage the use of open source software. Science is global and we want our users to be able to take their methods with them when they move between countries.
+            <strong>Open source.</strong>
+            We encourage the use of open source software. Science is global and we want our users to be able to take their methods with them when they move between countries.
           </v-col>
           <v-col cols="12">
-            <strong>Fail safely.</strong> Working with sensitive data is hard and we want our scientists to stay productively curious. We don’t reach that goal by removing every barrier for them – or for ourselves. Rather, we dive into the deep end together. As technology, laws and science evolves, we make sure that both our users and our team pick up new skills.
+            <strong>Fail safely.</strong>
+            Working with sensitive data is hard and we want our scientists to stay productively curious. We don’t reach that goal by removing every barrier for them – or for ourselves. Rather, we dive into the deep end together. As technology, laws and science evolves, we make sure that both our users and our team pick up new skills.
           </v-col>
         </v-row>
       </div>
     </div>
   </div>
 
-
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        Our solution
+        Research services for sensitive data and high impact international science
       </div>
       <v-row class="pt-10 pb-6">
         <v-col cols="12" class="v-col-sm-12 v-col-md-6 align-self-stretch">
@@ -174,9 +174,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
           <v-col cols="12">
-            Research services for sensitive data and high impact international science.
-          </v-col>
-          <v-col cols="12">
             Open infrastructure run by open source and open science principles.
           </v-col>
           <v-col cols="12">
@@ -257,7 +254,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   </div>
 
 
-<FooterBlock :contact="$frontmatter.contact" />
+  <FooterBlock :contact="$frontmatter.contact" />
 </div> <!-- END OF CONTENT - keep empty line before and after -->
 
 <style scoped>
