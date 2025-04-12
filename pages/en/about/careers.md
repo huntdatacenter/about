@@ -13,18 +13,59 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block" style="display: none;"></div>
   <div class="hc-block">
     <div class="hc-block-container">
-      <v-row>
-        <v-col cols="12" class="v-col-sm-6">
-          <div class="hc-subsection-title" style="text-wrap: nowrap;">
-            Career in HUNT Cloud
-          </div>
-        </v-col>
-      </v-row>
+      <div class="hc-container-title" style="text-wrap: nowrap;">
+        Career in HUNT Cloud
+      </div>
+      <div class="hc-container-subtitle">
+        Our mission is to empower researchers into doing great science with sensitive data.
+      </div>
     </div>
   </div>
 
   <div class="hc-block">
     <div class="hc-block-container">
+      <div class="hc-container-title">
+        Who we are
+      </div>
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="12">
+            We are a small team of imagineers and builders with one dream: to see ground breaking science happen. With a small team running complex services, every member contributes on multiple levels. Our employees get to do what they enjoy the most - from building stuff, automating services, learning new skills or diving into unknown territory.
+          </v-col>
+        </v-row>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        HUNT Cloud
+      </div>
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="12">
+            Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world».
+          </v-col>
+        </v-row>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        Our solution
+      </div>
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="12">
+            Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world».
+          </v-col>
+        </v-row>
+      </div>
       <v-row class="pt-10 pb-6">
         <v-col cols="12" class="v-col-sm-12 v-col-md-6 align-self-stretch">
           <v-card
@@ -141,7 +182,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         HUNT Cloud
       </div>
       <div class="hc-container-subtitle" style="text-align: left">
-      <v-row>
+        <v-row>
           <v-col cols="12">
             Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world».
           </v-col>
