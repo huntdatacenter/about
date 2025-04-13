@@ -5,21 +5,162 @@ sidebar: false
 contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 
-<div class="hc-home-page">
+<!-- <script setup></script> -->
 
+<!-- BLOCK START: Top images --> 
+  <div class="hc-header">
+    <!-- Note testing hcc-career-header-img for custom image-->
+    <div class="hc-header-img"></div>
+  </div>
+<!-- BLOCK END: Top images --> 
+  
+  
+  
+<div class="hc-home-page">
   <div class="hc-block" style="display: none;"></div>
 
+
+
+<!-- BLOCK START: Careers heading --> 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-container-title" style="text-wrap: nowrap;">
-        Career in HUNT Cloud
-      </div>
       <div class="hc-container-subtitle">
-        Our mission is to empower researchers into doing great science with sensitive data.
+        Careers at HUNT Cloud
+      </div>
+<div class="hc-container-title" style="text-wrap: nowrap;">
+        Empower one of the world's most important quests! 
       </div>
     </div>
   </div>
+<!-- BLOCK END: Careers heading --> 
 
+
+<!-- BLOCK START: Quest --> 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              The quest
+            </div>
+            The quest for new knowledge towards a better world is a profoundly meaningful endevor.<br><br>By being part of the HUNT Cloud team, you will create a world where impactful science on sensitive data is being done. And a place where people and machines work together to discover knowledge that they couldn't have discovered alone.
+          </v-col>
+          <v-col cols="6" class="d-none d-sm-flex">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="400"
+              max-height="400"
+              src="/img/A3_Trust_boat_500px.png"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
+        </v-row>
+      </div>
+    </div>
+  </div>
+<!-- BLOCK END: Quest --> 
+
+
+
+
+
+<!-- BLOCK START: Current openings --> 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-subtitle">
+        Openings for April 2025
+      </div>
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title" style="text-align: left">
+            DevOps engineer
+            </div>
+            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline is April 28th 2025.<br><br><strong><a href="">Clik here to learn more >></a></strong>
+          </v-col>
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title" style="text-align: left">
+             Full stack software engineer
+            </div>
+            We are seeking a senior full stack software engneer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline is April 28th 2025.<br><br><strong><a href="">Clik here to learn more >></a></strong>
+          </v-col>
+        </v-row>
+      </div>
+    </div>
+  </div>
+<!-- BLOCK END: Current openings --> 
+
+
+
+
+
+
+
+
+
+<!-- BLOCK START: Who are you --> 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="6" class="d-none d-sm-flex">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="400"
+              max-height="400"
+              src="/img/Portal3-square-500px.jpg"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              Who you are
+            </div>
+            You are courious and couragous, and longs to solve challenges at scale to improve the well-being of others.<br><br>You are looking for purpose, personal growth, and genuinely difficult challenges that are super rewarding.<br><br>You are confident when being surrounded by people that challenge you, and hold skills that you don't have.<br><br>You don’t necessarily go with the flow, but think differently, and like to explore unknown terrain.<br><br>And most importantly, you get the thrills of creating things.
+            </v-col>
+        </v-row>
+      </div>
+    </div>
+  </div>
+<!-- BLOCK END: Who are you --> 
+
+
+
+
+<!-- BLOCK Start: Who are we --> 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -28,7 +169,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               Who we are
             </div>
-            We are a small team of imagineers and builders with one dream: to see ground breaking science happen. With a small team running complex services, every member contributes on multiple levels. Our employees get to do what they enjoy the most - from building stuff, automating services, learning new skills or diving into unknown territory.
+            We are imagineers and builders that want to see more ground breaking science happen.<br><br>We enjoy working with people who want to explore and succeed in building complex cloud services for science.<br><br>We are a small team where every employee contribute diverse experiences and invaluable insights.
           </v-col>
           <v-col cols="6" class="d-none d-sm-flex">
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
@@ -59,36 +200,18 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
+<!-- BLOCK End: Who are we --> 
 
 
+
+
+
+
+<!-- BLOCK START: Specs --> 
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
-        What we value
-      </div>
-      <div class="hc-container-subtitle" style="text-align: left">
-        <v-row>
-          <v-col cols="12">
-            <strong>Our fundamental passion is to make science happen.</strong>
-            Scientists are the heroes of this story. We are here to help them along on their journey. If it means guiding them in using GPUs, building brand new tools or helping a very nervous student who’s never used Linux before – each step is equally important.
-          </v-col>
-          <v-col cols="12">
-            <strong>Open source.</strong>
-            We encourage the use of open source software. Science is global and we want our users to be able to take their methods with them when they move between countries.
-          </v-col>
-          <v-col cols="12">
-            <strong>Fail safely.</strong>
-            Working with sensitive data is hard and we want our scientists to stay productively curious. We don’t reach that goal by removing every barrier for them – or for ourselves. Rather, we dive into the deep end together. As technology, laws and science evolves, we make sure that both our users and our team pick up new skills.
-          </v-col>
-        </v-row>
-      </div>
-    </div>
-  </div>
-
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        Research services for sensitive data and high impact international science
+        Technologies
       </div>
       <v-row class="pt-10 pb-6">
         <v-col cols="12" class="v-col-sm-12 v-col-md-6 align-self-stretch">
@@ -199,13 +322,17 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
           <v-col cols="12">
-            Open infrastructure run by open source and open science principles.
-          </v-col>
-          <v-col cols="12">
-            Cloud installations using OpenStack, Ceph, and Ubuntu linux.
-          </v-col>
-          <v-col cols="12">
-            Infrastructure as code (IaC) with tools such as Ansible and Juju
+            <ul>
+            <li>- Cloud installations using OpenStack, Ceph, and Ubuntu linux.</li>
+            <li>- Data center network with spine-leaf architecture.</li>
+            <li>- Infrastructure as code (IaC) with tools such as Ansible and Juju.</li>
+            <li>- Monitoring and alerting with Prometheus and Grafana.</li>
+            <li>- Key management using Vault.</li>
+            <li>- Gitlab for version control, issue tracking, and CI/CD pipelines.</li>
+            <li>- Flask API services (Python) on the backend.</li>
+            <li>- Vue (Javascript and Typescript) on the frontend.</li>
+            <li>- Compliance with ISO-standards for quality, security and privacy.</li>
+            </ul>
           </v-col>
           <!-- <v-col cols="12">
             .
@@ -218,53 +345,346 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
+<!-- BLOCK END: Specs --> 
 
+
+
+
+
+
+<!-- BLOCK START: About --> 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-container-title">
-        HUNT Cloud
-      </div>
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
-          <v-col cols="12">
-            Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world».
-          </v-col>
-        </v-row>
+          <v-col cols="6" class="d-none d-sm-flex">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="400"
+              max-height="400"
+              src="/img/Enterprise2_500px_72dpi.png"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
+         <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              About HUNT Cloud
+            </div>
+            HUNT Cloud was founded in 2013 to providing reliable cloud computing services for national and international science on sensitive data under the vision «knowledge for a better world».<br><br>We have grown out of the HUNT study, one of the largest health studies around, that has held sensitive health on computers since 1984 - then using 5.25-inch floppy disks on an IBM 5150.<br><br>Today, we are part of the Norwegian University of Science and Technology (NTNU) in Trondheim, Norway. And affiliated with the Department of Public Health and Nursing at the Faculty of Medicine and Health Sciences.
+            </v-col>
+         </v-row>
       </div>
-      <div class="hc-container-subtitle">
+    </div>
+  </div>
+<!-- BLOCK END: About --> 
+
+
+
+
+
+<!-- BLOCK START: Team and culture --> 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
-          <v-col cols="12">
-            <SimpleButton title="Meet the team" href="/en/about/about-us" target="_blank" size="large" elevation="2" />
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              Culture
+            </div>
+            Team with a flat stucture where you are allowed to do what you really belive in, and have an impact.<br><br>International employees with english as working language, both in documents and conversations.<br><br>A small multidisiplinary team with complementary skills where you will be the expert in your field.<br><br>Roles and services are constantly evolving along with the devlopment of the scientific frontieer.<br><br>Employees that do what they enjoy the most, being building things, automating things, learning or teaching new skills, or diving head first into unknown territory.<br><br>Inclusive and multicultural environment that appreciate warm humor, diversity, care and respect.
           </v-col>
+          <v-col cols="6" class="d-none d-sm-flex">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="400"
+              max-height="400"
+              src="/img/flaske_square_500px.png"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
         </v-row>
       </div>
     </div>
   </div>
+<!-- BLOCK END: Team and culture --> 
 
 
+
+
+
+
+<!-- BLOCK START: Values --> 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-container-title">
-        NTNU
-      </div>
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
-          <v-col cols="12">
-            HUNT Cloud is part of <a href="https://www.ntnu.edu/" target="_blank">Norwegian University of Science and Technology (NTNU)</a>.
-            <br/><br/>
-            NTNU is an international oriented university with headquarters in Trondheim and campuses in Gjøvik and Ålesund.
-            <br/><br/>
-            The university's root goes back to 1760 with the foundation of Det Trondhiemske Selskab (Trondheim Academy). A merger in 2016 made NTNU Norway's largest single university.
-          </v-col>
+          <v-col cols="6" class="d-none d-sm-flex">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="400"
+              max-height="400"
+              src="/img/sekstant_square_500px.png"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
+         <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              Values
+            </div>
+            CURIOUSITY - Stay curious. Use your imagination, creativity and curiosity on the journey to create new things and discover new knowledge.<br><br>TRUST - Have the courage to do what's right - both safeguard research participant's personal data and advance science at the same time.
+            </v-col>
+         </v-row>
+      </div>
+    </div>
+  </div>
+<!-- BLOCK END: Values --> 
+
+
+
+
+
+
+
+
+
+
+<!-- BLOCK START: Openness --> 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              Open Infra and Open Source
+            </div>
+            We run HUNT Cloud under open infrastructure principles.<br><br>Among other, this means that we embrace open source software, open standards and vendor neutral equipment whenever possible.<br><br>From an equality perspective, this enables scientists to share tools and methods around the world.<br><br>From a personal perspective, we get to enjoy Club Mate at FOSDEM. Photo: Jakub at the 2025 opening session.       
+            </v-col>
+          <v-col cols="6" class="d-none d-sm-flex">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="400"
+              max-height="400"
+              src="/img/fosdem_2025.jpg"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
         </v-row>
       </div>
     </div>
   </div>
+<!-- BLOCK END: Openness --> 
+
+
+
+
+
+
+<!-- BLOCK START: NTNU --> 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="6" class="d-none d-sm-flex">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="400"
+              max-height="400"
+              src="/img/ntnu-hovedbygning.jpg"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
+         <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              About NTNU
+            </div>
+            Norwegian University of Science and Technology (NTNU)'s roots date back to 1760 with the foundation of The Royal Norwegian Society of Sciences.<br><br>Fast forward 265 years, and NTNU is Norway's largest university with a strong technology and health track.<br><br> <a href="https://www.ntnu.edu/" target="_blank">NTNU's home page >></a>
+            </v-col>
+         </v-row>
+      </div>
+    </div>
+  </div>
+<!-- BLOCK END: NTNU --> 
+
+
+
+
+
+
+
+<!-- BLOCK START: Moving to Trondheim --> 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              Moving to Trondheim?
+            </div>
+            Many of our team members have already paved the way. Here are a few links to get you going:<br><br>
+            <ul>
+            <li>- <a href="https://workintrondheim.no/opportunities/top-9-reasons">Top 9 reasons why you'll love Trondheim</a></li>
+            <li>- <a href="https://workintrondheim.no/">Work in Trondheim</a></li>
+            <li>- <a href="https://www.internations.org/trondheim-expats">Trondheim expat community</a></li>
+            </ul><br>NTNU International Researcher Support (NIRS) offers counseling services for administrative staff:<br><br>           
+            <ul>
+            <li>- <a href="https://www.ntnu.edu/nirs">NTNU International Researcher Support (NIRS)</a></li>
+            </ul><br>We are happy to help so you can enjoy the Nordic lifestyle with a balanced worklife, free health care for all, paied sick leave, five weeks paid vacation and virtualy free child's education.<br><br>
+            Photo: Trondheim, facing North. Åge Hojem/Trondheim Havn.
+            </v-col>
+          <v-col cols="6" class="d-none d-sm-flex">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="400"
+              max-height="400"
+              src="/img/trondheim.jpg"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
+        </v-row>
+      </div>
+    </div>
+  </div>
+<!-- BLOCK END: Moving to Trondheim --> 
+
+
+<!-- BLOCK START: Video --> 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="6" class="d-none d-sm-flex">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eMbw9XUXxA0?si=GBSThOmZR7RX6u6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </v-col>
+         <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              One more thing...
+            </div>
+            From time to time, we do small side quests interviewing guests on our own video podcast to add interesting perspectives to the scientific debate.<br><br>The production is a full team effort where we break from our daily routines to do something fun together, and you will be expected to contribute.<br><br><a href="https://www.youtube.com/@HUNTCloud" target="_blank">More on our YouTube page>></a>
+            </v-col>
+         </v-row>
+      </div>
+    </div>
+  </div>
+<!-- BLOCK END: Video --> 
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div class="hc-block">
     <div class="hc-block-container">
+        <v-col class="text-center">
+        <div class="hc-container-title">
+              We look forward to hearing from you!
+        </div>
+        </v-col>
       <v-row align="center" no-gutters>
         <v-col class="text-center">
+        <a href="https://docs.hdc.ntnu.no/do-science/contact/">If you have any questions do not hesitate to get in touch!
+</a><br><br>
           <v-btn
             href="https://www.linkedin.com/company/huntcloud/"
             target="_blank"

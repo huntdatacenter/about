@@ -258,6 +258,23 @@
     box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
+.hc-header-career-img {
+    background-image: url("/img/HAD_banner_960_3.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #004c7b;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    object-fit: fill;
+    margin: 0 auto !important;
+    box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
 .hc-page {
   display: block;
   z-index: 1;
@@ -301,6 +318,12 @@
         background-image: url("/img/HAD_banner_1280_5.jpg");
         height: 350px;
     }
+    
+    .hc-career-header-img {
+        background-image: url("/img/HAD_banner_1280_5.jpg");
+        height: 350px;
+    }
+    
 }
 
 @media (min-width: 1280px) {
@@ -309,11 +332,22 @@
         background-image: url("/img/HAD_banner_1920_1.jpg");
         height: 450px;
     }
+
+    .hc-career-header-img {
+        background-image: url("/img/HAD_banner_1920_1.jpg");
+        height: 450px;
+    }
+    
 }
 
 @media (min-width: 1920px) {
 
     .hc-header-img {
+        background-image: url("/img/HAD_banner_1920_1.jpg");
+        height: 700px;
+    }
+
+    .hc-career-header-img {
         background-image: url("/img/HAD_banner_1920_1.jpg");
         height: 700px;
     }
