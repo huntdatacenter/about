@@ -22,14 +22,39 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-container-title">
-        Who we are
-      </div>
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
-          <v-col cols="12">
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title">
+              Who we are
+            </div>
             We are a small team of imagineers and builders with one dream: to see ground breaking science happen. With a small team running complex services, every member contributes on multiple levels. Our employees get to do what they enjoy the most - from building stuff, automating services, learning new skills or diving into unknown territory.
           </v-col>
+          <v-col cols="6" class="d-none d-sm-flex">
+          <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
+          <v-sheet
+            class="mx-auto"
+            :width="400"
+            :height="400"
+            color="transparent"
+          >
+            <v-img
+              class="mx-auto my-10 fill-height"
+              max-width="400"
+              max-height="400"
+              src="/img/teach_500px.png"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height">
+                  <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                  ></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-col>
         </v-row>
       </div>
     </div>
