@@ -386,7 +386,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               About HUNT Cloud
             </div>
-            HUNT Cloud was founded in 2013 to providing reliable cloud computing services for national and international science on sensitive data under the vision «knowledge for a better world».<br><br>We have grown out of the HUNT study, one of the largest health studies around, that has held sensitive health on computers since 1984 - then using 5.25-inch floppy disks on an IBM 5150.<br><br>Today, we are part of the Norwegian University of Science and Technology (NTNU) in Trondheim, Norway. And affiliated with the Department of Public Health and Nursing at the Faculty of Medicine and Health Sciences.
+            HUNT Cloud was founded in 2013 to provide reliable cloud services for national and international science on sensitive data under NTNU's vision «knowledge for a better world».<br><br>We have grown out of the HUNT study, one of the largest health studies around, that has held sensitive health on computers since 1984 - then using 5.25-inch floppy disks on an IBM 5150.<br><br>Today, we are part of the Norwegian University of Science and Technology (NTNU) in Trondheim, Norway. And affiliated with the Department of Public Health and Nursing at the Faculty of Medicine and Health Sciences.
             </v-col>
          </v-row>
       </div>
