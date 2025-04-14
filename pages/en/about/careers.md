@@ -485,7 +485,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               Values
             </div>
-            CURIOUSITY - Stay curious. Use your imagination, creativity and curiosity on the journey to create new things and discover new knowledge.<br><br>TRUST - Have the courage to do what's right - both safeguard research participant's personal data and advance science at the same time.
+            CURIOUSITY - Use your imagination, creativity and curiosity to create new things and discover new knowledge.<br><br>TRUST - Have the courage to do what's right - both to safeguard research participant's personal data and to advance science at the same time.
             </v-col>
          </v-row>
       </div>
@@ -653,23 +653,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-title">
-        One more thing...
-      </div>
-      <div class="hc-container-subtitle">
-        From time to time, we do small side quests interviewing guests on our own video podcast to add interesting perspectives to the scientific debate.<br><br>The production is a full team effort where we break from our daily routines to do something fun together, and you will be expected to contribute.<br><br><strong><a href="https://www.youtube.com/@HUNTCloud" target="_blank">More on our YouTube page>></a></strong>
-      </div>
-     <v-row>
-        <v-col align="center">
-<iframe width="500" height="315" src="https://www.youtube.com/embed/eMbw9XUXxA0?si=GBSThOmZR7RX6u6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </v-col>
-      </v-row>
-    </div>
-  </div>
-
-
 
 
 
@@ -682,7 +665,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
           <v-col cols="12" class="v-col-sm-6">
 <!--          <v-col cols="6" class="d-none d-sm-flex">     -->
 <!-- <iframe width="500" height="315" -->
-<iframe width="300" height="169" src="https://www.youtube.com/embed/eMbw9XUXxA0?si=GBSThOmZR7RX6u6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </v-col>
+<iframe width="300" height="169" src="https://www.youtube.com/embed/eMbw9XUXxA0?si=GBSThOmZR7RX6u6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </v-col>
          <v-col cols="12" class="v-col-sm-6">
             <div class="hc-container-title">
               One more thing...
