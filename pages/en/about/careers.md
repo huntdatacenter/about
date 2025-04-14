@@ -7,7 +7,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 <!-- <script setup></script> -->
 <div class="hc-home-page">
-  <div class="hc-block" style="display: none;"></div>
 
 <!-- BLOCK START: Top images --> 
   <div class="hc-header">
@@ -95,13 +94,13 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title" style="text-align: left">
             DevOps engineer
             </div>
-            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline is April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277477/senior-devops-engineer">Clik here to learn more >></a></strong>
+            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277477/senior-devops-engineer">Clik here to learn more >></a></strong>
           </v-col>
           <v-col cols="12" class="v-col-sm-6">
             <div class="hc-container-title" style="text-align: left">
              Full stack software engineer
             </div>
-            We are seeking a senior full stack software engneer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline is April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277482/senior-full-stack-software-engineer">Clik here to learn more >></a></strong>
+            We are seeking a senior full stack software engneer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277482/senior-full-stack-software-engineer">Clik here to learn more >></a></strong>
           </v-col>
         </v-row>
       </div>
@@ -122,18 +121,19 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
-          <v-col cols="6" class="d-none d-sm-flex">
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
-            :width="400"
-            :height="400"
+            :width="300"
+            :height="300"
             color="transparent"
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="400"
-              max-height="400"
+              max-width="300"
+              max-height="300"
               src="/img/Portal3-square-500px.jpg"
             >
               <template v-slot:placeholder>
@@ -173,18 +173,19 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </div>
             We are imagineers and builders that want to see more ground breaking science happen.<br><br>We enjoy working with people who want to explore and succeed in building complex cloud services for science.<br><br>We are a small team where every employee contribute diverse experiences and invaluable insights.
           </v-col>
-          <v-col cols="6" class="d-none d-sm-flex">
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
-            :width="400"
-            :height="400"
+            :width="300"
+            :height="300"
             color="transparent"
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="400"
-              max-height="400"
+              max-width="300"
+              max-height="300"
               src="/img/teach_500px.png"
             >
               <template v-slot:placeholder>
@@ -359,18 +360,19 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
-          <v-col cols="6" class="d-none d-sm-flex">
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
-            :width="400"
-            :height="400"
+            :width="300"
+            :height="300"
             color="transparent"
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="400"
-              max-height="400"
+              max-width="300"
+              max-height="300"
               src="/img/Enterprise2_500px_72dpi.png"
             >
               <template v-slot:placeholder>
@@ -411,18 +413,19 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </div>
             Team with a flat stucture where you are allowed to do what you really belive in, and have an impact.<br><br>International employees with english as working language, both in documents and conversations.<br><br>A small multidisiplinary team with complementary skills where you will be the expert in your field.<br><br>Roles and services are constantly evolving along with the devlopment of the scientific frontieer.<br><br>Employees that do what they enjoy the most, being building things, automating things, learning or teaching new skills, or diving head first into unknown territory.<br><br>Inclusive and multicultural environment that appreciate warm humor, diversity, care and respect.
           </v-col>
-          <v-col cols="6" class="d-none d-sm-flex">
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
-            :width="400"
-            :height="400"
+            :width="300"
+            :height="300"
             color="transparent"
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="400"
-              max-height="400"
+              max-width="300"
+              max-height="300"
               src="/img/flaske_square_500px.png"
             >
               <template v-slot:placeholder>
@@ -452,18 +455,19 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
-          <v-col cols="6" class="d-none d-sm-flex">
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
-            :width="400"
-            :height="400"
+            :width="300"
+            :height="300"
             color="transparent"
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="400"
-              max-height="400"
+              max-width="300"
+              max-height="300"
               src="/img/sekstant_square_500px.png"
             >
               <template v-slot:placeholder>
@@ -509,18 +513,19 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </div>
             We run HUNT Cloud under open infrastructure principles.<br><br>Among other, this means that we embrace open source software, open standards and vendor neutral equipment whenever possible.<br><br>From an equality perspective, this enables scientists to share tools and methods around the world.<br><br>From a personal perspective, we get to enjoy Club Mate at FOSDEM. Photo: Jakub at the 2025 opening session.       
             </v-col>
-          <v-col cols="6" class="d-none d-sm-flex">
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
-            :width="400"
-            :height="400"
+            :width="300"
+            :height="300"
             color="transparent"
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="400"
-              max-height="400"
+              max-width="300"
+              max-height="300"
               src="/img/fosdem_2025.jpg"
             >
               <template v-slot:placeholder>
@@ -550,18 +555,19 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
-          <v-col cols="6" class="d-none d-sm-flex">
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
-            :width="400"
-            :height="400"
+            :width="300"
+            :height="300"
             color="transparent"
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="400"
-              max-height="400"
+              max-width="300"
+              max-height="300"
               src="/img/ntnu-hovedbygning.jpg"
             >
               <template v-slot:placeholder>
@@ -613,18 +619,19 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </ul><br>We are happy to help so you can enjoy the Nordic lifestyle with a balanced worklife, free health care for all, paied sick leave, five weeks paid vacation and virtualy free child's education.<br><br>
             Photo: Trondheim, facing North. Åge Hojem/Trondheim Havn.
             </v-col>
-          <v-col cols="6" class="d-none d-sm-flex">
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
-            :width="400"
-            :height="400"
+            :width="300"
+            :height="300"
             color="transparent"
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="400"
-              max-height="400"
+              max-width="300"
+              max-height="300"
               src="/img/trondheim.jpg"
             >
               <template v-slot:placeholder>
@@ -650,13 +657,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
         <v-row>
-          <v-col cols="6" class="d-none d-sm-flex">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eMbw9XUXxA0?si=GBSThOmZR7RX6u6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </v-col>
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
+<!-- <iframe width="500" height="315" -->
+<iframe width="300" height="169" src="https://www.youtube.com/embed/eMbw9XUXxA0?si=GBSThOmZR7RX6u6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </v-col>
          <v-col cols="12" class="v-col-sm-6">
             <div class="hc-container-title">
               One more thing...
             </div>
-            From time to time, we do small side quests interviewing guests on our own video podcast to add interesting perspectives to the scientific debate.<br><br>The production is a full team effort where we break from our daily routines to do something fun together, and you will be expected to contribute.<br><br><a href="https://www.youtube.com/@HUNTCloud" target="_blank">More on our YouTube page>></a>
+            From time to time, we do small side quests interviewing guests on our own video podcast to add interesting perspectives to the scientific debate.<br><br>The production is a full team effort where we break from our daily routines to do something fun together, and you will be expected to contribute.<br><br><strong><a href="https://www.youtube.com/@HUNTCloud" target="_blank">More on our YouTube page>></a></strong>
             </v-col>
          </v-row>
       </div>
