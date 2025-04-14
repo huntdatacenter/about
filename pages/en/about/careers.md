@@ -44,7 +44,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               The quest
             </div>
-            Advancing knowledge to build a better world is a truly meaningful pursuit.<br><br>As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data. You will be part of creating a world where people and machines work together to discover knowledge that they couldn't have discovered alone.
+            Advancing knowledge to build a better world is a truly meaningful pursuit.<br><br>As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data. You will be part of creating a world where people work together to discover knowledge that they couldn't have discovered alone.
           </v-col>
           <v-col cols="6" class="d-none d-sm-flex">
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
