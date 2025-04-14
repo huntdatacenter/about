@@ -6,6 +6,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 
 <!-- <script setup></script> -->
+<div class="hc-home-page">
+  <div class="hc-block" style="display: none;"></div>
 
 <!-- BLOCK START: Top images --> 
   <div class="hc-header">
@@ -16,23 +18,22 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   
   
   
-<div class="hc-home-page">
-  <div class="hc-block" style="display: none;"></div>
+<!----------------------------------------------->
+<!-- Block: Freedom to explore -->
+<!----------------------------------------------->
 
-
-
-<!-- BLOCK START: Careers heading --> 
   <div class="hc-block">
     <div class="hc-block-container">
-      <div class="hc-container-subtitle">
-        Careers at HUNT Cloud
+      <div class="hc-section">
+        <v-row justify="center">
+         Careers at HUNT Cloud
+        </v-row>
       </div>
-<div class="hc-container-title" style="text-wrap: nowrap;">
-        Empower one of the world's<br>most important quests! 
+     <div class="hc-title-main font-weight-black">
+        Empower one of the world's<br>most important quests
       </div>
     </div>
   </div>
-<!-- BLOCK END: Careers heading --> 
 
 
 <!-- BLOCK START: Quest --> 
@@ -46,7 +47,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </div>
             Advancing knowledge to build a better world is a truly meaningful pursuit.<br><br>As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data. You will be part of creating a world where people work together to discover knowledge that they couldn't have discovered alone.
           </v-col>
-          <v-col cols="6" class="d-none d-sm-flex">
+          <v-col cols="12" class="v-col-sm-6">
+<!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
