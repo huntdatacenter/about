@@ -28,7 +28,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Careers at HUNT Cloud
       </div>
 <div class="hc-container-title" style="text-wrap: nowrap;">
-        Empower one of the world's most important quests! 
+        Empower one of the world's<br>most important quests! 
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               The quest
             </div>
-            The quest for new knowledge towards a better world is a profoundly meaningful endevor.<br><br>By being part of the HUNT Cloud team, you will create a world where impactful science on sensitive data is being done. And a place where people and machines work together to discover knowledge that they couldn't have discovered alone.
+            Advancing knowledge to build a better world is a truly meaningful pursuit.<br><br>As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data. You will be part of creating a world where people and machines work together to discover knowledge that they couldn't have discovered alone.
           </v-col>
           <v-col cols="6" class="d-none d-sm-flex">
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
@@ -93,13 +93,13 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title" style="text-align: left">
             DevOps engineer
             </div>
-            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline is April 28th 2025.<br><br><strong><a href="">Clik here to learn more >></a></strong>
+            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline is April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277477/senior-devops-engineer">Clik here to learn more >></a></strong>
           </v-col>
           <v-col cols="12" class="v-col-sm-6">
             <div class="hc-container-title" style="text-align: left">
              Full stack software engineer
             </div>
-            We are seeking a senior full stack software engneer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline is April 28th 2025.<br><br><strong><a href="">Clik here to learn more >></a></strong>
+            We are seeking a senior full stack software engneer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline is April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277482/senior-full-stack-software-engineer">Clik here to learn more >></a></strong>
           </v-col>
         </v-row>
       </div>
