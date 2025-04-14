@@ -171,7 +171,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               Who we are
             </div>
-            We are imagineers and builders that want to see more ground breaking science happen.<br><br>We enjoy working with people who want to explore and succeed in building complex cloud services for science.<br><br>We are a small team where every employee contribute diverse experiences and invaluable insights.
+            We are imagineers and builders that want to see more ground breaking science happen.<br><br>We enjoy working with people who want to explore and succeed in building complex cloud services for science.<br><br>We are a small team where every employee contribute diverse experiences and invaluable insights.<br><br><strong><a href="https://about.hdc.ntnu.no/en/about/about-us">See our team >></a></strong>
           </v-col>
           <v-col cols="12" class="v-col-sm-6">
 <!--          <v-col cols="6" class="d-none d-sm-flex">     -->
@@ -336,6 +336,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <li>- Vue (Javascript and Typescript) on the frontend.</li>
             <li>- Compliance with ISO-standards for quality, security and privacy.</li>
             </ul>
+            <br><strong><a href="https://docs.hdc.ntnu.no/">See our documentation pages for info on our services >></a></strong>
           </v-col>
           <!-- <v-col cols="12">
             .
@@ -585,7 +586,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               About NTNU
             </div>
-            Norwegian University of Science and Technology (NTNU)'s roots date back to 1760 with the foundation of The Royal Norwegian Society of Sciences.<br><br>Fast forward 265 years, and NTNU is Norway's largest university with a strong technology and health track.<br><br> <a href="https://www.ntnu.edu/" target="_blank">NTNU's home page >></a>
+            Norwegian University of Science and Technology (NTNU)'s roots date back to 1760 with the foundation of The Royal Norwegian Society of Sciences.<br><br>Fast forward 265 years, and NTNU is Norway's largest university with a strong technology and health track.<br><br><strong><a href="https://www.ntnu.edu/" target="_blank">NTNU's home page >></a></strong>
             </v-col>
          </v-row>
       </div>
@@ -610,12 +611,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </div>
             Many of our team members have already paved the way. Here are a few links to get you going:<br><br>
             <ul>
-            <li>- <a href="https://workintrondheim.no/opportunities/top-9-reasons">Top 9 reasons why you'll love Trondheim</a></li>
-            <li>- <a href="https://workintrondheim.no/">Work in Trondheim</a></li>
-            <li>- <a href="https://www.internations.org/trondheim-expats">Trondheim expat community</a></li>
+            <li>- <strong><a href="https://workintrondheim.no/opportunities/top-9-reasons">Top 9 reasons why you'll love Trondheim >></a></strong></li>
+            <li>- <strong><a href="https://workintrondheim.no/">Work in Trondheim >></a></strong></li>
+            <li>- <strong><a href="https://www.internations.org/trondheim-expats">Trondheim expat community >></a></strong></li>
             </ul><br>NTNU International Researcher Support (NIRS) offers counseling services for administrative staff:<br><br>           
             <ul>
-            <li>- <a href="https://www.ntnu.edu/nirs">NTNU International Researcher Support (NIRS)</a></li>
+            <li>- <strong><a href="https://www.ntnu.edu/nirs">NTNU International Researcher Support (NIRS) >></a></strong></li>
             </ul><br>We are happy to help so you can enjoy the Nordic lifestyle with a balanced worklife, free health care for all, paied sick leave, five weeks paid vacation and virtualy free child's education.<br><br>
             Photo: Trondheim, facing North. Åge Hojem/Trondheim Havn.
             </v-col>
@@ -671,7 +672,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               One more thing...
             </div>
-            From time to time, we do small side quests interviewing guests on our own video podcast to add interesting perspectives to the scientific debate.<br><br>The production is a full team effort where we break from our daily routines to do something fun together, and you will be expected to contribute.<br><br><strong><a href="https://www.youtube.com/@HUNTCloud" target="_blank">More on our YouTube page>></a></strong>
+            From time to time, we do small side quests interviewing guests on our own video podcast to add interesting perspectives to the scientific debate.<br><br>The production is a full team effort where we break from our daily routines to do something fun together, and you will be expected to contribute.<br><br><strong><a href="https://www.youtube.com/@HUNTCloud" target="_blank">More on our YouTube page >></a></strong>
             </v-col>
          </v-row>
       </div>
