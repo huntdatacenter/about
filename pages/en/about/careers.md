@@ -672,7 +672,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               One more thing...
             </div>
-            From time to time, we do small side quests interviewing guests on our own video podcast to add interesting perspectives to the scientific debate.<br><br>The production is a full team effort where we break from our daily routines to do something fun together.<br><br><strong><a href="https://www.youtube.com/@HUNTCloud" target="_blank">More on our YouTube page >></a></strong>
+            From time to time, we do small side quests, such as interviewing guests on our own video podcast to add interesting perspectives to the scientific debate.<br><br>The production is a full team effort where we break from our daily routines to do something fun together.<br><br><strong><a href="https://www.youtube.com/@HUNTCloud" target="_blank">More on our YouTube page >></a></strong>
             </v-col>
          </v-row>
       </div>
