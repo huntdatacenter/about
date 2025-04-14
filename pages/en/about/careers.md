@@ -652,6 +652,28 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- BLOCK END: Moving to Trondheim --> 
 
 
+
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-title">
+        One more thing...
+      </div>
+      <div class="hc-container-subtitle">
+        From time to time, we do small side quests interviewing guests on our own video podcast to add interesting perspectives to the scientific debate.<br><br>The production is a full team effort where we break from our daily routines to do something fun together, and you will be expected to contribute.<br><br><strong><a href="https://www.youtube.com/@HUNTCloud" target="_blank">More on our YouTube page>></a></strong>
+      </div>
+     <v-row>
+        <v-col align="center">
+<iframe width="500" height="315" src="https://www.youtube.com/embed/eMbw9XUXxA0?si=GBSThOmZR7RX6u6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </v-col>
+      </v-row>
+    </div>
+  </div>
+
+
+
+
+
+
 <!-- BLOCK START: Video --> 
   <div class="hc-block">
     <div class="hc-block-container">
