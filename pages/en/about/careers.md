@@ -30,7 +30,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         </v-row>
       </div>
      <div class="hc-title-main font-weight-black">
-        Empower one of the world's<br>most important quests
+        Empower one of the world's most important quests
       </div>
     </div>
   </div>
@@ -45,21 +45,21 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               The quest
             </div>
-            Advancing knowledge to build a better world is a truly meaningful pursuit.<br><br>As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data. You will be part of creating a world where people work together to discover knowledge that they couldn't have discovered alone.
+            Advancing knowledge to build a better world is a truly meaningful pursuit.<br><br>As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data.<br><br>And you will create environments where people work together to discover knowledge that they couldn't have discovered alone.
           </v-col>
           <v-col cols="12" class="v-col-sm-6">
 <!--          <v-col cols="6" class="d-none d-sm-flex">     -->
           <!-- src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" -->
           <v-sheet
             class="mx-auto"
-            :width="400"
-            :height="400"
+            :width="300"
+            :height="300"
             color="transparent"
           >
             <v-img
               class="mx-auto my-10 fill-height"
-              max-width="400"
-              max-height="400"
+              max-width="300"
+              max-height="300"
               src="/img/A3_Trust_boat_500px.png"
             >
               <template v-slot:placeholder>
