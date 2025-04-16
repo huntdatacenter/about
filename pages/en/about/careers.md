@@ -42,7 +42,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         <v-row>
           <v-col cols="12" class="v-col-sm-6">
             <div class="hc-container-title">
-              The quest
+              Main quest
             </div>
             Advancing knowledge to build a better world is a truly meaningful pursuit.<br><br>As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data.<br><br>And you will create environments where people work together to discover knowledge that they couldn't have discovered alone.
           </v-col>
@@ -94,13 +94,13 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title" style="text-align: left">
             DevOps engineer
             </div>
-            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277477/senior-devops-engineer">Clik here to learn more >></a></strong>
+            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277477/senior-devops-engineer">Click here to learn more >></a></strong>
           </v-col>
           <v-col cols="12" class="v-col-sm-6">
             <div class="hc-container-title" style="text-align: left">
              Full stack software engineer
             </div>
-            We are seeking a senior full stack software engneer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277482/senior-full-stack-software-engineer">Clik here to learn more >></a></strong>
+            We are seeking a senior full stack software engineer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277482/senior-full-stack-software-engineer">Click here to learn more >></a></strong>
           </v-col>
         </v-row>
       </div>
@@ -151,7 +151,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               Who you are
             </div>
-            You are courious and couragous, and longs to solve challenges at scale to improve the well-being of others.<br><br>You are looking for purpose, personal growth, and genuinely difficult challenges that are super rewarding.<br><br>You are confident when being surrounded by people that challenge you, and hold skills that you don't have.<br><br>You don’t necessarily go with the flow, but think differently, and like to explore unknown terrain.<br><br>And most importantly, you get the thrills of creating things.
+            You are curious and courageous, and longs to solve challenges at scale to improve the well-being of others.<br><br>You are looking for purpose, personal growth, and genuinely difficult challenges that are super rewarding.<br><br>You are confident when being surrounded by people that challenge you, and hold skills that you don't have.<br><br>You don’t necessarily go with the flow, but think differently, and like to explore unknown terrain.<br><br>And most importantly, you get the thrills of creating things.
             </v-col>
         </v-row>
       </div>
@@ -171,7 +171,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               Who we are
             </div>
-            We are imagineers and builders that want to see more ground breaking science happen.<br><br>We enjoy working with people who want to explore and succeed in building complex cloud services for science.<br><br>We are a small team where every employee contribute diverse experiences and invaluable insights.<br><br><strong><a href="https://about.hdc.ntnu.no/en/about/about-us">See our team >></a></strong>
+            We are imagineers and builders that want to see more ground breaking science happen.<br><br>We enjoy working with people who want to explore and succeed in building complex cloud services for science.<br><br>We are a small team where every employee contributes diverse experiences and invaluable insights.<br><br><strong><a href="https://about.hdc.ntnu.no/en/about/about-us">See our team >></a></strong>
           </v-col>
           <v-col cols="12" class="v-col-sm-6">
 <!--          <v-col cols="6" class="d-none d-sm-flex">     -->
@@ -412,7 +412,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               Culture
             </div>
-            Team with a flat stucture where you are allowed to do what you really belive in, and have an impact.<br><br>International employees with english as working language, both in documents and conversations.<br><br>A small multidisiplinary team with complementary skills where you will be the expert in your field.<br><br>Roles and services are constantly evolving along with the devlopment of the scientific frontieer.<br><br>Employees that do what they enjoy the most, being building things, automating things, learning or teaching new skills, or diving head first into unknown territory.<br><br>Inclusive and multicultural environment that appreciate warm humor, diversity, care and respect.
+            Team with a flat structure where you are allowed to do what you really believe in, and have an impact.<br><br>International employees with English as working language, both in documents and conversations.<br><br>A small multidisciplinary team with complementary skills where you will be the expert in your field.<br><br>Roles and services are constantly evolving along with the development of the scientific frontier.<br><br>Employees that do what they enjoy the most, being building things, automating things, learning or teaching new skills, or diving head first into unknown territory.<br><br>Inclusive and multicultural environment that appreciates warm humor, diversity, care and respect.
           </v-col>
           <v-col cols="12" class="v-col-sm-6">
 <!--          <v-col cols="6" class="d-none d-sm-flex">     -->
@@ -486,7 +486,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               Values
             </div>
-            CURIOUSITY - Use your imagination, creativity and curiosity to create new things and discover new knowledge.<br><br>TRUST - Have the courage to do what's right - both to safeguard research participant's personal data and to advance science at the same time.
+            CURIOSITY - Use your imagination, creativity and curiosity to create new things and discover new knowledge.<br><br>TRUST - Have the courage to do what's right - both to safeguard research participant's personal data and to advance science at the same time.
             </v-col>
          </v-row>
       </div>
@@ -512,7 +512,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               Open Infra and Open Source
             </div>
-            We run HUNT Cloud under open infrastructure principles.<br><br>Among other, this means that we embrace open source software, open standards and vendor neutral equipment whenever possible.<br><br>From an equality perspective, this enables scientists to share tools and methods around the world.<br><br>From a personal perspective, we get to enjoy Club Mate at FOSDEM. Photo: Jakub at the 2025 opening session.       
+            We run HUNT Cloud under open infrastructure principles.<br><br>Among others, this means that we embrace open source software, open standards and vendor neutral equipment whenever possible.<br><br>From an equality perspective, this enables scientists to share tools and methods around the world.<br><br>From a personal perspective, we get to enjoy Club Mate at FOSDEM. Photo: Jakub at the 2025 opening session.       
             </v-col>
           <v-col cols="12" class="v-col-sm-6">
 <!--          <v-col cols="6" class="d-none d-sm-flex">     -->
@@ -617,7 +617,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             </ul><br>NTNU International Researcher Support (NIRS) offers counseling services for administrative staff:<br><br>           
             <ul>
             <li>- <strong><a href="https://www.ntnu.edu/nirs">NTNU International Researcher Support (NIRS) >></a></strong></li>
-            </ul><br>We are happy to help so you can enjoy the Nordic lifestyle with a balanced worklife, free health care for all, paied sick leave, five weeks paid vacation and virtualy free child's education.<br><br>
+            </ul><br>We are happy to help so you can enjoy the Nordic lifestyle with a balanced worklife, free health care for all, paid sick leave, five weeks paid vacation and virtually free child's education.<br><br>
             Photo: Trondheim, facing North. Åge Hojem/Trondheim Havn.
             </v-col>
           <v-col cols="12" class="v-col-sm-6">
