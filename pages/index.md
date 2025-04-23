@@ -238,8 +238,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  <a href="https://about.hdc.ntnu.no/compliance/">
-                    <v-img class="mb-5" max-height="160px" src="/img/kiwa-iso-9001-2017.svg" />
+                  <a href="https://docs.hdc.ntnu.no/govern-science/compliance/">
+                    <v-img class="mb-5" max-height="160px" src="/img/QualitySysCert_ISO9001_col.png" />
                   </a>
                   Our quality management system (ISO 9001) aims to provide predictable and high-quality services.
                 </v-col>
@@ -254,7 +254,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  <a href="https://about.hdc.ntnu.no/compliance/">
+                  <a href="https://docs.hdc.ntnu.no/govern-science/compliance/">
                     <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
                   </a>
                   Our information security management system (ISO 27001) adds an extensive list of controls to protect your activities.
@@ -270,7 +270,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  <a href="https://about.hdc.ntnu.no/compliance/">
+                  <a href="https://docs.hdc.ntnu.no/govern-science/compliance/">
                     <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
                   </a>
                   Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect data under your control.
