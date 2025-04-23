@@ -255,7 +255,7 @@ sidebar: false
               <v-row dense>
                 <v-col cols="12">
                   <a href="https://about.hdc.ntnu.no/compliance/">
-                    <v-img class="mb-5" max-height="160px" src="/img/kiwa-iso-9001-2017.svg" />
+                    <v-img class="mb-5" max-height="160px" src="/img/QualitySysCert_ISO9001_col.png" />
                   </a>
                   Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
                 </v-col>
