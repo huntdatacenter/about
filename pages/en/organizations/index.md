@@ -254,7 +254,7 @@ sidebar: false
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  <a href="https://about.hdc.ntnu.no/compliance/">
+                  <a href="https://docs.hdc.ntnu.no/govern-science/compliance/">
                     <v-img class="mb-5" max-height="160px" src="/img/QualitySysCert_ISO9001_col.png" />
                   </a>
                   Our quality management system (ISO 9001) aims to provide best possible services for our scientists, their collaborators and your organization.
@@ -270,7 +270,7 @@ sidebar: false
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  <a href="https://about.hdc.ntnu.no/compliance/">
+                  <a href="https://docs.hdc.ntnu.no/govern-science/compliance/">
                     <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
                   </a>
                   Our information security management system (ISO 27001) adds an extensive list of security controls to protect your data and activities.
@@ -286,7 +286,7 @@ sidebar: false
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  <a href="https://about.hdc.ntnu.no/compliance/">
+                  <a href="https://docs.hdc.ntnu.no/govern-science/compliance/">
                     <v-img max-height="180px" src="/img/ISO_IEC_27001_WEO_27701_col.png" />
                   </a>
                   Our privacy information management system (ISO 27701) provides a global framework that goes beyond GDPR to protect your data and scientific activities.
