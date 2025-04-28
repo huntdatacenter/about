@@ -40,35 +40,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
-<!-- BLOCK START: Current openings --> 
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-container-subtitle">
-        <strong>Openings for April 2025</strong>
-      </div>
-      <div class="hc-container-subtitle" style="text-align: left">
-        <v-row>
-          <v-col cols="12" class="v-col-sm-6">
-            <div class="hc-container-title" style="text-align: left">
-            DevOps engineer
-            </div>
-            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277477/senior-devops-engineer">Click for position text >></a></strong>
-          </v-col>
-          <v-col cols="12" class="v-col-sm-6">
-            <div class="hc-container-title" style="text-align: left">
-             Full stack software engineer
-            </div>
-            We are seeking a senior full stack software engineer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277482/senior-full-stack-software-engineer">Click for position text >></a></strong>
-          </v-col>
-        </v-row>
-      </div>
-    </div>
-  </div>
-<!-- BLOCK END: Current openings --> 
-
-
-
-
 
 <!-- BLOCK START: Quest --> 
   <div class="hc-block">
@@ -112,6 +83,37 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 <!-- BLOCK END: Quest --> 
+
+
+
+<!-- BLOCK START: Current openings --> 
+  <div class="hc-block">
+    <div class="hc-block-container">
+      <div class="hc-container-subtitle">
+        <strong>Current openings</strong>
+        <br><br><a href="https://docs.hdc.ntnu.no/do-science/contact/">We do not have any current job openings. <br><br>Feel free to contact us if you would like to be notified when new positions become available.</a>
+      </div>
+<!--       <div class="hc-container-subtitle" style="text-align: left">
+        <v-row>
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title" style="text-align: left">
+            DevOps engineer
+            </div>
+            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277477/senior-devops-engineer">Click for position text >></a></strong>
+          </v-col>
+          <v-col cols="12" class="v-col-sm-6">
+            <div class="hc-container-title" style="text-align: left">
+             Full stack software engineer
+            </div>
+            We are seeking a senior full stack software engineer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277482/senior-full-stack-software-engineer">Click for position text >></a></strong>
+          </v-col>
+        </v-row>
+      </div>
+ --> 
+    </div>
+  </div>
+<!-- BLOCK END: Current openings --> 
+
 
 
 
