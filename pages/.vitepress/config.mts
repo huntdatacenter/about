@@ -142,6 +142,25 @@ function navigationMenu() {
     { text: "Home", link: "/" },
     { text: "Researchers", link: "/en/researchers/" },
     { text: "Organizations", link: "/en/organizations/" },
+    {
+      text: 'About',
+      items: [
+        { text: "About us", link: "/en/about/about-us" },
+        { text: "Careers", link: "/en/about/careers" },
+        { text: "Glossary", link: "/en/about/glossary" },
+        // { text: 'Products', link: '/products/' },
+        // { text: 'Compliance', link: '/compliance/' },
+        // { text: 'Pillars', link: '/pillars/' },
+        // { text: 'Tools', link: '/tools/' },
+        // { text: 'Resources', link: '/resources/' },
+      ],
+    },
+    {
+      text: '🇳🇴',
+      items: [
+        { text: "Forskningsdeltakere", link: "/no/forskningsdeltakere/" },
+      ],
+    },
     // {
     //   text: 'Products',
     //   items: [
@@ -205,25 +224,6 @@ function navigationMenu() {
     //     { text: 'Tingweek', link: 'https://docs.hdc.ntnu.no/govern-science/tingweek/' },
     //   ],
     // },
-    {
-      text: 'About',
-      items: [
-        { text: "About us", link: "/en/about/about-us" },
-        { text: "Careers", link: "/en/about/careers" },
-        { text: "Glossary", link: "/en/about/glossary" },
-        // { text: 'Products', link: '/products/' },
-        // { text: 'Compliance', link: '/compliance/' },
-        // { text: 'Pillars', link: '/pillars/' },
-        // { text: 'Tools', link: '/tools/' },
-        // { text: 'Resources', link: '/resources/' },
-      ],
-    },
-    {
-      text: '🇳🇴',
-      items: [
-        { text: "Forskningsdeltakere", link: "/no/forskningsdeltakere/" },
-      ],
-    },
   ]
 }
 
