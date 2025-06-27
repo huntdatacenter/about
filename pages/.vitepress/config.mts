@@ -142,6 +142,7 @@ function navigationMenu() {
     { text: "Home", link: "/" },
     { text: "Researchers", link: "/en/researchers/" },
     { text: "Organizations", link: "/en/organizations/" },
+    { text: 'News', link: '/articles/', activeMatch: '/articles/' },
     {
       text: 'About',
       items: [
@@ -235,6 +236,11 @@ function sidebarCommon() {
         { text: "Home", link: "/" },
         { text: "About us", link: "/en/about/about-us" },
         { text: "Careers", link: "/en/about/careers" },
+        {
+          text: 'News',
+          link: '/articles/',
+          activeMatch: '/articles/',
+        },
         // { text: "Products", link: "/products/" },
         // { text: "Overview by role", link: "/overview-by-role/" },
         // { text: "Overview by field", link: "/overview-by-field/" },

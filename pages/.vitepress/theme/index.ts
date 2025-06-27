@@ -1,4 +1,5 @@
 import type { EnhanceAppContext } from 'vitepress';
+// import type { App } from 'vue';
 import DefaultTheme from 'vitepress/theme';
 
 import ContactDialog from '../components/ContactDialog.vue';
@@ -18,6 +19,14 @@ import LabCard from '../components/LabCard.vue';
 import Machine from '../components/Machine.vue';
 import Storage from '../components/Storage.vue';
 import TotalBlock from '../components/TotalBlock.vue';
+
+import AuthorDetail from './components/blog/AuthorDetail.vue'
+import Post from './components/blog/Post.vue'
+import PostAuthor from './components/blog/PostAuthor.vue'
+import PostDetail from './components/blog/PostDetail.vue'
+import PostIcon from './components/blog/PostIcon.vue'
+import Posts from './components/blog/Posts.vue'
+import AuthorLayout from './components/blog/AuthorLayout.vue'
 
 // 'vitepress/theme' == 'vitepress/dist/client/theme-default/components/VPButton.vue'
 import { VPButton } from 'vitepress/theme';
@@ -56,8 +65,10 @@ library.add(faInfinity)
 library.add(faQuoteLeft)
 library.add(faQuoteRight)
 
+// NOTE: `extends: DefaultTheme` seems to be the same as `...DefaultTheme`
 export default {
   extends: DefaultTheme,
+  // enhanceApp({ app }: { app: App }) {
   enhanceApp(context: EnhanceAppContext) {
     context.app.use(vuetify)
 
@@ -82,5 +93,13 @@ export default {
     context.app.component('Storage', Storage);
     context.app.component('TotalBlock', TotalBlock)
     // context.app.component('VPImage', VPImage);
+
+    context.app.component('Posts', Posts)
+    context.app.component('Post', Post)
+    context.app.component('PostDetail', PostDetail)
+    context.app.component('PostIcon', PostIcon)
+    context.app.component('PostAuthor', PostAuthor)
+    context.app.component('AuthorDetail', AuthorDetail)
+    context.app.component('author', AuthorLayout)
   }
 }
