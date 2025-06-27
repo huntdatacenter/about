@@ -15,6 +15,7 @@
   --v-theme-surface: rgba(255, 255, 255,0) !important;
 } */
 
+nav.v-pagination ul { list-style-type: none !important; }
 
 .v-table .v-theme--light {
   background-color: rgba(255, 255, 255,0) !important;
@@ -318,12 +319,12 @@
         background-image: url("/img/HAD_banner_1280_5.jpg");
         height: 350px;
     }
-    
+
     .hc-career-header-img {
         background-image: url("/img/HAD_banner_1280_5.jpg");
         height: 350px;
     }
-    
+
 }
 
 @media (min-width: 1280px) {
@@ -337,7 +338,7 @@
         background-image: url("/img/HAD_banner_1920_1.jpg");
         height: 450px;
     }
-    
+
 }
 
 @media (min-width: 1920px) {
