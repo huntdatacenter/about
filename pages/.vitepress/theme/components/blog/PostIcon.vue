@@ -30,6 +30,11 @@ const category: string = props.post.data.category ? props.post.data.category : '
       icon="mdi-podcast"
       class="mr-2"
     />
+    <v-icon
+      v-if="category === 'Artwork'"
+      icon="mdi-palette"
+      class="mr-2"
+    />
     <div style="padding-top: 1px">{{ category }}</div>
     <slot />
   </div>
