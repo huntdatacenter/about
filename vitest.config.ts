@@ -51,4 +51,12 @@ export default defineConfig({
     }),
     vuetify({ autoImport: true }),
   ],
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       api: 'modern-compiler',
+  //       additionalData: `@import "./pages/.vitepress/theme/variables.scss";`,
+  //     },
+  //   },
+  // },
 })

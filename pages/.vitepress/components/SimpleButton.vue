@@ -31,6 +31,10 @@ export default {
       <v-btn
         v-bind="props"
         rounded="sm"
+        :class="{
+          'hc-text-dark': blue ? false : true,
+          'hc-text-light': blue ? true : false,
+        }"
         :block="block"
         :color="blue ? '#253a55' : '#fff'"
         :size="size"

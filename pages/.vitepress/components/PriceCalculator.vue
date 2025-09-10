@@ -30,7 +30,6 @@ export default defineComponent({
         { name: "Data space", subscription: "Orange (3 years)", label: "Orange (3 years)", units: 1, price: 29734.0 },
         { name: "Data space", subscription: "Blue (1 year)", label: "Blue (1 year)", units: 1, price: 35397.0 },
       ] as { name: string, subscription: string | null, label: string, units: number, price: number }[],
-      
       // Initialization states and data storage for various price and machine data
       isInitializingComputePrices: false,
       computePrices: [],
@@ -43,7 +42,6 @@ export default defineComponent({
       isInitializingAvailableGpus: false,
       availableGpus: [],
       labPrices: [],
-      
       // Total price data
       totalCompute: { price: 0.0 },
       totalStorage: 0.0,
@@ -63,35 +61,31 @@ export default defineComponent({
     initializeAll() {
       this.isInitializingComputePrices = true
       const getPriceList = csvApi.getComputeFlavors()
-      
       // Fetch and process compute prices
       getPriceList.then(json => {
         this.computePrices = json.filter(item => item["service.group"] === "cpu")
         this.computePrices = this.computePrices.map(this.preparePricesToYearly)
         this.isInitializingComputePrices = false
       })
-      
+
       // Initialize available GPUs, machines, and storage prices
       this.initializeAvailableGpus()
       this.initializeMachines()
-      
+
       getPriceList.then(json => {
         this.storagePrices = json.filter(item => item["service.family"] === "store")
         this.isInitializingStoragePrices = false
       })
-      
       getPriceList.then(json => {
         this.gpuPrices = json.filter(item => item["service.group"] === "gpu")
         this.gpuPrices.map(this.preparePricesToYearly)
         this.isInitializingGpuPrices = false
       })
-      
       getPriceList.then(json => {
         this.labPrices = json.filter(item => item["service.group"] === "lab")
         this.isInitializingLabPrices = false
       })
     },
-    
     // Initialize available GPUs
     initializeAvailableGpus() {
       this.isInitializingAvailableGpus = true
@@ -101,7 +95,6 @@ export default defineComponent({
         this.isInitializingAvailableGpus = false
       })
     },
-    
     // Initialize available machines
     initializeMachines() {
       this.isInitializingMachines = true
@@ -111,7 +104,6 @@ export default defineComponent({
         this.isInitializingMachines = false
       })
     },
-    
     // Convert daily prices to yearly prices
     preparePricesToYearly(item: any) {
       if (item["service.commitment"] === "1D") {
@@ -190,12 +182,10 @@ export default defineComponent({
 </script>
 
 <template>
-  <v-container>
-    
-  <v-sheet class="group-slider-wrapper ma-auto" elevation="0" max-width="1120">
-    <v-card-title>Price calculator for HUNT Cloud</v-card-title>
+  <v-sheet class="group-slider-wrapper ma-auto pt-6" elevation="0" max-width="1120">
+    <v-card-title>Price estimator for HUNT Cloud</v-card-title>
     <v-card-subtitle> This calculator gives a rough estimate of how much our services cost</v-card-subtitle>
-    
+
     <!-- Subscription selection component (commented out) -->
     <!-- <v-select
       v-model="selectedDataSpaceSub"
@@ -218,7 +208,6 @@ export default defineComponent({
         </v-col>
       </v-row>
     </v-container>
-    
     <!-- Loop through labCards array and render LabCard component -->
     <v-row>
       <v-col v-for="(lab, index) in labCards" :key="index" cols="12">
@@ -235,7 +224,6 @@ export default defineComponent({
         />
       </v-col>
     </v-row>
-    
     <!-- Display total prices if there are lab cards -->
     <v-row v-if="labCards.length !== 0">
       <TotalBlock :total-items="totalPriceItems" :sum-in-total="sumInTotal" />
