@@ -182,6 +182,7 @@ export default defineComponent({
 </script>
 
 <template>
+    <v-container>
   <v-sheet class="group-slider-wrapper ma-auto pt-6" elevation="0" max-width="1120">
     <v-card-title>Price estimator for HUNT Cloud</v-card-title>
     <v-card-subtitle> This calculator gives a rough estimate of how much our services cost</v-card-subtitle>
