@@ -12,22 +12,31 @@ export default defineLoader({
   async load(): Promise<Data> {
     const uri = `https://assets.hdc.ntnu.no/assets/data/data-controllers/current.json`;
 
-    const response = await fetch(uri);
+    try {
+      const response = await fetch(uri);
+      // console.log(response.ok)
+      if (!response.ok) {
+        return {
+          dataControllers: []
+        };
+      }
 
-    // console.log(response.ok)
+      const dataControllers: any[] = await response.json();
+      // console.log(dataControllers)
+      return {
+        dataControllers: dataControllers
+      };
 
-    if (!response.ok) {
+    } catch(error) {
+      console.error(error)
       return {
         dataControllers: []
       };
     }
 
-    const dataControllers: any[] = await response.json();
 
-    // console.log(dataControllers)
 
-    return {
-      dataControllers: dataControllers
-    };
+
+
   }
 })
