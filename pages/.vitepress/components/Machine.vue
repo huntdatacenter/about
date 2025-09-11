@@ -140,8 +140,8 @@ export default {
 </script>
 
 <template>
-  <v-overlay v-model="overlay" >
-    <v-card max-width="600px" light>
+  <v-overlay v-model="overlay" class="d-flex justify-center align-center">
+    <v-card max-width="600px" min-width="600px" light>
       <v-card-title>
         <span class="text-h5">Add Compute</span>
       </v-card-title>
@@ -241,5 +241,6 @@ export default {
         <v-btn color="green darken-2" text @click="save()"> Save </v-btn>
       </v-card-actions>
     </v-card>
+
   </v-overlay>
 </template>

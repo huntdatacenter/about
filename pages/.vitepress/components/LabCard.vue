@@ -283,16 +283,6 @@ export default {
       <v-col cols="auto">
         <v-btn icon="mdi-plus" size="small" @click="addMachine"></v-btn>
       </v-col>
-      <Machine
-        v-if="isComputeModalOpen"
-        :compute-id="computeId"
-        :flavors="computePrices"
-        :gpus="gpuPrices"
-        :machines="machines"
-        :available-gpus="availableGpus"
-        @close="closeComputeModal"
-        @open-snackbar="openSnackbar"
-      />
 
         <v-data-table-virtual
           v-model="selectedCompute"
@@ -360,6 +350,16 @@ export default {
       </v-card>
     </v-card>
   </v-sheet>
+  <Machine
+        v-if="isComputeModalOpen"
+        :compute-id="computeId"
+        :flavors="computePrices"
+        :gpus="gpuPrices"
+        :machines="machines"
+        :available-gpus="availableGpus"
+        @close="closeComputeModal"
+        @open-snackbar="openSnackbar"
+      />
   <Storage
         v-if="isStorageModalOpen"
         :storage-id="storageId"
