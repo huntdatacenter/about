@@ -4,7 +4,7 @@ import axios from "axios";
 export default {
   async getComputeFlavors() {
     try {
-      const res = await axios.get("https://assets.hdc.ntnu.no/assets/prices/v4/hunt-cloud-price-list-4-2.json")
+      const res = await axios.get("https://assets.hdc.ntnu.no/assets/prices/v5/hunt-cloud-pricelist-v5-0.json")
       return res.data
     } catch (error) {
       console.error("Error fetching compute flavors:", error);
