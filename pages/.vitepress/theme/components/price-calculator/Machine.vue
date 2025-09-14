@@ -84,12 +84,11 @@ export default {
     },
     getGpus() {
       return this.availableGpus.map((item) => {
-          return{
-            title: item["type"] + " - " + item["ram"] + "GB",
-            value: item["type"],
-            };
-          }
-      );
+        return {
+          title: item["type"] + " - " + item["vram"] + " GB VRAM",
+          value: item["type"],
+        };
+      });
     },
   },
 
