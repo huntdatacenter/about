@@ -152,7 +152,7 @@ export default {
                 v-model="formData.name"
                 label="Name"
                 required
-                outlined
+                variant="outlined"
               ></v-text-field>
             </v-col>
             <v-col cols="12">
@@ -163,7 +163,7 @@ export default {
                 item-value="value"
                 label="Subscription type"
                 required
-                outlined
+                variant="outlined"
               >
 
             </v-autocomplete>
@@ -173,7 +173,7 @@ export default {
                 v-model="formData.flavor"
                 :items="getFlavors"
                 label="Machine type"
-                outlined
+                variant="outlined"
                 required
                 :disabled="!formData.subscription"
               >
@@ -191,7 +191,7 @@ export default {
                 label="Compute Price / Month"
                 suffix="NOK ex. VAT"
                 readonly
-                outlined
+                variant="outlined"
               ></v-text-field>
             </v-col>
             <v-col v-show="formData.flavor" cols="12" sm="6">
@@ -200,7 +200,7 @@ export default {
                 label="Compute Price / Year"
                 suffix="NOK ex. VAT / Year"
                 readonly
-                outlined
+                variant="outlined"
               ></v-text-field>
             </v-col>
             <v-col cols="12">
@@ -208,7 +208,7 @@ export default {
                 v-model="formData.gpu"
                 :items="getGpus"
                 label="GPU type (optional)"
-                outlined
+                variant="outlined"
                 clearable
                 :disabled="!formData.subscription"
               ></v-select>
@@ -219,7 +219,7 @@ export default {
                 label="GPU Price / Month"
                 suffix="NOK ex. VAT"
                 readonly
-                outlined
+                variant="outlined"
               ></v-text-field>
             </v-col>
             <v-col v-show="formData.gpu" cols="12" sm="6">
@@ -228,7 +228,7 @@ export default {
                 label="GPU Price / Year"
                 suffix="NOK ex. VAT / Year"
                 readonly
-                outlined
+                variant="outlined"
               ></v-text-field>
             </v-col>
           </v-row>
