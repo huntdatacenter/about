@@ -70,7 +70,7 @@ export default {
     getGpuSubscription() {
       // NOTE GPU does not have spot subscription hence taken as on demand in case spot is selected for compute
       return this.formData.subscription
-        ? this.formData.subscription.replace("SPOT", "ONDEMAND")
+        ? this.formData.subscription.replace("SPOT", "ONDEMAND").replace("COMMITMENT", "ONDEMAND")
         : this.formData.subscription;
     },
     getGpuMonthPrice() {
