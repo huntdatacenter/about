@@ -31,10 +31,10 @@ export default {
     subscriptions: [
       { text: "Commitment", value: "COMMITMENT" },
       { text: "On demand", value: "ONDEMAND" },
-      { text: "Blue", value: "BLUE" },
+      { text: "Spot", value: "SPOT" },
     ],
   };
-  },  
+  },
 
   computed: {
     getPeriod() {
@@ -54,10 +54,10 @@ export default {
     },
     getComputePriceMonth() {
       return parseFloat(this.getComputePriceYear / 12).toFixed(2);
-    },  
+    },
 
 
-    // Litt bugs her med blue og ONDEMAND
+    // Litt bugs her med SPOT og ONDEMAND
     getGpuPrice() {
       if (!this.formData.flavor && !this.formData.subscription) {
         return 0;
@@ -68,9 +68,9 @@ export default {
       return price ? parseFloat(price["price.nok.ex.vat"]).toFixed(2) : 0;
     },
     getGpuSubscription() {
-      // NOTE GPU does not have blue subscription hence taken as on demand in case blue is selected for compute
+      // NOTE GPU does not have spot subscription hence taken as on demand in case spot is selected for compute
       return this.formData.subscription
-        ? this.formData.subscription.replace("BLUE", "ONDEMAND")
+        ? this.formData.subscription.replace("SPOT", "ONDEMAND")
         : this.formData.subscription;
     },
     getGpuMonthPrice() {
@@ -115,11 +115,11 @@ export default {
       const name = this.formData.gpu
         ? `${this.formData.name} (incl. GPU)`
         : this.formData.name;
-    
+
       let monthlyPrice = this.getSummedPrice(this.getComputePriceMonth, this.getGpuMonthPrice);
       let yearlyPrice = this.getSummedPrice(this.getComputePriceYear, this.getGpuPrice);
       /* Splitting up the "default.b3 - 8 CPUs / 16 GB RAM" to get number of CPUs and GB of RAM**/
-      const machinetitle = this.machines.filter((item) => item["value"] === this.formData.flavor)[0]["title"].split(" - ")[1].split(" / ") 
+      const machinetitle = this.machines.filter((item) => item["value"] === this.formData.flavor)[0]["title"].split(" - ")[1].split(" / ")
       const core_count = parseInt(machinetitle[0].split(" ")[0])
       const ram = parseInt(machinetitle[1].split(" ")[0])
       const flavorWithGpu = this.formData.gpu ? this.formData.flavor + " + " + this.formData.gpu : this.formData.flavor;
@@ -130,8 +130,8 @@ export default {
         gpu: this.formData.gpu ? this.formData.gpu : null,
         core_count: core_count,
         ram: ram,
-        monthlyPrice: monthlyPrice, 
-        yearlyPrice: yearlyPrice, 
+        monthlyPrice: monthlyPrice,
+        yearlyPrice: yearlyPrice,
         type: this.formData.subscription,
       });
     },
@@ -166,7 +166,7 @@ export default {
                 required
                 outlined
               >
-            
+
             </v-autocomplete>
             </v-col>
             <v-col cols="12">
