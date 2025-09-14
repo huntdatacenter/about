@@ -60,7 +60,7 @@ export default defineComponent({
     // Method to initialize all data
     initializeAll() {
       this.isInitializingComputePrices = true
-      const getPriceList = csvApi.getComputeFlavors()
+      const getPriceList = csvApi.getPriceList()
       // Fetch and process compute prices
       getPriceList.then(json => {
         this.computePrices = json.filter(item => item["service.group"] === "cpu")
@@ -98,7 +98,7 @@ export default defineComponent({
     // Initialize available machines
     initializeMachines() {
       this.isInitializingMachines = true
-      const machines = csvApi.getMachines()
+      const machines = csvApi.getMachineFlavors()
       machines.then(machine => {
         this.machines = machine
         this.isInitializingMachines = false
