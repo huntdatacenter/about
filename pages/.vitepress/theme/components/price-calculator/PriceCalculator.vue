@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from "vue"
-import csvApi from "../api/csv.js"
+import csvApi from "../../api/csv.js"
 
 // Define the labCard interface for type safety
 interface labCard {
