@@ -149,6 +149,7 @@ function navigationMenu() {
         { text: "About us", link: "/en/about/about-us" },
         { text: "Careers", link: "/en/about/careers" },
         { text: "Glossary", link: "/en/about/glossary" },
+        { text: "Price Estimator", link: "/en/price-estimator" },
         // { text: 'Products', link: '/products/' },
         // { text: 'Compliance', link: '/compliance/' },
         // { text: 'Pillars', link: '/pillars/' },
@@ -266,7 +267,7 @@ function sidebarEnglish() {
       items: [
         { text: "Researchers", link: "/en/researchers/" },
         { text: "Organizations", link: "/en/organizations/" },
-        { text: "Price estimator", link: "/en/price-calculator/" },
+        { text: "Price estimator", link: "/en/price-estimator/" },
       ]
     },
   ]

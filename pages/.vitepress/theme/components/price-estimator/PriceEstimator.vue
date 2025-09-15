@@ -182,13 +182,13 @@ export default defineComponent({
 </script>
 
 <template>
-    <v-container>
-  <v-sheet class="group-slider-wrapper ma-auto pt-6" elevation="0" max-width="1120">
-    <v-card-title>Price estimator for HUNT Cloud</v-card-title>
-    <v-card-subtitle> This calculator gives a rough estimate of how much our services cost</v-card-subtitle>
+  <v-container>
+    <v-sheet class="group-slider-wrapper ma-auto pt-6" elevation="0" max-width="1120">
+      <v-card-title>Price estimator for HUNT Cloud</v-card-title>
+      <v-card-subtitle> This calculator gives a rough estimate of how much our services cost</v-card-subtitle>
 
-    <!-- Subscription selection component (commented out) -->
-    <!-- <v-select
+      <!-- Subscription selection component (commented out) -->
+      <!-- <v-select
       v-model="selectedDataSpaceSub"
       :items="dataspaceSubscriptions"
       item-title="label"
@@ -199,39 +199,32 @@ export default defineComponent({
       <template v-slot:item="{ props, item }">
         <v-list-item v-bind="props" :subtitle="item.raw.price"></v-list-item>
       </template>
-    </v-select> -->
+</v-select> -->
 
-    <v-container>
-      <v-row lex-direction="row-reverse">
-        <v-col cols="auto">
-          <!-- Add a new lab card on button click -->
-          <v-btn density="default" size="large" dark @click="addLabCard">Add lab</v-btn>
+      <v-container>
+        <v-row lex-direction="row-reverse">
+          <v-col cols="auto">
+            <!-- Add a new lab card on button click -->
+            <v-btn density="default" size="large" dark @click="addLabCard">Add lab</v-btn>
+          </v-col>
+        </v-row>
+      </v-container>
+      <!-- Loop through labCards array and render LabCard component -->
+      <v-row>
+        <v-col v-for="(lab, index) in labCards" :key="index" cols="12">
+          <LabCard :key="lab.id" :title="lab.title" :compute-prices="computePrices" :gpu-prices="gpuPrices"
+            :machines="machines" :available-gpus="availableGpus" :storage-prices="storagePrices"
+            @updateStorage="updateLabCardStorage(lab.id, $event)"
+            @updateCompute="updateLabCardCompute(lab.id, $event)" />
         </v-col>
       </v-row>
-    </v-container>
-    <!-- Loop through labCards array and render LabCard component -->
-    <v-row>
-      <v-col v-for="(lab, index) in labCards" :key="index" cols="12">
-        <LabCard
-          :key="lab.id"
-          :title="lab.title"
-          :compute-prices="computePrices"
-          :gpu-prices="gpuPrices"
-          :machines="machines"
-          :available-gpus="availableGpus"
-          :storage-prices="storagePrices"
-          @updateStorage="updateLabCardStorage(lab.id, $event)"
-          @updateCompute="updateLabCardCompute(lab.id, $event)"
-        />
-      </v-col>
-    </v-row>
-    <!-- Display total prices if there are lab cards -->
-    <v-row v-if="labCards.length !== 0">
-      <TotalBlock :total-items="totalPriceItems" :sum-in-total="sumInTotal" />
-    </v-row>
-  </v-sheet>
+      <!-- Display total prices if there are lab cards -->
+      <v-row v-if="labCards.length !== 0">
+        <TotalBlock :total-items="totalPriceItems" :sum-in-total="sumInTotal" />
+      </v-row>
+    </v-sheet>
 
-</v-container>
+  </v-container>
 </template>
 
 <style scoped>
