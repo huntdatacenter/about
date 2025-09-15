@@ -5,4 +5,4 @@ sidebar: true
 
 ---
 
-<PriceCalculator />
+<PriceEstimator />

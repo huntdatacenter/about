@@ -45,7 +45,7 @@ export default {
         { title: "Price", align: "start", sortable: true, key: "price" },
       ],
       storageLabSum: {
-        size: 0.0, 
+        size: 0.0,
         type: null,
         price: 0.0,
       },
@@ -76,14 +76,14 @@ export default {
 
 
   methods: {
-    
+
 
     updateLabSum() {
       this.computeLabSum.monthlyPrice = (this.datasetCompute.reduce((acc, item) => parseFloat(acc) + parseFloat(item.monthlyPrice), 0))
       this.computeLabSum.yearlyPrice = (this.datasetCompute.reduce((acc, item) => parseFloat(acc) + parseFloat(item.yearlyPrice), 0))
       this.computeLabSum.ram = this.datasetCompute.reduce((acc, item) => acc + item.ram, 0)
       this.computeLabSum.cpu_count = this.datasetCompute.reduce((acc, item) => acc + item.core_count, 0)
-      this.$emit('updateCompute', 
+      this.$emit('updateCompute',
         {
           monthlyPrice: this.computeLabSum.monthlyPrice,
           yearlyPrice: this.computeLabSum.yearlyPrice,
@@ -97,7 +97,7 @@ export default {
       this.updateAddedStorage()
       this.storageLabSum.price = this.datasetStorage.reduce((acc, item) => acc + item.price, 0)
 
-      this.$emit('updateStorage', 
+      this.$emit('updateStorage',
         {
           size: this.storageLabSum.size,
           price: this.storageLabSum.price
@@ -107,7 +107,7 @@ export default {
 
     addMachine() {
       this.isComputeModalOpen = true
-    },  
+    },
     addStorage() {
       this.isStorageModalOpen = true
     },
@@ -182,7 +182,7 @@ export default {
     },
     pushDefaultComputeUnit() {
       let defaultUnit = this.computePrices.find(item => item["service.unit"] === "default.c2" && item["service.level"] === "COMMITMENT" && item['service.commitment'] === "1Y")
-      const machinetitle = this.machines.filter((item) => item["value"] === defaultUnit['service.unit'])[0]["title"].split(" - ")[1].split(" / ") 
+      const machinetitle = this.machines.filter((item) => item["value"] === defaultUnit['service.unit'])[0]["title"].split(" - ")[1].split(" / ")
       const core_count = parseInt(machinetitle[0].split(" ")[0])
       const ram = parseInt(machinetitle[1].split(" ")[0])
         this.datasetCompute.push(
@@ -197,7 +197,7 @@ export default {
         monthlyPrice: defaultUnit["price.nok.ex.vat"] /12,
         yearlyPrice: defaultUnit["price.nok.ex.vat"],
       }
-    ) 
+    )
       this.computeId +=1
     },
     pushDefaultStorage(){
@@ -211,7 +211,7 @@ export default {
       }
 
       this.datasetStorage.push(defaultStorage)
-      //need to update all the existing storages, except the last one added. 
+      //need to update all the existing storages, except the last one added.
       this.storageId += 1
       this.updateLabSumStorage()
     },
@@ -227,8 +227,8 @@ export default {
       this.calculateTotalStoragePrice()
       return fraction * this.totalStoragePrice
     },
-    
-    
+
+
     calculateTotalStoragePrice() {
 
       let totalStorageSize = this.storageLabSum.size
@@ -260,7 +260,7 @@ export default {
       return price
     },
   },
-  
+
   created() {
     this.pushDefaultComputeUnit();
     this.pushDefaultStorage();
@@ -314,7 +314,7 @@ export default {
             </v-col>
         </v-card>
         <v-card>
-          
+
         <v-card-title> Storage</v-card-title>
         <v-card-subtitle> Add storage to {{ title }} </v-card-subtitle>
         <v-card-subtitle> Each compute unit needs a volume of storage of atleast 1 TB</v-card-subtitle>
