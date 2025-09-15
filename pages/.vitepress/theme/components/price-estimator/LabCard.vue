@@ -386,9 +386,15 @@ export default {
         </v-card>
       </v-card>
     </v-sheet>
-    <Machine v-if="isComputeModalOpen" :compute-id="computeId" :flavors="computePrices" :gpus="gpuPrices"
-      :machines="machines" :available-gpus="availableGpus" @close="closeComputeModal" @open-snackbar="openSnackbar" />
-    <Storage v-if="isStorageModalOpen" :storage-id="storageId" @close="closeStorageModal" />
+    <v-dialog v-model="isComputeModalOpen" max-width="600px" min-width="600px">
+      <Machine :compute-id="computeId" :flavors="computePrices" :gpus="gpuPrices" :machines="machines"
+        :available-gpus="availableGpus" @close="closeComputeModal" @open-snackbar="openSnackbar" />
+    </v-dialog>
+
+    <v-dialog v-model="isStorageModalOpen" max-width="600px" min-width="600px">
+      <Storage :storage-id="storageId" @close="closeStorageModal" />
+    </v-dialog>
+
     <v-snackbar v-model="snackbar.show"> {{ snackbar.message }}</v-snackbar>
   </v-container>
 </template>
@@ -397,10 +403,5 @@ export default {
 .lab-card {
   padding: 10px;
   margin-bottom: 10px;
-}
-
-.force-red {
-  color: #3e628a !important;
-  background-color: green !important;
 }
 </style>
