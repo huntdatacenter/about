@@ -6,7 +6,7 @@ import { data } from './posts.data'
 
 export default () => {
   // NOTE -- getting error (useData): vitepress data not properly injected in app
-  // const { site } = useData()
+  const { site } = useData()
 
   const allPosts: Ref<Post[]> = ref(data)
 
