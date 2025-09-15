@@ -35,7 +35,7 @@ const category: string = props.post.data.category ? props.post.data.category : '
       icon="mdi-palette"
       class="mr-2"
     />
-    <div style="padding-top: 1px">{{ category }}</div>
+    <div class="mr-2">{{ category }}</div>
     <slot />
   </div>
 </template>
