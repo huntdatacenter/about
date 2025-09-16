@@ -271,10 +271,10 @@ export default {
 
 <template>
   <v-container>
-    <v-sheet class="lab-card">
+    <v-sheet class="lab-card ma-0">
       <v-card class="ma-0">
         <v-card-title>{{ title }}</v-card-title>
-        <v-card>
+        <v-card flat>
           <v-card-title> Compute</v-card-title>
           <v-card-subtitle> {{ "Add a machine to " + title }}</v-card-subtitle>
 
@@ -327,11 +327,15 @@ export default {
               </tr>
             </template>
           </v-data-table-virtual>
-          <v-col cols="4">
-            <v-btn @click="removeSelectedCompute">Remove selected</v-btn>
-          </v-col>
+          <v-row class="ma-1">
+            <v-col class="d-flex">
+              <v-spacer></v-spacer>
+              <v-btn @click="removeSelectedCompute">Remove selected</v-btn>
+            </v-col>
+          </v-row>
         </v-card>
-        <v-card>
+
+        <v-card flat>
           <v-card-title> Storage</v-card-title>
           <v-card-subtitle> Add storage to {{ title }} </v-card-subtitle>
           <v-card-subtitle> Each compute unit needs a volume of storage of atleast 1 TB</v-card-subtitle>
@@ -376,12 +380,17 @@ export default {
               </tr>
             </template>
           </v-data-table-virtual>
-          <v-col cols="4">
-            <v-btn @click="removeSelectedStorage">Remove selected</v-btn>
-          </v-col>
+
+          <v-row class="ma-1">
+            <v-col class="d-flex">
+              <v-spacer></v-spacer>
+              <v-btn @click="removeSelectedStorage">Remove selected</v-btn>
+            </v-col>
+          </v-row>
         </v-card>
       </v-card>
     </v-sheet>
+
     <v-dialog v-model="isComputeModalOpen" max-width="600px" min-width="600px">
       <Machine
         :compute-id="computeId"
@@ -404,7 +413,7 @@ export default {
 
 <style scoped>
 .lab-card {
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 3px;
+  /* margin-bottom: 10px; */
 }
 </style>
