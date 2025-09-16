@@ -6,7 +6,10 @@ cache
 /build
 .tox
 npm-debug.log
-.vscode
+
+.vscode/**/* */
+# Allow specific files
+!.vscode/settings.json
 
 # vim
 *.swp
