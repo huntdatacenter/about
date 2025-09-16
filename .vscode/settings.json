@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "prettier.prettierPath": "/opt/homebrew/bin/prettier",
+  "eslint.format.enable": true
+}
