@@ -8,14 +8,20 @@ Make sure to have `node==20` installed
 mamba create -n node20 -c conda-forge -y "python==3.12.*" "nodejs==20.*" "yarn"
 
 mamba activate node20
+
+yarn dlx @yarnpkg/sdks vscode
 ```
 
 ## Running
 
+```bash
+mamba activate node20
+```
+
 Install dependencies:
 
 ```bash
-yarn install --immutable
+yarn install
 ```
 
 Run dev locally:
