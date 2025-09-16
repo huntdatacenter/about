@@ -29,7 +29,7 @@ export default defineComponent({
         { name: "Data space", subscription: "Orange (1 year)", label: "Orange (1 year)", units: 1, price: 8495.0 },
         { name: "Data space", subscription: "Orange (3 years)", label: "Orange (3 years)", units: 1, price: 29734.0 },
         { name: "Data space", subscription: "Blue (1 year)", label: "Blue (1 year)", units: 1, price: 35397.0 },
-      ] as { name: string, subscription: string | null, label: string, units: number, price: number }[],
+      ] as { name: string; subscription: string | null; label: string; units: number; price: number }[],
       // Initialization states and data storage for various price and machine data
       isInitializingComputePrices: false,
       computePrices: [],
@@ -146,18 +146,16 @@ export default defineComponent({
       this.setPriceItems()
     },
 
-
-
     // Set the price items and calculate the total sum
     setPriceItems() {
-      let priceItems: { name: string, subscription: string | null, units: number | string, price: number }[] = []
+      let priceItems: { name: string; subscription: string | null; units: number | string; price: number }[] = []
       if (this.labCards) {
         this.labCards.forEach(item => {
           priceItems.push({
             name: item.title,
             subscription: "1 Year",
             units: 1,
-            price: this.labPrices[0]['price.nok.ex.vat'],
+            price: this.labPrices[0]["price.nok.ex.vat"],
           })
         })
       }
@@ -212,10 +210,17 @@ export default defineComponent({
       <!-- Loop through labCards array and render LabCard component -->
       <v-row>
         <v-col v-for="(lab, index) in labCards" :key="index" cols="12">
-          <LabCard :key="lab.id" :title="lab.title" :compute-prices="computePrices" :gpu-prices="gpuPrices"
-            :machines="machines" :available-gpus="availableGpus" :storage-prices="storagePrices"
+          <LabCard
+            :key="lab.id"
+            :title="lab.title"
+            :compute-prices="computePrices"
+            :gpu-prices="gpuPrices"
+            :machines="machines"
+            :available-gpus="availableGpus"
+            :storage-prices="storagePrices"
             @updateStorage="updateLabCardStorage(lab.id, $event)"
-            @updateCompute="updateLabCardCompute(lab.id, $event)" />
+            @updateCompute="updateLabCardCompute(lab.id, $event)"
+          />
         </v-col>
       </v-row>
       <!-- Display total prices if there are lab cards -->
@@ -223,7 +228,6 @@ export default defineComponent({
         <TotalBlock :total-items="totalPriceItems" :sum-in-total="sumInTotal" />
       </v-row>
     </v-sheet>
-
   </v-container>
 </template>
 

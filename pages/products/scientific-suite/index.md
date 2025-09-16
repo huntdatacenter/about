@@ -4,7 +4,6 @@ title: Scientific Suite
 
 # {{ $frontmatter.title }}
 
-
 For large-scale explorations that combine the best minds, ideas and wildest dreams.
 
 Collaboration is where the magic happens, where ideas take flight in new directions, young scientists grow up and multidisiplinary teams make discoveries that change worlds.
@@ -36,8 +35,8 @@ train the next generation -->
 
 ## Sensitive AI
 
-
 ## Spesifications
+
 Unlimited digital labs
 Workbench
 Prioritized access to limited resources such as CPU and GPUs

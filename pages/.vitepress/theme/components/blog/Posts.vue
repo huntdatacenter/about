@@ -1,8 +1,8 @@
 <script lang="ts">
-import { ref } from 'vue'
-import { useData } from 'vitepress'
-import usePosts from '../../composables/usePosts'
-import Post from './Post.vue' // Assuming already rewritten for Vuetify
+import { ref } from "vue"
+import { useData } from "vitepress"
+import usePosts from "../../composables/usePosts"
+import Post from "./Post.vue" // Assuming already rewritten for Vuetify
 
 export default {
   setup() {
@@ -17,49 +17,43 @@ export default {
       theme,
       getPostsPerPage,
       pageCount,
-    };
+    }
   },
   data() {
     return {}
   },
   computed: {
     pageNumber() {
-      const url = new URL(window.location.href);
+      const url = new URL(window.location.href)
       const params = new URLSearchParams(url.search)
-      const pageParam = params.get('page') ? params.get('page') : null
+      const pageParam = params.get("page") ? params.get("page") : null
       const page = pageParam ? parseInt(pageParam, 10) : 1
       return page
-    }
+    },
   },
   mounted() {},
   methods: {
     updatePage(arg: number) {
-      let url = new URL(window.location.href);
+      let url = new URL(window.location.href)
       let params = new URLSearchParams(url.search)
-      params.set('page', arg.toString())
+      params.set("page", arg.toString())
       window.location.search = params.toString()
-    }
-  }
+    },
+  },
 }
 
 // :class="$vuetify.theme.current === 'dark' ? 'test-dark-1' : 'test-light-1'"
 </script>
 
 <template>
-  <v-container class="py-8 lg:py-16 px-4 lg:px-6" style="max-width: 1280px;">
+  <v-container class="py-8 lg:py-16 px-4 lg:px-6" style="max-width: 1280px">
     <!-- Blog Title and Description -->
     <v-row v-if="theme.blog?.title && theme.blog?.description ? true : false" justify="center" class="mb-8 lg:mb-16">
       <v-col cols="12" sm="8" class="text-center">
-        <h3
-          v-if="theme.blog?.title ? true : false"
-          class="mb-4 text-h5"
-        >
+        <h3 v-if="theme.blog?.title ? true : false" class="mb-4 text-h5">
           {{ theme.blog?.title }}
         </h3>
-        <p
-          v-if="theme.blog?.description ? true : false"
-          class="text-body-1 font-weight-light text-light-1"
-        >
+        <p v-if="theme.blog?.description ? true : false" class="text-body-1 font-weight-light text-light-1">
           {{ theme.blog?.description }}
         </p>
       </v-col>
@@ -67,12 +61,7 @@ export default {
 
     <!-- Post Grid -->
     <v-row class="pa-2" :dense="false">
-      <v-col
-        v-for="post of getPostsPerPage(pageNumber).value"
-        :key="post.id"
-        cols="12"
-        lg="6"
-      >
+      <v-col v-for="post of getPostsPerPage(pageNumber).value" :key="post.id" cols="12" lg="6">
         <Post :post="post" />
       </v-col>
     </v-row>
@@ -110,5 +99,4 @@ export default {
 /* .text-dark-1 {
   color: rgb(var(--v-theme-text-dark-1));
 } */
-
 </style>

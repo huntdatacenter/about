@@ -1,29 +1,22 @@
 <script setup lang="ts">
-import type { Author } from '../../composables/authors.data'
-import { useData } from 'vitepress'
+import type { Author } from "../../composables/authors.data"
+import { useData } from "vitepress"
 
 defineProps<{
   author: Author
 }>()
 
 const { site } = useData()
-
 </script>
 
 <template>
   <v-sheet v-if="author" class="d-flex ma-0">
     <v-sheet class="flex-1-0 pa-0 pr-3">
       <v-avatar v-if="author.data.avatar ? true : false" size="34">
-        <v-img
-          :alt="author.name"
-          :src="author.data.avatar"
-        ></v-img>
+        <v-img :alt="author.name" :src="author.data.avatar"></v-img>
       </v-avatar>
       <v-avatar v-else size="34">
-        <v-icon
-          icon="mdi-account-circle"
-          size="34"
-        ></v-icon>
+        <v-icon icon="mdi-account-circle" size="34"></v-icon>
       </v-avatar>
     </v-sheet>
 

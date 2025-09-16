@@ -7,7 +7,6 @@ next: false
 aside: false
 ---
 
-
 <script setup>
 import {
   VPTeamPage,
@@ -111,8 +110,6 @@ Jakub is our head of system operations. He is responsible for our day-to-day ope
 ## Ingunn B. Ferstad
 
 Ingunn is our marketing manager. She is responsible for our illustrations, brand identity and marketing. Ingunn is also responsible for financial management. You will indirectly meet Ingunn via her illustrations that we publish on these pages, and through the ideas and data philosophies that we talk about and evolve around.
-
-
 
 <style scoped>
 

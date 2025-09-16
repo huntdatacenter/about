@@ -1,5 +1,4 @@
 <script lang="ts">
-
 export default {
   // name: 'SimpleButton',
   props: {
@@ -17,8 +16,7 @@ export default {
       // item: null,
     }
   },
-  mounted() {
-  },
+  mounted() {},
   computed: {
     // TODO
   },
@@ -43,7 +41,7 @@ export default {
         :href="href"
         :append-icon="isHovering ? 'mdi-chevron-triple-right' : 'mdi-chevron-right'"
       >
-      <!-- rgba(37, 58, 85, 1) -->
+        <!-- rgba(37, 58, 85, 1) -->
         {{ title }}
         <template v-slot:append>
           <!-- :class="{'ml-1': isHovering, 'mr-1': !isHovering}" -->
@@ -60,6 +58,4 @@ export default {
   </v-hover>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

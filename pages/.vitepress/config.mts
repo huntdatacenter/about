@@ -1,28 +1,35 @@
 // refer https://vitepress.vuejs.org/config/introduction for details
-import { defineConfig, type HeadConfig } from 'vitepress';
+import { defineConfig, type HeadConfig } from "vitepress"
 
 // https://vitepress.vuejs.org/config/app-configs#head
 const customHead: HeadConfig[] = [
   ["link", { rel: "shortcut icon", href: "https://www.ntnu.no/assets/images/favicon.ico", sizes: "any" }],
 
-  ['meta', { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
+  ["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
 
   ["meta", { name: "author", content: "HUNT Cloud" }],
   ["meta", { name: "keywords", content: "HUNT Cloud,services,prices,about" }],
 
   ["meta", { name: "theme-color", content: "#00509e" }],
   ["meta", { name: "mobile-web-app-capable", content: "yes" }],
-  ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],  // DEPRECATED
+  ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }], // DEPRECATED
   ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
   ["meta", { name: "msapplication-TileColor", content: "#00509e" }],
 
   // ["meta", { rel: "stylesheet", type: "text/css", href: "/css/custom.css", sizes: "any" }],
-  ["meta", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons", sizes: "any" }],
+  [
+    "meta",
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons",
+      sizes: "any",
+    },
+  ],
 
   ["link", { rel: "icon", type: "image/svg+xml", href: "/img/hunt-cloud-logo.svg", sizes: "any" }],
   ["link", { rel: "mask-icon", type: "image/svg+xml", href: "/img/hunt-cloud-logo.svg", color: "#00509e" }],
   // ["script", { src: "https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js", 'data-domain': "hdc.ntnu.no", defer: "" }],
-];
+]
 
 export default defineConfig({
   title: "HUNT Cloud",
@@ -39,7 +46,7 @@ export default defineConfig({
 
   // https://vitepress.vuejs.org/config/app-configs#markdown
   markdown: {
-    theme: 'solarized-dark',
+    theme: "solarized-dark",
     lineNumbers: false,
   },
 
@@ -132,9 +139,9 @@ export default defineConfig({
   },
   vite: {
     ssr: {
-      noExternal: ["vuetify"]
-    }
-  }
+      noExternal: ["vuetify"],
+    },
+  },
 })
 
 function navigationMenu() {
@@ -142,9 +149,9 @@ function navigationMenu() {
     { text: "Home", link: "/" },
     { text: "Researchers", link: "/en/researchers/" },
     { text: "Organizations", link: "/en/organizations/" },
-    { text: 'News', link: '/articles/', activeMatch: '/articles/' },
+    { text: "News", link: "/articles/", activeMatch: "/articles/" },
     {
-      text: 'About',
+      text: "About",
       items: [
         { text: "About us", link: "/en/about/about-us" },
         { text: "Careers", link: "/en/about/careers" },
@@ -158,10 +165,8 @@ function navigationMenu() {
       ],
     },
     {
-      text: '🇳🇴',
-      items: [
-        { text: "Forskningsdeltakere", link: "/no/forskningsdeltakere/" },
-      ],
+      text: "🇳🇴",
+      items: [{ text: "Forskningsdeltakere", link: "/no/forskningsdeltakere/" }],
     },
     // {
     //   text: 'Products',
@@ -238,9 +243,9 @@ function sidebarCommon() {
         { text: "About us", link: "/en/about/about-us" },
         { text: "Careers", link: "/en/about/careers" },
         {
-          text: 'News',
-          link: '/articles/',
-          activeMatch: '/articles/',
+          text: "News",
+          link: "/articles/",
+          activeMatch: "/articles/",
         },
         // { text: "Products", link: "/products/" },
         // { text: "Overview by role", link: "/overview-by-role/" },
@@ -256,8 +261,8 @@ function sidebarCommon() {
         //     { text: "Prices", link: "/resources/prices" },
         //   ]
         // },
-      ]
-    }
+      ],
+    },
   ]
 }
 
@@ -268,7 +273,7 @@ function sidebarEnglish() {
         { text: "Researchers", link: "/en/researchers/" },
         { text: "Organizations", link: "/en/organizations/" },
         { text: "Price estimator", link: "/en/price-estimator/" },
-      ]
+      ],
     },
   ]
 }
@@ -276,9 +281,7 @@ function sidebarEnglish() {
 function sidebarNorwegian() {
   return [
     {
-      items: [
-        { text: "Forskningsdeltakere", link: "/no/forskningsdeltakere/" },
-      ]
+      items: [{ text: "Forskningsdeltakere", link: "/no/forskningsdeltakere/" }],
     },
   ]
 }

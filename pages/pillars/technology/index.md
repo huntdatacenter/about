@@ -1,6 +1,5 @@
 ---
 title: Technology
-
 ---
 
 # {{ $frontmatter.title }}

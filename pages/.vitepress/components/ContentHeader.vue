@@ -1,5 +1,4 @@
 <script lang="ts">
-
 export default {
   // name: 'ContentHeader',
   props: {
@@ -22,21 +21,21 @@ export default {
     // const headerImage = document.getElementById('header-image');
     // console.log(headerImage);
 
-    const headerImageObs = document.getElementById('header-image')
+    const headerImageObs = document.getElementById("header-image")
     if (headerImageObs) {
       const resizeObserver = new ResizeObserver(() => {
-        const headerImageElem = document.getElementById('header-image')
-        const headerReserveElem = document.getElementById('header-reserve')
+        const headerImageElem = document.getElementById("header-image")
+        const headerReserveElem = document.getElementById("header-reserve")
 
         if (headerImageElem && headerReserveElem) {
           // if (headerImageElem.clientHeight < 250) {
           //   headerImageElem.style.minHeight = '250px';
           // }
-          headerReserveElem.style.height = `${headerImageElem.clientHeight > 250 ? headerImageElem.clientHeight : 250}px`;
+          headerReserveElem.style.height = `${headerImageElem.clientHeight > 250 ? headerImageElem.clientHeight : 250}px`
           // console.log(`Size changed: ${ headerImageElem ? headerImageElem.clientHeight : 0} ${ headerReserveElem.style.height }`);
         }
-      });
-      resizeObserver.observe(headerImageObs);
+      })
+      resizeObserver.observe(headerImageObs)
     }
   },
   computed: {
@@ -55,7 +54,6 @@ export default {
 </template>
 
 <style scoped>
-
 .content-header-block {
   display: block;
   padding-top: 0px !important;
@@ -82,5 +80,4 @@ export default {
   min-height: 250px;
   height: 250px;
 }
-
 </style>

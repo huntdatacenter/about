@@ -19,12 +19,12 @@ export default {
   }),
 
   created() {
-    this.formData.id = this.storageId;
-    this.formData.name = `volume-${this.storageId}`;
+    this.formData.id = this.storageId
+    this.formData.name = `volume-${this.storageId}`
   },
   methods: {
     close() {
-      this.$emit("close");
+      this.$emit("close")
     },
     save() {
       this.$emit("close", {
@@ -33,10 +33,10 @@ export default {
         size: parseInt(this.formData.size),
         usage: this.formData.usage,
         type: this.formData.type,
-      });
+      })
     },
   },
-};
+}
 </script>
 
 <template>
@@ -53,17 +53,37 @@ export default {
               <v-text-field v-model="formData.name" label="Name" required variant="outlined"></v-text-field>
             </v-col>
             <v-col cols="12">
-              <v-select :items="['Archive', 'Work', 'Scratch', 'Home']" v-model="formData.usage" label="Usage" required
-                variant="outlined"></v-select>
+              <v-select
+                :items="['Archive', 'Work', 'Scratch', 'Home']"
+                v-model="formData.usage"
+                label="Usage"
+                required
+                variant="outlined"
+              ></v-select>
             </v-col>
             <v-col cols="12">
-              <v-select :items="['HDD', 'NVME']" v-model="formData.type" label="Type" required
-                variant="outlined"></v-select>
+              <v-select
+                :items="['HDD', 'NVME']"
+                v-model="formData.type"
+                label="Type"
+                required
+                variant="outlined"
+              ></v-select>
             </v-col>
             <v-col cols="12">
-              <v-text-field v-model="formData.size" label="Size (TB)" hint="Enter the size of the storage in Terrabytes"
-                persistent-hint type="number" :min="1" :max="100" :step="1" required suffix="TB"
-                variant="outlined"></v-text-field>
+              <v-text-field
+                v-model="formData.size"
+                label="Size (TB)"
+                hint="Enter the size of the storage in Terrabytes"
+                persistent-hint
+                type="number"
+                :min="1"
+                :max="100"
+                :step="1"
+                required
+                suffix="TB"
+                variant="outlined"
+              ></v-text-field>
             </v-col>
           </v-form>
         </v-row>

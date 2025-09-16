@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useData, useRoute } from 'vitepress'
-import { computed } from 'vue'
+import { useData, useRoute } from "vitepress"
+import { computed } from "vue"
 // import Theme from 'vitepress/theme'
 // import VPContent from 'vitepress/theme'
 // import VPFooter from 'vitepress/theme'
@@ -9,7 +9,7 @@ import { computed } from 'vue'
 // import VPDoc from 'vitepress/theme'
 // import VPSkipLink from 'vitepress/theme'
 // import VPBackdrop from 'vitepress/theme'
-import useAuthors from '../../composables/useAuthors'
+import useAuthors from "../../composables/useAuthors"
 
 const { isDark, site, page, frontmatter, theme } = useData()
 
@@ -17,26 +17,20 @@ const route = useRoute()
 
 const { currentAuthor: author, prevAuthor, nextAuthor } = useAuthors()
 
-const pageName = computed(() =>
-  route.path.replace(/[./]+/g, '_').replace(/_html$/, '')
-)
+const pageName = computed(() => route.path.replace(/[./]+/g, "_").replace(/_html$/, ""))
 
 var hasSidebar = true
 
 const hasAside = true
 const leftAside = false
-
 </script>
 
 <template>
   <v-container>
-    <div
-      class="VPDoc"
-      :class="{ 'has-sidebar': hasSidebar, 'has-aside': hasAside }"
-    >
+    <div class="VPDoc" :class="{ 'has-sidebar': hasSidebar, 'has-aside': hasAside }">
       <slot name="doc-top" />
       <div class="container">
-        <div v-if="hasAside" class="aside" :class="{'left-aside': leftAside}">
+        <div v-if="hasAside" class="aside" :class="{ 'left-aside': leftAside }">
           <div class="aside-curtain" />
           <div class="aside-container">
             <div class="aside-content">
@@ -59,34 +53,20 @@ const leftAside = false
               <v-sheet v-if="author" class="d-flex ma-0">
                 <v-sheet class="pa-0 mr-4 d-flex-inline" width="40">
                   <v-avatar v-if="author.data.avatar ? true : false" size="34">
-                    <v-img
-                      :alt="author.name"
-                      :src="author.data.avatar"
-                    ></v-img>
+                    <v-img :alt="author.name" :src="author.data.avatar"></v-img>
                   </v-avatar>
                   <v-avatar v-else size="34">
-                    <v-icon
-                      icon="mdi-account-circle"
-                      size="34"
-                    ></v-icon>
+                    <v-icon icon="mdi-account-circle" size="34"></v-icon>
                   </v-avatar>
                 </v-sheet>
 
                 <v-sheet class="pa-0">
-                  <h1
-                    class="text-h4 font-weight-bold text-primary-light pa-0"
-                  >
+                  <h1 class="text-h4 font-weight-bold text-primary-light pa-0">
                     {{ author.name }}
                   </h1>
                 </v-sheet>
               </v-sheet>
-              <Content
-                class="vp-doc"
-                :class="[
-                  pageName,
-                  theme.externalLinkIcon && 'external-link-icon-enabled'
-                ]"
-              />
+              <Content class="vp-doc" :class="[pageName, theme.externalLinkIcon && 'external-link-icon-enabled']" />
             </main>
             <VPDocFooter>
               <template #doc-footer-before><slot name="doc-footer-before" /></template>
@@ -101,7 +81,6 @@ const leftAside = false
 </template>
 
 <style scoped>
-
 .VPDoc {
   padding: 32px 24px 96px;
   width: 100%;
@@ -235,5 +214,4 @@ const leftAside = false
 .VPDoc.has-aside .content-container {
   max-width: 688px;
 }
-
 </style>

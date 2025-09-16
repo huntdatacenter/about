@@ -1,6 +1,5 @@
 ---
 title: Pillars
-
 ---
 
 # {{ $frontmatter.title }}

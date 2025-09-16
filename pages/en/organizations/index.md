@@ -36,12 +36,9 @@ sidebar: false
     </div>
   </div>
 
-
-
 <!----------------------------------------------->
 <!-- Block: Offer -->
 <!----------------------------------------------->
-
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -56,9 +53,6 @@ sidebar: false
       </div>
     </div>
   </div>
-
-
-
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -130,9 +124,6 @@ sidebar: false
     </div>
   </div>
 
-
-
-
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
@@ -153,7 +144,6 @@ sidebar: false
       </v-row>
     </div>
   </div>
-
 
 <!----------------------------------------------->
 <!-- Block: sensitive AI -->
@@ -214,8 +204,6 @@ sidebar: false
     </div> -->
     </div>
   </div>
-
-
 
 <!----------------------------------------------->
 <!-- Content: ISO -->
@@ -304,11 +292,6 @@ sidebar: false
     </div>
   </div>
 
-
-
-
-
-
 <!----------------------------------------------->
 <!-- Block: activate your data -->
 <!----------------------------------------------->
@@ -341,7 +324,6 @@ sidebar: false
   </div>
 -->
 
-
 <!----------------------------------------------->
 <!-- Block: About HUNT Cloud -->
 <!----------------------------------------------->
@@ -349,7 +331,6 @@ sidebar: false
 <FooterBlock :contact="$frontmatter.contact" />
 
 </div>
-
 
 <style scoped>
 

@@ -1,17 +1,16 @@
 <script lang="ts">
-
 interface Role {
-  title: string,
-  text: string,
-  href: string,
+  title: string
+  text: string
+  href: string
 }
 
 export default {
   props: {
     roles: {
       type: Array<Role>,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
@@ -33,7 +32,7 @@ export default {
       }
     },
     sliderClasses() {
-      return { 'group-slider': true,  [this.sliderNumItemsClass]: true}
+      return { "group-slider": true, [this.sliderNumItemsClass]: true }
     },
   },
 }
@@ -60,119 +59,117 @@ export default {
 </template>
 
 <style scoped>
-
 .group-slider {
-    /* box-sizing: border-box; */
-	/* background-color: #0E1318; */
-	/* width: 500px; */
-	height: 300px;
+  /* box-sizing: border-box; */
+  /* background-color: #0E1318; */
+  /* width: 500px; */
+  height: 300px;
 
-	overflow-x: scroll;
-	overflow-y: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
 
-	display: grid;
-	/* grid-template-columns: repeat(6, auto); */
-    /* grid-template-columns: auto; */
-	grid-gap: 0 40px;
+  display: grid;
+  /* grid-template-columns: repeat(6, auto); */
+  /* grid-template-columns: auto; */
+  grid-gap: 0 40px;
 
-	padding: 30px 60px;
-	padding-right: 0;
+  padding: 30px 60px;
+  padding-right: 0;
 
-	margin: 0 auto;
-	border-radius: 10px;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .group-slider {
-	padding-right: 40px !important;
+  padding-right: 40px !important;
 }
 .group-slider-1-items {
-	grid-template-columns: repeat(1, auto);
+  grid-template-columns: repeat(1, auto);
 }
 
 .group-slider-2-items {
-	grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
 }
 
 .group-slider-3-items {
-	grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, auto);
 }
 
 .group-slider-4-items {
-	grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, auto);
 }
 
 .group-slider-5-items {
-	grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(5, auto);
 }
 
 .group-slider-6-items {
-	grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(6, auto);
 }
 
 .group-slider::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
+  display: none; /* Chrome, Safari and Opera */
 }
 
 .group-slider {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .group-slider-card-item {
-    display: inline-block;
-    box-sizing: border-box;
-    /* background-color: rgb(238, 238, 238); */
-    /* padding: 15px 15px 10px 15px; */
-    height: 250px;
-    width: 200px;
-    border-radius: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  /* background-color: rgb(238, 238, 238); */
+  /* padding: 15px 15px 10px 15px; */
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
 }
 
 .group-slider-card {
-    overflow: unset;
+  overflow: unset;
 }
 
 .group-slider-item {
-    display: inline-block;
-    box-sizing: border-box;
-    background-color: rgb(238, 238, 238);
-    padding: 15px 15px 10px 15px;
-    height: 250px;
-    width: 200px;
-    border-radius: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgb(238, 238, 238);
+  padding: 15px 15px 10px 15px;
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
 }
 
 .group-slider-item-title {
-    display: flex;
-    /* width: 250px; */
-    justify-content: center;
-    line-height: 24px;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0 auto;
-    margin-bottom: 12px;
+  display: flex;
+  /* width: 250px; */
+  justify-content: center;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 12px;
 }
 
 .group-slider-item-img {
   max-width: 220px;
   margin-top: -36px;
-  transition: all .6s ease;
-  -webkit-transition: all .6s ease;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
 }
 
 .group-slider-item-img:hover {
   max-width: 230px;
   margin-top: -46px;
   margin-left: -5px;
-  transition: all .2s ease;
-  -webkit-transition: all .2s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
 }
 
 .group-slider-item-text {
-    padding-top: 20px;
-    line-height: 18px;
-    font-size: 14px;
-    text-align: justify;
+  padding-top: 20px;
+  line-height: 18px;
+  font-size: 14px;
+  text-align: justify;
 }
-
 </style>

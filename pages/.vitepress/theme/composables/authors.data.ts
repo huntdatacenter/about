@@ -1,15 +1,15 @@
-import type { MarkdownRenderer } from 'vitepress'
-import fs from 'node:fs'
-import path from 'node:path'
-import process from 'node:process'
-import { createMarkdownRenderer } from 'vitepress'
-import useBlogFile from './useBlogFile'
+import type { MarkdownRenderer } from "vitepress"
+import fs from "node:fs"
+import path from "node:path"
+import process from "node:process"
+import { createMarkdownRenderer } from "vitepress"
+import useBlogFile from "./useBlogFile"
 
 let md: MarkdownRenderer
 
 const { readFrontMatter, mainLevelDir } = useBlogFile()
 
-const dir = mainLevelDir('authors')
+const dir = mainLevelDir("authors")
 
 export interface Author {
   name: string
@@ -31,7 +31,7 @@ async function load() {
 }
 
 export default {
-  watch: path.join(dir, '*.md'),
+  watch: path.join(dir, "*.md"),
   load,
 }
 
@@ -45,7 +45,7 @@ function getAuthor(file: string, parentDir: string): Author {
 
   const author: Author = {
     name: data.name,
-    href: `authors/${file.replace(/\.md$/, '')}`,
+    href: `authors/${file.replace(/\.md$/, "")}`,
     excerpt: excerpt && md.render(excerpt),
     data,
   }

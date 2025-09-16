@@ -1,6 +1,5 @@
 ---
 title: Image annotation
-
 ---
 
 # {{ $frontmatter.title }}

@@ -1,6 +1,5 @@
 ---
 title: Use cases
-
 ---
 
 # {{ $frontmatter.title }}

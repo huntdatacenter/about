@@ -1,14 +1,13 @@
-
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath } from "node:url"
 
 import {
   configDefaults,
   defineConfig,
   // mergeConfig,
-} from 'vitest/config';
+} from "vitest/config"
 
-import vue from "@vitejs/plugin-vue";
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
+import vue from "@vitejs/plugin-vue"
+import vuetify, { transformAssetUrls } from "vite-plugin-vuetify"
 
 // import viteConfig from './vite.config';
 
@@ -28,26 +27,26 @@ export default defineConfig({
   resolve: {
     // https://vitest.dev/config/#alias
     alias: {
-      '@': fileURLToPath(new URL('./pages/.vitepress', import.meta.url)),
-      '~': fileURLToPath(new URL('./node_modules', import.meta.url)),
+      "@": fileURLToPath(new URL("./pages/.vitepress", import.meta.url)),
+      "~": fileURLToPath(new URL("./node_modules", import.meta.url)),
     },
-    extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
+    extensions: [".js", ".json", ".jsx", ".mjs", ".ts", ".tsx", ".vue"],
   },
   test: {
-    environment: 'happy-dom',
+    environment: "happy-dom",
     exclude: [...configDefaults.exclude],
     globals: true,
-    root: fileURLToPath(new URL('./', import.meta.url)),
+    root: fileURLToPath(new URL("./", import.meta.url)),
     // https://vuetifyjs.com/en/getting-started/unit-testing/
     server: {
       deps: {
-        inline: ['vuetify'],
+        inline: ["vuetify"],
       },
     },
   },
   plugins: [
     vue({
-      template: { transformAssetUrls }
+      template: { transformAssetUrls },
     }),
     vuetify({ autoImport: true }),
   ],

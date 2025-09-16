@@ -24,6 +24,7 @@ products:
     text: |
       For research centers and large-scale research efforts who require additional resources, speed and portfolio management.
 ---
+
 <ContentHeader src="/img/HAD_banner_960_3.jpg" srcset="/img/HAD_banner_1280_5.jpg 960w, /img/HAD_banner_1920_1.jpg 1280w" />
 
 <div class="hc-page pb-5">
