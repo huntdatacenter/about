@@ -1,8 +1,8 @@
-import type { Ref } from 'vue'
-import type { Post } from './posts.data'
-import { useData, useRoute } from 'vitepress'
-import { computed, ref } from 'vue'
-import { data } from './posts.data'
+import type { Ref } from "vue"
+import type { Post } from "./posts.data"
+import { useData, useRoute } from "vitepress"
+import { computed, ref } from "vue"
+import { data } from "./posts.data"
 
 export default () => {
   // NOTE -- getting error (useData): vitepress data not properly injected in app
@@ -17,14 +17,14 @@ export default () => {
 
   function getPageCount(pageSize: number = 10): Ref<number> {
     const pageCount: Ref<number> = ref(Math.ceil(allPosts.value.length / pageSize))
-    return pageCount;
+    return pageCount
   }
 
   const route = useRoute()
 
   const path = route.path
 
-  const articlesPath = 'articles'
+  const articlesPath = "articles"
 
   function findCurrentIndex() {
     return allPosts.value.findIndex(p => `${site.value.base}${articlesPath}${p.href}` === route.path)

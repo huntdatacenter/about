@@ -1,6 +1,5 @@
 ---
 title: Compliance
-
 ---
 
 # {{ $frontmatter.title }}

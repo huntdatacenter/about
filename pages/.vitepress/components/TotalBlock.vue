@@ -19,13 +19,9 @@ export default {
       onDemandPrice: 0.0,
     }
   },
-  watch: {
+  watch: {},
 
-  },    
-
-  methods: {
-
-  },
+  methods: {},
 }
 </script>
 

@@ -1,6 +1,5 @@
 ---
 title: Image processing
-
 ---
 
 # {{ $frontmatter.title }}

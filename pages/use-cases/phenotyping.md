@@ -1,6 +1,5 @@
 ---
 title: Phenotyping
-
 ---
 
 # {{ $frontmatter.title }}

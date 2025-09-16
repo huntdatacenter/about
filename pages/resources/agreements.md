@@ -1,6 +1,5 @@
 ---
 title: Agreements
-
 ---
 
 # {{ $frontmatter.title }}

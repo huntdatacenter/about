@@ -23,8 +23,8 @@ products:
       Scientific suite allows research centers and large-scale collaborations flexibility and control over diverse research portfolios.
 
 overview_by_role:
-  title: 'Solutions by role'
-  subtitle: 'Read about our solutions from your own perspective.'
+  title: "Solutions by role"
+  subtitle: "Read about our solutions from your own perspective."
 roles:
   - title: Scientist
     href: /roles/scientist/
@@ -60,7 +60,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <div class="hc-header-img"></div>
   </div>
 
-
 <!----------------------------------------------->
 <!-- Block: Freedom to explore -->
 <!----------------------------------------------->
@@ -85,12 +84,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
-
 <!----------------------------------------------->
 <!-- Block: Offer -->
 <!----------------------------------------------->
-
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -175,10 +171,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div> -->
 
-
-
-
-
 <!----------------------------------------------->
 <!-- Block: sensitive AI -->
 <!----------------------------------------------->
@@ -198,8 +190,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
     </div>
   </div>
-
-
 
 <!----------------------------------------------->
 <!-- Content: ISO -->
@@ -288,11 +278,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
-
-
-
-
 <!----------------------------------------------->
 <!-- Block: activate your data -->
 <!----------------------------------------------->
@@ -310,7 +295,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-
 
 <!----------------------------------------------->
 <!-- Block: Roles -->
@@ -346,12 +330,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
     </div>
   </div> -->
-
-
-
-
-
-
 
 <!----------------------------------------------->
 <!-- Content: Supportive products -->
@@ -421,9 +399,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
     </div>
   </div> -->
-
-
-
 
 <!----------------------------------------------->
 <!-- Block: Agreements and multiblock -->
@@ -544,8 +519,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
-
 <!----------------------------------------------->
 <!-- Content: Philosophy -->
 <!----------------------------------------------->
@@ -606,9 +579,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row> -->
     </div>
   </div>
-
-
-
 
 <!----------------------------------------------->
 <!-- Content: About -->
@@ -674,10 +644,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
-
-
-
 <!----------------------------------------------->
 <!-- Block: activate your data -->
 <!----------------------------------------------->
@@ -697,9 +663,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
     </div>
   </div> -->
-
-
-
 
 <!----------------------------------------------->
 <!-- Block: activate your data -->
@@ -721,7 +684,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div> -->
 
-
 <!----------------------------------------------->
 <!-- Block: About HUNT Cloud -->
 <!----------------------------------------------->
@@ -729,7 +691,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <FooterBlock :contact="$frontmatter.contact" />
 
 </div>
-
 
 <style scoped>
 

@@ -9,7 +9,6 @@ sidebar: false
     <div class="hc-header-img"></div>
   </div> -->
 
-
   <div class="hc-block" style="display: none;"></div>
 <!----------------------------------------------->
 <!-- Block: Freedom to explore -->
@@ -86,8 +85,6 @@ sidebar: false
     </div>
   </div>
 
-
-
 <!----------------------------------------------->
 <!-- Block: Offer -->
 <!----------------------------------------------->
@@ -104,8 +101,6 @@ sidebar: false
       </div>
     </div>
   </div> -->
-
-
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -184,8 +179,6 @@ sidebar: false
     </div>
   </div>
 
-
-
 <!----------------------------------------------->
 <!-- Block: sensitive AI -->
 <!----------------------------------------------->
@@ -246,8 +239,6 @@ sidebar: false
     </div>
   </div>
 
-
-
 <!----------------------------------------------->
 <!-- Content: Scientific tools -->
 <!----------------------------------------------->
@@ -296,10 +287,6 @@ sidebar: false
       </v-row>
     </div>
   </div>
-
-
-
-
 
 <!----------------------------------------------->
 <!-- Block: Agreements and multiblock -->
@@ -423,9 +410,6 @@ sidebar: false
     </div>
   </div>
 
-
-
-
 <!----------------------------------------------->
 <!-- Block: About HUNT Cloud -->
 <!----------------------------------------------->
@@ -433,7 +417,6 @@ sidebar: false
 <FooterBlock :contact="$frontmatter.contact" />
 
 </div>
-
 
 <style scoped>
 

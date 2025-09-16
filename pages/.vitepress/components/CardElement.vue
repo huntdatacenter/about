@@ -1,5 +1,4 @@
 <script lang="ts">
-
 export default {
   props: {
     title: { type: String, required: true, default: "Title" },
@@ -19,14 +18,14 @@ export default {
   //   },
   // },
   mounted() {
-    console.log('mounted')
+    console.log("mounted")
   },
   computed: {
     // TODO
   },
   methods: {
-    hoverIcon (isHovering: Boolean) {
-      return isHovering ? 'mdi-chevron-triple-right' : 'mdi-chevron-right'
+    hoverIcon(isHovering: Boolean) {
+      return isHovering ? "mdi-chevron-triple-right" : "mdi-chevron-right"
     },
   },
 }
@@ -64,6 +63,4 @@ export default {
   </v-col>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,5 +1,4 @@
 <script lang="ts">
-
 export default {
   // name: 'ExpandTable',
   props: {
@@ -39,18 +38,25 @@ export default {
                       <th class="text-left">
                         <b>Details</b>
                       </th>
-                      <th class="text-left">
-                      </th>
+                      <th class="text-left"></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Number of digital labs</td>
-                      <td><font-awesome-icon :icon="['fas', 'infinity']" /><v-tooltip activator="parent" location="start">Unlimited</v-tooltip></td>
+                      <td>
+                        <font-awesome-icon :icon="['fas', 'infinity']" /><v-tooltip activator="parent" location="start"
+                          >Unlimited</v-tooltip
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Number of lab users</td>
-                      <td><font-awesome-icon :icon="['fas', 'infinity']" /><v-tooltip activator="parent" location="start">Unlimited</v-tooltip></td>
+                      <td>
+                        <font-awesome-icon :icon="['fas', 'infinity']" /><v-tooltip activator="parent" location="start"
+                          >Unlimited</v-tooltip
+                        >
+                      </td>
                     </tr>
                   </tbody>
                   <!-- ------------------------------------- -->
@@ -59,14 +65,19 @@ export default {
                       <th class="text-left">
                         <b>Analytical Features</b>
                       </th>
-                      <th class="text-left">
-                      </th>
+                      <th class="text-left"></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>AI ready</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip activator="parent" location="start">All that you need to train and finetune your AI models.</v-tooltip></td>
+                      <td>
+                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
+                          activator="parent"
+                          location="start"
+                          >All that you need to train and finetune your AI models.</v-tooltip
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Machine learning / Deep learning</td>
@@ -83,18 +94,30 @@ export default {
                       <th class="text-left">
                         <b>Digital laboratory equipment</b>
                       </th>
-                      <th class="text-left">
-                      </th>
+                      <th class="text-left"></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>GPU Cards</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip activator="parent" location="start">NVidia GPUs available in variety VRAM sizes and number of CUDA cores</v-tooltip></td>
+                      <td>
+                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
+                          activator="parent"
+                          location="start"
+                          >NVidia GPUs available in variety VRAM sizes and number of CUDA cores</v-tooltip
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Browser based access</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip activator="parent" location="start">All you need to run your analysis is your web browser. Unless you want more, we have that too.</v-tooltip></td>
+                      <td>
+                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
+                          activator="parent"
+                          location="start"
+                          >All you need to run your analysis is your web browser. Unless you want more, we have that
+                          too.</v-tooltip
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Python / Jupyterlab</td>
@@ -135,14 +158,17 @@ export default {
                       <th class="text-left">
                         <b>Storage</b>
                       </th>
-                      <th class="text-left">
-                      </th>
+                      <th class="text-left"></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Storage sizes</td>
-                      <td><font-awesome-icon :icon="['fas', 'infinity']" /><v-tooltip activator="parent" location="start">From small labs up to hundreds of terabytes.</v-tooltip></td>
+                      <td>
+                        <font-awesome-icon :icon="['fas', 'infinity']" /><v-tooltip activator="parent" location="start"
+                          >From small labs up to hundreds of terabytes.</v-tooltip
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Multiple tiers</td>
@@ -150,15 +176,33 @@ export default {
                     </tr>
                     <tr>
                       <td>Fast storage</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip activator="parent" location="start">NVME backed storage cluster</v-tooltip></td>
+                      <td>
+                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
+                          activator="parent"
+                          location="start"
+                          >NVME backed storage cluster</v-tooltip
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Long term storage</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip activator="parent" location="start">Our tape storage service is perfect for long term storage.</v-tooltip></td>
+                      <td>
+                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
+                          activator="parent"
+                          location="start"
+                          >Our tape storage service is perfect for long term storage.</v-tooltip
+                        >
+                      </td>
                     </tr>
                     <tr>
                       <td>Data storage in Norway, EU</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip activator="parent" location="start">Our server rooms are located in Norway.</v-tooltip></td>
+                      <td>
+                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
+                          activator="parent"
+                          location="start"
+                          >Our server rooms are located in Norway.</v-tooltip
+                        >
+                      </td>
                     </tr>
                   </tbody>
                   <!-- ------------------------------------- -->
@@ -187,8 +231,7 @@ export default {
                       <th class="text-left">
                         <b>Compliance</b>
                       </th>
-                      <th class="text-left">
-                      </th>
+                      <th class="text-left"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -215,8 +258,7 @@ export default {
                       <th class="text-left">
                         <b>Security</b>
                       </th>
-                      <th class="text-left">
-                      </th>
+                      <th class="text-left"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -239,8 +281,7 @@ export default {
                       <th class="text-left">
                         <b>Account & Support</b>
                       </th>
-                      <th class="text-left">
-                      </th>
+                      <th class="text-left"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -272,7 +313,6 @@ export default {
 </template>
 
 <style scoped>
-
 .content-preview {
   transition: auto 5s ease;
   max-height: 500px;
@@ -284,5 +324,4 @@ export default {
   max-height: unset;
   overflow: visible;
 }
-
 </style>

@@ -1,6 +1,5 @@
 ---
 title: Sensitive AI
-
 ---
 
 # {{ $frontmatter.title }}

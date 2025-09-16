@@ -8,7 +8,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- <script setup></script> -->
 <div class="hc-home-page">
 
-<!-- BLOCK START: Top images --> 
+<!-- BLOCK START: Top images -->
   <div class="hc-header">
     <!-- Note testing hcc-career-header-img for custom image-->
     <div class="hc-header-img"></div>
@@ -34,14 +34,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
-
-
-
-
-
-
-<!-- BLOCK START: Quest --> 
+<!-- BLOCK START: Quest -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -82,11 +75,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK END: Quest --> 
+<!-- BLOCK END: Quest -->
 
-
-
-<!-- BLOCK START: Current openings --> 
+<!-- BLOCK START: Current openings -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle">
@@ -112,13 +103,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
  --> 
     </div>
   </div>
-<!-- BLOCK END: Current openings --> 
+<!-- BLOCK END: Current openings -->
 
-
-
-
-
-<!-- BLOCK START: Who are you --> 
+<!-- BLOCK START: Who are you -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -159,12 +146,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK END: Who are you --> 
+<!-- BLOCK END: Who are you -->
 
-
-
-
-<!-- BLOCK Start: Who are we --> 
+<!-- BLOCK Start: Who are we -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -205,14 +189,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK End: Who are we --> 
+<!-- BLOCK End: Who are we -->
 
-
-
-
-
-
-<!-- BLOCK START: Specs --> 
+<!-- BLOCK START: Specs -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-title">
@@ -351,14 +330,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-<!-- BLOCK END: Specs --> 
+<!-- BLOCK END: Specs -->
 
-
-
-
-
-
-<!-- BLOCK START: About --> 
+<!-- BLOCK START: About -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -399,13 +373,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK END: About --> 
+<!-- BLOCK END: About -->
 
-
-
-
-
-<!-- BLOCK START: Team and culture --> 
+<!-- BLOCK START: Team and culture -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -446,14 +416,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK END: Team and culture --> 
+<!-- BLOCK END: Team and culture -->
 
-
-
-
-
-
-<!-- BLOCK START: Values --> 
+<!-- BLOCK START: Values -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -494,18 +459,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK END: Values --> 
+<!-- BLOCK END: Values -->
 
-
-
-
-
-
-
-
-
-
-<!-- BLOCK START: Openness --> 
+<!-- BLOCK START: Openness -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -546,14 +502,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK END: Openness --> 
+<!-- BLOCK END: Openness -->
 
-
-
-
-
-
-<!-- BLOCK START: NTNU --> 
+<!-- BLOCK START: NTNU -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -594,15 +545,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK END: NTNU --> 
+<!-- BLOCK END: NTNU -->
 
-
-
-
-
-
-
-<!-- BLOCK START: Moving to Trondheim --> 
+<!-- BLOCK START: Moving to Trondheim -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -652,15 +597,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK END: Moving to Trondheim --> 
+<!-- BLOCK END: Moving to Trondheim -->
 
-
-
-
-
-
-
-<!-- BLOCK START: Video --> 
+<!-- BLOCK START: Video -->
   <div class="hc-block">
     <div class="hc-block-container">
       <div class="hc-container-subtitle" style="text-align: left">
@@ -680,19 +619,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-<!-- BLOCK END: Video --> 
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- BLOCK END: Video -->
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -717,7 +644,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </v-row>
     </div>
   </div>
-
 
   <FooterBlock :contact="$frontmatter.contact" />
 </div> <!-- END OF CONTENT - keep empty line before and after -->

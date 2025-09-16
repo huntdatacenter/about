@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { Post } from '../../composables/posts.data'
-import { useData } from 'vitepress'
-import useAuthors from '../../composables/useAuthors'
-import PostAuthor from './PostAuthor.vue'
-import PostIcon from './PostIcon.vue'
+import type { Post } from "../../composables/posts.data"
+import { useData } from "vitepress"
+import useAuthors from "../../composables/useAuthors"
+import PostAuthor from "./PostAuthor.vue"
+import PostIcon from "./PostIcon.vue"
 
 const props = defineProps<{
   post: Post
@@ -11,16 +11,11 @@ const props = defineProps<{
 const { site } = useData()
 const { findByName } = useAuthors()
 const author = findByName(props.post.author)
-const articlesPath = 'articles'
+const articlesPath = "articles"
 </script>
 
 <template>
-  <v-card
-    class="pa-6 border-primary-light"
-    elevation="2"
-    rounded="lg"
-    color="white"
-  >
+  <v-card class="pa-6 border-primary-light" elevation="2" rounded="lg" color="white">
     <!-- Date and Icon -->
     <v-row class="mb-0 pb-0 d-flex">
       <v-col cols="auto" class="me-auto">
@@ -36,7 +31,7 @@ const articlesPath = 'articles'
     </v-row>
 
     <!-- Title -->
-    <div class="mt-2 pt-5" style="border-top: rgb(226, 226, 227) 1px solid;">
+    <div class="mt-2 pt-5" style="border-top: rgb(226, 226, 227) 1px solid">
       <a
         :href="`${site.base}${articlesPath}${post.href}`"
         variant="text"

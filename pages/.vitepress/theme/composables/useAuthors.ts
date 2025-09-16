@@ -1,8 +1,8 @@
-import type { Ref } from 'vue'
-import type { Author } from './authors.data'
-import { useData, useRoute } from 'vitepress'
-import { computed, ref } from 'vue'
-import { data } from './authors.data'
+import type { Ref } from "vue"
+import type { Author } from "./authors.data"
+import { useData, useRoute } from "vitepress"
+import { computed, ref } from "vue"
+import { data } from "./authors.data"
 
 export default () => {
   const { site } = useData()

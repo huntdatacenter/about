@@ -1,6 +1,5 @@
 ---
 title: Scientist
-
 ---
 
 # {{ $frontmatter.title }}

@@ -1,6 +1,5 @@
 ---
 title: Resources
-
 ---
 
 # {{ $frontmatter.title }}

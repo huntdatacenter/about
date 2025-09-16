@@ -23,12 +23,9 @@ sidebar: false
     </div>
   </div>
 
-
-
 <!----------------------------------------------->
 <!-- Block: Offer -->
 <!----------------------------------------------->
-
 
   <div class="hc-block">
     <div class="hc-block-container">
@@ -116,9 +113,6 @@ sidebar: false
     </div>
   </div>
 
-
-
-
 <!----------------------------------------------->
 <!-- Last Block: Footer -->
 <!----------------------------------------------->
@@ -126,7 +120,6 @@ sidebar: false
 <FooterBlock :contact="$frontmatter.contact" />
 
 </div>
-
 
 <style scoped>
 

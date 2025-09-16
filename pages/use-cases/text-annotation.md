@@ -1,6 +1,5 @@
 ---
 title: Text annotation
-
 ---
 
 # {{ $frontmatter.title }}

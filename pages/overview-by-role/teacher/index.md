@@ -1,6 +1,5 @@
 ---
 title: Teacher
-
 ---
 
 # {{ $frontmatter.title }}

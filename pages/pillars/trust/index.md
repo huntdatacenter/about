@@ -1,6 +1,5 @@
 ---
 title: Trust
-
 ---
 
 # {{ $frontmatter.title }}

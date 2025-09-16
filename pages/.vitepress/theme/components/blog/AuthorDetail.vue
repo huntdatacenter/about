@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
-import useAuthors from '../../composables/useAuthors'
+import { useData } from "vitepress"
+import useAuthors from "../../composables/useAuthors"
 
 const { site } = useData()
 
 const { currentAuthor: author, prevAuthor, nextAuthor } = useAuthors()
-
 </script>
 
 <template>
@@ -15,23 +14,15 @@ const { currentAuthor: author, prevAuthor, nextAuthor } = useAuthors()
       <v-sheet v-if="author" class="d-flex ma-0">
         <v-sheet class="flex-1-0 pa-0 pr-3">
           <v-avatar v-if="author.data.avatar ? true : false" size="34">
-            <v-img
-              :alt="author.name"
-              :src="author.data.avatar"
-            ></v-img>
+            <v-img :alt="author.name" :src="author.data.avatar"></v-img>
           </v-avatar>
           <v-avatar v-else size="34">
-            <v-icon
-              icon="mdi-account-circle"
-              size="34"
-            ></v-icon>
+            <v-icon icon="mdi-account-circle" size="34"></v-icon>
           </v-avatar>
         </v-sheet>
 
         <v-sheet class="pa-0">
-          <h1
-            class="text-h4 font-weight-bold text-primary-light"
-          >
+          <h1 class="text-h4 font-weight-bold text-primary-light">
             {{ author.name }}
           </h1>
         </v-sheet>

@@ -1,15 +1,15 @@
-import type { MarkdownRenderer } from 'vitepress'
-import fs from 'node:fs'
-import path from 'node:path'
-import process from 'node:process'
-import { formatDistance } from 'date-fns'
-import { createMarkdownRenderer } from 'vitepress'
-import useBlogFile from './useBlogFile'
+import type { MarkdownRenderer } from "vitepress"
+import fs from "node:fs"
+import path from "node:path"
+import process from "node:process"
+import { formatDistance } from "date-fns"
+import { createMarkdownRenderer } from "vitepress"
+import useBlogFile from "./useBlogFile"
 
 let md: MarkdownRenderer
 const { folderDir, readFrontMatter } = useBlogFile()
 
-const dir = folderDir('posts')
+const dir = folderDir("posts")
 
 export interface Post {
   id: string
@@ -39,7 +39,7 @@ async function load() {
 }
 
 export default {
-  watch: path.join(dir, '*.md'),
+  watch: path.join(dir, "*.md"),
   load,
 }
 
@@ -52,10 +52,10 @@ function getPost(file: string, postDir: string): Post {
   const { data, excerpt } = readFrontMatter(file, postDir, cache)
 
   const post: Post = {
-    id: file.replace(/\.md$/, ''),
+    id: file.replace(/\.md$/, ""),
     title: data.title,
-    author: data.author ? data.author : 'Unknown',
-    href: `/posts/${file.replace(/\.md$/, '')}`,
+    author: data.author ? data.author : "Unknown",
+    href: `/posts/${file.replace(/\.md$/, "")}`,
     date: formatDate(data.date),
     intro: data.intro,
     excerpt: excerpt && md.render(excerpt),
@@ -69,18 +69,17 @@ function getPost(file: string, postDir: string): Post {
   return post
 }
 
-function formatDate(date: string | Date): Post['date'] {
-  if (!(date instanceof Date))
-    date = new Date(date)
+function formatDate(date: string | Date): Post["date"] {
+  if (!(date instanceof Date)) date = new Date(date)
 
   date.setUTCHours(12)
 
   return {
     time: +date,
-    string: date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
+    string: date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     }),
     since: formatDistance(date, new Date(), { addSuffix: true }),
   }

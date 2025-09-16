@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
-import useAuthors from '../../composables/useAuthors'
-import usePosts from '../../composables/usePosts'
-import PostAuthor from './PostAuthor.vue'
-import PostIcon from './PostIcon.vue'
+import { useData } from "vitepress"
+import useAuthors from "../../composables/useAuthors"
+import usePosts from "../../composables/usePosts"
+import PostAuthor from "./PostAuthor.vue"
+import PostIcon from "./PostIcon.vue"
 
 const { site } = useData()
 
@@ -11,7 +11,7 @@ const { currentPost: post, prevPost, nextPost } = usePosts()
 const { findByName } = useAuthors()
 const author = findByName(post.value.author)
 
-const articlesPath = 'articles'
+const articlesPath = "articles"
 
 // <!-- :class="$vuetify.theme.current === 'dark' ? 'bg-primary-darken-4' : 'bg-primary-lighten-5'" -->
 </script>
@@ -43,29 +43,22 @@ const articlesPath = 'articles'
         </v-col>
       </v-row> -->
 
-      <v-row
-        class="mt-0 mb-4 pb-4 pt-0"
-        style="border-bottom: 1px solid var(--vp-c-divider);"
-      >
+      <v-row class="mt-0 mb-4 pb-4 pt-0" style="border-bottom: 1px solid var(--vp-c-divider)">
         <v-col cols="auto" class="pt-0">
-          <h3
-            class="text-h5 font-weight-bold text-primary-light d-inline-flex pa-0 ma-0"
-          >
+          <h3 class="text-h5 font-weight-bold text-primary-light d-inline-flex pa-0 ma-0">
             <!-- Title -->
             {{ post.title }}
           </h3>
         </v-col>
         <v-col cols="auto" class="ml-auto mt-n2">
-          <span
-            class="align-center bg-primary-lighten-5 float-right"
-          >
+          <span class="align-center bg-primary-lighten-5 float-right">
             <PostIcon :post="post" />
           </span>
         </v-col>
       </v-row>
 
       <v-row class="mb-8">
-        <v-col cols="auto" style="margin-top: -6px !important;">
+        <v-col cols="auto" style="margin-top: -6px !important">
           <PostAuthor :author="author" />
         </v-col>
         <v-col cols="auto" class="ml-auto overflow-auto">
@@ -102,7 +95,6 @@ const articlesPath = 'articles'
           </v-btn>
         </v-col>
       </v-row>
-
     </div>
   </v-container>
 </template>

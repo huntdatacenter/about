@@ -1,6 +1,5 @@
 <script lang="ts">
-
-import { data } from '../data/dataControllers.data.ts'
+import { data } from "../data/dataControllers.data.ts"
 
 export default {
   // name: 'ViewDataControllers',
@@ -17,12 +16,12 @@ export default {
     }
   },
   watch: {
-    faculty: function(after, before) {
+    faculty: function (after, before) {
       if (!this.hasMultipleDepartments && this.hasDepartments) {
         this.department = this.getDepartments[0]
       }
     },
-    institution: function(after, before) {
+    institution: function (after, before) {
       if (!this.hasMultipleFaculties && this.hasFaculties) {
         this.faculty = this.getFaculties[0]
       }
@@ -33,40 +32,38 @@ export default {
   },
   computed: {
     getCountries() {
-      return data.dataControllers ? data.dataControllers.map((item) => {
-        return item.country
-      }).filter(
-        this.onlyUnique
-      ) : []
+      return data.dataControllers
+        ? data.dataControllers
+            .map(item => {
+              return item.country
+            })
+            .filter(this.onlyUnique)
+        : []
     },
     getInstitutions() {
       return data.dataControllers
         ? data.dataControllers
-            .filter((item) => {
+            .filter(item => {
               return item.country == this.country
             })
-            .map((item) => {
+            .map(item => {
               return item.institution
             })
-            .filter((item) => item ? true : false)
-            .filter(
-              this.onlyUnique
-            )
+            .filter(item => (item ? true : false))
+            .filter(this.onlyUnique)
         : []
     },
     getFaculties() {
       return data.dataControllers
         ? data.dataControllers
-            .filter((item) => {
+            .filter(item => {
               return item.institution == this.institution
             })
-            .map((item) => {
+            .map(item => {
               return item.faculty
             })
-            .filter((item) => item ? true : false)
-            .filter(
-              this.onlyUnique
-            )
+            .filter(item => (item ? true : false))
+            .filter(this.onlyUnique)
         : []
     },
     hasFaculties() {
@@ -78,16 +75,14 @@ export default {
     getDepartments() {
       return data.dataControllers
         ? data.dataControllers
-            .filter((item) => {
+            .filter(item => {
               return item.institution == this.institution && item.faculty == this.faculty
             })
-            .map((item) => {
+            .map(item => {
               return item.department
             })
-            .filter((item) => item ? true : false)
-            .filter(
-              this.onlyUnique
-            )
+            .filter(item => (item ? true : false))
+            .filter(this.onlyUnique)
         : []
     },
     hasDepartments() {
@@ -111,13 +106,15 @@ export default {
       }
     },
     result() {
-      return this.isSignedInstitution ? "Yes, we have signed an agreement with your institution" : "Haven't found your institution? Contact us"
-    }
+      return this.isSignedInstitution
+        ? "Yes, we have signed an agreement with your institution"
+        : "Haven't found your institution? Contact us"
+    },
   },
   methods: {
     onlyUnique(value, index, array) {
-      return array.indexOf(value) === index;
-    }
+      return array.indexOf(value) === index
+    },
   },
 }
 </script>
@@ -130,11 +127,7 @@ export default {
       label="Country"
       :items="getCountries"
     ></v-autocomplete> -->
-    <v-autocomplete
-      v-model="institution"
-      label="Institution"
-      :items="getInstitutions"
-    ></v-autocomplete>
+    <v-autocomplete v-model="institution" label="Institution" :items="getInstitutions"></v-autocomplete>
     <v-autocomplete
       v-if="hasMultipleFaculties"
       v-model="faculty"
@@ -151,6 +144,4 @@ export default {
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
