@@ -437,7 +437,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               </v-row>
               <v-row dense>
                 <v-col cols="12">
-                  <SimpleButton size="small" href="https://docs.hdc.ntnu.no/administer-science/prices/introduction/" title="Read more" />
+                  <SimpleButton size="small" href="https://docs.hdc.ntnu.no/administer-science/prices/" title="Read more" />
                 </v-col>
               </v-row>
             </v-card-text>
