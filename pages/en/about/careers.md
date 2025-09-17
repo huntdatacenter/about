@@ -13,10 +13,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     <!-- Note testing hcc-career-header-img for custom image-->
     <div class="hc-header-img"></div>
   </div>
-<!-- BLOCK END: Top images --> 
-  
-  
-  
+<!-- BLOCK END: Top images -->
+
 <!----------------------------------------------->
 <!-- Block: Freedom to explore -->
 <!----------------------------------------------->
@@ -90,17 +88,17 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title" style="text-align: left">
             DevOps engineer
             </div>
-            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277477/senior-devops-engineer">Click for position text >></a></strong>
+            We are seeking a senior DevOps engineer to join our team in Trondheim. This is a 100% permanent position with immediate start. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/">Click for position text >></a></strong>
           </v-col>
           <v-col cols="12" class="v-col-sm-6">
             <div class="hc-container-title" style="text-align: left">
              Full stack software engineer
             </div>
-            We are seeking a senior full stack software engineer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/available-jobs/job/277482/senior-full-stack-software-engineer">Click for position text >></a></strong>
+            We are seeking a senior full stack software engineer to join our team in Trondheim. This is a 100% position for two years with the possibility for extension. Deadline: April 28th 2025.<br><br><strong><a href="https://www.jobbnorge.no/en/">Click for position text >></a></strong>
           </v-col>
         </v-row>
       </div>
- --> 
+ -->
     </div>
   </div>
 <!-- BLOCK END: Current openings -->
@@ -470,7 +468,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <div class="hc-container-title">
               Open Infra and Open Source
             </div>
-            We run HUNT Cloud under open infrastructure principles.<br><br>Among others, this means that we embrace open source software, open standards and vendor neutral equipment whenever possible.<br><br>From an equality perspective, this enables scientists to share tools and methods around the world.<br><br>From a personal perspective, we get to enjoy Club Mate at FOSDEM. Photo: Jakub at the 2025 opening session.       
+            We run HUNT Cloud under open infrastructure principles.<br><br>Among others, this means that we embrace open source software, open standards and vendor neutral equipment whenever possible.<br><br>From an equality perspective, this enables scientists to share tools and methods around the world.<br><br>From a personal perspective, we get to enjoy Club Mate at FOSDEM. Photo: Jakub at the 2025 opening session.
             </v-col>
           <v-col cols="12" class="v-col-sm-6">
 <!--          <v-col cols="6" class="d-none d-sm-flex">     -->
@@ -561,7 +559,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
             <li>- <strong><a href="https://workintrondheim.no/opportunities/top-9-reasons">Top 9 reasons why you'll love Trondheim >></a></strong></li>
             <li>- <strong><a href="https://workintrondheim.no/">Work in Trondheim >></a></strong></li>
             <li>- <strong><a href="https://www.internations.org/trondheim-expats">Trondheim expat community >></a></strong></li>
-            </ul><br>NTNU International Researcher Support (NIRS) offers counseling services for administrative staff:<br><br>           
+            </ul><br>NTNU International Researcher Support (NIRS) offers counseling services for administrative staff:<br><br>
             <ul>
             <li>- <strong><a href="https://www.ntnu.edu/nirs">NTNU International Researcher Support (NIRS) >></a></strong></li>
             </ul><br>We are happy to help so you can enjoy the Nordic lifestyle with a balanced worklife, free health care for all, paid sick leave, five weeks paid vacation and virtually free child's education.<br><br>
