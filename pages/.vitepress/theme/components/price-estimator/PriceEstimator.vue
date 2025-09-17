@@ -13,6 +13,19 @@ interface labCard {
   numCompute: number
 }
 
+interface datasetCompute {
+  id: number
+  name: string
+  flavor: string
+  core_count: number
+  ram: number
+  type: string
+  period: string
+  monthlyPrice: number
+  yearlyPrice: number
+}
+interface datasetStorage {}
+
 export default defineComponent({
   props: {
     title: { type: String, default: "Title" },
@@ -48,6 +61,8 @@ export default defineComponent({
       totalStorageCost: 0.0,
       totalPriceItems: [],
       sumInTotal: 0.0,
+      itemsComputeExport: [] as datasetCompute[],
+      itemsStorageExport: [] as datasetStorage[],
     }
   },
 
@@ -125,13 +140,16 @@ export default defineComponent({
 
     // Update the storage property of a lab card
     updateLabCardStorage(id, payload) {
+      console.log(payload)
       const labCard = this.labCards.find(lab => lab.id === id)
       if (labCard) {
         labCard.storage = payload
         labCard.priceStorage = payload.price
       }
       this.totalStorage = this.labCards.reduce((total, lab) => total + lab.storage.size, 0)
+      console.log("labCards:", this.labCards)
       this.totalStorageCost = this.labCards.reduce((total, lab) => total + lab.priceStorage, 0)
+      this.itemsStorageExport[id] = payload.datasetStorage
       this.setPriceItems()
     },
 
@@ -143,6 +161,10 @@ export default defineComponent({
         labCard.numCompute = parseFloat(prices.numCompute)
       }
       this.totalCompute.price = this.labCards.reduce((total, lab) => total + lab.priceComputeYearly, 0)
+      /**
+       * We need to handle that we can have multiple labs for the export. So make it an array of arrays.
+       */
+      this.itemsComputeExport[id] = prices.datasetCompute
       this.setPriceItems()
     },
 
@@ -175,6 +197,16 @@ export default defineComponent({
       this.totalPriceItems = priceItems
       this.sumInTotal = priceItems.reduce((total, item) => total + item.price, 0)
     },
+    triggerFileUpload() {
+      this.$refs.fileInput.click()
+    },
+
+    handleFileUpload(event) {
+      const file = event.target.files[0]
+      if (!file) {
+        return
+      }
+    },
   },
 })
 </script>
@@ -200,10 +232,23 @@ export default defineComponent({
 </v-select> -->
 
       <v-container>
-        <v-row lex-direction="row-reverse">
+        <v-row lex-direction="row-reverse" justify="space-between">
           <v-col cols="auto">
             <!-- Add a new lab card on button click -->
             <v-btn density="default" size="large" dark @click="addLabCard">Add lab</v-btn>
+          </v-col>
+          <v-col cols="auto">
+            <input
+              ref="fileInput"
+              type="file"
+              style="display: none"
+              accept="application/json"
+              @change="handleFileUpload"
+            />
+            <v-btn density="default" size="large" dark @click="triggerFileUpload">
+              <v-icon left>mdi-import</v-icon>
+              Import
+            </v-btn>
           </v-col>
         </v-row>
       </v-container>
@@ -225,7 +270,12 @@ export default defineComponent({
       </v-row>
       <!-- Display total prices if there are lab cards -->
       <v-row v-if="labCards.length !== 0">
-        <TotalBlock :total-items="totalPriceItems" :sum-in-total="sumInTotal" />
+        <TotalBlock
+          :total-items="totalPriceItems"
+          :sum-in-total="sumInTotal"
+          :itemsComputeExport="itemsComputeExport"
+          :itemsStorageExport="itemsStorageExport"
+        />
       </v-row>
     </v-sheet>
   </v-container>

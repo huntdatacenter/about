@@ -89,6 +89,7 @@ export default {
         monthlyPrice: this.computeLabSum.monthlyPrice,
         yearlyPrice: this.computeLabSum.yearlyPrice,
         numCompute: this.datasetCompute.length || 0,
+        datasetCompute: this.datasetCompute,
       })
     },
     updateLabSumStorage() {
@@ -96,10 +97,12 @@ export default {
 
       this.updateAddedStorage()
       this.storageLabSum.price = this.datasetStorage.reduce((acc, item) => acc + item.price, 0)
+      console.log("storage", this.datasetStorage)
 
       this.$emit("updateStorage", {
         size: this.storageLabSum.size,
         price: this.storageLabSum.price,
+        datasetStorage: this.datasetStorage,
       })
     },
 
