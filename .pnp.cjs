@@ -50,6 +50,7 @@ const RAW_RUNTIME_STATE =
           ["vitepress", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:1.6.4"],\
           ["vitest", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:1.6.1"],\
           ["vue", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:3.5.21"],\
+          ["vue-router", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:4.5.1"],\
           ["vuetify", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:3.9.7"]\
         ],\
         "linkType": "SOFT"\
@@ -2747,6 +2748,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@vue/devtools-api", [\
+      ["npm:6.6.4", {\
+        "packageLocation": "../../.yarn/berry/cache/@vue-devtools-api-npm-6.6.4-495c1fc100-10c0.zip/node_modules/@vue/devtools-api/",\
+        "packageDependencies": [\
+          ["@vue/devtools-api", "npm:6.6.4"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:7.7.7", {\
         "packageLocation": "../../.yarn/berry/cache/@vue-devtools-api-npm-7.7.7-8754ec04ad-10c0.zip/node_modules/@vue/devtools-api/",\
         "packageDependencies": [\
@@ -3021,6 +3029,7 @@ const RAW_RUNTIME_STATE =
           ["vitepress", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:1.6.4"],\
           ["vitest", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:1.6.1"],\
           ["vue", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:3.5.21"],\
+          ["vue-router", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:4.5.1"],\
           ["vuetify", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:3.9.7"]\
         ],\
         "linkType": "SOFT"\
@@ -6660,6 +6669,29 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/vue-component-type-helpers-npm-2.0.11-6293fca979-10c0.zip/node_modules/vue-component-type-helpers/",\
         "packageDependencies": [\
           ["vue-component-type-helpers", "npm:2.0.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["vue-router", [\
+      ["npm:4.5.1", {\
+        "packageLocation": "../../.yarn/berry/cache/vue-router-npm-4.5.1-e1e2c95bb4-10c0.zip/node_modules/vue-router/",\
+        "packageDependencies": [\
+          ["vue-router", "npm:4.5.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:4.5.1", {\
+        "packageLocation": "./.yarn/__virtual__/vue-router-virtual-626751113a/3/.yarn/berry/cache/vue-router-npm-4.5.1-e1e2c95bb4-10c0.zip/node_modules/vue-router/",\
+        "packageDependencies": [\
+          ["@types/vue", null],\
+          ["@vue/devtools-api", "npm:6.6.4"],\
+          ["vue", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:3.5.21"],\
+          ["vue-router", "virtual:89d5fc836f083cb96f430c4259bd64e027c79f164ab07e933eba912a7e8d69557d42434f947e005aeee433f905c8f8e68ea7e69ad7d1e08e14430f89e57e8511#npm:4.5.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/vue",\
+          "vue"\
         ],\
         "linkType": "HARD"\
       }]\
