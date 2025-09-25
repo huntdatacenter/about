@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent } from "vue"
+import { defineComponent, nextTick } from "vue"
 import csvApi from "../../api/csv.js"
 
 // Define the labCard interface for type safety
@@ -11,6 +11,9 @@ interface labCard {
   priceComputeYearly: number
   priceComputeYearlyYearly: number
   numCompute: number
+  // Add properties to hold initial data for imported labs
+  initialCompute?: any[]
+  initialStorage?: any[]
 }
 
 interface datasetCompute {
@@ -75,30 +78,33 @@ export default defineComponent({
     // Method to initialize all data
     initializeAll() {
       this.isInitializingComputePrices = true
-      const getPriceList = csvApi.getPriceList()
-      // Fetch and process compute prices
-      getPriceList.then(json => {
-        this.computePrices = json.filter(item => item["service.group"] === "cpu")
-        this.computePrices = this.computePrices.map(this.preparePricesToYearly)
-        this.isInitializingComputePrices = false
-      })
+      this.isInitializingStoragePrices = true
+      this.isInitializingGpuPrices = true
+      this.isInitializingMachines = true
+      this.isInitializingAvailableGpus = true
 
-      // Initialize available GPUs, machines, and storage prices
-      this.initializeAvailableGpus()
-      this.initializeMachines()
-
-      getPriceList.then(json => {
+      const priceListPromise = csvApi.getPriceList().then(json => {
+        this.computePrices = json.filter(item => item["service.group"] === "cpu").map(this.preparePricesToYearly)
         this.storagePrices = json.filter(item => item["service.family"] === "store")
-        this.isInitializingStoragePrices = false
-      })
-      getPriceList.then(json => {
-        this.gpuPrices = json.filter(item => item["service.group"] === "gpu")
-        this.gpuPrices.map(this.preparePricesToYearly)
-        this.isInitializingGpuPrices = false
-      })
-      getPriceList.then(json => {
+        this.gpuPrices = json.filter(item => item["service.group"] === "gpu").map(this.preparePricesToYearly)
         this.labPrices = json.filter(item => item["service.group"] === "lab")
-        this.isInitializingLabPrices = false
+      })
+
+      const gpusPromise = csvApi.getAvailableGPUS().then(gpus => {
+        this.availableGpus = gpus
+      })
+
+      const machinesPromise = csvApi.getMachineFlavors().then(machine => {
+        this.machines = machine
+      })
+
+      // Return a promise that resolves when all data fetching is complete
+      return Promise.all([priceListPromise, gpusPromise, machinesPromise]).then(() => {
+        this.isInitializingComputePrices = false
+        this.isInitializingStoragePrices = false
+        this.isInitializingGpuPrices = false
+        this.isInitializingMachines = false
+        this.isInitializingAvailableGpus = false
       })
     },
     // Initialize available GPUs
@@ -155,6 +161,7 @@ export default defineComponent({
 
     // Update the compute property of a lab card
     updateLabCardCompute(id, prices) {
+      console.log(prices)
       const labCard = this.labCards.find(lab => lab.id === id)
       if (labCard) {
         labCard.priceComputeYearly = parseFloat(prices.yearlyPrice)
@@ -201,11 +208,69 @@ export default defineComponent({
       this.$refs.fileInput.click()
     },
 
-    handleFileUpload(event) {
+    async handleFileUpload(event) {
       const file = event.target.files[0]
       if (!file) {
         return
       }
+
+      const reader = new FileReader()
+      reader.onload = async e => {
+        try {
+          // Ensure all price data is loaded before processing the file
+          await this.initializeAll()
+
+          const data = JSON.parse(e.target.result as string)
+
+          // Basic validation of the JSON structure
+          if (!data.version || !Array.isArray(data.labs)) {
+            throw new Error("Invalid JSON format: 'version' or 'labs' property is missing.")
+          }
+
+          // Reset current state
+          this.labCards = []
+          this.itemsComputeExport = []
+          this.itemsStorageExport = []
+          this.totalCompute = { price: 0.0 }
+          this.totalStorage = 0.0
+          this.totalStorageCost = 0.0
+
+          // Re-create labs from the imported file
+          data.labs.forEach(lab => {
+            const newLabCard: labCard = {
+              id: lab.id,
+              title: lab.name,
+              // Initialize all properties to a default state
+              storage: 0,
+              priceStorage: 0,
+              priceComputeYearly: 0,
+              priceComputeYearlyYearly: 0,
+              numCompute: 0,
+              initialCompute: lab.compute || [],
+              initialStorage: lab.storage || [],
+            }
+            this.labCards.push(newLabCard)
+          })
+
+          // Wait for the DOM to update with the new lab cards
+          await nextTick()
+
+          // Now that lab cards are created and have emitted their initial state,
+          // recalculate the total summary.
+          this.setPriceItems()
+
+          // Reset the file input so the same file can be uploaded again
+          event.target.value = ""
+        } catch (error) {
+          console.error("Failed to parse or process JSON file:", error)
+          alert("Error: Could not import file. Please ensure it is a valid JSON file with the correct format.")
+        }
+      }
+      reader.onerror = error => {
+        console.error("FileReader error:", error)
+        alert("Error reading file.")
+      }
+      reader.readAsText(file)
     },
   },
 })
@@ -263,6 +328,8 @@ export default defineComponent({
             :machines="machines"
             :available-gpus="availableGpus"
             :storage-prices="storagePrices"
+            :initial-compute="lab.initialCompute"
+            :initial-storage="lab.initialStorage"
             @updateStorage="updateLabCardStorage(lab.id, $event)"
             @updateCompute="updateLabCardCompute(lab.id, $event)"
           />
