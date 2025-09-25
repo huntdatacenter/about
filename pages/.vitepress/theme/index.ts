@@ -14,12 +14,13 @@ import WindowSlider from "../components/WindowSlider.vue"
 import CardElement from "../components/CardElement.vue"
 import ExpandTable from "../components/ExpandTable.vue"
 import ViewDataControllers from "../components/ViewDataControllers.vue"
-import TotalBlock from "../components/TotalBlock.vue"
+
 
 import PriceEstimator from "./components/price-estimator/PriceEstimator.vue"
 import LabCard from "./components/price-estimator/LabCard.vue"
 import Machine from "./components/price-estimator/Machine.vue"
 import Storage from "./components/price-estimator/Storage.vue"
+import TotalBlock from "./components/price-estimator/TotalBlock.vue"
 
 import AuthorDetail from "./components/blog/AuthorDetail.vue"
 import Post from "./components/blog/Post.vue"

@@ -28,7 +28,8 @@ export default {
       overlay: true,
       /* This subscriptions are used to translate into the correct subscription type in the api */
       subscriptions: [
-        { text: "Commitment", value: "COMMITMENT" },
+        { text: "Commitment - 1 Year", value: "COMMITMENT_1Y" },
+        { text: "Commitment - 3 Years", value: "COMMITMENT_3Y" },
         { text: "On demand", value: "ONDEMAND" },
         { text: "Spot", value: "SPOT" },
       ],
@@ -36,19 +37,38 @@ export default {
   },
 
   computed: {
-    getPeriod() {
-      return this.formData.flavor && this.formData.subscription ? this.periods[this.formData.subscription] : null
-    },
-
     //Lurer på om jeg skal endre denne til å bli noe som getFlavor som henter ut det itemet, så kan jeg bruke den rundt om kring i koden
+    // Problemet er at vi ikke vet hvilken commitment level det er snakk om, siden denne er basert på subscription type.
+    // Add option to the dropdown for a period. Commitment 1 year, or commitment 3 year.
+
     getComputePriceYear() {
       if (!this.formData.flavor && !this.formData.subscription) {
         return 0
       }
-      const price = this.flavors.find(
-        item => item["service.unit"] === this.formData.flavor && item["service.level"] === this.formData.subscription,
-      )
-      return price ? parseInt(price["price.nok.ex.vat"]).toFixed(2) : 0
+      var price
+      if (this.formData.subscription.includes("COMMITMENT")) {
+        if (this.formData.subscription === "COMMITMENT_3Y") {
+          price =
+            this.flavors.find(
+              item =>
+                item["service.unit"] === this.formData.flavor &&
+                item["service.level"] === "COMMITMENT" &&
+                item["service.commitment"] === "3Y",
+            )["price.nok.ex.vat"] / 3
+        } else {
+          price = this.flavors.find(
+            item =>
+              item["service.unit"] === this.formData.flavor &&
+              item["service.level"] === "COMMITMENT" &&
+              item["service.commitment"] === "1Y",
+          )["price.nok.ex.vat"]
+        }
+      } else {
+        price = this.flavors.find(
+          item => item["service.unit"] === this.formData.flavor && item["service.level"] === this.formData.subscription,
+        )["price.nok.ex.vat"]
+      }
+      return price ? parseInt(price).toFixed(2) : 0
     },
     getComputePriceMonth() {
       return parseFloat(this.getComputePriceYear / 12).toFixed(2)
@@ -60,16 +80,10 @@ export default {
         return 0
       }
       const price = this.gpus.find(
-        item => item["service.unit"] === this.formData.gpu && item["service.level"] === this.getGpuSubscription,
+        item => item["service.unit"] === this.formData.gpu && item["service.level"] === "ONDEMAND",
       )
 
       return price ? parseFloat(price["price.nok.ex.vat"]).toFixed(2) : 0
-    },
-    getGpuSubscription() {
-      // NOTE GPU does not have spot subscription hence taken as on demand in case spot is selected for compute
-      return this.formData.subscription
-        ? this.formData.subscription.replace("SPOT", "ONDEMAND").replace("COMMITMENT", "ONDEMAND")
-        : this.formData.subscription
     },
     getGpuMonthPrice() {
       return parseFloat(this.getGpuPrice / 12).toFixed(2)
