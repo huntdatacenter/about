@@ -14,6 +14,9 @@ interface labCard {
   // Add properties to hold initial data for imported labs
   initialCompute?: any[]
   initialStorage?: any[]
+  // Add properties to hold the current dataset for saving state
+  computeDataset?: any[]
+  storageDataset?: any[]
 }
 
 interface datasetCompute {
@@ -79,11 +82,24 @@ export default defineComponent({
   methods: {
     // Method to save the current state to localStorage
     saveState() {
-      const state = {
-        labCards: this.labCards,
-        nextLabId: this.nextLabId,
-      }
-      localStorage.setItem("priceEstimatorState", JSON.stringify(state))
+      // Create a deep clone of the state to avoid mutating the reactive state that the child is watching.
+      const stateToSave = JSON.parse(
+        JSON.stringify({
+          labCards: this.labCards,
+          nextLabId: this.nextLabId,
+        }),
+      )
+
+      // Update the 'initial' properties on the cloned object before saving.
+      stateToSave.labCards.forEach(lab => {
+        lab.initialCompute = lab.computeDataset
+        lab.initialStorage = lab.storageDataset
+        // Clean up the temporary properties so they aren't saved in localStorage
+        delete lab.computeDataset
+        delete lab.storageDataset
+      })
+
+      localStorage.setItem("priceEstimatorState", JSON.stringify(stateToSave))
     },
 
     // Method to load the state from localStorage
@@ -198,6 +214,8 @@ export default defineComponent({
       if (labCard) {
         labCard.storage = payload
         labCard.priceStorage = payload.price
+        // Store the current dataset to be used when saving state
+        labCard.storageDataset = payload.datasetStorage
       }
       this.totalStorage = this.labCards.reduce((total, lab) => total + lab.storage.size, 0)
       this.totalStorageCost = this.labCards.reduce((total, lab) => total + lab.priceStorage, 0)
@@ -208,11 +226,12 @@ export default defineComponent({
 
     // Update the compute property of a lab card
     updateLabCardCompute(id, prices) {
-      console.log(prices)
       const labCard = this.labCards.find(lab => lab.id === id)
       if (labCard) {
         labCard.priceComputeYearly = parseFloat(prices.yearlyPrice)
         labCard.numCompute = parseFloat(prices.numCompute)
+        // Store the current dataset to be used when saving state
+        labCard.computeDataset = prices.datasetCompute
       }
       this.totalCompute.price = this.labCards.reduce((total, lab) => total + lab.priceComputeYearly, 0)
       /**
@@ -434,4 +453,6 @@ export default defineComponent({
 
 <style scoped>
 /* Add scoped styles if needed */
+
+/* TODO: Make sure that the price is calculated correctly when importing a file and loading from local storage */
 </style>
