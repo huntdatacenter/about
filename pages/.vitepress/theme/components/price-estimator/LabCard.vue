@@ -1,7 +1,7 @@
 <script lang="ts">
 export default {
   name: "LabCard",
-  emits: ["updateStorage", "updateCompute"],
+  emits: ["updateStorage", "updateCompute", "removeLab"],
   props: {
     title: { type: String, required: true, default: "Lab " },
     computePrices: { type: Array, default: () => [] },
@@ -363,7 +363,13 @@ export default {
   <v-container>
     <v-sheet class="lab-card ma-0">
       <v-card class="ma-0">
-        <v-card-title>{{ title }}</v-card-title>
+        <v-row class="ma-2" align="center" justify="space-between">
+          <v-card-title>{{ title }}</v-card-title>
+          <v-btn icon @click="$emit('removeLab')">
+            <v-icon>mdi-delete</v-icon>
+          </v-btn>
+        </v-row>
+
         <v-card flat>
           <v-card-title> Compute</v-card-title>
           <v-card-subtitle> {{ "Add a machine to " + title }}</v-card-subtitle>
