@@ -36,6 +36,7 @@ export default defineComponent({
   data() {
     return {
       labCards: [] as labCard[], // Initialize an empty array for lab cards
+      nextLabId: 1, // New property to track the next available lab ID
       selectedDataSpaceSub: null,
       dataspaceSubscriptions: [
         // Predefined data space subscriptions
@@ -69,11 +70,49 @@ export default defineComponent({
   },
 
   created() {
-    // Initialize all data when the component is created
-    this.initializeAll()
+    // Initialize all data when the component is created, then load the saved state
+    this.initializeAll().then(() => {
+      this.loadState()
+    })
   },
 
   methods: {
+    // Method to save the current state to localStorage
+    saveState() {
+      const state = {
+        labCards: this.labCards,
+        nextLabId: this.nextLabId,
+      }
+      localStorage.setItem("priceEstimatorState", JSON.stringify(state))
+    },
+
+    // Method to load the state from localStorage
+    loadState() {
+      //Add some try catch here, if it fails just give them an empty state
+      try {
+        const savedState = localStorage.getItem("priceEstimatorState")
+        if (savedState) {
+          const state = JSON.parse(savedState)
+          this.labCards = state.labCards || []
+          this.nextLabId = state.nextLabId || 1
+
+          // After loading state, we need to re-populate the export arrays and recalculate totals
+          this.$nextTick(() => {
+            this.labCards.forEach(lab => {
+              // This assumes that the child LabCard component will emit its state on creation
+              // which will then be captured by updateLabCardCompute/Storage.
+            })
+            this.setPriceItems()
+          })
+        }
+      } catch (error) {
+        console.error("Failed to load state:", error)
+        // If loading fails, just start with an empty state
+        this.labCards = []
+        this.nextLabId = 1
+      }
+    },
+
     // Method to initialize all data
     initializeAll() {
       this.isInitializingComputePrices = true
@@ -136,11 +175,21 @@ export default defineComponent({
     // Add a new lab card
     addLabCard() {
       const newLabCard = {
-        id: this.labCards.length + 1, // Assign a unique ID to the new lab card
-        title: `Lab ${this.labCards.length + 1}`,
+        id: this.nextLabId, // Use the counter for the new ID
+        title: `Lab ${this.nextLabId}`,
+        // Initialize with default empty values to prevent errors
+        storage: 0,
+        priceStorage: 0,
+        priceComputeYearly: 0,
+        priceComputeYearlyYearly: 0,
+        numCompute: 0,
+        initialCompute: [],
+        initialStorage: [],
       }
       this.labCards.push(newLabCard)
+      this.nextLabId++ // Increment the counter for the next lab
       this.setPriceItems()
+      this.saveState() // Save state after adding a lab
     },
 
     // Update the storage property of a lab card
@@ -154,6 +203,7 @@ export default defineComponent({
       this.totalStorageCost = this.labCards.reduce((total, lab) => total + lab.priceStorage, 0)
       this.itemsStorageExport[id] = payload.datasetStorage
       this.setPriceItems()
+      this.saveState() // Save state after updating storage
     },
 
     // Update the compute property of a lab card
@@ -170,6 +220,29 @@ export default defineComponent({
        */
       this.itemsComputeExport[id] = prices.datasetCompute
       this.setPriceItems()
+      this.saveState() // Save state after updating compute
+    },
+    // Remove a lab card by its ID
+    removeLabCard(id) {
+      this.labCards = this.labCards.filter(lab => lab.id !== id)
+      // Use delete to create a sparse array, preserving other indices
+      delete this.itemsComputeExport[id]
+      delete this.itemsStorageExport[id]
+      // Recalculate totals after removing a lab card
+      this.setPriceItems()
+      this.saveState() // Save state after removing a lab
+    },
+    removeAllLabs() {
+      this.labCards = []
+      this.itemsComputeExport = []
+      this.itemsStorageExport = []
+      this.totalCompute = { price: 0.0 }
+      this.totalStorage = 0.0
+      this.totalStorageCost = 0.0
+      this.nextLabId = 1
+      this.setPriceItems()
+      // Remove the saved state from local storage
+      localStorage.removeItem("priceEstimatorState")
     },
 
     // Set the price items and calculate the total sum
@@ -231,6 +304,7 @@ export default defineComponent({
           this.totalCompute = { price: 0.0 }
           this.totalStorage = 0.0
           this.totalStorageCost = 0.0
+          this.nextLabId = 1 // Reset the lab ID counter
 
           // Re-create labs from the imported file
           data.labs.forEach(lab => {
@@ -247,6 +321,10 @@ export default defineComponent({
               initialStorage: lab.storage || [],
             }
             this.labCards.push(newLabCard)
+            // Update the nextLabId to be one greater than the highest ID found
+            if (lab.id >= this.nextLabId) {
+              this.nextLabId = lab.id + 1
+            }
           })
 
           // Wait for the DOM to update with the new lab cards
@@ -255,6 +333,7 @@ export default defineComponent({
           // Now that lab cards are created and have emitted their initial state,
           // recalculate the total summary.
           this.setPriceItems()
+          this.saveState() // Save the newly imported state
 
           // Reset the file input so the same file can be uploaded again
           event.target.value = ""
@@ -300,17 +379,24 @@ export default defineComponent({
             <v-btn density="default" size="large" dark @click="addLabCard">Add lab</v-btn>
           </v-col>
           <v-col cols="auto">
-            <input
-              ref="fileInput"
-              type="file"
-              style="display: none"
-              accept="application/json"
-              @change="handleFileUpload"
-            />
-            <v-btn density="default" size="large" dark @click="triggerFileUpload">
-              <v-icon left>mdi-import</v-icon>
-              Import
-            </v-btn>
+            <v-row>
+              <v-col cols="auto">
+                <v-btn density="default" size="large" dark @click="removeAllLabs"> Remove all </v-btn>
+              </v-col>
+              <v-col cols="auto">
+                <input
+                  ref="fileInput"
+                  type="file"
+                  style="display: none"
+                  accept="application/json"
+                  @change="handleFileUpload"
+                />
+                <v-btn density="default" size="large" dark @click="triggerFileUpload">
+                  <v-icon left>mdi-import</v-icon>
+                  Import
+                </v-btn>
+              </v-col>
+            </v-row>
           </v-col>
         </v-row>
       </v-container>
@@ -329,6 +415,7 @@ export default defineComponent({
             :initial-storage="lab.initialStorage"
             @updateStorage="updateLabCardStorage(lab.id, $event)"
             @updateCompute="updateLabCardCompute(lab.id, $event)"
+            @removeLab="removeLabCard(lab.id)"
           />
         </v-col>
       </v-row>
