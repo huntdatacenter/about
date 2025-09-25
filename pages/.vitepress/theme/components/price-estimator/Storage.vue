@@ -45,10 +45,10 @@ export default {
     <v-card-title>
       <span class="headline">Storage</span>
     </v-card-title>
-    <v-card-text>
+    <v-card-text style="width: 100%">
       <v-container>
         <v-row dense>
-          <v-form @submit.prevent="save">
+          <v-form @submit.prevent="save" style="width: 100%">
             <v-col cols="12">
               <v-text-field v-model="formData.name" label="Name" required variant="outlined"></v-text-field>
             </v-col>

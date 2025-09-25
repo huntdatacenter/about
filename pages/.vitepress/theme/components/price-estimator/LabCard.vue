@@ -225,7 +225,7 @@ export default {
     pushDefaultComputeUnit() {
       let defaultUnit = this.computePrices.find(
         item =>
-          item["service.unit"] === "default.c2" &&
+          item["service.unit"] === "default.c1" &&
           item["service.level"] === "COMMITMENT" &&
           item["service.commitment"] === "1Y",
       )
@@ -243,8 +243,8 @@ export default {
         gpu: null,
         ram: ram,
         type: "COMMITMENT_1Y",
-        monthlyPrice: defaultUnit["price.nok.ex.vat"] / 12,
-        yearlyPrice: defaultUnit["price.nok.ex.vat"],
+        monthlyPrice: parseFloat(defaultUnit["price.nok.ex.vat"] / 12).toFixed(2),
+        yearlyPrice: parseFloat(defaultUnit["price.nok.ex.vat"]).toFixed(2),
       })
       this.computeId += 1
     },

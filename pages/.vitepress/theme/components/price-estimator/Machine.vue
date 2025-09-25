@@ -156,7 +156,7 @@ export default {
     <v-card-title>
       <span class="text-h5">Add Compute</span>
     </v-card-title>
-    <v-card-text>
+    <v-card-text style="width: 100%">
       <v-container>
         <v-row dense>
           <v-col cols="12">
@@ -182,6 +182,7 @@ export default {
               variant="outlined"
               required
               :disabled="!formData.subscription"
+              width="100%"
             >
               <template #item="{ item, props }">
                 <VDivider v-if="'divider' in item.raw" />

@@ -380,7 +380,7 @@ export default defineComponent({
           </v-col>
           <v-col cols="auto">
             <v-row>
-              <v-col cols="auto">
+              <v-col cols="auto" v-if="labCards.length !== 0">
                 <v-btn density="default" size="large" dark @click="removeAllLabs"> Remove all </v-btn>
               </v-col>
               <v-col cols="auto">
