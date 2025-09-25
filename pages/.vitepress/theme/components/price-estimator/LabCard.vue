@@ -9,8 +9,6 @@ export default {
     machines: { type: Array, default: () => [] },
     availableGpus: { type: Array, default: () => [] },
     storagePrices: { type: Array, default: () => [] },
-    initialCompute: { type: Array, default: null },
-    initialStorage: { type: Array, default: null },
   },
   data() {
     return {
@@ -77,7 +75,6 @@ export default {
 
   methods: {
     updateLabSum() {
-      console.log("compute", this.datasetCompute)
       this.computeLabSum.monthlyPrice = this.datasetCompute.reduce(
         (acc, item) => parseFloat(acc) + parseFloat(item.monthlyPrice),
         0,
@@ -265,70 +262,12 @@ export default {
       }
       return price
     },
-
-    // Helper to find compute price based on flavor and type
-    getComputePrice(flavor, type, period, gpuFlavor = null) {
-      console.log("Getting price for", flavor, type, period, gpuFlavor)
-      let commitment = "1D" // Default to On-Demand
-      if (type === "COMMITMENT") {
-        commitment = period === "1 Years" ? "1Y" : "1M"
-      }
-
-      let totalYearlyPrice = 0
-
-      const mainFlavorPrice = this.computePrices.find(
-        p => p["service.unit"] === flavor && p["service.commitment"] === commitment,
-      )
-      if (mainFlavorPrice) {
-        totalYearlyPrice += mainFlavorPrice["price.nok.ex.vat"]
-      }
-
-      if (gpuFlavor) {
-        const gpuPrice = this.gpuPrices.find(
-          p => p["service.unit"] === gpuFlavor && p["service.commitment"] === commitment,
-        )
-        if (gpuPrice) {
-          totalYearlyPrice += gpuPrice["price.nok.ex.vat"]
-        }
-      }
-
-      if (commitment === "1D") {
-        // If it's a daily price, calculate monthly and yearly
-        const dailyPrice = totalYearlyPrice
-        return { monthlyPrice: dailyPrice * 30, yearlyPrice: dailyPrice * 365 }
-      } else {
-        // Otherwise, the fetched price is yearly, so calculate monthly from it
-        return { monthlyPrice: totalYearlyPrice / 12, yearlyPrice: totalYearlyPrice }
-      }
-    },
   },
 
   created() {
-    console.log("initialCompute", this.initialCompute)
-    console.log("initialStorage", this.initialStorage)
-    if (this.initialCompute) {
-      this.datasetCompute = this.initialCompute.map(item => {
-        const flavorParts = item.flavor.split(" + ")
-        const mainFlavor = flavorParts[0]
-        const gpuFlavor = item.gpu || null
-        const prices = this.getComputePrice(mainFlavor, item.type, item.period, gpuFlavor)
-        console.log("prices for unit", prices)
-        return { ...item, ...prices }
-      })
-      this.computeId = this.initialCompute.length
-    } else {
-      this.pushDefaultComputeUnit()
-    }
-
-    if (this.initialStorage) {
-      this.datasetStorage = this.initialStorage.map(item => ({ ...item, price: 0 })) // Price will be calculated in updateLabSumStorage
-      this.storageId = this.initialStorage.length
-    } else {
-      this.pushDefaultStorage()
-    }
-
+    this.pushDefaultComputeUnit()
+    this.pushDefaultStorage()
     this.updateLabSum()
-    this.updateLabSumStorage()
   },
 }
 </script>

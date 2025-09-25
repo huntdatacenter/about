@@ -131,7 +131,6 @@ export default {
         monthlyPrice: monthlyPrice,
         yearlyPrice: yearlyPrice,
         type: this.formData.subscription,
-        period: this.formData.commitment ? this.formData.commitment : "1 Years",
       })
     },
   },
