@@ -12,6 +12,7 @@ export default {
     machines: { type: Array, default: () => [] },
     availableGpus: { type: Array, default: () => [] },
     selectedRadio: { type: String, default: "1Y" },
+    initialData: { type: Object, default: null },
   },
 
   emits: ["close", "open-snackbar"],
@@ -42,7 +43,7 @@ export default {
     // Add option to the dropdown for a period. Commitment 1 year, or commitment 3 year.
 
     getComputePriceYear() {
-      if (!this.formData.flavor && !this.formData.subscription) {
+      if (!this.formData.flavor || !this.formData.subscription) {
         return 0
       }
       var price
@@ -105,8 +106,27 @@ export default {
   },
 
   created() {
-    this.formData.id = this.computeId
-    this.formData.name = `machine-${this.computeId}`
+    if (this.initialData) {
+      // If we are editing, populate the form with the existing data
+      this.formData.id = this.initialData.id
+      // Remove "(incl. GPU)" from the name if it exists, to avoid duplication
+      this.formData.name = this.initialData.name.replace(" (incl. GPU)", "")
+      this.formData.subscription = this.initialData.type
+
+      // Handle combined flavor and GPU
+      if (this.initialData.flavor.includes(" + ")) {
+        const parts = this.initialData.flavor.split(" + ")
+        this.formData.flavor = parts[0]
+        this.formData.gpu = parts[1]
+      } else {
+        this.formData.flavor = this.initialData.flavor
+        this.formData.gpu = this.initialData.gpu || null
+      }
+    } else {
+      // If we are adding a new machine, set the default name and ID
+      this.formData.id = this.computeId
+      this.formData.name = `machine-${this.computeId}`
+    }
   },
 
   methods: {

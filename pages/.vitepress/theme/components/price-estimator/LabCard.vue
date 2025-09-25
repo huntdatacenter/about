@@ -17,9 +17,9 @@ export default {
       /* These are the variables used to manage the compute machines */
       computeId: 0,
       isComputeModalOpen: false,
+      editingComputeItem: null, // To hold the item being edited
       //Add a default entry to datasetCompute with name, flavor, core_count, ram, type, price
       datasetCompute: [],
-      selectedCompute: [],
       isInitializingComputePrices: false,
       computeHeaders: [
         { title: "Name", align: "start", sortable: true, key: "name" },
@@ -29,6 +29,7 @@ export default {
         { title: "Type", align: "start", sortable: true, key: "type" },
         { title: "Price / month", align: "start", sortable: true, key: "monthlyPrice" },
         { title: "Price / year", align: "start", sortable: true, key: "yearlyPrice" },
+        { title: "Actions", key: "actions", align: "end", sortable: false },
       ],
       totalPriceItems: 0.0,
       computeLabSum: { monthlyPrice: 0.0, yearlyPrice: 0.0, ram: 0, cpu_count: 0 },
@@ -152,21 +153,37 @@ export default {
     },
 
     addMachine() {
+      this.editingComputeItem = null // Clear any previous editing state
       this.isComputeModalOpen = true
     },
     addStorage() {
       this.isStorageModalOpen = true
     },
+    editCompute(item) {
+      this.editingComputeItem = item
+      this.isComputeModalOpen = true
+    },
     closeComputeModal(payload: any) {
       if (payload) {
-        this.computeId = this.computeId + 1
-        this.datasetCompute.push(payload)
-        this.updateLabSum()
-        if (this.datasetCompute.length > this.datasetStorage.length) {
-          this.pushDefaultStorage()
+        if (this.editingComputeItem) {
+          // This is an edit, so we replace the existing item
+          const index = this.datasetCompute.findIndex(item => item.id === this.editingComputeItem.id)
+          if (index !== -1) {
+            // Ensure the ID of the original item is preserved
+            this.datasetCompute.splice(index, 1, { ...payload, id: this.editingComputeItem.id })
+          }
+        } else {
+          // This is a new item
+          this.datasetCompute.push({ ...payload, id: this.computeId })
+          this.computeId = this.computeId + 1
+          if (this.datasetCompute.length > this.datasetStorage.length) {
+            this.pushDefaultStorage()
+          }
         }
+        this.updateLabSum()
       }
       this.isComputeModalOpen = false
+      this.editingComputeItem = null // Reset editing state
     },
     closeStorageModal(payload: any) {
       if (payload) {
@@ -190,23 +207,16 @@ export default {
       this.snackbar.show = true
     },
 
-    removeSelectedCompute() {
-      if (this.selectedCompute.length === 0) {
-        this.selectedCompute = []
+    removeComputeById(id: number) {
+      if (id === 0) {
+        this.openSnackbar("Cannot remove the default machine")
         return
       }
-      for (let i = 0; i < this.selectedCompute.length; i++) {
-        if (this.selectedCompute[i] === 0) {
-          this.openSnackbar("Cannot remove the default machine")
-          continue
-        } else {
-          this.datasetCompute = this.datasetCompute.filter(item => {
-            return item["id"] !== this.selectedCompute[i]
-          })
-        }
-      }
+
+      this.datasetCompute = this.datasetCompute.filter(item => {
+        return item["id"] !== id
+      })
       this.updateLabSum()
-      this.selectedCompute = []
     },
     //remember to emit the updateStorage event
 
@@ -375,15 +385,25 @@ export default {
           <v-card-subtitle> {{ "Add a machine to " + title }}</v-card-subtitle>
 
           <v-data-table-virtual
-            v-model="selectedCompute"
             :items="datasetCompute"
             :headers="computeHeaders"
             :loading="isInitializingComputePrices"
-            show-select
             hide-default-footer
             hover
             item-value="id"
           >
+            <template v-slot:item.actions="{ item }">
+              <div class="d-flex ga-2 justify-end">
+                <v-icon color="medium-emphasis" icon="mdi-pencil" size="small" @click="editCompute(item)"></v-icon>
+                <v-icon
+                  color="medium-emphasis"
+                  icon="mdi-delete"
+                  size="small"
+                  @click="removeComputeById(item.id)"
+                ></v-icon>
+              </div>
+            </template>
+
             <template v-slot:body.append="{}">
               <tr>
                 <th :colspan="computeHeaders.length + 1" class="text-center">
@@ -423,12 +443,6 @@ export default {
               </tr>
             </template>
           </v-data-table-virtual>
-          <v-row class="ma-1">
-            <v-col class="d-flex">
-              <v-spacer></v-spacer>
-              <v-btn @click="removeSelectedCompute">Remove selected</v-btn>
-            </v-col>
-          </v-row>
         </v-card>
 
         <v-card flat>
@@ -494,6 +508,7 @@ export default {
         :gpus="gpuPrices"
         :machines="machines"
         :available-gpus="availableGpus"
+        :initial-data="editingComputeItem"
         @close="closeComputeModal"
         @open-snackbar="openSnackbar"
       />
