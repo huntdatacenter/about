@@ -23,7 +23,6 @@ interface datasetCompute {
   core_count: number
   ram: number
   type: string
-  period: string
   monthlyPrice: number
   yearlyPrice: number
 }
@@ -146,14 +145,12 @@ export default defineComponent({
 
     // Update the storage property of a lab card
     updateLabCardStorage(id, payload) {
-      console.log(payload)
       const labCard = this.labCards.find(lab => lab.id === id)
       if (labCard) {
         labCard.storage = payload
         labCard.priceStorage = payload.price
       }
       this.totalStorage = this.labCards.reduce((total, lab) => total + lab.storage.size, 0)
-      console.log("labCards:", this.labCards)
       this.totalStorageCost = this.labCards.reduce((total, lab) => total + lab.priceStorage, 0)
       this.itemsStorageExport[id] = payload.datasetStorage
       this.setPriceItems()

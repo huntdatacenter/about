@@ -17,7 +17,7 @@ export default {
       /* These are the variables used to manage the compute machines */
       computeId: 0,
       isComputeModalOpen: false,
-      //Add a default entry to datasetCompute with name, flavor, core_count, ram, type, period, price
+      //Add a default entry to datasetCompute with name, flavor, core_count, ram, type, price
       datasetCompute: [],
       selectedCompute: [],
       isInitializingComputePrices: false,
@@ -94,11 +94,12 @@ export default {
   methods: {
     initializeState() {
       if (this.initialCompute && this.initialCompute.length > 0) {
+        console.log("Initializing compute with", this.initialCompute)
         this.datasetCompute = this.initialCompute.map(item => {
           const flavorParts = item.flavor.split(" + ")
           const mainFlavor = flavorParts[0]
           const gpuFlavor = item.gpu || null
-          const prices = this.getComputePrice(mainFlavor, item.type, item.period, gpuFlavor)
+          const prices = this.getComputePrice(mainFlavor, item.type, gpuFlavor)
           return { ...item, ...prices }
         })
         this.computeId = this.initialCompute.length
@@ -121,7 +122,6 @@ export default {
       this.updateLabSumStorage()
     },
     updateLabSum() {
-      console.log("compute", this.datasetCompute)
       this.computeLabSum.monthlyPrice = this.datasetCompute.reduce(
         (acc, item) => parseFloat(acc) + parseFloat(item.monthlyPrice),
         0,
@@ -144,8 +144,6 @@ export default {
 
       this.updateAddedStorage()
       this.storageLabSum.price = this.datasetStorage.reduce((acc, item) => acc + item.price, 0)
-      console.log("storage", this.datasetStorage)
-
       this.$emit("updateStorage", {
         size: this.storageLabSum.size,
         price: this.storageLabSum.price,
@@ -242,9 +240,9 @@ export default {
         name: "machine-0",
         flavor: defaultUnit["service.unit"],
         core_count: core_count,
+        gpu: null,
         ram: ram,
-        type: "COMMITMENT",
-        period: "1 Years",
+        type: "COMMITMENT_1Y",
         monthlyPrice: defaultUnit["price.nok.ex.vat"] / 12,
         yearlyPrice: defaultUnit["price.nok.ex.vat"],
       })
@@ -311,43 +309,51 @@ export default {
     },
 
     // Helper to find compute price based on flavor and type
-    getComputePrice(flavor, type, period, gpuFlavor = null) {
-      console.log("Getting price for", flavor, type, period, gpuFlavor)
-      let commitment = "1D" // Default to On-Demand
-      if (type === "COMMITMENT") {
-        commitment = period === "1 Years" ? "1Y" : "1M"
-      }
-
+    getComputePrice(flavor, type, gpuFlavor = null) {
       let totalYearlyPrice = 0
-
-      const mainFlavorPrice = this.computePrices.find(
-        p => p["service.unit"] === flavor && p["service.commitment"] === commitment,
-      )
+      var mainFlavorPrice
+      if (type.includes("COMMITMENT")) {
+        if (type === "COMMITMENT_3Y") {
+          console.log("Looking for 3 year commitment price for ", flavor, type)
+          mainFlavorPrice = this.computePrices.find(
+            p =>
+              p["service.unit"] === flavor && p["service.level"] === "COMMITMENT" && p["service.commitment"] === "3Y",
+          )["price.nok.ex.vat"]
+          mainFlavorPrice = mainFlavorPrice / 3
+        } else {
+          mainFlavorPrice = this.computePrices.find(
+            p =>
+              p["service.unit"] === flavor && p["service.level"] === "COMMITMENT" && p["service.commitment"] === "1Y",
+          )["price.nok.ex.vat"]
+        }
+      } else {
+        mainFlavorPrice = this.computePrices.find(p => p["service.unit"] === flavor && p["service.level"] === type)[
+          "price.nok.ex.vat"
+        ]
+      }
       if (mainFlavorPrice) {
-        totalYearlyPrice += mainFlavorPrice["price.nok.ex.vat"]
+        totalYearlyPrice += mainFlavorPrice
       }
 
       if (gpuFlavor) {
         const gpuPrice = this.gpuPrices.find(
-          p => p["service.unit"] === gpuFlavor && p["service.commitment"] === commitment,
+          // GPU is always ONDEMAND
+          p => p["service.unit"] === gpuFlavor && p["service.commitment"] === "ONDEMAND",
         )
         if (gpuPrice) {
           totalYearlyPrice += gpuPrice["price.nok.ex.vat"]
         }
       }
-
-      if (commitment === "1D") {
-        // If it's a daily price, calculate monthly and yearly
-        const dailyPrice = totalYearlyPrice
-        return { monthlyPrice: dailyPrice * 30, yearlyPrice: dailyPrice * 365 }
-      } else {
-        // Otherwise, the fetched price is yearly, so calculate monthly from it
-        return { monthlyPrice: totalYearlyPrice / 12, yearlyPrice: totalYearlyPrice }
+      // Otherwise, the fetched price is yearly, so calculate monthly from it
+      return {
+        monthlyPrice: parseFloat(totalYearlyPrice / 12).toFixed(2),
+        yearlyPrice: parseFloat(totalYearlyPrice).toFixed(2),
       }
     },
   },
 
   created() {
+    console.log("Compute prices", this.computePrices)
     this.initializeState()
   },
 }
@@ -403,10 +409,10 @@ export default {
                 </th>
                 <th></th>
                 <th>
-                  <strong>{{ this.computeLabSum.monthlyPrice + " kr" }} </strong>
+                  <strong>{{ parseFloat(this.computeLabSum.monthlyPrice).toFixed(2) + " kr" }} </strong>
                 </th>
                 <th>
-                  <strong>{{ this.computeLabSum.yearlyPrice + " kr" }} </strong>
+                  <strong>{{ parseFloat(this.computeLabSum.yearlyPrice).toFixed(2) + " kr" }} </strong>
                 </th>
               </tr>
             </template>

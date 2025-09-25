@@ -21,6 +21,17 @@ export default {
       onDemandPrice: 0.0,
     }
   },
+  computed: {
+    formattedTotalItems() {
+      if (!this.totalItems) {
+        return []
+      }
+      return this.totalItems.map(item => ({
+        ...item,
+        price: parseFloat(item.price).toFixed(2),
+      }))
+    },
+  },
   watch: {},
 
   methods: {
@@ -90,7 +101,7 @@ export default {
       <v-card-title> Total</v-card-title>
       <v-data-table-virtual
         v-model="datasetStorage"
-        :items="totalItems"
+        :items="formattedTotalItems"
         :headers="totalHeaders"
         hover
         hide-default-footer
@@ -108,7 +119,9 @@ export default {
           <v-list dense>
             <v-list-item>
               <v-list-item-title> <strong> Estimated total price: </strong></v-list-item-title>
-              <v-list-item-subtitle class="align-end"> {{ this.sumInTotal }} NOK ex. VAT / Year </v-list-item-subtitle>
+              <v-list-item-subtitle class="align-end">
+                {{ parseFloat(this.sumInTotal).toFixed(2) }} NOK ex. VAT / Year
+              </v-list-item-subtitle>
             </v-list-item>
           </v-list>
         </v-col>
