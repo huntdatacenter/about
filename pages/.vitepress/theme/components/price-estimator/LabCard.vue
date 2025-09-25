@@ -75,7 +75,51 @@ export default {
     },
   },
 
+  watch: {
+    // Watch for changes in initial data props to re-initialize the component state
+    initialCompute: {
+      handler() {
+        this.initializeState()
+      },
+      deep: true,
+    },
+    initialStorage: {
+      handler() {
+        this.initializeState()
+      },
+      deep: true,
+    },
+  },
+
   methods: {
+    initializeState() {
+      if (this.initialCompute && this.initialCompute.length > 0) {
+        this.datasetCompute = this.initialCompute.map(item => {
+          const flavorParts = item.flavor.split(" + ")
+          const mainFlavor = flavorParts[0]
+          const gpuFlavor = item.gpu || null
+          const prices = this.getComputePrice(mainFlavor, item.type, item.period, gpuFlavor)
+          return { ...item, ...prices }
+        })
+        this.computeId = this.initialCompute.length
+      } else {
+        this.datasetCompute = []
+        this.computeId = 0
+        this.pushDefaultComputeUnit()
+      }
+
+      if (this.initialStorage && this.initialStorage.length > 0) {
+        this.datasetStorage = this.initialStorage.map(item => ({ ...item, price: 0 })) // Price will be calculated in updateLabSumStorage
+        this.storageId = this.initialStorage.length
+      } else {
+        this.datasetStorage = []
+        this.storageId = 0
+        this.pushDefaultStorage()
+      }
+
+      this.updateLabSum()
+      this.updateLabSumStorage()
+    },
     updateLabSum() {
       console.log("compute", this.datasetCompute)
       this.computeLabSum.monthlyPrice = this.datasetCompute.reduce(
@@ -304,31 +348,7 @@ export default {
   },
 
   created() {
-    console.log("initialCompute", this.initialCompute)
-    console.log("initialStorage", this.initialStorage)
-    if (this.initialCompute) {
-      this.datasetCompute = this.initialCompute.map(item => {
-        const flavorParts = item.flavor.split(" + ")
-        const mainFlavor = flavorParts[0]
-        const gpuFlavor = item.gpu || null
-        const prices = this.getComputePrice(mainFlavor, item.type, item.period, gpuFlavor)
-        console.log("prices for unit", prices)
-        return { ...item, ...prices }
-      })
-      this.computeId = this.initialCompute.length
-    } else {
-      this.pushDefaultComputeUnit()
-    }
-
-    if (this.initialStorage) {
-      this.datasetStorage = this.initialStorage.map(item => ({ ...item, price: 0 })) // Price will be calculated in updateLabSumStorage
-      this.storageId = this.initialStorage.length
-    } else {
-      this.pushDefaultStorage()
-    }
-
-    this.updateLabSum()
-    this.updateLabSumStorage()
+    this.initializeState()
   },
 }
 </script>
