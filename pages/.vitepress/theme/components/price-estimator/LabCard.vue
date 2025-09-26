@@ -95,7 +95,6 @@ export default {
   methods: {
     initializeState() {
       if (this.initialCompute && this.initialCompute.length > 0) {
-        console.log("Initializing compute with", this.initialCompute)
         this.datasetCompute = this.initialCompute.map(item => {
           const flavorParts = item.flavor.split(" + ")
           const mainFlavor = flavorParts[0]
@@ -320,11 +319,13 @@ export default {
 
     // Helper to find compute price based on flavor and type
     getComputePrice(flavor, type, gpuFlavor = null) {
-      let totalYearlyPrice = 0
-      var mainFlavorPrice
+      let totalYearlyPrice = 0,
+        totalMonthlyPrice = 0,
+        mainFlavorPrice,
+        gpuYearly
+
       if (type.includes("COMMITMENT")) {
         if (type === "COMMITMENT_3Y") {
-          console.log("Looking for 3 year commitment price for ", flavor, type)
           mainFlavorPrice = this.computePrices.find(
             p =>
               p["service.unit"] === flavor && p["service.level"] === "COMMITMENT" && p["service.commitment"] === "3Y",
@@ -345,25 +346,28 @@ export default {
         totalYearlyPrice += mainFlavorPrice
       }
 
+      totalMonthlyPrice = Number((totalYearlyPrice / 12).toFixed(2))
+
       if (gpuFlavor) {
         const gpuPrice = this.gpuPrices.find(
           // GPU is always ONDEMAND
-          p => p["service.unit"] === gpuFlavor && p["service.commitment"] === "ONDEMAND",
+          p => p["service.unit"] === gpuFlavor && p["service.level"] === "ONDEMAND",
         )
         if (gpuPrice) {
-          totalYearlyPrice += gpuPrice["price.nok.ex.vat"]
+          gpuYearly = gpuPrice["price.nok.ex.vat"]
+          totalYearlyPrice += gpuYearly
+          totalMonthlyPrice = totalMonthlyPrice + Number((gpuYearly / 12).toFixed(2))
         }
       }
       // Otherwise, the fetched price is yearly, so calculate monthly from it
       return {
-        monthlyPrice: parseFloat(totalYearlyPrice / 12).toFixed(2),
+        monthlyPrice: parseFloat(totalMonthlyPrice).toFixed(2),
         yearlyPrice: parseFloat(totalYearlyPrice).toFixed(2),
       }
     },
   },
 
   created() {
-    console.log("Compute prices", this.computePrices)
     this.initializeState()
   },
 }
@@ -425,7 +429,6 @@ export default {
                 <th role="columnheader" class="pt-4 pb-2">
                   <span><strong>Total</strong> </span>
                 </th>
-                <th></th>
                 <th></th>
                 <th>
                   <strong>{{ this.computeLabSum.cpu_count }}</strong>
