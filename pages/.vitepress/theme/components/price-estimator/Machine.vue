@@ -69,10 +69,11 @@ export default {
           item => item["service.unit"] === this.formData.flavor && item["service.level"] === this.formData.subscription,
         )["price.nok.ex.vat"]
       }
-      return price ? parseInt(price).toFixed(2) : 0
+      return price ? parseFloat(price).toFixed(2) : 0
     },
     getComputePriceMonth() {
-      return parseFloat(this.getComputePriceYear / 12).toFixed(2)
+      const yearly = parseFloat(this.getComputePriceYear)
+      return yearly ? parseFloat(yearly / 12).toFixed(2) : 0
     },
 
     // Litt bugs her med SPOT og ONDEMAND
@@ -83,7 +84,6 @@ export default {
       const price = this.gpus.find(
         item => item["service.unit"] === this.formData.gpu && item["service.level"] === "ONDEMAND",
       )
-
       return price ? parseFloat(price["price.nok.ex.vat"]).toFixed(2) : 0
     },
     getGpuMonthPrice() {
@@ -131,20 +131,18 @@ export default {
 
   methods: {
     getSummedPrice(num1, num2) {
-      return (parseFloat(num1) + parseFloat(num2)).toFixed(0)
+      return (parseFloat(num1) + parseFloat(num2)).toFixed(2)
     },
     close() {
       this.$emit("close")
     },
     save() {
       if (!this.formData.flavor) {
-        console.log("No machine type selected")
         this.$emit("open-snackbar", "No machine type selected")
         return
       }
 
       const name = this.formData.gpu ? `${this.formData.name} (incl. GPU)` : this.formData.name
-
       let monthlyPrice = this.getSummedPrice(this.getComputePriceMonth, this.getGpuMonthPrice)
       let yearlyPrice = this.getSummedPrice(this.getComputePriceYear, this.getGpuPrice)
       /* Splitting up the "default.b3 - 8 CPUs / 16 GB RAM" to get number of CPUs and GB of RAM**/
