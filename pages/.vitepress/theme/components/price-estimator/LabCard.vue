@@ -443,6 +443,7 @@ export default {
                 <th>
                   <strong>{{ parseFloat(this.computeLabSum.yearlyPrice).toFixed(2) + " kr" }} </strong>
                 </th>
+                <th></th>
               </tr>
             </template>
           </v-data-table-virtual>
