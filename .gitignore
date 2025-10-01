@@ -44,3 +44,5 @@ npm-debug.log
 *.msi
 *.msm
 *.msp
+
+package-lock.json
