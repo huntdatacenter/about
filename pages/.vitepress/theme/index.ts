@@ -15,12 +15,11 @@ import CardElement from "../components/CardElement.vue"
 import ExpandTable from "../components/ExpandTable.vue"
 import ViewDataControllers from "../components/ViewDataControllers.vue"
 
-
-import PriceEstimator from "./components/price-estimator/PriceEstimator.vue"
-import LabCard from "./components/price-estimator/LabCard.vue"
-import Machine from "./components/price-estimator/Machine.vue"
-import Storage from "./components/price-estimator/Storage.vue"
-import TotalBlock from "./components/price-estimator/TotalBlock.vue"
+// import PriceEstimator from "./components/price-estimator/PriceEstimator.vue"
+// import LabCard from "./components/price-estimator/LabCard.vue"
+// import Machine from "./components/price-estimator/Machine.vue"
+// import Storage from "./components/price-estimator/Storage.vue"
+// import TotalBlock from "./components/price-estimator/TotalBlock.vue"
 
 import AuthorDetail from "./components/blog/AuthorDetail.vue"
 import Post from "./components/blog/Post.vue"
@@ -87,12 +86,13 @@ export default {
     context.app.component("CardElement", CardElement)
     context.app.component("ExpandTable", ExpandTable)
     context.app.component("ViewDataControllers", ViewDataControllers)
-    context.app.component("PriceEstimator", PriceEstimator)
     context.app.component("VPButton", VPButton)
-    context.app.component("LabCard", LabCard)
-    context.app.component("Machine", Machine)
-    context.app.component("Storage", Storage)
-    context.app.component("TotalBlock", TotalBlock)
+    // context.app.component("PriceEstimator", PriceEstimator)
+    // context.app.component("LabCard", LabCard)
+    // context.app.component("Machine", Machine)
+    // context.app.component("Storage", Storage)
+    // context.app.component("TotalBlock", TotalBlock)
+
     // context.app.component('VPImage', VPImage);
 
     context.app.component("Posts", Posts)
