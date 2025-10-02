@@ -4,6 +4,8 @@ import { useData } from "vitepress"
 import usePosts from "../../composables/usePosts"
 import Post from "./Post.vue" // Assuming already rewritten for Vuetify
 
+const ISSERVER = typeof window === "undefined"
+
 export default {
   setup() {
     const { theme } = useData() // Destructure theme from useData composable
@@ -24,20 +26,25 @@ export default {
   },
   computed: {
     pageNumber() {
-      const url = new URL(window.location.href)
-      const params = new URLSearchParams(url.search)
-      const pageParam = params.get("page") ? params.get("page") : null
-      const page = pageParam ? parseInt(pageParam, 10) : 1
+      let page = 1
+      if (!ISSERVER) {
+        const url = new URL(window.location.href)
+        const params = new URLSearchParams(url.search)
+        const pageParam = params.get("page") ? params.get("page") : null
+        page = pageParam ? parseInt(pageParam, 10) : 1
+      }
       return page
     },
   },
   mounted() {},
   methods: {
     updatePage(arg: number) {
-      let url = new URL(window.location.href)
-      let params = new URLSearchParams(url.search)
-      params.set("page", arg.toString())
-      window.location.search = params.toString()
+      if (!ISSERVER) {
+        let url = new URL(window.location.href)
+        let params = new URLSearchParams(url.search)
+        params.set("page", arg.toString())
+        window.location.search = params.toString()
+      }
     },
   },
 }

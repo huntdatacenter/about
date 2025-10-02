@@ -1,6 +1,8 @@
 <script lang="ts">
 import { ref, onMounted, onBeforeUnmount } from "vue"
 
+const ISSERVER = typeof window === "undefined"
+
 export default {
   name: "ContactDialog",
   props: {
@@ -48,19 +50,28 @@ export default {
     this.loadingEmailButtons = true
     this.messageSubject = this.subject
 
-    this.isMobile = ref(window.innerWidth <= 540)
-
-    // Update the value on resize
-    const checkScreenSize = () => {
+    this.isMobile = ref(false)
+    if (!ISSERVER) {
       this.isMobile = ref(window.innerWidth <= 540)
+    } else {
     }
 
-    // onMounted(() => {
-    window.addEventListener("resize", checkScreenSize) // Listen to window resize
-    // });
+    // Update the value on resize
+    this.checkScreenSize = ref(false)
+    if (!ISSERVER) {
+      this.checkScreenSize = ref(window.innerWidth <= 540)
+    }
+
+    if (!ISSERVER) {
+      // onMounted(() => {
+      window.addEventListener("resize", this.checkScreenSize) // Listen to window resize
+      // });
+    }
 
     onBeforeUnmount(() => {
-      window.removeEventListener("resize", checkScreenSize) // Clean up event listener
+      if (!ISSERVER) {
+        window.removeEventListener("resize", this.checkScreenSize) // Clean up event listener
+      }
     })
   },
   computed: {
@@ -121,18 +132,24 @@ export default {
     actionSend() {
       this.sendClicked = true
       this.panel = 2
-      window.location.href = this.mailto
+      if (!ISSERVER) {
+        window.location.href = this.mailto
+      }
     },
     actionSendOutlook() {
       this.sendClicked = true
       this.panel = 2
-      window.location.href = this.deeplinkUrl
+      if (!ISSERVER) {
+        window.location.href = this.deeplinkUrl
+      }
     },
     actionSendOutlookPopup() {
       this.sendClicked = true
       this.panel = 2
       // window.location.href = this.deeplinkUrl;
-      window.open(this.deeplinkUrl, "_blank")
+      if (!ISSERVER) {
+        window.open(this.deeplinkUrl, "_blank")
+      }
     },
     encode(template) {
       return template ? encodeURIComponent(this.wrap(template)) : null
