@@ -1,4 +1,4 @@
-name: lint
+name: Linter
 on:
   push:
     branches: main
@@ -8,13 +8,16 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.x"
+          cache: "pip" # caching pip dependencies
+          cache-dependency-path: "**/tox.ini"
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3
+          ruby-version: 2.6
       - run: python3 -m pip install tox
       - name: Run linter
         run: tox -e lint

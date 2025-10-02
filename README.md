@@ -1,13 +1,13 @@
 # About HUNT Cloud
 
-Make sure to have `node==20` installed
+Make sure to have `node==24` installed
 
 ## Setup development environment
 
 ```bash
-mamba create -n node20 -c conda-forge -y "python==3.12.*" "nodejs==20.*" "yarn"
+mamba create -n node24 -c conda-forge -y "python==3.13.*" "nodejs==24.*" "yarn"
 
-mamba activate node20
+mamba activate node24
 
 yarn dlx @yarnpkg/sdks vscode
 ```
@@ -15,7 +15,7 @@ yarn dlx @yarnpkg/sdks vscode
 ## Running
 
 ```bash
-mamba activate node20
+mamba activate node24
 ```
 
 Install dependencies:
