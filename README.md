@@ -9,6 +9,8 @@ mamba create -n node24 -c conda-forge -y "python==3.13.*" "nodejs==24.*" "yarn"
 
 mamba activate node24
 
+yarn install
+
 yarn dlx @yarnpkg/sdks vscode
 ```
 
