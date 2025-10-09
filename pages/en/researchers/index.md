@@ -323,7 +323,7 @@ sidebar: false
             <v-card-text>
               <v-row dense>
                 <v-col cols="12">
-                  We will set up your lab with a default machine type. Update your resources are your science develop from our list of commonly used machine types.
+                  We will set up your lab with a default machine type. Update your resources as your research progresses by choosing from our list of commonly used machine types.
                 </v-col>
               </v-row>
               <v-row dense>
