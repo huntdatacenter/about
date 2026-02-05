@@ -28,6 +28,7 @@ import PostDetail from "./components/blog/PostDetail.vue"
 import PostIcon from "./components/blog/PostIcon.vue"
 import Posts from "./components/blog/Posts.vue"
 import AuthorLayout from "./components/blog/AuthorLayout.vue"
+import GlossaryPanels from "./components/glossary/GlossaryPanels.vue"
 
 // 'vitepress/theme' == 'vitepress/dist/client/theme-default/components/VPButton.vue'
 import { VPButton } from "vitepress/theme"
@@ -102,5 +103,6 @@ export default {
     context.app.component("PostAuthor", PostAuthor)
     context.app.component("AuthorDetail", AuthorDetail)
     context.app.component("author", AuthorLayout)
+    context.app.component("GlossaryPanels", GlossaryPanels)
   },
 }
