@@ -207,15 +207,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               <v-row align="center" no-gutters>
                 <v-col
                   class="text-h2 text-no-wrap"
-                  cols="8"
+                  cols="10"
                 >
                   2 Locations
                 </v-col>
-                <v-col class="text-right" cols="4">
+                <v-col class="text-right" cols="2">
                   <v-icon
                     color="#ef8114"
                     icon="mdi-server"
-                    size="88"
+                    size="80"
                   ></v-icon>
                 </v-col>
               </v-row>
@@ -233,15 +233,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               <v-row align="center" no-gutters>
                 <v-col
                   class="text-h2"
-                  cols="8"
+                  cols="10"
                 >
                   10+&nbsp;PB
                 </v-col>
-                <v-col class="text-right" cols="4">
+                <v-col class="text-right" cols="2">
                   <v-icon
                     color="#ef8114"
                     icon="mdi-database"
-                    size="88"
+                    size="80"
                   ></v-icon>
                 </v-col>
               </v-row>
@@ -259,15 +259,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               <v-row align="center" no-gutters>
                 <v-col
                   class="text-h2"
-                  cols="8"
+                  cols="10"
                 >
-                  6000+ vCPUs
+                  6k+ vCPUs<br />20+ TB RAM
                 </v-col>
-                <v-col class="text-right" cols="4">
+                <v-col class="text-right" cols="2">
                   <v-icon
                     color="#ef8114"
                     icon="mdi-memory"
-                    size="88"
+                    size="80"
                   ></v-icon>
                 </v-col>
               </v-row>
@@ -285,15 +285,15 @@ contact: https://docs.hdc.ntnu.no/about/contact/
               <v-row align="center" no-gutters>
                 <v-col
                   class="text-h2"
-                  cols="8"
+                  cols="10"
                 >
-                  70+ GPUs
+                  75+ GPUs
                 </v-col>
-                <v-col class="text-right" cols="4">
+                <v-col class="text-right" cols="2">
                   <v-icon
                     color="#ef8114"
                     icon="mdi-expansion-card-variant"
-                    size="88"
+                    size="80"
                   ></v-icon>
                 </v-col>
               </v-row>
