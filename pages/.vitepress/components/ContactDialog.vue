@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="js">
 import { ref, onMounted, onBeforeUnmount } from "vue"
 
 const ISSERVER = typeof window === "undefined"
@@ -330,4 +330,27 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* ContactDialog btn */
+.v-btn {
+  background: #3e628a !important;
+  color: white !important;
+  padding: 12px 32px !important;
+  font-size: 1.1rem !important;
+  text-transform: none !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 5px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 8px rgba(62, 98, 138, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Blue */
+.v-btn.hc-text-light {
+  background: #253a55 !important;
+}
+
+.v-btn.hc-text-light:hover {
+  background: #2d4563 !important;
+}
+</style>
