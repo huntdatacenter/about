@@ -101,7 +101,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block hc-section">
     <div class="hc-block-container">
       <div class="hc-title">
-        Custom text
+        To Do
       </div>
       <div class="hc-cards">
         <CardElement title="For researchers" href="/en/researchers/" image="/img/flaske_square_500px.png" text="Get access to your own digital lab where your team can meet to explore, innovate and collaborate. Bring your own data, get instant access to major scientific tools and scale storage, CPU and GPU to your needs." link />
