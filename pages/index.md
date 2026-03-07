@@ -107,7 +107,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-cards">
         <CardElement title="Science is global" a href="https://docs.hdc.ntnu.no/do-science/community/freedom-to-explore" image="/img/science-is-global-500px.jpg" text="Click here to see our tagline «Freedom to explore» translated into some of the languages that our community members speak. We are humble and proud of the current list, and eager to see it grow further." link/>
         <CardElement title="Cloud community" image="/img/Vaffel_1_square_72_500px.png" text="All users are invited to join our HUNT Cloud community. We are truly proud of the warm and welcoming tone in a community that blends a wide variety of cultures and scientific fields."/>
-        <CardElement title="Teaching environments" image="/img/teach_500px.png" text="We provide teaching environments free of charge for courses that wants to transfer the excitement of sensitive data analysis to the next generation of scientists."/>
+        <CardElement title="Teaching environments" image="/img/teach_500px.png" text="We provide teaching environments free of charge for courses that wants to transfer the excitement of sensitive data analysis and open-source tools to the next generation of scientists."/>
       </div>
     </div>
   </div>
