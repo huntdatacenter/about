@@ -2,54 +2,6 @@
 title: Welcome
 layout: page
 sidebar: false
-products:
-  - title: Explore
-    href: /products/explore/
-    img: /img/product-explore.png
-    subtitle: Make it easy.
-    text: |
-      Start to explore and analyse your sensitive data in trusted research environments with easy access to preferred tools in HUNT Workbench.
-  - title: Evolve
-    href: /products/evolve/
-    img: /img/product-evolve.png
-    subtitle: Evolve your ideas.
-    text: |
-      Evolve is for scientific groups that aims to evolve and expand their ideas, careers, collaborations, data and methods with flexible choices.
-  - title: Scientific Suite
-    href: /products/scientific-suite/
-    img: /img/product-scientific-suite.png
-    subtitle: Gather great minds.
-    text: |
-      Scientific suite allows research centers and large-scale collaborations flexibility and control over diverse research portfolios.
-
-overview_by_role:
-  title: "Solutions by role"
-  subtitle: "Read about our solutions from your own perspective."
-roles:
-  - title: Scientist
-    href: /roles/scientist/
-    text: |
-      Scientists working in a range of different fields use HUNT Cloud for their sensitive data explorations. Read on to see if we are a good fit for your needs.
-  - title: Scientific leader
-    href: /roles/scientific-leader/
-    text: |
-      Sensitive data represents a range of new oportunities. Our goal is for your team to thrive and succeed in ground-breaking science, all the while keeping their data protected.
-  - title: Teacher
-    href: /roles/teacher/
-    text: |
-      The next generation of scientists deserves to build their skills in real-life environments. Our course packages are developed with this in mind. Read more to see how our set-up can be tailored to your course.
-  - title: Department
-    href: /roles/department/
-    text: |
-      HUNT Cloud works closely with departments from many organisations. Our product packages are tailored for different levels of sensitive data activities, while ensuring easy overview and organisational control
-  - title: Clinic
-    href: /roles/clinic/
-    text: |
-      Clinics use HUNT Cloud for research and data processing during production. We are ISO/IEC certified and compliant with Helesnormen, while our trusted research environments can be tailored to your security needs.
-  - title: Private enterprise
-    href: /roles/private-enterprise/
-    text: |
-      Innovation projects, enterprises and private companies have spesific challenges and needs in dealing with sensitive data. The HUNT Cloud Invent program might be for you.
 contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 
@@ -704,7 +656,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 /* CSS scoped specifically to this page */
 
 .hc-section {
-  padding: 60px 20px;
+  padding: 20px 10px;
   background: #EDEDED;
 }
 

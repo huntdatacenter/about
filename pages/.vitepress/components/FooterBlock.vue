@@ -47,9 +47,7 @@ export default {
     <div class="hc-block-container pb-8">
       <v-row class="my-4 px-4">
         <v-col cols="12" class="v-col-sm-6 v-col-md-4 text-body-1">
-          <b>Ready to get started on your journey?</b>
-          <br />
-          Reach out to arrange a&nbsp;call.
+          <b>Ready to start on your journey?</b>
         </v-col>
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
           <!-- <SimpleButton title="Contact us" :href="contact" target="_blank" size="large" elevation="2" /> -->
@@ -107,7 +105,7 @@ export default {
           <v-sheet class="ma-2 px-2 text-no-wrap text-body-1" color="transparent"> NTNU | HUNT Cloud </v-sheet>
         </div>
         <div class="mb-2">
-          <a href="https://docs.hdc.ntnu.no/administer-science/privacy-statement/" target="_blank">
+          <a href="https://docs.hdc.ntnu.no/govern-science/privacy-statement" target="_blank">
             <v-sheet class="ma-2 px-2 text-no-wrap text-body-1" color="transparent"> Privacy statement </v-sheet>
           </a>
         </div>
