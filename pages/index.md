@@ -64,42 +64,50 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Freedom to explore -->
 <!----------------------------------------------->
 
-  <div class="hc-block">
-    <div class="hc-block-container">
-      <div class="hc-title-main font-weight-black">
-        Freedom to explore sensitive&nbsp;data within a&nbsp;trustworthy framework
-      </div>
-      <div class="hc-section">
-        <v-row justify="center">
-          <v-col cols="12" class="v-col-xs-12 v-col-sm-4 v-col-md-4">
-            <ContactDialog title="Contact us" subject="Information about HUNT Cloud" size="x-large" elevation="2" block />
-          </v-col>
-<!--
-          <v-col cols="12" class="v-col-xs-12 v-col-sm-5 v-col-md-4">
-            <CallDialog title="Talk to an expert" size="x-large" elevation="2" block />
-          </v-col>
--->
-        </v-row>
-      </div>
+  <div class="hc-block hc-section">
+  <div class="hc-block-container">
+    <div class="hc-title">
+      Freedom to explore sensitive data <br /> within a trustworthy framework
+    </div>
+    <div class="hc-subtitle">
+      Explore, collaborate, and create while your data is secured within a flexible <br /> and ISO-certified cloud environment in Norway.
+    </div>
+    <div class="hc-cta">
+      <ContactDialog title="Contact us" subject="Information about HUNT Cloud" size="x-large" elevation="4" />
     </div>
   </div>
+</div>
 
 <!----------------------------------------------->
 <!-- Block: Offer -->
 <!----------------------------------------------->
 
-  <div class="hc-block">
+  <div class="hc-block hc-section">
     <div class="hc-block-container">
-      <div class="hc-container-title">
+      <div class="hc-title">
         HUNT Cloud offers digital labs for sensitive data science
       </div>
-      <div class="hc-container-subtitle">
-        Explore, collaborate, and create <br /> while your data is secured within a flexible <br /> and ISO-certified cloud environment located in Norway.
+      <div class="hc-cards">
+        <CardElement title="For researchers" href="/en/researchers/" image="/img/flaske_square_500px.png" text="Get access to your own digital lab where your team can meet to explore, innovate and collaborate. Bring your own data, get instant access to major scientific tools and scale storage, CPU and GPU to your needs." link />
+        <CardElement title="For organizations" href="/en/organizations/" image="/img/sekstant_square_500px.png" text="Enable your researchers with needed flexibility while also protecting your data safety with trustworthy compliance. Get easy overview and portfolio management for your sensitive data science at the same time." link />
       </div>
-      <v-row class="my-5 d-flex" style="justify-content: center; align-items: center;">
-        <CardElement title="For researchers" href="/en/researchers/" text="Get access to your own digital lab where your team can meet to explore, innovate and collaborate. Bring your own data, get instant access to major scientific tools and scale storage, CPU and GPU to your needs." link />
-        <CardElement title="For organizations" href="/en/organizations/" text="Enable your researchers with needed flexibility while also protecting your data safety with trustworthy compliance. Get easy overview and portfolio management for your sensitive data science at the same time." link />
-      </v-row>
+    </div>
+  </div>
+
+  <!----------------------------------------------->
+<!-- Block: To be edited -->
+<!----------------------------------------------->
+
+  <div class="hc-block hc-section">
+    <div class="hc-block-container">
+      <div class="hc-title">
+        To Do
+      </div>
+      <div class="hc-cards">
+        <CardElement title="For researchers" href="/en/researchers/" image="/img/flaske_square_500px.png" text="Get access to your own digital lab where your team can meet to explore, innovate and collaborate. Bring your own data, get instant access to major scientific tools and scale storage, CPU and GPU to your needs." link />
+        <CardElement title="For organizations" href="/en/organizations/" image="/img/sekstant_square_500px.png" text="Enable your researchers with needed flexibility while also protecting your data safety with trustworthy compliance. Get easy overview and portfolio management for your sensitive data science at the same time." link />
+        <CardElement title="For organizations" href="/en/organizations/" image="/img/sekstant_square_500px.png" text="Enable your researchers with needed flexibility while also protecting your data safety with trustworthy compliance. Get easy overview and portfolio management for your sensitive data science at the same time." link />
+      </div>
     </div>
   </div>
 
@@ -693,8 +701,85 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 </div>
 
 <style scoped>
-
 /* CSS scoped specifically to this page */
+
+.hc-section {
+  padding: 60px 20px;
+  background: #EDEDED;
+}
+
+.hc-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  line-height: 1.3;
+}
+
+.hc-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.hc-cta {
+  text-align: center;
+}
+
+.hc-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hc-cards :deep(.card),
+.hc-cards :deep(> div) {
+  flex: 1 1 30%;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 30px;
+}
+
+/* Responsive - mobile */
+@media (max-width: 719px) {
+  .hc-title {
+    font-size: 1.8rem;
+  }
+
+  .hc-subtitle {
+    font-size: 1rem;
+  }
+
+  .hc-section {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 719px) {
+  .hc-title {
+    font-size: 1.6rem;
+  }
+
+  .hc-subtitle {
+    font-size: 1rem;
+  }
+
+  .hc-section {
+    padding: 40px 20px;
+  }
+
+  .hc-cards {
+    flex-direction: column;
+  }
+}
 
 </style>
 
