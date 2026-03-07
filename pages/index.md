@@ -56,12 +56,13 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block hc-section">
     <div class="hc-block-container">
       <div class="hc-title">
-        Powerful computations
+        Powerful computation
       </div>
     <div class="hc-subtitle">
-      HUNT Cloud house from small to the largest scientific environments.
+      HUNT Cloud is home to some of the largest scientific environments on sensitive data in Norway.
     </div>
       <div class="hc-cards">
+        <CardElement title="Workbench" text="Text."/>
         <CardElement title="Large-scale analysis" text="Text."/>
         <CardElement title="Sensitive AI" text="Enjoy accelerated computing in environments made for sensitive AI."/>
       </div>
@@ -104,12 +105,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       Enable global access to your lab and data to fully utilize <br />  scientific opportunities that comes your way.
     </div>
       <div class="hc-cards">
-        <CardElement title="Science is global" image="/img/sekstant_square_500px.png" text="Text. Allow for rich set of tools."/>
-        <CardElement title="Community" image="/img/sekstant_square_500px.png" text="Text."/>
+        <CardElement title="Science is global" a href="https://docs.hdc.ntnu.no/do-science/community/freedom-to-explore" image="/img/science-is-global-500px.jpg" text="Click here to see our tagline «Freedom to explore» translated into some of the languages that our community members speak. We are humble and proud of the current list, and eager to see it grow further." link/>
+        <CardElement title="Cloud community" image="/img/Vaffel_1_square_72_500px.png" text="All users are invited to join our HUNT Cloud community. We are truly proud of the warm and welcoming tone in a community that blends a wide variety of cultures and scientific fields."/>
+        <CardElement title="Teaching environments" image="/img/teach_500px.png" text="We provide teaching environments free of charge for courses that wants to transfer the excitement of sensitive data analysis to the next generation of scientists."/>
       </div>
     </div>
   </div>
-
 
 <!----------------------------------------------->
 <!-- Block: Support -->
@@ -200,6 +201,22 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 
 
 
+<!----------------------------------------------->
+<!-- Block: NORTRE -->
+<!----------------------------------------------->
+
+  <div class="hc-block hc-section">
+    <div class="hc-block-container">
+      <div class="hc-title">
+        National infrastructure for sensitive data
+      </div>
+    <div class="hc-subtitle">      
+    </div>
+      <div class="hc-cards">
+        <CardElement title="" image="/img/Nortre_AltLogo.png" a href="https://www.nortre.no/english/" text="HUNT Cloud is a proud member of the Norwegian national infrastructure for sensitive data (NORTRE) togeter with TSD at the University of Oslo and SAFE at the University of Bergen. NORTRE is co-funded by the Ministry of Education and Research and the Ministry of Health and Care Services to provide more and better knowldege from our national health data." link/>
+      </div>
+    </div>
+  </div>
 
 <!----------------------------------------------->
 <!-- Block: About HUNT Cloud -->
@@ -211,7 +228,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         About HUNT Cloud
       </div>
       <div class="hc-cards">
-        <CardElement title="History" image="/img/square_featherpen_500px.png" text=" Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world». "/>
+        <CardElement title="History" image="/img/square_featherpen_500px.png" text=" Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world»."/>
         <CardElement title="Team" image="/img/team_500px.jpg" text="Experiences in HUNT Cloud are shaped and molded by a small team of scientific instrument makers that work hard to make the impossible possible. Read more about the team that make HUNT Cloud."/>
         <CardElement title="Careers" a href="/en/about/careers" image="/img/A3_Trust_boat_500px.png" text="Advancing knowledge to build a better world is a truly meaningful pursuit. As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data, and learn, develop and have fun along the way." link/>
       </div>
@@ -237,6 +254,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   </div>
 
 
+
 <!----------------------------------------------->
 <!-- Block: Art -->
 <!----------------------------------------------->
@@ -250,7 +268,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       We believe in the power of combining ideas from the liberal arts and humanities with technology and biomedical science to advance dialogues and knowledge from data.
     </div>
       <div class="hc-cards">
-        <CardElement title="Illustrations" a href="https://docs.hdc.ntnu.no/about/illustrations/" image="/img/soria-moria2_500px.jpg" text="The world of data science is filled with abstract ideas. We aim to use illustrations to bring these ideas into practical forms to ease dialogues and strengthen cooperation." link/>
+        <CardElement title="Illustrations" a href="https://docs.hdc.ntnu.no/about/illustrations/" image="/img/soria-moria2_500px.jpg" text="The world of data science is filled with abstract ideas. We make our own illustrations to bring these ideas into practical forms to ease dialogues and strengthen cooperation." link/>
         <CardElement title="Video interviews" a href="https://www.youtube.com/@HUNTCloud" image="/img/youtube_500px.png" text="There are so many great ideas out there. We aim to bring together perspectives that explore the intersections of knowledge, collaboration and creativity to advance knowledge from data." link/>
       </div>
     </div>
