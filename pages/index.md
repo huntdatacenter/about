@@ -22,7 +22,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       Freedom to explore sensitive data <br /> within a trustworthy framework
     </div>
     <div class="hc-subtitle">
-      Explore, collaborate, and create while your data is secured within a flexible <br /> and ISO-certified cloud environment in Norway.
+      Explore, collaborate, and create while your data is secured within a flexible <br /> and ISO-certified academic cloud environment in Norway.
     </div>
     <div class="hc-cta">
       <ContactDialog title="Contact us" subject="Information about HUNT Cloud" size="x-large" elevation="4" />
@@ -37,11 +37,14 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block hc-section">
     <div class="hc-block-container">
       <div class="hc-title">
-        HUNT Cloud offers digital labs for sensitive data science
+        Get a digital lab for sensitive data
       </div>
+    <div class="hc-subtitle">
+      HUNT Cloud provides secure processing environments for data in need of protection, <br /> both personal data, business critical data and intellectual property data.
+    </div>
       <div class="hc-cards">
-        <CardElement title="For researchers" href="/en/researchers/" image="/img/flaske_square_500px.png" text="Get access to your own digital lab where your team can meet to explore, innovate and collaborate. Bring your own data, get instant access to major scientific tools and scale storage, CPU and GPU to your needs." link />
-        <CardElement title="For organizations" href="/en/organizations/" image="/img/sekstant_square_500px.png" text="Enable your researchers with needed flexibility while also protecting your data safety with trustworthy compliance. Get easy overview and portfolio management for your sensitive data science at the same time." link />
+        <CardElement title="For researchers" href="/en/researchers/" image="/img/flaske_square_500px.png" text="Read more about our scientific offerings. Get your team quickly up and running with access to major scientific tools and flexible capacity that fit your needs." link />
+        <CardElement title="For organizations" href="/en/organizations/" image="/img/sekstant_square_500px.png" text="See how you can enable your scientists with trustworthy and competitive scientific tools. And at the same time get overview and control over your activities." link />
       </div>
     </div>
   </div>
