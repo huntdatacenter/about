@@ -330,13 +330,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   line-height: 1.6;
 }
 
+/* Spacing for front-page button */
 .hc-cta {
   text-align: center;
+  margin-top: 40px; 
+  margin-bottom: -10px; 
 }
 
 .hc-cards {
   display: flex;
-  gap: 10px;
+  gap: 0px;
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
