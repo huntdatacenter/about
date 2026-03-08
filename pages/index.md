@@ -211,7 +211,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-cards">
         <CardElement title="Data holders" text="We collaborate closely with large-scale population-based health studies and other data holders to provide pre-processing environments for quality assurance, long-term archiving of data, and transfer services directly to secure processing environments."/>
         <CardElement title="Health data access bodies (HDAB)" text="The European Health Data Space (EHDS) will change how we access health data. We collaborate closely with the coordinating HDAB in Norway for both pre-processing and exports to secure processing environments."/>
-        <CardElement title="Data producers" text="We provide high-capacity pre-processing environments for core facilities and other data producers for quality assurance workflows, large-scale data transfers from lab instruments, and exports to scientists in secure processing environments."/>
+        <CardElement title="Data producers" text="We provide high-capacity pre-processing environments for core facilities and other data producers for automated quality assurance workflows, large-scale data transfers from lab instruments, and exports to scientists in secure processing environments."/>
         </div>
     </div>
   </div>
@@ -248,8 +248,8 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <div class="hc-cards">
         <CardElement title="History" image="/img/square_featherpen_500px.png" text=" Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world»."/>
-        <CardElement title="Team" image="/img/team_500px.jpg" text="Experiences in HUNT Cloud are shaped and molded by a small team of scientific instrument makers that work hard to make the impossible possible. Read more about the team that makes HUNT Cloud."/>
-        <CardElement title="Careers" a href="/en/about/careers" image="/img/A3_Trust_boat_500px.png" text="Advancing knowledge to build a better world is a truly meaningful pursuit. As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data, and learn, develop and have fun along the way." link/>
+        <CardElement title="Team" image="/img/team_500px.jpg" text="Experiences in HUNT Cloud are shaped and molded by a small team of scientific instrument makers that work hard to make the impossible possible. Learn more about the team that makes HUNT Cloud."/>
+        <CardElement title="Careers" a href="/en/about/careers" image="/img/A3_Trust_boat_500px.png" text="Advancing knowledge to build a better world is a truly meaningful pursuit. As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data, and learn, develop and hopefully have fun along the way." link/>
       </div>
     </div>
   </div>
