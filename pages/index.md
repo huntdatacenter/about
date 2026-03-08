@@ -85,7 +85,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
       <div class="hc-cards">
         <CardElement title="Activate data" image="/img/key_square.png" text="Access to relevant and interesting data is key to high-impact data science. We work alongside your scientific administrators to ensure sufficient trust from data holders to enable as much data as possible for your experiments."/>
-        <CardElement title="Store data" image="/img/Dataflasker_square.png" text="Store all the data you need in a reliable and trustworthy manner. Scale as you grow, and choose between regular storage, speed-optimized storage and tape-based storage for long-term preservation. Backup is on by  default."/>
+        <CardElement title="Store data" image="/img/Dataflasker_square.png" text="Store all the data you need in a reliable and trustworthy manner. Scale as you grow, and choose between regular storage, speed-optimized storage and tape-based storage for long-term preservation. Backup is available by  default."/>
         <CardElement title="Transfer data" image="/img/kiste_square.png" text="Data transfers is an essential part of data-driven science. Utilize internal and external transfer services that are compliant with requirements from the health sector such as the Norwegian Helsenorm."/>
       </div>
     </div>
