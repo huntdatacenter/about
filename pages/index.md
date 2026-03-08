@@ -62,7 +62,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       Scientific hypotheses vary. <br />HUNT Cloud provide environments for the smallest to the largest experiments. 
     </div>
       <div class="hc-cards">
-        <CardElement title="Workbench" image="/img/workbench_500px.png" text="Enjoy a regular desktop and web-based interactive access to modern data science tools in HUNT Cloud Workbench. Adjust the compuational resources and tools in accordance with your needs."/>
+        <CardElement title="Workbench" image="/img/workbench_500px.png" text="Enjoy a regular desktop and web-based interactive access to modern data science tools in HUNT Cloud Workbench. Adjust the computational resources and tools in accordance with your needs."/>
         <CardElement title="Go big!" image="/img/tannhjul_square_500px.png" text="HUNT Cloud is home to some of the largest scientific experiments on sensitive health data in Norway. We hold a vast amount of computational power that can be utilized on-demand, and we aid in the data activation."/>
         <CardElement title="Sensitive AI" image="/img/trust_500px.jpg" text="HUNT Cloud has provided trustworthy environments for sensitive AI since 2018. We provide a selection of up-to-date GPU-cards for activities such as fine-tuning, foundation modelling, multi-modal analysis and others."/>
       </div>
@@ -106,7 +106,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       We know science never sleep. <br /> Get access to support that ensures scientific flow.
       </div>
       <div class="hc-cards">
-        <CardElement title="Documentation" a href="https://docs.hdc.ntnu.no/" image="/img/docs_500px.png" text="We hold an extensive body of user documentation and &quot;how-to&quot; guides for our services. The documention is divided in three sections aimed at scientists, administrators and organizations." link/>
+        <CardElement title="Documentation" a href="https://docs.hdc.ntnu.no/" image="/img/docs_500px.png" text="We hold an extensive body of user documentation and &quot;how-to&quot; guides for our services. The documentation is divided in three sections aimed at scientists, administrators and organizations." link/>
         <CardElement title="Service desk" image="/img/service_desk_500px.png" text="&quot;Click the blue button to order&quot;: Allow your team to adjust lab resources throughout your project period. We provide an extensive set of pre-defined orders that ensures quick responses and predictable deliveries."/>
         <CardElement title="Chat" image="/img/guiding_lights_500px.jpg" text="Quick clarifications are sometimes the best way forward to ensure flow. We provide all labs with their own chat where teams can reach us for technical and administrative guidance whenever needed."/>
       </div>
@@ -170,7 +170,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       HUNT Cloud is used for a broad range of scientific activities. <br /> Here are a few example from the health sciences.
     </div>
       <div class="hc-cards">
-        <CardElement title="Genomics" text="HUNT Cloud was initially build for large-scale genomics analysis. We provide environments for genotyping, sequencing and other omnics studies."/>
+        <CardElement title="Genomics" text="HUNT Cloud was initially build for large-scale genomics analysis. We provide environments for genotyping, sequencing, proteins, metabolites and other omics studies."/>
         <CardElement title="Image analysis" text="We hold tools for both CPU and GPU-based images analysis, including computed tomography imaging, magnetic resonance imaging, and ultrasound imaging."/>
         <CardElement title="Epidemiology" text="Epidemiology is evolving with more data, new methods and new tools. We allow you to combine different software and analytical capacity inside the same lab."/>
       </div>
@@ -230,7 +230,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         National infrastructure for sensitive data
       </div>
       <div class="hc-cards">
-        <CardElement title="" image="/img/Nortre_AltLogo.png" a href="https://www.nortre.no/english/" text="HUNT Cloud is a founding member of the Norwegian national infrastructure for sensitive data (NORTRE) togeter with TSD at the University of Oslo and SAFE at the University of Bergen. NORTRE is co-funded by the Ministry of Education and Research and the Ministry of Health and Care Services to provide more and better knowldege from our national health data resources." link/>
+        <CardElement title="" image="/img/Nortre_AltLogo.png" a href="https://www.nortre.no/english/" text="HUNT Cloud is a founding member of the Norwegian national infrastructure for sensitive data (NORTRE) together with TSD at the University of Oslo and SAFE at the University of Bergen. NORTRE is co-funded by the Ministry of Education and Research and the Ministry of Health and Care Services to provide more and better knowledge from our national health data resources." link/>
       </div>
     </div>
   </div>
