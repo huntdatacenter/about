@@ -265,7 +265,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Our foundation
       </div>
       <div class="hc-cards">
-        <CardElement title="Technology" text="Technology changes fast and brings with it new solutions and new opportunities. NTNU has a long tradition for experimentation and adoption of new technologies. In this spirit, we see the importance of always developing to stay relevant."/>
+        <CardElement title="Technology" text="Technology changes fast, and brings with it new solutions and new opportunities. NTNU has a long tradition for experimentation and adoption of new technologies. In this spirit, we see the importance of always developing to stay relevant."/>
         <CardElement title="Trust" text="Trust is the hard currency in science, and the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We are building on this tradition to protect study participants and scientific integrity."/>
         <CardElement title="Collaboration" text="Truly impactful science takes place across traditional borders; across fields, sectors and countries. We aim to strongly support scientists who dream on a global scale and who are eager to advance international collaborations and explorations."/>
       </div>
