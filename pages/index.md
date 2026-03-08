@@ -59,7 +59,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Flexible computation
       </div>
     <div class="hc-subtitle">
-      Scientific hypotheses vary. <br />HUNT Cloud provide environments for the smallest to the largest experiments. 
+      Scientific hypotheses vary. <br />HUNT Cloud provides environments for the smallest to the largest experiments. 
     </div>
       <div class="hc-cards">
         <CardElement title="Workbench" image="/img/workbench_500px.png" text="Enjoy a regular desktop and web-based interactive access to modern data science tools in HUNT Cloud Workbench. Adjust the computational resources and tools in accordance with your needs."/>
@@ -84,9 +84,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       Data is the precious raw material in high-impact science. <br /> Take good care of it and make it shine in HUNT Cloud.
     </div>
       <div class="hc-cards">
-        <CardElement title="Activate data" image="/img/key_square.png" text="Access to relevant and interesting data is key to high-impact data science. We work alongside your scientific administrators to ensure sufficient trust from data holders to enable as much data as possible for your experiments."/>
-        <CardElement title="Store data" image="/img/Dataflasker_square.png" text="Store all the data you need in a reliable and trustworthy manner. Scale as you grow, and choose between regular storage, speed-optimized storage and tape-based storage for long-term preservation. Backup is available by  default."/>
-        <CardElement title="Transfer data" image="/img/kiste_square.png" text="Data transfers is an essential part of data-driven science. Utilize internal and external transfer services that are compliant with requirements from the health sector, such as the Norwegian Helsenorm."/>
+        <CardElement title="Activate data" image="/img/key_square.png" text="Access to relevant and interesting data is key to high-impact data science. We work alongside your scientific administrators to ensure required trust from data holders to enable as much data as possible for your experiments."/>
+        <CardElement title="Store data" image="/img/Dataflasker_square.png" text="Store all the data you need in a reliable and trustworthy manner. Scale as you grow, and choose between regular storage, speed-optimized storage, and tape-based storage for long-term preservation. Backup is available by  default."/>
+        <CardElement title="Transfer data" image="/img/kiste_square.png" text="Data transfers is an essential part of data-driven science. Utilize internal and external transfer services that are compliant with requirements from for example the health sector, such as the Norwegian Helsenorm."/>
       </div>
     </div>
   </div>
@@ -103,7 +103,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Responsive support
       </div>
     <div class="hc-subtitle">
-      We know science never sleep. <br /> Get access to support that ensures scientific flow.
+      We know science never sleeps. <br /> Get access to support that ensures scientific flow.
       </div>
       <div class="hc-cards">
         <CardElement title="Documentation" a href="https://docs.hdc.ntnu.no/" image="/img/docs_500px.png" text="We hold an extensive body of user documentation and &quot;how-to&quot; guides for our services. The documentation is divided in three sections aimed at scientists, administrators and organizations." link/>
@@ -128,7 +128,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
       <div class="hc-cards">
         <CardElement title="Made for collaboration" image="/img/Partner_square_72dpi.png" text="Collaborations elevate science. Scientists from different fields and backgrounds can work together in the same environment and share the same data - all while they use their favorite tools of choice."/>
-        <CardElement title="A welcoming community" image="/img/Vaffel_1_square_72_500px.png" text="All users are invited to join our HUNT Cloud community. We are truly proud of the warm and welcoming tone in a community that blends a wide variety of cultures and scientific fields."/>
+        <CardElement title="A welcoming community" image="/img/Vaffel_1_square_72_500px.png" text="All users are invited to join our HUNT Cloud community, including online user forums three times per year. We are truly proud of the warm and welcoming tone in a community that blends a wide variety of cultures and scientific fields."/>
         <CardElement title="Freedom to explore" a href="https://docs.hdc.ntnu.no/do-science/community/freedom-to-explore" image="/img/science-is-global-500px.jpg" text="Click here to see our tagline «Freedom to explore» translated into some of the many languages that our community members speak. We are humble and proud of the current list, and eager to see it grow further." link/>
       </div>
     </div>
@@ -211,7 +211,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-cards">
         <CardElement title="Data holders" text="We collaborate closely with large-scale population-based health studies and other data holders to provide pre-processing environments for quality assurance, long-term archiving of data, and transfer services directly to secure processing environments."/>
         <CardElement title="Health data access bodies (HDAB)" text="The European Health Data Space (EHDS) will change how we access health data. We collaborate closely with the coordinating HDAB in Norway for both pre-processing and exports to secure processing environments."/>
-        <CardElement title="Data producers" text="We provide high-capacity pre-processing environments for core facilities and other data producers for automated quality assurance workflows, large-scale data transfers from lab instruments, and exports to scientists in secure processing environments."/>
+        <CardElement title="Data producers" text="We provide high-capacity pre-processing environments to core facilities and other data producers for automated quality assurance workflows, large-scale data transfers from lab instruments, and exports to scientists in secure processing environments."/>
         </div>
     </div>
   </div>
@@ -230,7 +230,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         National infrastructure for sensitive data
       </div>
       <div class="hc-cards">
-        <CardElement title="" image="/img/Nortre_AltLogo.png" a href="https://www.nortre.no/english/" text="HUNT Cloud is a founding member of the Norwegian national infrastructure for sensitive data (NORTRE) together with TSD at the University of Oslo and SAFE at the University of Bergen. NORTRE is co-funded by the Ministry of Education and Research and the Ministry of Health and Care Services to provide more and better knowledge from our national health data resources." link/>
+        <CardElement title="" image="/img/Nortre_AltLogo.png" a href="https://www.nortre.no/english/" text="HUNT Cloud is a founding member of the Norwegian national infrastructure for sensitive data (NORTRE), alongside TSD at the University of Oslo and SAFE at the University of Bergen. NORTRE is co-funded by the Ministry of Education and Research, and the Ministry of Health and Care Services, to enhance access to and knowledge from Norway's national health data resources." link/>
       </div>
     </div>
   </div>
@@ -262,18 +262,35 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block hc-section">
     <div class="hc-block-container">
       <div class="hc-title">
-        Our philosophy
+        Our foundation
       </div>
       <div class="hc-cards">
-        <CardElement title="Technology" text="Technology changes fast and brings with it new solutions and new opportunities. NTNU has a long tradition for experimentation and adoption of new technologies. In this spirit, we see the importance of a continuous development."/>
-        <CardElement title="Trust" text="Trust is the currency in science and the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We are building on this tradition to protect study participants and scientific integrity."/>
+        <CardElement title="Technology" text="Technology changes fast and brings with it new solutions and new opportunities. NTNU has a long tradition for experimentation and adoption of new technologies. In this spirit, we see the importance of always developing to stay relevant."/>
+        <CardElement title="Trust" text="Trust is the hard currency in science, and the foundation for everything we do. Since its beginning in 1984, HUNT has been pioneering trustworthy care for health data. We are building on this tradition to protect study participants and scientific integrity."/>
         <CardElement title="Collaboration" text="Truly impactful science takes place across traditional borders; across fields, sectors and countries. We aim to strongly support scientists who dream on a global scale and who are eager to advance international collaborations and explorations."/>
       </div>
     </div>
   </div>
 
 
+<!----------------------------------------------->
+<!-- Block: Philosophy -->
+<!----------------------------------------------->
 
+  <div class="hc-block hc-section">
+    <div class="hc-block-container">
+      <div class="hc-title">
+        Our principles
+      </div>
+      <div class="hc-cards">
+        <CardElement title="Crafted" text="."/>
+        <CardElement title="Open" text="We run HUNT Cloud under open infrastructure principles. This means that we embrace open source software, open standards and vendor neutral equipment whenever possible."/>
+        <CardElement title="Sovereign" text="Data last longer than laws."/>
+      </div>
+    </div>
+  </div>
+
+  
 <!----------------------------------------------->
 <!-- Block: Art -->
 <!----------------------------------------------->
@@ -281,14 +298,14 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block hc-section">
     <div class="hc-block-container">
       <div class="hc-title">
-        The intersection of technology and art
+        At the intersection of technology and art
       </div>
     <div class="hc-subtitle">
-      We believe in the power of combining ideas from the liberal arts and humanities with technology and biomedical science to advance dialogues and knowledge from sensitive data.
+      We believe in the power of combining ideas from the liberal arts and humanities with technology and biomedical science, to advance dialogues and knowledge from sensitive data.
     </div>
       <div class="hc-cards">
         <CardElement title="Illustrations" a href="https://docs.hdc.ntnu.no/about/illustrations/" image="/img/soria-moria2_500px.jpg" text="The world of data science is filled with abstract ideas. We make our own illustrations to bring these ideas into practical forms to ease dialogues and strengthen cooperation." link/>
-        <CardElement title="Video interviews" a href="https://www.youtube.com/@HUNTCloud" image="/img/youtube_500px.png" text="There are so many great ideas out there. We aim to bring together perspectives that explore the intersections of knowledge, collaboration and creativity to advance knowledge from data." link/>
+        <CardElement title="Video interviews" a href="https://www.youtube.com/@HUNTCloud" image="/img/youtube_500px.png" text="There are so many great ideas out there. We aim to bring together perspectives that explore the intersections of knowledge, collaboration and creativity to advance knowledge from sensitive data." link/>
       </div>
     </div>
   </div>
