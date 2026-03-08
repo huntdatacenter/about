@@ -280,6 +280,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   <div class="hc-block hc-section">
     <div class="hc-block-container">
       <div class="hc-title">
+        Our principles
       </div>
       <div class="hc-cards">
         <CardElement title="Crafted" text="Science is all about exploring the unknown. Infrastructures that support truly novel missions can not be purchased off-the-self. They must to be built and continuously developed with love and dedication."/>
