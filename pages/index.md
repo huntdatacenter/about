@@ -284,7 +284,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <div class="hc-cards">
         <CardElement title="Crafted" text="Science is all about exploring the unknown. Infrastructures that support truly novel missions can not be purchased off-the-self. They must to be built and continuously developed with love and dedication."/>
-        <CardElement title="Open" text="HUNT Cloud adhere to open infrastructure principles. This means that we embrace open source software, open standards, and vendor neutral equipment. And we strongly support open science."/>
+        <CardElement title="Open" text="HUNT Cloud adhere to open infrastructure principles. This means that we embrace open source software, open standards, and vendor neutral equipment - and we strongly support open science."/>
         <CardElement title="Sovereign" text="HUNT Cloud holds decades-long perspective on data governance. We adhere to strict digital sovereignty principles to ensure that users in the EU and Norway maintain independence and control over their data."/>
       </div>
     </div>
