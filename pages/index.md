@@ -107,7 +107,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <div class="hc-cards">
         <CardElement title="Documentation" a href="https://docs.hdc.ntnu.no/" image="/img/docs_500px.png" text="We hold an extensive body of user documentation on how to use our services. The documention is divided in three distinct sections aimed at scientists, administrators and organizations." link/>
-        <CardElement title="Service desk" image="/img/service_desk_500px.png" text="&quot;Click the blue button to order&quot;: Allow your team to adjust lab resources throughout your project period. We provide an extensive set of pre-defined orders that ensures quick responses and predictable results."/>
+        <CardElement title="Service desk" image="/img/service_desk_500px.png" text="&quot;Click the blue button to order&quot;: Allow your team to adjust lab resources throughout your project period. We provide an extensive set of pre-defined orders that ensures quick responses and predictable deliveries."/>
         <CardElement title="Chat" image="/img/guiding_lights_500px.jpg" text="A quick question is sometimes the best way forward. We provide all labs with their own chat where your team can reach us for technical and administrative guidance whenever needed."/>
       </div>
     </div>
@@ -128,7 +128,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
       <div class="hc-cards">
         <CardElement title="Made for collaboration" image="/img/Partner_square_72dpi.png" text="Collaborations elevate science. Scientists from different fields and backgrounds can work together in the same environment and share the same data - all while they use their favorite tools of choice."/>
-        <CardElement title="Cloud community" image="/img/Vaffel_1_square_72_500px.png" text="All users are invited to join our HUNT Cloud community. We are truly proud of the warm and welcoming tone in a community that blends a wide variety of cultures and scientific fields."/>
+        <CardElement title="A welcomming community" image="/img/Vaffel_1_square_72_500px.png" text="All users are invited to join our HUNT Cloud community. We are truly proud of the warm and welcoming tone in a community that blends a wide variety of cultures and scientific fields."/>
         <CardElement title="Science is global" a href="https://docs.hdc.ntnu.no/do-science/community/freedom-to-explore" image="/img/science-is-global-500px.jpg" text="Click here to see our tagline «Freedom to explore» translated into some of the many languages that our community members speak. We are humble and proud of the current list, and eager to see it grow further." link/>
       </div>
     </div>
