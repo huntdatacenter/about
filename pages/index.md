@@ -249,7 +249,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       <div class="hc-cards">
         <CardElement title="History" image="/img/square_featherpen_500px.png" text=" Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world»."/>
         <CardElement title="Team" image="/img/team_500px.jpg" text="Experiences in HUNT Cloud are shaped and molded by a small team of scientific instrument makers that work hard to make the impossible possible. Learn more about the team that makes HUNT Cloud."/>
-        <CardElement title="Careers" a href="/en/about/careers" image="/img/A3_Trust_boat_500px.png" text="Advancing knowledge to build a better world is a truly meaningful pursuit. As a part of the HUNT Cloud team, you will enable scientists to do impactful science on sensitive data, and learn, develop and hopefully have fun along the way." link/>
+        <CardElement title="Careers" a href="/en/about/careers" image="/img/A3_Trust_boat_500px.png" text="Advancing knowledge to build a better world is a truly meaningful pursuit. As a part of the HUNT Cloud team, you will enable scientists to do impactful science, and learn, develop and have fun along the way." link/>
       </div>
     </div>
   </div>
@@ -284,7 +284,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <div class="hc-cards">
         <CardElement title="Crafted" text="Science is all about exploring the unknown. Infrastructures that support truly novel missions can not be purchased off-the-self. They must to be built and continuously developed with love and dedication."/>
-        <CardElement title="Open" text="HUNT Cloud operates under open infrastructure principles. This means that we embrace open source software, open standards, and vendor neutral equipment. And we strongly support open science."/>
+        <CardElement title="Open" text="HUNT Cloud adhere to open infrastructure principles. This means that we embrace open source software, open standards, and vendor neutral equipment. And we strongly support open science."/>
         <CardElement title="Sovereign" text="HUNT Cloud holds decades-long perspective on data governance. We adhere to strict digital sovereignty principles to ensure that users in the EU and Norway maintain independence and control over their data."/>
       </div>
     </div>
