@@ -59,12 +59,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Flexible computation
       </div>
     <div class="hc-subtitle">
-      HUNT Cloud is home to a variety of scientific environments <br /> that conducts from the smallest to the largest experiments. 
+      Scientific hypotheses vary. <br />HUNT Cloud provide environments for the smallest to the largest experiments. 
     </div>
       <div class="hc-cards">
         <CardElement title="Workbench" image="/img/workbench_500px.png" text="Enjoy both a regular desktop and web-based interactive access to modern data science tools in HUNT Cloud Workbench. Adjust the compuational resources and tools in accordance with your needs."/>
-        <CardElement title="Go big!" image="/img/tannhjul_square_500px.png" text="HUNT Cloud is home to some of the largest scientific experiments on sensitive health data in Norway. We hold a vast amount of computational power that can be utilized on-demand."/>
-        <CardElement title="Sensitive AI" image="/img/trust_500px.jpg" text="HUNT Cloud has provided trustworthy environments for sensitive AI since 2018. We provide a selection of GPU-cards for both fine-tuning, foundation modelling and multi-modal analysis."/>
+        <CardElement title="Go big!" image="/img/tannhjul_square_500px.png" text="HUNT Cloud is home to some of the largest scientific experiments on sensitive health data in Norway. We hold a vast amount of computational power that can be utilized on-demand, and aid in the data activation."/>
+        <CardElement title="Sensitive AI" image="/img/trust_500px.jpg" text="HUNT Cloud has provided trustworthy environments for sensitive AI since 2018. We provide a selection of GPU-cards for activities such as fine-tuning, foundation modelling, multi-modal analysis and others."/>
       </div>
     </div>
   </div>
@@ -103,12 +103,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Responsive support
       </div>
     <div class="hc-subtitle">
-      We know science never sleep. <br /> Get access to support that ensures your scientific flow.
+      We know science never sleep. <br /> Get access to support that ensures scientific flow.
       </div>
       <div class="hc-cards">
         <CardElement title="Documentation" a href="https://docs.hdc.ntnu.no/" image="/img/docs_500px.png" text="We hold an extensive body of user documentation on how to use our services. The documention is divided in three distinct sections aimed at scientists, administrators and organizations." link/>
-        <CardElement title="Service desk" image="/img/service_desk_500px.png" text="Click the blue button to order: Allow your team to adjust lab resources throughout your project periods. We provide an extensive set of pre-defined orders that ensures quick responses."/>
-        <CardElement title="Chat" image="/img/guiding_lights_500px.jpg" text="A quick question is sometimes the best way forward. We provide all labs with their own chat were your team can reach us for technical and administrative guidance whenever needed."/>
+        <CardElement title="Service desk" image="/img/service_desk_500px.png" text="&quot;Click the blue button to order&quot;: Allow your team to adjust lab resources throughout your project period. We provide an extensive set of pre-defined orders that ensures quick responses and predictable results."/>
+        <CardElement title="Chat" image="/img/guiding_lights_500px.jpg" text="A quick question is sometimes the best way forward. We provide all labs with their own chat where your team can reach us for technical and administrative guidance whenever needed."/>
       </div>
     </div>
   </div>
@@ -127,9 +127,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       Enable global access to your lab and data to fully utilize <br />  scientific opportunities that comes your way.
     </div>
       <div class="hc-cards">
-        <CardElement title="Made for collaboration" image="/img/Partner_square_72dpi.png" text="Collaborations elevate science. Scientists from different fields and backgrounds can work together in the same environment and share the same data, all while they use their favorite tools of choice."/>
+        <CardElement title="Made for collaboration" image="/img/Partner_square_72dpi.png" text="Collaborations elevate science. Scientists from different fields and backgrounds can work together in the same environment and share the same data - all while they use their favorite tools of choice."/>
         <CardElement title="Cloud community" image="/img/Vaffel_1_square_72_500px.png" text="All users are invited to join our HUNT Cloud community. We are truly proud of the warm and welcoming tone in a community that blends a wide variety of cultures and scientific fields."/>
-        <CardElement title="Science is global" a href="https://docs.hdc.ntnu.no/do-science/community/freedom-to-explore" image="/img/science-is-global-500px.jpg" text="Click here to see our tagline «Freedom to explore» translated into some of the languages that our community members speak. We are humble and proud of the current list, and eager to see it grow further." link/>
+        <CardElement title="Science is global" a href="https://docs.hdc.ntnu.no/do-science/community/freedom-to-explore" image="/img/science-is-global-500px.jpg" text="Click here to see our tagline «Freedom to explore» translated into some of the many languages that our community members speak. We are humble and proud of the current list, and eager to see it grow further." link/>
       </div>
     </div>
   </div>
@@ -145,7 +145,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         High trust
       </div>
     <div class="hc-subtitle">
-      Trust is a hard currency in sensitive data science. <br /> HUNT Cloud holds certificates for renowned ISO standards.
+      Trust is a hard currency in sensitive data science. <br /> HUNT Cloud holds third-party verified certificates for renowned ISO standards.
     </div>
       <div class="hc-cards">
         <CardElement title="Quality" image="/img/QualitySysCert_ISO9001_col.png" text="Our quality management system provides predictable and high-quality services."/>
@@ -167,11 +167,11 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Tailored for science
       </div>
     <div class="hc-subtitle">
-      HUNT Cloud is utilized a broad range of scientific activities. <br /> Here are a few example from health sciences.
+      HUNT Cloud is use for a broad range of scientific activities. <br /> Here are a few example from health sciences.
     </div>
       <div class="hc-cards">
-        <CardElement title="Genomics" text="HUNT Cloud was initially build for large-scale genomics analysis. We provide environments for both genotyping, sequencing and other omnics studies."/>
-        <CardElement title="Image analysis" text="We hold tools for both CPU and GPU-based images analysis, including computed tomography imaging, magnetic resonance imaging and ultrasound."/>
+        <CardElement title="Genomics" text="HUNT Cloud was initially build for large-scale genomics analysis. We provide environments for genotyping, sequencing and other omnics studies."/>
+        <CardElement title="Image analysis" text="We hold tools for both CPU and GPU-based images analysis, including computed tomography imaging, magnetic resonance imaging, and ultrasound imaging."/>
         <CardElement title="Epidemiology" text="Epidemiology is evolving with more data, new methods and new tools. We allow you to combine different software and analytical capacity inside the same lab."/>
       </div>
     </div>
@@ -206,7 +206,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         Pre-processing environments
       </div>
     <div class="hc-subtitle">
-      We monitor the European legal landscape closely <br />to ensure secure processing environments in compliance with EHDS and GDPR.
+      We monitor the European legal landscape closely to ensure that our <br />secure processing environments are in compliance with EHDS and GDPR.
     </div>
       <div class="hc-cards">
         <CardElement title="Data holders" text="We collaborate closely with large-scale population-based health studies and other data holders to provide pre-processing environments for quality assurance, long-term archiving of data, and transfer services directly to secure processing environments."/>
@@ -230,7 +230,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         National infrastructure for sensitive data
       </div>
       <div class="hc-cards">
-        <CardElement title="" image="/img/Nortre_AltLogo.png" a href="https://www.nortre.no/english/" text="HUNT Cloud is a proud member of the Norwegian national infrastructure for sensitive data (NORTRE) togeter with TSD at the University of Oslo and SAFE at the University of Bergen. NORTRE is co-funded by the Ministry of Education and Research and the Ministry of Health and Care Services to provide more and better knowldege from our national health data." link/>
+        <CardElement title="" image="/img/Nortre_AltLogo.png" a href="https://www.nortre.no/english/" text="HUNT Cloud is a founding member of the Norwegian national infrastructure for sensitive data (NORTRE) togeter with TSD at the University of Oslo and SAFE at the University of Bergen. NORTRE is co-funded by the Ministry of Education and Research and the Ministry of Health and Care Services to provide more and better knowldege from our national health data resources." link/>
       </div>
     </div>
   </div>

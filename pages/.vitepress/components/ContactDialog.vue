@@ -21,7 +21,7 @@ export default {
       emailRecipient: "cloud@hunt.ntnu.no",
       emailTitle: "Contact HUNT Cloud",
       requirements: [
-        "<b>We care about your privacy.</b> Read our <a href='https://docs.hdc.ntnu.no/govern-science/privacy-statement' target='_blank' style='color: #00509e; font-weight: bold;;'>privacy statement</a> to learn how we process your personal data when you send us a request.",
+        "<b>We care about your privacy.</b> Read our <a href='https://docs.hdc.ntnu.no/govern-science/privacy-statement' target='_blank' style='color: #3e628a; font-weight: bold;;'>privacy statement</a> to learn how we process your personal data when you send us a request.",
       ],
       fields: [{ label: "Request topic", key: "topic", field: "textfield" }],
       attachments: [],
@@ -200,7 +200,7 @@ export default {
     </v-hover>
     <v-dialog v-model="dialog" transition="dialog-bottom-transition" max-width="960px" :fullscreen="isMobile">
       <v-card>
-        <v-toolbar dark color="#00509e">
+        <v-toolbar dark color="#3e628a">
           <v-toolbar-title>{{ title }}</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn icon fab @click="closeBtn">
