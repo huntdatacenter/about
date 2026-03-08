@@ -170,7 +170,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       HUNT Cloud is used for a broad range of scientific activities. <br /> Here are a few example from the health sciences.
     </div>
       <div class="hc-cards">
-        <CardElement title="Genomics" text="HUNT Cloud was initially build for large-scale genomics analysis. We provide environments for genotyping, sequencing, proteins, metabolites and other omics studies."/>
+        <CardElement title="Genomics" text="HUNT Cloud was initially build for large-scale genomics analysis. We provide environments for genotyping, sequencing, proteomics, metabolomics and other omics studies."/>
         <CardElement title="Image analysis" text="We hold tools for both CPU and GPU-based images analysis, including computed tomography imaging, magnetic resonance imaging, and ultrasound imaging."/>
         <CardElement title="Epidemiology" text="Epidemiology is evolving with more data, new methods and new tools. We allow you to combine different software and analytical capacity inside the same lab."/>
       </div>
