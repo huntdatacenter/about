@@ -284,7 +284,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
         The intersection of technology and art
       </div>
     <div class="hc-subtitle">
-      We believe in the power of combining ideas from the liberal arts and humanities with technology and biomedical science to advance dialogues and knowledge from data.
+      We believe in the power of combining ideas from the liberal arts and humanities with technology and biomedical science to advance dialogues and knowledge from sensitive data.
     </div>
       <div class="hc-cards">
         <CardElement title="Illustrations" a href="https://docs.hdc.ntnu.no/about/illustrations/" image="/img/soria-moria2_500px.jpg" text="The world of data science is filled with abstract ideas. We make our own illustrations to bring these ideas into practical forms to ease dialogues and strengthen cooperation." link/>
