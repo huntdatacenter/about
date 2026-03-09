@@ -471,3 +471,36 @@ nav.v-pagination ul {
     padding-bottom: 8px !important;
   }
 }
+
+/* Responsive - mobile */
+@media (max-width: 719px) {
+  .hc-title {
+    font-size: 1.8rem;
+  }
+
+  .hc-subtitle {
+    font-size: 1rem;
+  }
+
+  .hc-section {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 719px) {
+  .hc-title {
+    font-size: 1.6rem;
+  }
+
+  .hc-subtitle {
+    font-size: 1rem;
+  }
+
+  .hc-section {
+    padding: 20px 10px;
+  }
+
+  .hc-cards {
+    flex-direction: column;
+  }
+}
+
