@@ -16,12 +16,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Freedom to explore -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
   <div class="hc-block-container">
-    <div class="hc-title">
+    <div class="hc-new-title">
       Freedom to explore sensitive data <br /> within a trustworthy framework
     </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       Explore, collaborate, and create while your data is secured within a flexible <br /> and ISO-certified academic cloud environment in Norway.
     </div>
     <div class="hc-cta">
@@ -34,12 +34,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Offer -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Get a digital lab for sensitive data
       </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       HUNT Cloud provides secure processing environments for data in need of protection, <br /> including personal data, business critical data and intellectual property data.
     </div>
       <div class="hc-cards">
@@ -53,16 +53,16 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Compute -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Flexible computation
       </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       Scientific hypotheses vary. <br />HUNT Cloud provides environments for the smallest to the largest experiments.
     </div>
       <div class="hc-cards">
-        <CardElement title="Workbench" image="/img/workbench_500px.png" href="" text="Enjoy a regular desktop, as well as a web-based interactive access to modern data science tools in HUNT Cloud Workbench. Adjust the computational resources and tools in accordance with your needs."/>
+        <CardElement title="Workbench" image="/img/workbench_500px.png" href="/en/workbench/" text="Enjoy a regular desktop, as well as a web-based interactive access to modern data science tools in HUNT Cloud Workbench. Adjust the computational resources and tools in accordance with your needs."/>
         <CardElement title="Go big!" image="/img/tannhjul_square_500px.png" href="" text="HUNT Cloud is home to some of the largest scientific experiments on sensitive health data in Norway. We hold a vast amount of computational power that can be utilized on-demand, and we aid in the data activation."/>
         <CardElement title="Sensitive AI" image="/img/trust_500px.jpg" href="" text="HUNT Cloud has provided trustworthy environments for sensitive AI since 2018. We provide a selection of up-to-date GPU-cards for activities such as fine-tuning, foundation modelling, multi-modal analysis and others."/>
       </div>
@@ -73,12 +73,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Storage -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Reliable storage
       </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       Data is the precious raw material in high-impact science. <br /> Take good care of it and make it shine in HUNT Cloud.
     </div>
       <div class="hc-cards">
@@ -93,12 +93,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Support -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Responsive support
       </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       We know science never sleeps. <br /> Get access to support that ensures scientific flow.
       </div>
       <div class="hc-cards">
@@ -113,12 +113,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Collaborations -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Enhanced collaborations
       </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       Enable global access to your lab and data to fully utilize <br />  scientific opportunities that comes your way.
     </div>
       <div class="hc-cards">
@@ -133,12 +133,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: ISO -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         High trust
       </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       Trust is a hard currency in sensitive data science. <br /> HUNT Cloud holds third-party verified certificates for renowned ISO standards.
     </div>
       <div class="hc-cards">
@@ -153,12 +153,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Scientific domains -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Tailored for science
       </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       HUNT Cloud is used for a broad range of scientific activities. <br /> Here are a few example from the health sciences.
     </div>
       <div class="hc-cards">
@@ -173,9 +173,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: TEACHING -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Inspire and innovate
       </div>
       <div class="hc-cards">
@@ -189,12 +189,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Pre-processing environments -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Pre-processing environments
       </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       We monitor the European legal landscape closely to ensure that our <br />secure processing environments are in compliance with EHDS and GDPR.
     </div>
       <div class="hc-cards">
@@ -209,9 +209,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: NORTRE -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         National infrastructure for sensitive data
       </div>
       <div class="hc-cards">
@@ -224,9 +224,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: About HUNT Cloud -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         About HUNT Cloud
       </div>
       <div class="hc-cards">
@@ -241,9 +241,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Philosophy -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Our foundation
       </div>
       <div class="hc-cards">
@@ -258,9 +258,9 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Philosophy -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         Our principles
       </div>
       <div class="hc-cards">
@@ -275,12 +275,12 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- Block: Art -->
 <!----------------------------------------------->
 
-  <div class="hc-block hc-section">
+  <div class="hc-block-gray hc-new-section">
     <div class="hc-block-container">
-      <div class="hc-title">
+      <div class="hc-new-title">
         At the intersection of technology and art
       </div>
-    <div class="hc-subtitle">
+    <div class="hc-new-subtitle">
       We believe in the power of combining ideas from the liberal arts and humanities with technology and biomedical science, to advance dialogues and knowledge from sensitive data.
     </div>
       <div class="hc-cards">
@@ -301,37 +301,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <style scoped>
 /* CSS scoped specifically to this page */
 
-.hc-section {
-  padding: 10px 10px;
-  background: #EDEDED;
-}
-
-.hc-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #000000;
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto 30px;
-  line-height: 1.3;
-}
-
-.hc-subtitle {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #555;
-  text-align: center;
-  margin: 0 auto 10px;
-  line-height: 1.6;
-}
-
-/* Spacing for front-page button */
-.hc-cta {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: -10px;
-}
-
 .hc-cards {
   display: flex;
   gap: 0px;
@@ -348,38 +317,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
   min-width: 300px;
   max-width: 450px;
   padding: 30px;
-}
-
-/* Responsive - mobile */
-@media (max-width: 719px) {
-  .hc-title {
-    font-size: 1.8rem;
-  }
-
-  .hc-subtitle {
-    font-size: 1rem;
-  }
-
-  .hc-section {
-    padding: 20px 10px;
-  }
-}
-@media (max-width: 719px) {
-  .hc-title {
-    font-size: 1.6rem;
-  }
-
-  .hc-subtitle {
-    font-size: 1rem;
-  }
-
-  .hc-section {
-    padding: 20px 10px;
-  }
-
-  .hc-cards {
-    flex-direction: column;
-  }
 }
 
 </style>
