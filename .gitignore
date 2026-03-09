@@ -46,3 +46,6 @@ npm-debug.log
 *.msp
 
 package-lock.json
+
+.pnp.cjs
+.pnp.loader.mjs
