@@ -326,16 +326,6 @@ nav.v-pagination ul {
   line-height: 1.3;
 }
 
-.hc-new-title-left {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #000000;
-  text-align: left;
-  max-width: 900px;
-  margin: 0 auto 30px;
-  line-height: 1.3;
-}
-
 .hc-new-subtitle {
   font-size: 1.2rem;
   font-weight: 400;
@@ -345,12 +335,43 @@ nav.v-pagination ul {
   line-height: 1.6;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3e628a;
+  text-align: left;
+  max-width: 900px;
+  margin: 1.5em 0 0.5em;
+  line-height: 1.3;
+  padding: 0;
+}
+
+.hc-new-title-left {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  max-width: 900px;
+  margin: 10px 0 1.1em;
+  line-height: 1.3;
+  padding: 0;
+}
+
 .hc-new-subtitle-left {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #555;
+  text-align: left;
+  margin: 0 0 1.7em;
+  line-height: 1.6;
+}
+
+.hc-new-bodytext-left {
   font-size: 1.2rem;
   font-weight: 400;
   color: #555;
   text-align: left;
-  margin: 0 auto 10px;
+  margin: 0 0 1em;
   line-height: 1.6;
 }
 
@@ -474,28 +495,6 @@ nav.v-pagination ul {
 
 /* Responsive - mobile */
 @media (max-width: 719px) {
-  .hc-title {
-    font-size: 1.8rem;
-  }
-
-  .hc-new-title {
-    font-size: 1.8rem;
-  }
-
-  .hc-subtitle {
-    font-size: 1rem;
-  }
-
-  .hc-new-subtitle {
-    font-size: 1rem;
-  }
-
-  .hc-section {
-    padding: 20px 10px;
-  }
-}
-
-@media (max-width: 719px) {
 
   .hc-title {
     font-size: 1.6rem;
@@ -519,6 +518,20 @@ nav.v-pagination ul {
 
   .hc-cards {
     flex-direction: column;
+    padding: 0px 0px;
   }
+  
+  .hc-new-title-left {
+    font-size: 1.6rem;
+  }
+
+  .hc-new-subtitle-left {
+    font-size: 1.6rem;
+  }
+
+  .hc-new-bodytext-left {
+    font-size: 1rem;
+  }
+
 }
 
