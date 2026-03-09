@@ -69,8 +69,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
-
 <!----------------------------------------------->
 <!-- Block: Storage -->
 <!----------------------------------------------->
@@ -90,8 +88,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-
-
 
 <!----------------------------------------------->
 <!-- Block: Support -->
@@ -113,7 +109,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
 <!----------------------------------------------->
 <!-- Block: Collaborations -->
 <!----------------------------------------------->
@@ -133,7 +128,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-
 
 <!----------------------------------------------->
 <!-- Block: ISO -->
@@ -155,8 +149,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
-
 <!----------------------------------------------->
 <!-- Block: Scientific domains -->
 <!----------------------------------------------->
@@ -177,7 +169,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
 <!----------------------------------------------->
 <!-- Block: TEACHING -->
 <!----------------------------------------------->
@@ -193,8 +184,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-
-
 
 <!----------------------------------------------->
 <!-- Block: Pre-processing environments -->
@@ -216,10 +205,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
-
-
-
 <!----------------------------------------------->
 <!-- Block: NORTRE -->
 <!----------------------------------------------->
@@ -234,8 +219,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-
-
 
 <!----------------------------------------------->
 <!-- Block: About HUNT Cloud -->
@@ -254,7 +237,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-
 <!----------------------------------------------->
 <!-- Block: Philosophy -->
 <!----------------------------------------------->
@@ -271,7 +253,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-
 
 <!----------------------------------------------->
 <!-- Block: Philosophy -->
@@ -308,8 +289,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
     </div>
   </div>
-
-
 
 <!----------------------------------------------->
 <!-- Block: Visual tweaks -->
@@ -404,4 +383,3 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 }
 
 </style>
-
