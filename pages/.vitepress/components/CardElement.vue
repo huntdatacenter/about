@@ -42,7 +42,7 @@ export default {
           color="#3E628A"
           variant="tonal"
           :href="href"
-          :link="link ? true : false"
+          :link="href || link ? true : false"
           :append-icon="link ? (isHovering ? 'mdi-chevron-triple-right' : 'mdi-chevron-right') : ''"
         >
           <v-card-text>
