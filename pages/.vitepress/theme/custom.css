@@ -478,7 +478,15 @@ nav.v-pagination ul {
     font-size: 1.8rem;
   }
 
+  .hc-new-title {
+    font-size: 1.8rem;
+  }
+
   .hc-subtitle {
+    font-size: 1rem;
+  }
+
+  .hc-new-subtitle {
     font-size: 1rem;
   }
 
@@ -486,12 +494,22 @@ nav.v-pagination ul {
     padding: 20px 10px;
   }
 }
+
 @media (max-width: 719px) {
+
   .hc-title {
     font-size: 1.6rem;
   }
 
+  .hc-new-title {
+    font-size: 1.6rem;
+  }
+
   .hc-subtitle {
+    font-size: 1rem;
+  }
+
+  .hc-new-subtitle {
     font-size: 1rem;
   }
 
