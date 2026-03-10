@@ -47,7 +47,7 @@ export default {
     <div class="hc-block-container pb-8">
       <v-row class="my-4 px-4">
         <v-col cols="12" class="v-col-sm-6 v-col-md-4 text-body-1">
-          <b>Ready to start on your journey?</b>
+          <b>Ready to start your journey?</b>
         </v-col>
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
           <!-- <SimpleButton title="Contact us" :href="contact" target="_blank" size="large" elevation="2" /> -->
@@ -74,29 +74,6 @@ export default {
           </v-list>
         </v-col>
       </v-row>
-
-      <!-- <v-divider class="my-4"></v-divider> -->
-
-      <!--
-      <v-row class="mt-4 px-4">
-        <v-col cols="12" class="v-col-sm-12 v-col-md-4">
-          <v-img
-            class="mx-auto"
-            max-width="200"
-            max-height="200"
-            :src="image"
-          >
-            <template v-slot:placeholder>
-              <div class="d-flex align-center justify-center fill-height">
-                <v-progress-circular
-                  color="grey-lighten-4"
-                  indeterminate
-                ></v-progress-circular>
-              </div>
-            </template>
-          </v-img>
-        </v-col>
-      </v-row> -->
 
       <v-row class="mt-16"></v-row>
       <v-divider class="my-4"></v-divider>
