@@ -1,5 +1,0 @@
----
-title: Collaboration
----
-
-# {{ $frontmatter.title }}
