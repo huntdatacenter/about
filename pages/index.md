@@ -62,7 +62,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       Scientific hypotheses vary. <br />HUNT Cloud provides environments for the smallest to the largest experiments.
     </div>
       <div class="hc-cards">
-        <CardElement title="Workbench" image="/img/workbench_500px.png" href="/en/workbench/" text="Enjoy a regular desktop, as well as a web-based interactive access to modern data science tools in HUNT Cloud Workbench. Adjust the computational resources and tools in accordance with your needs."/>
+        <CardElement title="Workbench" image="/img/workbench_500px.png" text="Enjoy a regular desktop, as well as a web-based interactive access to modern data science tools in HUNT Cloud Workbench. Adjust the computational resources and tools in accordance with your needs."/>
         <CardElement title="Go big!" image="/img/tannhjul_square_500px.png" href="" text="HUNT Cloud is home to some of the largest scientific experiments on sensitive health data in Norway. We hold a vast amount of computational power that can be utilized on-demand, and we aid in the data activation."/>
         <CardElement title="Sensitive AI" image="/img/trust_500px.jpg" href="" text="HUNT Cloud has provided trustworthy environments for sensitive AI since 2018. We provide a selection of up-to-date GPU-cards for activities such as fine-tuning, foundation modelling, multi-modal analysis and others."/>
       </div>
