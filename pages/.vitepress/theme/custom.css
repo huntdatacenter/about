@@ -527,6 +527,10 @@ nav.v-pagination ul {
   }
 
   .hc-new-subtitle-left {
+    font-size: 1.0+rem;
+  }
+
+  .hc-new-subtitle-left {
     font-size: 1.2rem;
   }
 
