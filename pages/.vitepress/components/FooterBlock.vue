@@ -79,7 +79,9 @@ export default {
       <v-divider class="my-4"></v-divider>
       <div class="d-flex flex-wrap">
         <div class="me-auto mb-2">
-          <v-sheet class="ma-2 px-2 text-no-wrap text-body-1" color="transparent"> NTNU | HUNT Cloud </v-sheet>
+          <a href="https://www.ntnu.no/" target="_blank">
+          <v-sheet class="ma-2 px-2 text-no-wrap text-body-1" color="transparent"> NTNU | HUNT Cloud</v-sheet>
+          </a>
         </div>
         <div class="mb-2">
           <a href="https://docs.hdc.ntnu.no/govern-science/privacy-statement" target="_blank">
