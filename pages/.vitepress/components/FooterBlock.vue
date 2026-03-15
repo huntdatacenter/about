@@ -1,48 +1,22 @@
-<script lang="ts">
-export default {
-  props: {
-    contact: { type: Object, required: false },
-    image: { type: String, default: "/img/robot-2-square-250.png" },
-    listmenus: { type: Boolean, default: false },
-  },
-  data() {
-    return {
-      isHovering: false,
-      lists: [
-        {
-          title: "Products",
-          items: [
-            { text: "Evolve", href: "#page" },
-            { text: "Explore", href: "#page" },
-            { text: "Scientific suite", href: "#page" },
-          ],
-        },
-        {
-          title: "Compliance",
-          items: [
-            { text: "ISO 9001", href: "#page" },
-            { text: "ISO 27001", href: "#page" },
-            { text: "ISO 27701", href: "#page" },
-          ],
-        },
-        {
-          title: "Documentation",
-          items: [
-            { text: "Do Science", href: "https://docs.hdc.ntnu.no/do-science/" },
-            { text: "Administer Science", href: "https://docs.hdc.ntnu.no/administer-science/" },
-            { text: "Govern Science", href: "https://docs.hdc.ntnu.no/govern-science/" },
-          ],
-        },
-      ],
-    }
-  },
-  computed: {
-    // TODO
-  },
-}
-</script>
+
+
+
 
 <template>
+
+<!----------------------------------------------->
+<!-- Block: Test video-ending -->
+<!----------------------------------------------->
+
+<video autoplay loop muted disablepictureinpicture disableremoteplayback preload width="100%">
+  <source src="https://assets.hdc.ntnu.no/assets/artworks/videos/guiding-lights_2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<!----------------------------------------------->
+<!-- Block: Read to start -->
+<!----------------------------------------------->
+
   <div class="hc-block hc-footer-block">
     <div class="hc-block-container pb-8">
       <v-row class="my-4 px-4">
@@ -50,7 +24,6 @@ export default {
           <b>Ready to start your journey?</b>
         </v-col>
         <v-col cols="12" class="v-col-sm-6 v-col-md-4">
-          <!-- <SimpleButton title="Contact us" :href="contact" target="_blank" size="large" elevation="2" /> -->
           <ContactDialog title="Contact us" subject="You got me at sensitive data" size="x-large" elevation="2" />
         </v-col>
       </v-row>
@@ -75,6 +48,10 @@ export default {
         </v-col>
       </v-row>
 
+<!----------------------------------------------->
+<!-- Block: Lower links -->
+<!----------------------------------------------->
+
       <v-row class="mt-16"></v-row>
       <v-divider class="my-4"></v-divider>
       <div class="d-flex flex-wrap">
@@ -93,4 +70,3 @@ export default {
   </div>
 </template>
 
-<style scoped></style>

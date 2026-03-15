@@ -290,14 +290,6 @@ contact: https://docs.hdc.ntnu.no/about/contact/
     </div>
   </div>
 
-<!----------------------------------------------->
-<!-- Block: Test video-ending -->
-<!----------------------------------------------->
-
-<video autoplay loop muted disablepictureinpicture disableremoteplayback preload width="100%">
-  <source src="https://assets.hdc.ntnu.no/assets/artworks/videos/guiding-lights_2.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
 
 <!----------------------------------------------->
 <!-- Block: Visual tweaks -->
