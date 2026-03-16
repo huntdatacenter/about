@@ -92,6 +92,7 @@ function navigationMenu() {
     { text: "Home", link: "/" },
     { text: "Researchers", link: "/en/researchers/" },
     { text: "Organizations", link: "/en/organizations/" },
+    { text: "Documentation", link: "https://docs.hdc.ntnu.no/" },
     { text: "News", link: "/articles/", activeMatch: "/articles/" },
     {
       text: "About",
@@ -113,6 +114,8 @@ function navigationMenu() {
     },
   ]
 }
+
+
 
 function sidebarCommon() {
   return [
