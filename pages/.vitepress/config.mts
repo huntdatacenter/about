@@ -115,8 +115,6 @@ function navigationMenu() {
   ]
 }
 
-
-
 function sidebarCommon() {
   return [
     {
