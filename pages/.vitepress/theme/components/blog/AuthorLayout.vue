@@ -50,21 +50,16 @@ const leftAside = false
           <div class="content-container">
             <slot name="doc-before" />
             <main class="main">
-              <v-sheet v-if="author" class="d-flex ma-0">
-                <v-sheet class="pa-0 mr-4 d-flex-inline" width="40">
-                  <v-avatar v-if="author.data.avatar ? true : false" size="34">
-                    <v-img :alt="author.name" :src="author.data.avatar"></v-img>
-                  </v-avatar>
-                  <v-avatar v-else size="34">
-                    <v-icon icon="mdi-account-circle" size="34"></v-icon>
-                  </v-avatar>
-                </v-sheet>
-
-                <v-sheet class="pa-0">
-                  <h1 class="text-h4 font-weight-bold text-primary-light pa-0">
-                    {{ author.name }}
-                  </h1>
-                </v-sheet>
+              <v-sheet v-if="author" class="author-header">
+                <v-avatar v-if="author.data.avatar" size="300" class="author-avatar">
+                  <v-img :alt="author.name" :src="author.data.avatar"></v-img>
+                </v-avatar>
+                <v-avatar v-else size="300" class="author-avatar">
+                  <v-icon icon="mdi-account-circle" size="140"></v-icon>
+                </v-avatar>
+                <h1 class="author-name">
+                  {{ author.name }}
+                </h1>
               </v-sheet>
               <Content class="vp-doc" :class="[pageName, theme.externalLinkIcon && 'external-link-icon-enabled']" />
             </main>
@@ -213,5 +208,22 @@ const leftAside = false
 
 .VPDoc.has-aside .content-container {
   max-width: 688px;
+}
+
+.author-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.author-avatar {
+  margin-bottom: 16px;
+}
+
+.author-name {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
 }
 </style>

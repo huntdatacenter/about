@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Marvin Muni
-avatar: "todo"
+avatar: "/en/about/img/marvin.png"
 next: false
 prev: false
 sidebar: false

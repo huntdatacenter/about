@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Magdalena Duda
-avatar: "todo"
+avatar: "/en/about/img/magda.png"
 next: false
 prev: false
 sidebar: false

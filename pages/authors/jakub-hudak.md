@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Jakub Hudak
-avatar: "todo"
+avatar: "/en/about/img/jakub.png"
 next: false
 prev: false
 sidebar: false

@@ -8,6 +8,7 @@ aside: false
 ---
 
 <script setup>
+
 import {
   VPTeamPage,
   VPTeamPageTitle,
@@ -16,10 +17,10 @@ import {
 
 const members = [
   {
-    //avatar: 'https://github.com/owhat',
     avatar: 'https://backends.it.ntnu.no/user-profile-service/rest/files/abcdfea3-303c-3992-80b7-068f12994142',
     name: 'Oddgeir Lingaas Holmen',
     title: 'Head of HUNT Cloud',
+    link: '/authors/oddgeir-l-holmen',
     links: [
       { icon: 'github', link: 'https://github.com/oddgeih-ntnu' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/oddgeir-lingaas-holmen/' },
@@ -29,6 +30,7 @@ const members = [
     avatar: 'img/matus.png',
     name: 'Matus Kosut',
     title: 'CTO / Head of Product Development',
+    link: '/authors/matus-kosut',
     links: [
       { icon: 'github', link: 'https://github.com/matuskosut' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/matuskosut/' },
@@ -38,15 +40,16 @@ const members = [
     avatar: 'img/qussay.png',
     name: 'Qussay Ghazeia',
     title: 'Compliance Officer',
+    link: '/authors/qussay-ghazeia',
     links: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/qussay-ghazeia-168626142/' },
     ]
   },
   {
     avatar: 'img/jakub.png',
-    //avatar: 'https://github.com/JakubNTNU.png',
     name: 'Jakub Hudak',
     title: 'Head of operations',
+    link: '/authors/jakub-hudak',
     links: [
       { icon: 'github', link: 'https://github.com/JakubNTNU' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/jakub-hudak-288b611a0/' },
@@ -56,6 +59,7 @@ const members = [
     avatar: 'img/ingunn.png',
     name: 'Ingunn Berg Ferstad',
     title: 'Marketing Manager',
+    link: '/authors/ingunn-ferstad',
     links: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/ingunn-berg-ferstad/' },
     ]
@@ -64,6 +68,7 @@ const members = [
     avatar: 'img/marvin.png',
     name: 'Marvin Muni',
     title: 'Senior DevOps Engineer',
+    link: '/authors/marvin-muni',
     links: [
       { icon: 'linkedin', link: '' },
     ]
@@ -72,6 +77,7 @@ const members = [
     avatar: 'img/keisuke.png',
     name: 'Keisuke Konno',
     title: 'Senior Security Engineer',
+    link: '/authors/keisuke-konno',
     links: [
       { icon: 'linkedin', link: '' },
     ]
@@ -79,14 +85,15 @@ const members = [
   {
     avatar: 'img/magda.png',
     name: 'Magdalena Duda',
-    title: '?????',
+    title: 'Advisor',
+    link: '/authors/magdalena-duda',
     links: [
       { icon: 'linkedin', link: '' },
     ]
   },
 ]
-</script>
 
+</script>
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
@@ -96,107 +103,86 @@ const members = [
       Your experiences in HUNT Cloud are shaped by a small team of scientific instrument makers located at NTNU in Trondheim, Norway.
     </template>
   </VPTeamPageTitle>
-  <VPTeamMembers
-    :members="members"
-  />
+  <div class="team-grid">
+    <div v-for="member in members" :key="member.name" class="team-card">
+      <a :href="member.link" class="card-content">
+        <div class="profile">
+          <div class="avatar">
+            <img :src="member.avatar" alt="Avatar of {{ member.name }}" />
+          </div>
+          <h3>{{ member.name }}</h3>
+          <p>{{ member.title }}</p>
+        </div>
+      </a>
+    </div>
+  </div>
 </VPTeamPage>
 
 <strong>Our team consist of employees with a background from medicine, computer science, management systems, biology and art. We collaborate closely on most of our activities, although for clarity, here is a short description of our main responsibility areas.</strong>
 
 <style scoped>
-.VPTeamPage {
-  margin-top: 0px !important;
-  margin-left: -120px !important;
-  margin-right: auto !important;
-  width: 960px !important;
-  display: block;
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-:deep(.VPTeamMembers) {
-  max-width: 1200px !important;
-  margin: 0 auto !important;
-}
-
-:deep(.VPTeamMembers .container) {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 30px !important;
-  max-width: 100% !important;
-  margin: 0 auto !important;
-  padding: 0 !important;
-}
-
-:deep(.VPTeamMembersItem) {
-  background: #f1eef0ff !important;
+.team-card {
+  background: #f1eef0ff;
   border-radius: 15px;
-  padding: 40px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  min-height: 100% !important;
+  padding: 30px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-:deep(.VPTeamMembersItem .profile) {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center !important;
-  width: 100% !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  padding: 0 !important;
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-:deep(.VPTeamMembersItem .avatar) {
-  width: 200px !important;
-  height: 200px !important;
-  margin: 0 auto !important;
-  padding: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+/* keep card content inside */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  color: inherit;
+  text-decoration: none; /* to remove underlined text */
 }
 
-:deep(.VPTeamMembersItem .avatar img) {
-  width: 200px !important;
-  height: 200px !important;
-  object-fit: cover !important;
-  display: block !important;
-  border-radius: 50% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+.card-content:hover {
+  color: inherit; /* so the text doesn't change color to blue */
 }
 
+.avatar {
+  justify-self: center; /* to center all the team pictures */
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* display full avatar */
+}
+
+/* responsive */
 @media (max-width: 719px) {
-  :deep(.VPTeamMembers .container) {
-    grid-template-columns: 1fr !important;
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }
-
-:deep(.VPTeamMembersItem) {
-  background: #f1eef0ff !important;
-  border-radius: 15px;
-  padding: 40px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  min-height: 100% !important;
-  cursor: pointer !important;
-  transition: transform 0.2s, box-shadow 0.2s !important;
-  position: relative !important;
-}
-
-:deep(.VPTeamMembersItem:hover) {
-  transform: translateY(-5px) !important;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Keep social links clickable above the card link */
-:deep(.VPTeamMembersItem .links) {
-  position: relative !important;
-  z-index: 2 !important;
-}
-
 </style>
