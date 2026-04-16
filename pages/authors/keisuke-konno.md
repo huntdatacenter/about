@@ -2,6 +2,8 @@
 layout: author
 name: Keisuke Konno
 avatar: "/en/about/img/keisuke.png"
+github: ""
+linkedin: ""
 next: false
 prev: false
 sidebar: false

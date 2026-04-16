@@ -21,48 +21,30 @@ const members = [
     name: 'Oddgeir Lingaas Holmen',
     title: 'Head of HUNT Cloud',
     link: '/authors/oddgeir-l-holmen',
-    links: [
-      { icon: 'github', link: 'https://github.com/oddgeih-ntnu' },
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/oddgeir-lingaas-holmen/' },
-    ]
   },
   {
     avatar: 'img/matus.png',
     name: 'Matus Kosut',
     title: 'CTO / Head of Product Development',
     link: '/authors/matus-kosut',
-    links: [
-      { icon: 'github', link: 'https://github.com/matuskosut' },
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/matuskosut/' },
-    ]
   },
   {
     avatar: 'img/qussay.png',
     name: 'Qussay Ghazeia',
     title: 'Compliance Officer',
     link: '/authors/qussay-ghazeia',
-    links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/qussay-ghazeia-168626142/' },
-    ]
   },
   {
     avatar: 'img/jakub.png',
     name: 'Jakub Hudak',
     title: 'Head of operations',
     link: '/authors/jakub-hudak',
-    links: [
-      { icon: 'github', link: 'https://github.com/JakubNTNU' },
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/jakub-hudak-288b611a0/' },
-    ]
   },
   {
     avatar: 'img/ingunn.png',
     name: 'Ingunn Berg Ferstad',
     title: 'Marketing Manager',
     link: '/authors/ingunn-ferstad',
-    links: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/ingunn-berg-ferstad/' },
-    ]
   },
   {
     avatar: 'img/marvin.png',
@@ -78,18 +60,12 @@ const members = [
     name: 'Keisuke Konno',
     title: 'Senior Security Engineer',
     link: '/authors/keisuke-konno',
-    links: [
-      { icon: 'linkedin', link: '' },
-    ]
   },
   {
     avatar: 'img/magda.png',
     name: 'Magdalena Duda',
     title: 'Advisor',
     link: '/authors/magdalena-duda',
-    links: [
-      { icon: 'linkedin', link: '' },
-    ]
   },
 ]
 

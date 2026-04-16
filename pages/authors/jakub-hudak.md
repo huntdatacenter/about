@@ -2,6 +2,8 @@
 layout: author
 name: Jakub Hudak
 avatar: "/en/about/img/jakub.png"
+github: "https://github.com/JakubNTNU"
+linkedin: "https://www.linkedin.com/in/jakub-hudak-288b611a0/"
 next: false
 prev: false
 sidebar: false

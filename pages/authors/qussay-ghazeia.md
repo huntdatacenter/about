@@ -2,6 +2,8 @@
 layout: author
 name: Qussay Ghazeia
 avatar: "/en/about/img/qussay.png"
+github: ""
+linkedin: "https://www.linkedin.com/in/qussay-ghazeia-168626142/"
 next: false
 prev: false
 sidebar: false

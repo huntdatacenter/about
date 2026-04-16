@@ -2,6 +2,8 @@
 layout: author
 name: Matus Kosut
 avatar: "/en/about/img/matus.png"
+github: "https://github.com/matuskosut"
+linkedin: "https://www.linkedin.com/in/matuskosut/"
 next: false
 prev: false
 sidebar: false

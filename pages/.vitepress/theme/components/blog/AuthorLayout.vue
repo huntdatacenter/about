@@ -60,6 +60,14 @@ const leftAside = false
                 <h1 class="author-name">
                   {{ author.name }}
                 </h1>
+                <div class="author-socials">
+                  <a v-if="author.data.github" :href="author.data.github" target="_blank">
+                    <FontAwesomeIcon :icon="['fab', 'github']" />
+                  </a>
+                  <a v-if="author.data.linkedin" :href="author.data.linkedin" target="_blank">
+                    <FontAwesomeIcon :icon="['fab', 'linkedin']" />
+                  </a>
+                </div>
               </v-sheet>
               <Content class="vp-doc" :class="[pageName, theme.externalLinkIcon && 'external-link-icon-enabled']" />
             </main>
@@ -225,5 +233,24 @@ const leftAside = false
   font-size: 28px;
   font-weight: 700;
   text-align: center;
+}
+
+.author-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.author-socials a {
+  font-size: 22px;
+  color: inherit;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.author-socials a:hover {
+  transform: scale(1.2);
 }
 </style>
