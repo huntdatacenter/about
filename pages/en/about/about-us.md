@@ -1,6 +1,5 @@
 ---
 title: About us
-# layout: page
 sidebar: false
 pref: false
 next: false
@@ -51,9 +50,6 @@ const members = [
     name: 'Marvin Muni',
     title: 'Senior DevOps Engineer',
     link: '/authors/marvin-muni',
-    links: [
-      { icon: 'linkedin', link: '' },
-    ]
   },
   {
     avatar: 'img/keisuke.png',
@@ -102,17 +98,12 @@ const members = [
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .team-card {
   background: #f1eef0ff;
   border-radius: 15px;
   padding: 30px;
-  display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-  position: relative;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -123,15 +114,8 @@ const members = [
 
 /* keep card content inside */
 .card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  width: 100%;
-  background: transparent;
-  box-shadow: none;
-  padding: 0;
-  color: inherit;
+  color: inherit;  /* keep color black */
   text-decoration: none; /* to remove underlined text */
 }
 
@@ -141,11 +125,9 @@ const members = [
 
 .avatar {
   justify-self: center; /* to center all the team pictures */
-  justify-content: center;
-  align-items: center;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 50%; /*circle shape*/
   overflow: hidden;
 }
 
