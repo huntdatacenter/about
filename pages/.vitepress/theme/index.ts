@@ -44,32 +44,27 @@ import "vuetify/styles"
 import { vuetify } from "../plugins/vuetify"
 
 // Search for FREE icons: https://fontawesome.com/search?o=r&m=free
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
-import {
-  faClipboardCheck,
-  faFolderOpen,
-  faPeopleArrows,
-  faBrain,
-  faCheck,
-  faInfinity,
-  faQuoteLeft,
-  faQuoteRight,
-} from "@fortawesome/free-solid-svg-icons"
+// import { library } from "@fortawesome/fontawesome-svg-core"
+// import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
+// import {
+//   faClipboardCheck,
+//   faFolderOpen,
+//   faPeopleArrows,
+//   faBrain,
+//   faCheck,
+//   faInfinity,
+//   faQuoteLeft,
+//   faQuoteRight,
+// } from "@fortawesome/free-solid-svg-icons"
 
-library.add(faClipboardCheck)
-library.add(faFolderOpen)
-library.add(faPeopleArrows)
-library.add(faBrain)
-library.add(faCheck)
-library.add(faInfinity)
-library.add(faQuoteLeft)
-library.add(faQuoteRight)
-
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-
-library.add(faLinkedin)
-library.add(faGithub)
+// library.add(faClipboardCheck)
+// library.add(faFolderOpen)
+// library.add(faPeopleArrows)
+// library.add(faBrain)
+// library.add(faCheck)
+// library.add(faInfinity)
+// library.add(faQuoteLeft)
+// library.add(faQuoteRight)
 
 // NOTE: `extends: DefaultTheme` seems to be the same as `...DefaultTheme`
 export default {
@@ -79,7 +74,7 @@ export default {
     context.app.use(vuetify)
 
     // Search for FREE icons: https://fontawesome.com/search?o=r&m=free
-    context.app.component("FontAwesomeIcon", FontAwesomeIcon)
+    // context.app.component("font-awesome-icon", FontAwesomeIcon)
     context.app.component("ContactDialog", ContactDialog)
     context.app.component("CallDialog", CallDialog)
     context.app.component("SimpleButton", SimpleButton)

@@ -62,10 +62,10 @@ const leftAside = false
                 </h1>
                 <div class="author-socials">
                   <a v-if="author.data.github" :href="author.data.github" target="_blank">
-                    <FontAwesomeIcon :icon="['fab', 'github']" />
+                    <v-icon icon="mdi-github" />
                   </a>
                   <a v-if="author.data.linkedin" :href="author.data.linkedin" target="_blank">
-                    <FontAwesomeIcon :icon="['fab', 'linkedin']" />
+                    <v-icon icon="mdi-linkedin" />
                   </a>
                 </div>
               </v-sheet>

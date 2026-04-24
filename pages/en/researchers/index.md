@@ -119,7 +119,7 @@ sidebar: false
           <div class="pt-6 pl-16">
             <v-row class="flex-nowrap">
               <v-col cols="1" style="min-width: 35px">
-                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+                <v-icon class="highlight-color" icon="mdi-clipboard-check" size="24" />
               </v-col>
               <v-col class="font-size-medium pt-4" cols="10">
                 Creative freedom
@@ -127,7 +127,7 @@ sidebar: false
             </v-row>
             <v-row class="flex-nowrap">
               <v-col cols="1" style="min-width: 35px">
-                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+                <v-icon class="highlight-color" icon="mdi-clipboard-check" size="24" />
               </v-col>
               <v-col class="font-size-medium pt-4" cols="10">
                 Personalized setup
@@ -135,7 +135,7 @@ sidebar: false
             </v-row>
             <v-row class="flex-nowrap">
               <v-col cols="1" style="min-width: 35px">
-                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+                <v-icon class="highlight-color" icon="mdi-clipboard-check" size="24" />
               </v-col>
               <v-col class="font-size-medium pt-4" cols="10">
                 Scalable solutions
@@ -143,7 +143,7 @@ sidebar: false
             </v-row>
             <v-row class="flex-nowrap">
               <v-col cols="1" style="min-width: 35px">
-                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+                <v-icon class="highlight-color" icon="mdi-clipboard-check" size="24" />
               </v-col>
               <v-col class="font-size-medium pt-4" cols="10">
                 Collaborative environment
@@ -151,7 +151,7 @@ sidebar: false
             </v-row>
             <!-- <v-row class="flex-nowrap">
               <v-col cols="1" style="min-width: 35px">
-                <font-awesome-icon class="highlight-color" icon="fas fa-clipboard-check" size="2x" />
+                <v-icon class="highlight-color" icon="mdi-clipboard-check" size="24" />
               </v-col>
               <v-col class="font-size-medium pt-4" cols="10">
                 <a href="https://docs.hdc.ntnu.no/" target="_blank">Extensive documentation</a>
@@ -162,7 +162,7 @@ sidebar: false
       </v-row>
       <v-row class="flex-nowrap mt-16">
         <v-col cols="1" style="min-width: 70px">
-          <font-awesome-icon class="highlight-color" icon="fas fa-quote-left" size="4x" />
+          <v-icon class="highlight-color" icon="mdi-format-quote-open" size="48" />
         </v-col>
         <v-col>
           <div class="hc-quote-text">
@@ -173,7 +173,7 @@ sidebar: false
           </div>
         </v-col>
         <v-col cols="1" style="min-width: 70px">
-          <font-awesome-icon class="highlight-color" icon="fas fa-quote-right" size="4x" />
+          <v-icon class="highlight-color" icon="mdi-format-quote-close" size="48" />
         </v-col>
       </v-row>
     </div>
