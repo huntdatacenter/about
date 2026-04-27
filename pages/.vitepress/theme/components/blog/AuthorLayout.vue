@@ -50,21 +50,27 @@ const leftAside = false
           <div class="content-container">
             <slot name="doc-before" />
             <main class="main">
-              <v-sheet v-if="author" class="d-flex ma-0">
-                <v-sheet class="pa-0 mr-4 d-flex-inline" width="40">
-                  <v-avatar v-if="author.data.avatar ? true : false" size="34">
-                    <v-img :alt="author.name" :src="author.data.avatar"></v-img>
-                  </v-avatar>
-                  <v-avatar v-else size="34">
-                    <v-icon icon="mdi-account-circle" size="34"></v-icon>
-                  </v-avatar>
-                </v-sheet>
-
-                <v-sheet class="pa-0">
-                  <h1 class="text-h4 font-weight-bold text-primary-light pa-0">
-                    {{ author.name }}
-                  </h1>
-                </v-sheet>
+              <div class="back-link">
+                <a href="/en/about/about-us">← Back to the team page</a>
+              </div>
+              <v-sheet v-if="author" class="author-header">
+                <v-avatar v-if="author.data.avatar" size="300" class="author-avatar">
+                  <v-img :alt="author.name" :src="author.data.avatar"></v-img>
+                </v-avatar>
+                <v-avatar v-else size="300" class="author-avatar">
+                  <v-icon icon="mdi-account-circle" size="140"></v-icon>
+                </v-avatar>
+                <h1 class="author-name">
+                  {{ author.name }}
+                </h1>
+                <div class="author-socials">
+                  <a v-if="author.data.github" :href="author.data.github" target="_blank">
+                    <v-icon icon="mdi-github" />
+                  </a>
+                  <a v-if="author.data.linkedin" :href="author.data.linkedin" target="_blank">
+                    <v-icon icon="mdi-linkedin" />
+                  </a>
+                </div>
               </v-sheet>
               <Content class="vp-doc" :class="[pageName, theme.externalLinkIcon && 'external-link-icon-enabled']" />
             </main>
@@ -213,5 +219,57 @@ const leftAside = false
 
 .VPDoc.has-aside .content-container {
   max-width: 688px;
+}
+
+.author-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.author-avatar {
+  margin-bottom: 16px;
+}
+
+.author-name {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.author-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.author-socials a {
+  font-size: 22px;
+  color: inherit;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.author-socials a:hover {
+  transform: scale(1.2);
+}
+
+.back-link {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.back-link a {
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-link a:hover {
+  color: var(--vp-c-brand-1);
 }
 </style>

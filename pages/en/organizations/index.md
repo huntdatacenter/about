@@ -64,7 +64,7 @@ sidebar: false
           <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
             <v-card class="pt-8" variant="outlined" height="220px" width="100%">
               <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="110px" color="transparent">
-                <font-awesome-icon icon="fas fa-clipboard-check" size="8x" />
+                <v-icon icon="mdi-clipboard-check" size="64" />
               </v-sheet>
               <v-card-text class="text-center font-weight-bold">
                 ISO&#8209;certified and GDPR&#8209;compliant cloud environments
@@ -79,7 +79,7 @@ sidebar: false
           <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
             <v-card class="pt-8" variant="outlined" height="220px" width="100%">
               <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="110px" color="transparent">
-                <font-awesome-icon icon="fas fa-folder-open" size="8x" />
+                <v-icon icon="mdi-folder-open" size="64" />
               </v-sheet>
               <v-card-text class="text-center font-weight-bold">
                 Portfolio management
@@ -94,7 +94,7 @@ sidebar: false
           <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
             <v-card class="pt-8" variant="outlined" height="220px" width="100%">
               <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="110px" color="transparent">
-                <font-awesome-icon icon="fas fa-people-arrows" size="8x" />
+                <v-icon icon="mdi-account-switch" size="64" />
               </v-sheet>
               <v-card-text class="text-center font-weight-bold">
                 Structured follow-up
@@ -109,7 +109,7 @@ sidebar: false
           <v-sheet class="mx-auto" color="transparent" style="max-width: 250px; min-width: 200px">
             <v-card class="pt-8" variant="outlined" height="220px" width="100%">
               <v-sheet class="mx-auto d-flex justify-center align-center" elevation="0" height="110px" color="transparent">
-                <font-awesome-icon icon="fas fa-brain" size="8x" />
+                <v-icon icon="mdi-brain" size="64" />
               </v-sheet>
               <v-card-text class="text-center font-weight-bold">
                 AI-ready infrastructure

@@ -45,7 +45,7 @@ export default {
                     <tr>
                       <td>Number of digital labs</td>
                       <td>
-                        <font-awesome-icon :icon="['fas', 'infinity']" /><v-tooltip activator="parent" location="start"
+                        <v-icon icon="mdi-infinity" /><v-tooltip activator="parent" location="start"
                           >Unlimited</v-tooltip
                         >
                       </td>
@@ -53,7 +53,7 @@ export default {
                     <tr>
                       <td>Number of lab users</td>
                       <td>
-                        <font-awesome-icon :icon="['fas', 'infinity']" /><v-tooltip activator="parent" location="start"
+                        <v-icon icon="mdi-infinity" /><v-tooltip activator="parent" location="start"
                           >Unlimited</v-tooltip
                         >
                       </td>
@@ -72,20 +72,18 @@ export default {
                     <tr>
                       <td>AI ready</td>
                       <td>
-                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
-                          activator="parent"
-                          location="start"
+                        <v-icon icon="mdi-check" color="green" /><v-tooltip activator="parent" location="start"
                           >All that you need to train and finetune your AI models.</v-tooltip
                         >
                       </td>
                     </tr>
                     <tr>
                       <td>Machine learning / Deep learning</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Big data ready</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                   </tbody>
                   <!-- ------------------------------------- -->
@@ -101,9 +99,7 @@ export default {
                     <tr>
                       <td>GPU Cards</td>
                       <td>
-                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
-                          activator="parent"
-                          location="start"
+                        <v-icon icon="mdi-check" color="green" /><v-tooltip activator="parent" location="start"
                           >NVidia GPUs available in variety VRAM sizes and number of CUDA cores</v-tooltip
                         >
                       </td>
@@ -111,9 +107,7 @@ export default {
                     <tr>
                       <td>Browser based access</td>
                       <td>
-                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
-                          activator="parent"
-                          location="start"
+                        <v-icon icon="mdi-check" color="green" /><v-tooltip activator="parent" location="start"
                           >All you need to run your analysis is your web browser. Unless you want more, we have that
                           too.</v-tooltip
                         >
@@ -121,15 +115,15 @@ export default {
                     </tr>
                     <tr>
                       <td>Python / Jupyterlab</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Tensorflow / Pytorch</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>R / RStudio</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>MATLAB / STATA</td>
@@ -137,19 +131,19 @@ export default {
                     </tr>
                     <tr>
                       <td>Remote desktop</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Workbench</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Data import tools</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Data exports tools</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                   </tbody>
                   <!-- ------------------------------------- -->
@@ -165,21 +159,19 @@ export default {
                     <tr>
                       <td>Storage sizes</td>
                       <td>
-                        <font-awesome-icon :icon="['fas', 'infinity']" /><v-tooltip activator="parent" location="start"
+                        <v-icon icon="mdi-infinity" /><v-tooltip activator="parent" location="start"
                           >From small labs up to hundreds of terabytes.</v-tooltip
                         >
                       </td>
                     </tr>
                     <tr>
                       <td>Multiple tiers</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Fast storage</td>
                       <td>
-                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
-                          activator="parent"
-                          location="start"
+                        <v-icon icon="mdi-check" color="green" /><v-tooltip activator="parent" location="start"
                           >NVME backed storage cluster</v-tooltip
                         >
                       </td>
@@ -187,9 +179,7 @@ export default {
                     <tr>
                       <td>Long term storage</td>
                       <td>
-                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
-                          activator="parent"
-                          location="start"
+                        <v-icon icon="mdi-check" color="green" /><v-tooltip activator="parent" location="start"
                           >Our tape storage service is perfect for long term storage.</v-tooltip
                         >
                       </td>
@@ -197,9 +187,7 @@ export default {
                     <tr>
                       <td>Data storage in Norway, EU</td>
                       <td>
-                        <font-awesome-icon :icon="['fas', 'check']" color="green" /><v-tooltip
-                          activator="parent"
-                          location="start"
+                        <v-icon icon="mdi-check" color="green" /><v-tooltip activator="parent" location="start"
                           >Our server rooms are located in Norway.</v-tooltip
                         >
                       </td>
@@ -218,11 +206,11 @@ export default {
                   <tbody>
                     <tr>
                       <td>Sensitive data</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Personally identifiable data</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                   </tbody> -->
                   <!-- ------------------------------------- -->
@@ -237,19 +225,19 @@ export default {
                   <tbody>
                     <tr>
                       <td>ISO 9001 Certified</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>ISO 27001 Certified</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>ISO 27701 Certified</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Solid agreement framework</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                   </tbody>
                   <!-- ------------------------------------- -->
@@ -264,15 +252,15 @@ export default {
                   <tbody>
                     <tr>
                       <td>Multitenancy</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Full network isolation of labs</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Documented data transfers</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                   </tbody>
                   <!-- ------------------------------------- -->
@@ -287,11 +275,11 @@ export default {
                   <tbody>
                     <tr>
                       <td>Tailored onboarding guides</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                     <tr>
                       <td>Video guides</td>
-                      <td><font-awesome-icon :icon="['fas', 'check']" color="green" /></td>
+                      <td><v-icon icon="mdi-check" color="green" /></td>
                     </tr>
                   </tbody>
                 </v-table>
