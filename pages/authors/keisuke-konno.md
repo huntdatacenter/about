@@ -3,7 +3,7 @@ layout: author
 name: Keisuke Konno
 avatar: "/en/about/img/keisuke.png"
 github: ""
-linkedin: ""
+linkedin: "https://www.linkedin.com/in/keisuke-konno-tech/"
 next: false
 prev: false
 sidebar: false
