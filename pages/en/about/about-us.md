@@ -24,7 +24,7 @@ const members = [
   {
     avatar: '/img/team-img/matus.png',
     name: 'Matus Kosut',
-    title: 'CTO',
+    title: 'Chief Technology Officer',
     link: '/authors/matus-kosut',
   },
   {
