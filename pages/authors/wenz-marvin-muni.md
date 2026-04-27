@@ -1,6 +1,6 @@
 ---
 layout: author
-name: Marvin Muni
+name: Wenz Marvin Muni
 avatar: "/img/team-img/marvin.png"
 github: "https://github.com/Marvin-HC"
 linkedin: "https://www.linkedin.com/in/wenz-marvin-m/"

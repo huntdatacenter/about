@@ -47,7 +47,7 @@ const members = [
   },
   {
     avatar: '/img/team-img/marvin.png',
-    name: 'Marvin Muni',
+    name: 'Wenz Marvin Muni',
     title: 'Senior DevOps Engineer',
     link: '/authors/marvin-muni',
   },
