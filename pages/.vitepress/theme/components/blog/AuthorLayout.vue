@@ -50,6 +50,9 @@ const leftAside = false
           <div class="content-container">
             <slot name="doc-before" />
             <main class="main">
+              <div class="back-link">
+                <a href="/en/about/about-us">← Back to the team page</a>
+              </div>
               <v-sheet v-if="author" class="author-header">
                 <v-avatar v-if="author.data.avatar" size="300" class="author-avatar">
                   <v-img :alt="author.name" :src="author.data.avatar"></v-img>
@@ -252,5 +255,21 @@ const leftAside = false
 
 .author-socials a:hover {
   transform: scale(1.2);
+}
+
+.back-link {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.back-link a {
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-link a:hover {
+  color: var(--vp-c-brand-1);
 }
 </style>
