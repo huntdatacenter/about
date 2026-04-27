@@ -1,5 +1,0 @@
----
-title: Department
----
-
-# {{ $frontmatter.title }}
