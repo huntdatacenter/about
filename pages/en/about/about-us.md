@@ -30,7 +30,7 @@ const members = [
   {
     avatar: '/img/team-img/qussay.png',
     name: 'Qussay Ghazeia',
-    title: 'Compliance Officer',
+    title: 'Chief Compliance Officer',
     link: '/authors/qussay-ghazeia',
   },
   {
