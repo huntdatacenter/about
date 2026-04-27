@@ -24,7 +24,7 @@ const members = [
   {
     avatar: 'img/matus.png',
     name: 'Matus Kosut',
-    title: 'CTO / Head of Product Development',
+    title: 'CTO',
     link: '/authors/matus-kosut',
   },
   {
@@ -90,7 +90,7 @@ const members = [
   </div>
 </VPTeamPage>
 
-<strong>Our team consist of employees with a background from medicine, computer science, management systems, biology and art. We collaborate closely on most of our activities, although for clarity, here is a short description of our main responsibility areas.</strong>
+<strong>Our team consists of employees with a background from medicine, computer science, management systems, biology and art. We collaborate closely on most of our activities, although for clarity, here is a short description of our main responsibility areas.</strong>
 
 <style scoped>
 .team-grid {

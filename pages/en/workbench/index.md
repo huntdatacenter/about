@@ -1,36 +1,45 @@
 ---
 title: Workbench
-sidebar: false
 layout: page
+sidebar: false
 contact: https://docs.hdc.ntnu.no/about/contact/
 ---
 
-<div class="hc-home-page">
-  <div class="hc-block-gray" style="display: none;"></div>
+<!-- <script setup></script> -->
 
-  <div class="hc-block-gray">
-    <div class="hc-block-container">
-      <v-row>
-          <div class="hc-new-title-left">
-            Workbench
-          </div>
-          <div class="hc-new-subsection-text">
-            Enjoy a regular desktop, as well as a web-based interactive access to modern data science tools in HUNT Cloud Workbench. Adjust the computational resources and tools in accordance with your needs.
-          </div>
-      </v-row>
-    </div>
+<div class="hc-home-page">
+  <div class="hc-header">
+    <div class="hc-header-img"></div>
   </div>
 
 <!----------------------------------------------->
-<!-- Block: About HUNT Cloud -->
+<!-- Block: Freedom to explore -->
+<!----------------------------------------------->
+
+  <div class="hc-block-gray hc-new-section">
+  <div class="hc-block-container">
+    <div class="hc-new-title-left">
+      Holding title
+    </div>
+    <div class="hc-new-subtitle-left">
+      Holding index.
+    </div>
+    <div class="hc-new-bodytext-left">
+      Holding text.
+    </div>
+    <div class="hc-new-bodytext-left">
+      <div class="hc-new-subheading-left" id="Workbench">This is a holding subheading</div>
+      Holding text.
+    </div>
+  </div>
+</div>
+
+<!----------------------------------------------->
+<!-- Block: Visual tweaks -->
 <!----------------------------------------------->
 
 <FooterBlock :contact="$frontmatter.contact" />
 
 </div>
 
-<style scoped>
 
-/* CSS scoped specifically to this page */
-
-</style>

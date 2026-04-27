@@ -1,5 +1,0 @@
----
-title: Clinic
----
-
-# {{ $frontmatter.title }}
