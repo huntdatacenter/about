@@ -36,7 +36,7 @@ const members = [
   {
     avatar: 'img/jakub.png',
     name: 'Jakub Hudak',
-    title: 'Head of operations',
+    title: 'Head of Operations',
     link: '/authors/jakub-hudak',
   },
   {
@@ -54,7 +54,7 @@ const members = [
   {
     avatar: 'img/keisuke.png',
     name: 'Keisuke Konno',
-    title: 'Senior Security Engineer',
+    title: 'Senior Software Engineer',
     link: '/authors/keisuke-konno',
   },
   {
@@ -69,7 +69,7 @@ const members = [
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      The HUNT Cloud team
+      The HUNT Cloud Team
     </template>
     <template #lead>
       Your experiences in HUNT Cloud are shaped by a small team of scientific instrument makers located at NTNU in Trondheim, Norway.
