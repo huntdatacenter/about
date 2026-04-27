@@ -93,11 +93,11 @@ function navigationMenu() {
     { text: "Researchers", link: "/en/researchers/" },
     { text: "Organizations", link: "/en/organizations/" },
     { text: "Documentation", link: "https://docs.hdc.ntnu.no/" },
-    { text: "News", link: "/articles/", activeMatch: "/articles/" },
+//    { text: "News", link: "/articles/", activeMatch: "/articles/" },
     {
       text: "About",
       items: [
-        { text: "About us", link: "/en/about/about-us" },
+        { text: "Team", link: "/en/about/about-us" },
         { text: "Careers", link: "/en/about/careers" },
         { text: "Glossary", link: "/en/about/glossary" },
         { text: "Price Estimator", link: "https://docs.hdc.ntnu.no/administer-science/prices/estimator" },

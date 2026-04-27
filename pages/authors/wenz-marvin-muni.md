@@ -18,3 +18,4 @@ Now I do a mix of programming, automation, and networking thinking. I enjoy turn
 The best part of my job is getting deeper insight into the infrastructure that powers research environments and helping shape how it is delivered to users. It's rewarding to know that the work behind the scenes helps researchers move further in their work.
 
 When I'm not at work, you'll probably find me in the mountains snowboarding and enjoying fresh powder. Otherwise, I'm at home working on an oil painting or a DIY project—and if you happen to see me online, there's a good chance I'm gaming.
+

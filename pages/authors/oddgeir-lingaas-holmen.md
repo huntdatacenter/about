@@ -2,7 +2,7 @@
 layout: author
 name: Oddgeir Lingaas Holmen
 avatar: "https://backends.it.ntnu.no/user-profile-service/rest/files/abcdfea3-303c-3992-80b7-068f12994142"
-github: "https://github.com/oddgeih-ntnu"
+github: ""
 linkedin: "https://www.linkedin.com/in/oddgeir-lingaas-holmen/"
 next: false
 prev: false

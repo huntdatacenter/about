@@ -231,7 +231,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
       </div>
       <div class="hc-cards">
         <CardElement title="History" image="/img/square_featherpen_500px.png" href="" text=" Founded in 2013, HUNT Cloud has been at the forefront of providing reliable cloud computing services tailored for both national and international scientific initiatives under the vision «data for a better world»."/>
-        <CardElement title="Team" image="/img/team_500px.jpg" href="" text="Experiences in HUNT Cloud are shaped and molded by a small team of scientific instrument makers that work hard to make the impossible possible. Learn more about the team that makes HUNT Cloud."/>
+        <CardElement title="Team" image="/img/team_500px.jpg" href="/en/about/about-us" text="Experiences in HUNT Cloud are shaped and molded by a small team of scientific instrument makers that work hard to make the impossible possible. Learn more about the team that makes HUNT Cloud."/>
         <CardElement title="Careers" image="/img/A3_Trust_boat_500px.png" href="/en/about/careers" text="Advancing knowledge to build a better world is a truly meaningful pursuit. As a part of the HUNT Cloud team, you will enable scientists to do impactful science, and learn, develop and have fun along the way."/>
       </div>
     </div>

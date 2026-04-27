@@ -9,8 +9,8 @@ prev: false
 sidebar: false
 ---
 
-Matus holds the role of Chief Technology Officer.
+Matus is our Chief Technology Officer (CTO).
 
-On a mission to improve user experience and elevate analytical approaches. Colaborating with researchers on building better solutions for sensitive data research. Combining experience from product management and software engineering with close connection to research enables his mission.
+On a mission to improve user experience and elevate analytical approaches. Collaborating with researchers on building better solutions for sensitive data research. Combining experience from product management and software engineering with close connection to research enables his mission.
 
 You will meet Matus both in dicussions on pilot services and during advanced support.
