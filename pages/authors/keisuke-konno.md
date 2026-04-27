@@ -9,11 +9,11 @@ prev: false
 sidebar: false
 ---
 
-I am a software engineer at HUNT Cloud, NTNU and I am passionate about cybersecurity and data security.
-My journey began in middle school in Japan when I learned the C programming language and networking with Cisco.
+I'm a software engineer at NTNU HUNT Cloud, and I'm passionate about cybersecurity and data protection.
 
-My interest in cybersecurity grew and I went to Estonia to study. Here I participated in CTF competitions and work for several tech companies.
+My journey began in high school in Japan, where I learned the C language and network fundamentals with Cisco devices.
+I further developed this passion by studying cybersecurity in Estonia, competing in CTF competitions, and working for multiple tech companies.
 
-Now I work on developing full-stack solutions, penetration testing and building secure, "privacy first" applications.
+Currently, I develop full‑stack solutions and perform penetration testing to build secure, privacy‑first applications.
 
-My goal is to protect user data and uphold the right to privacy in our projects.
+I am committed to safeguarding user data and promoting the right to privacy in our projects.
