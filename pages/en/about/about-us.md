@@ -60,7 +60,7 @@ const members = [
   {
     avatar: '/img/team-img/magda.png',
     name: 'Magdalena Duda',
-    title: 'Advisor',
+    title: 'Technical Services Manager',
     link: '/authors/magdalena-duda',
   },
 ]
