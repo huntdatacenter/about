@@ -19,7 +19,7 @@ const members = [
     avatar: 'https://backends.it.ntnu.no/user-profile-service/rest/files/abcdfea3-303c-3992-80b7-068f12994142',
     name: 'Oddgeir Lingaas Holmen',
     title: 'Head of HUNT Cloud',
-    link: '/authors/oddgeir-l-holmen',
+    link: '/authors/oddgeir-lingaas-holmen',
   },
   {
     avatar: '/img/team-img/matus.png',
