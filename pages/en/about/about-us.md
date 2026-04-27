@@ -124,11 +124,11 @@ const members = [
 }
 
 .avatar {
-  justify-self: center; /* to center all the team pictures */
   width: 200px;
   height: 200px;
-  border-radius: 50%; /*circle shape*/
+  border-radius: 50%;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .avatar img {
