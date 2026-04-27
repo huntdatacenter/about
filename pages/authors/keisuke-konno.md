@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Keisuke Konno
-avatar: "/en/about/img/keisuke.png"
+avatar: "/img/team-img/keisuke.png"
 github: ""
 linkedin: "https://www.linkedin.com/in/keisuke-konno-tech/"
 next: false

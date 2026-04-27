@@ -1,8 +1,8 @@
 ---
 layout: author
 name: Marvin Muni
-avatar: "/en/about/img/marvin.png"
-github: ""
+avatar: "/img/team-img/marvin.png"
+github: "https://github.com/Marvin-HC"
 linkedin: "https://www.linkedin.com/in/wenz-marvin-m/"
 next: false
 prev: false

@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Jakub Hudak
-avatar: "/en/about/img/jakub.png"
+avatar: "/img/team-img/jakub.png"
 github: "https://github.com/JakubNTNU"
 linkedin: "https://www.linkedin.com/in/jakub-hudak-288b611a0/"
 next: false

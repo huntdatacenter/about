@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Ingunn Berg Ferstad
-avatar: "/en/about/img/ingunn.png"
+avatar: "/img/team-img/ingunn.png"
 github: ""
 linkedin: "https://www.linkedin.com/in/ingunn-berg-ferstad/"
 next: false
