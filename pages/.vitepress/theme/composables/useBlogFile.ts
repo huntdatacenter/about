@@ -17,7 +17,7 @@ export default () => {
   }
 
   function folderDir(name: string): string {
-    const contentSectionPath = "gallery"
+    const contentSectionPath = "feed"
     // @ts-expect-error: import.meta is supported
     const dirname = path.dirname(fileURLToPath(import.meta.url))
     return path.resolve(dirname, `../../../${contentSectionPath}/${name}`)

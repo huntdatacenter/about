@@ -4,19 +4,27 @@ import { useData, useRoute } from "vitepress"
 import { computed, ref } from "vue"
 import { data } from "./posts.data"
 
-export default () => {
+// Optional `category` scopes the paginated listing to a single content type
+// (e.g. "Artwork", "Podcast", "Article"). Detail-page navigation (currentPost /
+// nextPost / prevPost) always runs over the full set so prev/next isn't limited
+// to one category.
+export default (category?: string) => {
   // NOTE -- getting error (useData): vitepress data not properly injected in app
   const { site } = useData()
 
   const allPosts: Ref<Post[]> = ref(data)
 
+  const listedPosts: Ref<Post[]> = ref(
+    category ? data.filter(p => p.data.category === category) : data,
+  )
+
   function getPostsPerPage(pageNumber: number, pageSize: number = 10): Ref<Post[]> {
-    const posts: Ref<Post[]> = ref(allPosts.value.slice((pageNumber - 1) * pageSize, pageNumber * pageSize))
+    const posts: Ref<Post[]> = ref(listedPosts.value.slice((pageNumber - 1) * pageSize, pageNumber * pageSize))
     return posts
   }
 
   function getPageCount(pageSize: number = 10): Ref<number> {
-    const pageCount: Ref<number> = ref(Math.ceil(allPosts.value.length / pageSize))
+    const pageCount: Ref<number> = ref(Math.ceil(listedPosts.value.length / pageSize))
     return pageCount
   }
 
@@ -24,7 +32,7 @@ export default () => {
 
   const path = route.path
 
-  const contentSectionPath = "gallery"
+  const contentSectionPath = "feed"
 
   function findCurrentIndex() {
     return allPosts.value.findIndex(p => `${site.value.base}${contentSectionPath}${p.href}` === route.path)
@@ -34,5 +42,5 @@ export default () => {
   const nextPost = computed(() => allPosts.value[findCurrentIndex() - 1])
   const prevPost = computed(() => allPosts.value[findCurrentIndex() + 1])
 
-  return { allPosts, currentPost, nextPost, prevPost, path, getPostsPerPage, getPageCount }
+  return { allPosts, listedPosts, currentPost, nextPost, prevPost, path, getPostsPerPage, getPageCount }
 }

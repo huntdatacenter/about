@@ -11,7 +11,7 @@ const { currentPost: post, prevPost, nextPost } = usePosts()
 const { findByName } = useAuthors()
 const author = findByName(post.value.author)
 
-const contentSectionPath = "gallery"
+const contentSectionPath = "feed"
 
 // <!-- :class="$vuetify.theme.current === 'dark' ? 'bg-primary-darken-4' : 'bg-primary-lighten-5'" -->
 </script>

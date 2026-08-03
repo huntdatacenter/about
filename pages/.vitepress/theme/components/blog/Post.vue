@@ -11,7 +11,7 @@ const props = defineProps<{
 const { site } = useData()
 const { findByName } = useAuthors()
 const author = findByName(props.post.author)
-const contentSectionPath = "gallery"
+const contentSectionPath = "feed"
 </script>
 
 <template>

@@ -34,6 +34,9 @@ async function load() {
   md = md || (await createMarkdownRenderer(process.cwd()))
   return fs
     .readdirSync(dir)
+    // Skip index.md (the /feed/posts section listing page) and any non-post file;
+    // only dated post entries live here.
+    .filter(file => file.endsWith(".md") && file !== "index.md")
     .map(file => getPost(file, dir))
     .sort((a, b) => b.date.time - a.date.time)
 }

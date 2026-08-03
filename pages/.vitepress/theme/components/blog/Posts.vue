@@ -6,8 +6,23 @@ import Post from "./Post.vue"
 
 const ISSERVER = typeof window === "undefined"
 
-const { theme } = useData()
-const { getPostsPerPage, getPageCount } = usePosts()
+// `category` scopes this listing to a single content type. Omit it (the /feed
+// index) to show everything. Values match the posts' frontmatter `category`.
+const props = defineProps<{
+  category?: string
+}>()
+
+// Feed sections: label + route + the category each filters by (undefined = all).
+const sections = [
+  { label: "All", href: "/feed/", category: undefined },
+  { label: "Art", href: "/feed/art/", category: "Artwork" },
+  { label: "Podcasts", href: "/feed/podcast/", category: "Podcast" },
+  { label: "Posts", href: "/feed/posts/", category: "Article" },
+]
+const activeHref = computed(() => sections.find(s => s.category === props.category)?.href ?? "/feed/")
+
+const { site, theme } = useData()
+const { getPostsPerPage, getPageCount } = usePosts(props.category)
 
 const pageCount = getPageCount().value
 
@@ -138,6 +153,22 @@ onBeforeUnmount(() => {
         </p>
       </v-col>
     </v-row>
+
+    <!-- Content-type filter tabs. Plain links so each section is its own
+         static, SSR-rendered, shareable URL (/feed, /feed/art, ...). -->
+    <div class="d-flex justify-center flex-wrap ga-2 mb-6">
+      <v-btn
+        v-for="section of sections"
+        :key="section.href"
+        :href="`${site.base.replace(/\/$/, '')}${section.href}`"
+        :variant="section.href === activeHref ? 'flat' : 'text'"
+        :color="section.href === activeHref ? 'primary-light' : 'grey'"
+        rounded="pill"
+        class="font-weight-medium text-decoration-none normal-case"
+      >
+        {{ section.label }}
+      </v-btn>
+    </div>
 
     <!-- Post grid (order-preserving masonry, see <script>) -->
     <div
