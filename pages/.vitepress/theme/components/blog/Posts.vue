@@ -6,20 +6,20 @@ import Post from "./Post.vue"
 
 const ISSERVER = typeof window === "undefined"
 
-// `category` scopes this listing to a single content type. Omit it (the /feed
+// `category` scopes this listing to a single content type. Omit it (the /content
 // index) to show everything. Values match the posts' frontmatter `category`.
 const props = defineProps<{
   category?: string
 }>()
 
-// Feed sections: label + route + the category each filters by (undefined = all).
+// Content sections: label + route + the category each filters by (undefined = all).
 const sections = [
-  { label: "All", href: "/feed/", category: undefined },
-  { label: "Art", href: "/feed/art/", category: "Artwork" },
-  { label: "Podcasts", href: "/feed/podcast/", category: "Podcast" },
-  { label: "Articles", href: "/feed/articles/", category: "Article" },
+  { label: "All", href: "/content/", category: undefined },
+  { label: "Art", href: "/content/art/", category: "Artwork" },
+  { label: "Podcasts", href: "/content/podcast/", category: "Podcast" },
+  { label: "Articles", href: "/content/articles/", category: "Article" },
 ]
-const activeHref = computed(() => sections.find(s => s.category === props.category)?.href ?? "/feed/")
+const activeHref = computed(() => sections.find(s => s.category === props.category)?.href ?? "/content/")
 
 const { site, theme } = useData()
 const { getPostsPerPage, getPageCount } = usePosts(props.category)
@@ -155,7 +155,7 @@ onBeforeUnmount(() => {
     </v-row>
 
     <!-- Content-type filter tabs. Plain links so each section is its own
-         static, SSR-rendered, shareable URL (/feed, /feed/art, ...). -->
+         static, SSR-rendered, shareable URL (/content, /content/art, ...). -->
     <div class="d-flex justify-center flex-wrap ga-2 mb-6">
       <v-btn
         v-for="section of sections"

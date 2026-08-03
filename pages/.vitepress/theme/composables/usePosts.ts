@@ -32,7 +32,7 @@ export default (category?: string) => {
 
   const path = route.path
 
-  const contentSectionPath = "feed"
+  const contentSectionPath = "content"
 
   function findCurrentIndex() {
     return allPosts.value.findIndex(p => `${site.value.base}${contentSectionPath}${p.href}` === route.path)
