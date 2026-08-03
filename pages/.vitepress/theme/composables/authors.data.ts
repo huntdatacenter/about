@@ -9,7 +9,7 @@ let md: MarkdownRenderer
 
 const { readFrontMatter, mainLevelDir } = useBlogFile()
 
-const dir = mainLevelDir("authors")
+const dir = mainLevelDir("people")
 
 export interface Author {
   name: string
@@ -45,7 +45,7 @@ function getAuthor(file: string, parentDir: string): Author {
 
   const author: Author = {
     name: data.name,
-    href: `authors/${file.replace(/\.md$/, "")}`,
+    href: `people/${file.replace(/\.md$/, "")}`,
     excerpt: excerpt && md.render(excerpt),
     data,
   }
