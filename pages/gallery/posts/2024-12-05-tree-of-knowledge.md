@@ -7,16 +7,12 @@ tags:
   - knowledge
   - artwork
 intro: |
-  An illustration from HUNT Cloud where we imagine data science.
-
   <img src="https://assets.hdc.ntnu.no/assets/artworks/hunt-cloud_tree-of-knowledge_small.jpg"></img>
 next: false
 prev: false
 ---
 
 <PostDetail>
-
-An illustration from HUNT Cloud where we imagine data science.
 
 <img src="https://assets.hdc.ntnu.no/assets/artworks/hunt-cloud_tree-of-knowledge_full.jpg"></img>
 
