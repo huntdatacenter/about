@@ -66,12 +66,12 @@ export default {
       </v-col>
     </v-row>
 
-    <!-- Post Grid -->
-    <v-row class="pa-2" :dense="false">
-      <v-col v-for="post of getPostsPerPage(pageNumber).value" :key="post.id" cols="12" lg="6">
+    <!-- Post Grid (masonry: cards flow into columns by height, no vertical gaps) -->
+    <div class="posts-masonry pa-2">
+      <div v-for="post of getPostsPerPage(pageNumber).value" :key="post.id" class="posts-masonry__item">
         <Post :post="post" />
-      </v-col>
-    </v-row>
+      </div>
+    </div>
     <v-row class="pa-2" :dense="false">
       <v-col cols="12">
         <v-pagination
@@ -90,6 +90,26 @@ export default {
 </template>
 
 <style scoped>
+/* Masonry post grid: single column on small screens, two columns from the
+   Vuetify `lg` breakpoint (1280px) up — matching the previous cols=12 lg=6.
+   CSS columns pack cards by height so a shorter post leaves no gap below it. */
+.posts-masonry {
+  column-count: 1;
+  column-gap: 24px;
+}
+
+@media (min-width: 1280px) {
+  .posts-masonry {
+    column-count: 2;
+  }
+}
+
+.posts-masonry__item {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid; /* older WebKit/Blink */
+  margin-bottom: 24px;
+}
+
 /* Theme-based color classes */
 .text-primary-light {
   color: rgb(var(--v-theme-primary-light));
