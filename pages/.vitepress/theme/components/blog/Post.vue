@@ -5,9 +5,15 @@ import useAuthors from "../../composables/useAuthors"
 import PostAuthor from "./PostAuthor.vue"
 import PostIcon from "./PostIcon.vue"
 
-const props = defineProps<{
-  post: Post
-}>()
+// `showDate` is off by default: cards hide the date, and it only appears on the
+// opened post (PostDetail). Pass :show-date="true" to surface it on a card.
+const props = withDefaults(
+  defineProps<{
+    post: Post
+    showDate?: boolean
+  }>(),
+  { showDate: false },
+)
 const { site } = useData()
 const { findByName } = useAuthors()
 const author = findByName(props.post.author)
@@ -18,10 +24,10 @@ const postUrl = `${site.value.base}${contentSectionPath}${props.post.href}`
 
 <template>
   <v-card class="post-card" flat>
-    <!-- Category + date -->
+    <!-- Category + date (date hidden on cards by default, see showDate) -->
     <div class="post-card__meta">
       <PostIcon :post="post" class="post-card__category" />
-      <span class="post-card__date">{{ post.date.since }}</span>
+      <span v-if="showDate" class="post-card__date">{{ post.date.since }}</span>
     </div>
 
     <!-- Title -->
