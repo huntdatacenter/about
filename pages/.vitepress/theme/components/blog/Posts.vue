@@ -1,55 +1,128 @@
-<script lang="ts">
-import { ref } from "vue"
+<script setup lang="ts">
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from "vue"
 import { useData } from "vitepress"
 import usePosts from "../../composables/usePosts"
-import Post from "./Post.vue" // Assuming already rewritten for Vuetify
+import Post from "./Post.vue"
 
 const ISSERVER = typeof window === "undefined"
 
-export default {
-  setup() {
-    const { theme } = useData() // Destructure theme from useData composable
+const { theme } = useData()
+const { getPostsPerPage, getPageCount } = usePosts()
 
-    const { getPostsPerPage, getPageCount } = usePosts()
+const pageCount = getPageCount().value
 
-    const pageCount = getPageCount().value
+const pageNumber = computed(() => {
+  if (ISSERVER) return 1
+  const params = new URLSearchParams(new URL(window.location.href).search)
+  const pageParam = params.get("page")
+  return pageParam ? parseInt(pageParam, 10) : 1
+})
 
-    // Export theme by returning it from setup
-    return {
-      theme,
-      getPostsPerPage,
-      pageCount,
-    }
-  },
-  data() {
-    return {}
-  },
-  computed: {
-    pageNumber() {
-      let page = 1
-      if (!ISSERVER) {
-        const url = new URL(window.location.href)
-        const params = new URLSearchParams(url.search)
-        const pageParam = params.get("page") ? params.get("page") : null
-        page = pageParam ? parseInt(pageParam, 10) : 1
-      }
-      return page
-    },
-  },
-  mounted() {},
-  methods: {
-    updatePage(arg: number) {
-      if (!ISSERVER) {
-        let url = new URL(window.location.href)
-        let params = new URLSearchParams(url.search)
-        params.set("page", arg.toString())
-        window.location.search = params.toString()
-      }
-    },
-  },
+const posts = computed(() => getPostsPerPage(pageNumber.value).value)
+
+function updatePage(arg: number) {
+  if (ISSERVER) return
+  const url = new URL(window.location.href)
+  const params = new URLSearchParams(url.search)
+  params.set("page", arg.toString())
+  window.location.search = params.toString()
 }
 
-// :class="$vuetify.theme.current === 'dark' ? 'test-dark-1' : 'test-light-1'"
+/*
+ * Order-preserving masonry.
+ *
+ * Vuetify has no masonry component, and a pure CSS `column-count` layout fills
+ * top-to-bottom per column, which breaks newest-first ordering. Instead we walk
+ * the cards in document order (already sorted newest-first) and drop each one
+ * into whichever column is currently shortest. That keeps reading order
+ * left-to-right while eliminating the vertical gaps a fixed-height row grid
+ * leaves under shorter posts.
+ */
+const GAP = 24 // px, gutter between cards (matches previous grid spacing)
+const BREAKPOINT = 1280 // px, Vuetify `lg` — 2 columns at/above, 1 below
+
+const masonryEl = ref<HTMLElement | null>(null)
+const ready = ref(false)
+const animate = ref(false) // enabled after first layout so the initial placement doesn't slide
+const containerHeight = ref<string>("auto")
+
+let ro: ResizeObserver | null = null
+let frame = 0
+
+// Column count follows the viewport (matching Vuetify's `lg` breakpoint and the
+// original `cols=12 lg=6`), NOT the container: the container is capped at
+// max-width 1280 minus padding, so it never actually reaches 1280.
+function columnCount() {
+  return window.innerWidth >= BREAKPOINT ? 2 : 1
+}
+
+function relayout() {
+  const container = masonryEl.value
+  if (!container) return
+
+  const items = Array.from(container.children) as HTMLElement[]
+  const width = container.clientWidth
+  const cols = columnCount()
+  const colWidth = (width - GAP * (cols - 1)) / cols
+  const colHeights = new Array(cols).fill(0)
+
+  for (const el of items) {
+    // Fixing the width first makes offsetHeight reflect the wrapped height.
+    el.style.width = `${colWidth}px`
+    // Shortest column wins; ties go to the left-most (earliest) column.
+    let target = 0
+    for (let c = 1; c < cols; c++) {
+      if (colHeights[c] < colHeights[target]) target = c
+    }
+    el.style.transform = `translate(${target * (colWidth + GAP)}px, ${colHeights[target]}px)`
+    colHeights[target] += el.offsetHeight + GAP
+  }
+
+  containerHeight.value = `${Math.max(...colHeights) - GAP}px`
+  ready.value = true
+  if (!animate.value) requestAnimationFrame(() => (animate.value = true))
+}
+
+function scheduleRelayout() {
+  if (frame) cancelAnimationFrame(frame)
+  frame = requestAnimationFrame(relayout)
+}
+
+// Re-observe container + current cards so layout tracks width changes and
+// late-settling content (images, YouTube iframes) that changes card heights.
+function observeAll() {
+  const container = masonryEl.value
+  if (!ro || !container) return
+  ro.disconnect()
+  ro.observe(container)
+  for (const el of Array.from(container.children)) ro.observe(el as HTMLElement)
+}
+
+onMounted(() => {
+  if (ISSERVER || typeof ResizeObserver === "undefined") return
+  ro = new ResizeObserver(scheduleRelayout)
+  observeAll()
+  // The container stops widening once it hits its max-width, so the ResizeObserver
+  // won't fire when the viewport crosses the breakpoint beyond that point.
+  window.addEventListener("resize", scheduleRelayout)
+  scheduleRelayout()
+})
+
+// Pagination swaps the card set; rewire observers and relay out afterwards.
+watch(posts, () => {
+  if (ISSERVER) return
+  ready.value = false
+  nextTick(() => {
+    observeAll()
+    scheduleRelayout()
+  })
+})
+
+onBeforeUnmount(() => {
+  if (frame) cancelAnimationFrame(frame)
+  ro?.disconnect()
+  if (!ISSERVER) window.removeEventListener("resize", scheduleRelayout)
+})
 </script>
 
 <template>
@@ -66,12 +139,18 @@ export default {
       </v-col>
     </v-row>
 
-    <!-- Post Grid (masonry: cards flow into columns by height, no vertical gaps) -->
-    <div class="posts-masonry pa-2">
-      <div v-for="post of getPostsPerPage(pageNumber).value" :key="post.id" class="posts-masonry__item">
+    <!-- Post grid (order-preserving masonry, see <script>) -->
+    <div
+      ref="masonryEl"
+      class="posts-masonry pa-2"
+      :class="{ 'posts-masonry--ready': ready, 'posts-masonry--animate': animate }"
+      :style="{ height: ready ? containerHeight : undefined }"
+    >
+      <div v-for="post of posts" :key="post.id" class="posts-masonry__item">
         <Post :post="post" />
       </div>
     </div>
+
     <v-row class="pa-2" :dense="false">
       <v-col cols="12">
         <v-pagination
@@ -90,24 +169,31 @@ export default {
 </template>
 
 <style scoped>
-/* Masonry post grid: single column on small screens, two columns from the
-   Vuetify `lg` breakpoint (1280px) up — matching the previous cols=12 lg=6.
-   CSS columns pack cards by height so a shorter post leaves no gap below it. */
+/*
+ * Before JS lays the cards out (SSR + pre-hydration) they flow as a single
+ * column so the page is never broken without JS. Once `--ready`, cards are
+ * absolutely positioned by the masonry logic and the container gets an explicit
+ * height.
+ */
 .posts-masonry {
-  column-count: 1;
-  column-gap: 24px;
-}
-
-@media (min-width: 1280px) {
-  .posts-masonry {
-    column-count: 2;
-  }
+  position: relative;
+  width: 100%;
 }
 
 .posts-masonry__item {
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid; /* older WebKit/Blink */
   margin-bottom: 24px;
+}
+
+.posts-masonry--ready .posts-masonry__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 0;
+  will-change: transform;
+}
+
+.posts-masonry--animate .posts-masonry__item {
+  transition: transform 0.2s ease;
 }
 
 /* Theme-based color classes */
