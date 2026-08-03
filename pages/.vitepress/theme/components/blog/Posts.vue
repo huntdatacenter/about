@@ -17,7 +17,7 @@ const sections = [
   { label: "All", href: "/feed/", category: undefined },
   { label: "Art", href: "/feed/art/", category: "Artwork" },
   { label: "Podcasts", href: "/feed/podcast/", category: "Podcast" },
-  { label: "Posts", href: "/feed/posts/", category: "Article" },
+  { label: "Articles", href: "/feed/articles/", category: "Article" },
 ]
 const activeHref = computed(() => sections.find(s => s.category === props.category)?.href ?? "/feed/")
 
