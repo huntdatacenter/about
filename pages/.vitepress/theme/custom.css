@@ -3,6 +3,10 @@
 :root {
   --vp-home-hero-name-color: #00509e;
   --vp-c-brand-1: #00509e;
+  /* NTNU brand palette */
+  --ntnu-blue: #00509e;
+  --ntnu-blue-soft: rgba(0, 80, 158, 0.08);
+  --ntnu-blue-border: rgba(0, 80, 158, 0.25);
   --vp-page-texts-dark: #3c3c44;
   --vp-page-texts-light: #ffffff;
   --vp-block-background-blue: #3e628a; /* #3E628A == rgb(62,98,138) */

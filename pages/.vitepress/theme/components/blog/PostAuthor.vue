@@ -10,33 +10,38 @@ const { site } = useData()
 </script>
 
 <template>
-  <v-sheet v-if="author" class="d-flex ma-0">
-    <v-sheet class="flex-1-0 pa-0 pr-3">
-      <v-avatar v-if="author.data.avatar ? true : false" size="34">
-        <v-img :alt="author.name" :src="author.data.avatar"></v-img>
-      </v-avatar>
-      <v-avatar v-else size="34">
-        <v-icon icon="mdi-account-circle" size="34"></v-icon>
-      </v-avatar>
-    </v-sheet>
-
-    <v-sheet class="pa-0">
-      <v-btn
-        :href="`${site.base}${author.href}`"
-        variant="text"
-        color="primary-light"
-        class="text-decoration-none normal-case pa-0"
-      >
-        {{ author.name }}
-      </v-btn>
-    </v-sheet>
-  </v-sheet>
-  <v-sheet v-else></v-sheet>
+  <a v-if="author" :href="`${site.base}${author.href}`" class="post-author">
+    <v-avatar v-if="author.data.avatar ? true : false" size="30">
+      <v-img :alt="author.name" :src="author.data.avatar"></v-img>
+    </v-avatar>
+    <v-avatar v-else size="30">
+      <v-icon icon="mdi-account-circle" size="30"></v-icon>
+    </v-avatar>
+    <span class="post-author__name">{{ author.name }}</span>
+  </a>
+  <span v-else></span>
 </template>
 
 <style scoped>
-/* Ensure primary color theming */
-.text-primary-light {
-  color: rgb(var(--v-theme-primary-light));
+.post-author {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.post-author__name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.2s ease;
+}
+
+.post-author:hover .post-author__name {
+  color: var(--ntnu-blue);
 }
 </style>

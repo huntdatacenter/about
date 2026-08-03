@@ -111,11 +111,11 @@ const contentSectionPath = "content"
 
 /* Ensure primary color theming */
 .text-primary-light {
-  color: rgb(var(--v-theme-primary-light));
+  color: var(--ntnu-blue);
 }
 
 .text-primary-dark {
-  color: rgb(var(--v-theme-primary-dark));
+  color: var(--ntnu-blue);
 }
 
 /* Grey text for consistency */

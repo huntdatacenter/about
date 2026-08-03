@@ -156,19 +156,17 @@ onBeforeUnmount(() => {
 
     <!-- Content-type filter tabs. Plain links so each section is its own
          static, SSR-rendered, shareable URL (/content, /content/art, ...). -->
-    <div class="d-flex justify-center flex-wrap ga-2 mb-6">
-      <v-btn
+    <nav class="content-tabs">
+      <a
         v-for="section of sections"
         :key="section.href"
         :href="`${site.base.replace(/\/$/, '')}${section.href}`"
-        :variant="section.href === activeHref ? 'flat' : 'text'"
-        :color="section.href === activeHref ? 'primary-light' : 'grey'"
-        rounded="pill"
-        class="font-weight-medium text-decoration-none normal-case"
+        class="content-tabs__tab"
+        :class="{ 'content-tabs__tab--active': section.href === activeHref }"
       >
         {{ section.label }}
-      </v-btn>
-    </div>
+      </a>
+    </nav>
 
     <!-- Post grid (order-preserving masonry, see <script>) -->
     <div
@@ -200,6 +198,37 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
+/* Content-type filter tabs — minimal pills, active one in NTNU blue. */
+.content-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+
+.content-tabs__tab {
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.content-tabs__tab:hover {
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+}
+
+.content-tabs__tab--active,
+.content-tabs__tab--active:hover {
+  color: #fff;
+  background: var(--ntnu-blue);
+}
+
 /*
  * Before JS lays the cards out (SSR + pre-hydration) they flow as a single
  * column so the page is never broken without JS. Once `--ready`, cards are

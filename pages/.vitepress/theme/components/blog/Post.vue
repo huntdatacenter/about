@@ -12,69 +12,130 @@ const { site } = useData()
 const { findByName } = useAuthors()
 const author = findByName(props.post.author)
 const contentSectionPath = "content"
+
+const postUrl = `${site.value.base}${contentSectionPath}${props.post.href}`
 </script>
 
 <template>
-  <v-card class="pa-6 border-primary-light" elevation="2" rounded="lg" color="white">
-    <!-- Date and Icon -->
-    <v-row class="mb-0 pb-0 d-flex">
-      <v-col cols="auto" class="me-auto">
-        <span class="text-subtitle-2">
-          <PostIcon :post="post"></PostIcon>
-        </span>
-      </v-col>
-      <v-col cols="auto">
-        <div class="text-subtitle-2">
-          {{ post.date.since }}
-        </div>
-      </v-col>
-    </v-row>
-
-    <!-- Title -->
-    <div class="mt-2 pt-5" style="border-top: rgb(226, 226, 227) 1px solid">
-      <a
-        :href="`${site.base}${contentSectionPath}${post.href}`"
-        variant="text"
-        color="primary-light"
-        class="pa-0 text-h5 font-weight-bold text-decoration-none normal-case text-primary-light"
-      >
-        {{ post.title }}
-      </a>
+  <v-card class="post-card" flat>
+    <!-- Category + date -->
+    <div class="post-card__meta">
+      <PostIcon :post="post" class="post-card__category" />
+      <span class="post-card__date">{{ post.date.since }}</span>
     </div>
 
-    <!-- Excerpt -->
-    <p class="mb-5 text-body-1 font-weight-light" v-html="post.intro" />
-    <!-- <p class="mb-5 text-body-1 font-weight-light" v-html="post.excerpt" /> -->
+    <!-- Title -->
+    <a :href="postUrl" class="post-card__title">{{ post.title }}</a>
 
-    <!-- Author and Read More -->
-    <v-row>
-      <v-col cols="auto" class="me-auto">
-        <PostAuthor :author="author" />
-      </v-col>
-      <v-col cols="auto" class="text-right">
-        <v-btn
-          :href="`${site.base}${contentSectionPath}${post.href}`"
-          variant="text"
-          color="primary-light"
-          class="font-weight-medium text-decoration-none"
-        >
-          Read more
-          <v-icon end icon="mdi-arrow-right" />
-        </v-btn>
-      </v-col>
-    </v-row>
+    <!-- Excerpt -->
+    <div class="post-card__intro" v-html="post.intro" />
+
+    <!-- Author and Read more -->
+    <div class="post-card__footer">
+      <PostAuthor :author="author" />
+      <a :href="postUrl" class="post-card__more">
+        Read more
+        <v-icon end icon="mdi-arrow-right" size="16" />
+      </a>
+    </div>
   </v-card>
 </template>
 
 <style scoped>
-/* Custom border colors for theming */
-
-/* Ensure primary color theming */
-.text-primary-light {
-  color: rgb(var(--v-theme-primary-light));
+.post-card {
+  padding: 22px 24px;
+  background: var(--vp-c-bg) !important;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.text-primary-dark {
-  color: rgb(var(--v-theme-primary-dark));
+.post-card:hover {
+  border-color: var(--ntnu-blue-border);
+  box-shadow: 0 8px 30px rgba(0, 80, 158, 0.08);
+}
+
+.post-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-3);
+}
+
+/* NTNU-blue accent on the category tag */
+.post-card__category {
+  color: var(--ntnu-blue);
+}
+
+.post-card__category :deep(.v-icon) {
+  font-size: 16px;
+}
+
+.post-card__title {
+  display: block;
+  font-size: 19px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-card:hover .post-card__title {
+  color: var(--ntnu-blue);
+}
+
+.post-card__intro {
+  margin: 12px 0 22px;
+  font-size: 14px;
+  line-height: 1.65;
+  font-weight: 300;
+  color: var(--vp-c-text-2);
+}
+
+/* v-html content — reach through scoped styling to keep media tidy */
+.post-card__intro :deep(img),
+.post-card__intro :deep(iframe) {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 14px;
+  border-radius: 8px;
+}
+
+.post-card__intro :deep(p:last-child) {
+  margin-bottom: 0;
+}
+
+.post-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.post-card__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ntnu-blue);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.post-card__more .v-icon {
+  transition: transform 0.2s ease;
+}
+
+.post-card__more:hover .v-icon {
+  transform: translateX(3px);
 }
 </style>
