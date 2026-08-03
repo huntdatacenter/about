@@ -7,12 +7,15 @@ import PostIcon from "./PostIcon.vue"
 
 // `showDate` is off by default: cards hide the date, and it only appears on the
 // opened post (PostDetail). Pass :show-date="true" to surface it on a card.
+// `showType` hides the category tag on filtered subsections (Art / Podcast /
+// Articles) where it would be redundant.
 const props = withDefaults(
   defineProps<{
     post: Post
     showDate?: boolean
+    showType?: boolean
   }>(),
-  { showDate: false },
+  { showDate: false, showType: true },
 )
 const { site } = useData()
 const { findByName } = useAuthors()
@@ -24,9 +27,9 @@ const postUrl = `${site.value.base}${contentSectionPath}${props.post.href}`
 
 <template>
   <v-card class="post-card" flat>
-    <!-- Category + date (date hidden on cards by default, see showDate) -->
-    <div class="post-card__meta">
-      <PostIcon :post="post" class="post-card__category" />
+    <!-- Category + date (both hidden on cards by default, see showType/showDate) -->
+    <div v-if="showType || showDate" class="post-card__meta">
+      <PostIcon v-if="showType" :post="post" class="post-card__category" />
       <span v-if="showDate" class="post-card__date">{{ post.date.since }}</span>
     </div>
 
@@ -40,7 +43,7 @@ const postUrl = `${site.value.base}${contentSectionPath}${props.post.href}`
     <div class="post-card__footer">
       <PostAuthor :author="author" />
       <a :href="postUrl" class="post-card__more">
-        Read more
+        Explore
         <v-icon end icon="mdi-arrow-right" size="16" />
       </a>
     </div>
@@ -130,8 +133,10 @@ const postUrl = `${site.value.base}${contentSectionPath}${props.post.href}`
   align-items: center;
   gap: 4px;
   flex-shrink: 0;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--ntnu-blue);
   text-decoration: none;
   white-space: nowrap;

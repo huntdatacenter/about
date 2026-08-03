@@ -176,7 +176,7 @@ onBeforeUnmount(() => {
       :style="{ height: ready ? containerHeight : undefined }"
     >
       <div v-for="post of posts" :key="post.id" class="posts-masonry__item">
-        <Post :post="post" />
+        <Post :post="post" :show-type="!category" />
       </div>
     </div>
 
