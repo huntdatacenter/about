@@ -96,7 +96,7 @@ function navigationMenu() {
     {
       text: "About",
       items: [
-        { text: "Gallery", link: "/articles/", activeMatch: "/articles/" },
+        { text: "Gallery", link: "/gallery/", activeMatch: "/gallery/" },
         { text: "Team", link: "/en/about/about-us" },
         { text: "Careers", link: "/en/about/careers" },
         { text: "Glossary", link: "/en/about/glossary" },
@@ -125,8 +125,8 @@ function sidebarCommon() {
         { text: "Careers", link: "/en/about/careers" },
         {
           text: "News",
-          link: "/articles/",
-          activeMatch: "/articles/",
+          link: "/gallery/",
+          activeMatch: "/gallery/",
         },
       ],
     },

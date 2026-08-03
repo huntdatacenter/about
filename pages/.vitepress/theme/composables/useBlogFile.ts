@@ -17,10 +17,10 @@ export default () => {
   }
 
   function folderDir(name: string): string {
-    const articlesPath = "articles"
+    const contentSectionPath = "gallery"
     // @ts-expect-error: import.meta is supported
     const dirname = path.dirname(fileURLToPath(import.meta.url))
-    return path.resolve(dirname, `../../../${articlesPath}/${name}`)
+    return path.resolve(dirname, `../../../${contentSectionPath}/${name}`)
   }
 
   function mainLevelDir(name: string): string {

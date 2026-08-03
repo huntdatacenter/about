@@ -11,7 +11,7 @@ const props = defineProps<{
 const { site } = useData()
 const { findByName } = useAuthors()
 const author = findByName(props.post.author)
-const articlesPath = "articles"
+const contentSectionPath = "gallery"
 </script>
 
 <template>
@@ -33,7 +33,7 @@ const articlesPath = "articles"
     <!-- Title -->
     <div class="mt-2 pt-5" style="border-top: rgb(226, 226, 227) 1px solid">
       <a
-        :href="`${site.base}${articlesPath}${post.href}`"
+        :href="`${site.base}${contentSectionPath}${post.href}`"
         variant="text"
         color="primary-light"
         class="pa-0 text-h5 font-weight-bold text-decoration-none normal-case text-primary-light"
@@ -53,7 +53,7 @@ const articlesPath = "articles"
       </v-col>
       <v-col cols="auto" class="text-right">
         <v-btn
-          :href="`${site.base}${articlesPath}${post.href}`"
+          :href="`${site.base}${contentSectionPath}${post.href}`"
           variant="text"
           color="primary-light"
           class="font-weight-medium text-decoration-none"

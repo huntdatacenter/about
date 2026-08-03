@@ -11,7 +11,7 @@ const { currentPost: post, prevPost, nextPost } = usePosts()
 const { findByName } = useAuthors()
 const author = findByName(post.value.author)
 
-const articlesPath = "articles"
+const contentSectionPath = "gallery"
 
 // <!-- :class="$vuetify.theme.current === 'dark' ? 'bg-primary-darken-4' : 'bg-primary-lighten-5'" -->
 </script>
@@ -73,7 +73,7 @@ const articlesPath = "articles"
       <v-row class="mt-2">
         <v-col cols="6" v-if="prevPost">
           <v-btn
-            :href="`${site.base}${articlesPath}${prevPost.href}`"
+            :href="`${site.base}${contentSectionPath}${prevPost.href}`"
             variant="text"
             color="grey"
             class="font-weight-medium text-decoration-none normal-case"
@@ -85,7 +85,7 @@ const articlesPath = "articles"
         <v-col cols="6" v-if="!prevPost" />
         <v-col cols="6" class="text-right" v-if="nextPost">
           <v-btn
-            :href="`${site.base}${articlesPath}${nextPost.href}`"
+            :href="`${site.base}${contentSectionPath}${nextPost.href}`"
             variant="text"
             color="grey"
             class="font-weight-medium text-decoration-none normal-case"

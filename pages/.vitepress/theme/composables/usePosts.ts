@@ -24,10 +24,10 @@ export default () => {
 
   const path = route.path
 
-  const articlesPath = "articles"
+  const contentSectionPath = "gallery"
 
   function findCurrentIndex() {
-    return allPosts.value.findIndex(p => `${site.value.base}${articlesPath}${p.href}` === route.path)
+    return allPosts.value.findIndex(p => `${site.value.base}${contentSectionPath}${p.href}` === route.path)
   }
 
   const currentPost = computed(() => allPosts.value[findCurrentIndex()])
