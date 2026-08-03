@@ -307,7 +307,6 @@ nav.v-pagination ul {
 }
 
 .hc-block-gray {
-  box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
   color: #ededed;
   max-width: 100%;
   width: 100vw;
@@ -315,9 +314,20 @@ nav.v-pagination ul {
   line-height: 1.2;
 }
 
+/*
+ * Sleek block transitions: a soft, feathered top shadow at each section marks
+ * the boundary gently — visible, but a smooth fade rather than the old hard
+ * inset band. The negative spread confines the shadow to the top edge so it
+ * eases into the block instead of drawing a crisp line. Backdrop stays light so
+ * the white cards still pop.
+ */
 .hc-new-section {
   padding: 10px 10px;
-  background: #ededed;
+  background: #f3f3f4;
+}
+
+.hc-home-page .hc-new-section {
+  box-shadow: inset 0 9px 12px -9px rgba(0, 0, 0, 0.1);
 }
 
 .hc-new-title {

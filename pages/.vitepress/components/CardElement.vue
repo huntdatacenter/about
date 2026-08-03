@@ -18,9 +18,6 @@ export default {
   //     console.log(after);
   //   },
   // },
-  mounted() {
-    console.log("mounted")
-  },
   computed: {
     // TODO
   },
@@ -39,8 +36,7 @@ export default {
         <v-card
           v-bind="props"
           class="card-element h-100"
-          color="#3E628A"
-          variant="tonal"
+          variant="flat"
           :href="href"
           :link="href || link ? true : false"
           :append-icon="link ? (isHovering ? 'mdi-chevron-triple-right' : 'mdi-chevron-right') : ''"
@@ -52,7 +48,7 @@ export default {
             <div class="card-element-text">{{ text }}</div>
           </v-card-text>
           <template v-slot:append>
-            <v-icon color="#ef8114" style="margin-top: 1px !important"></v-icon>
+            <v-icon color="#00509e" style="margin-top: 1px !important"></v-icon>
           </template>
         </v-card>
       </template>
@@ -62,19 +58,20 @@ export default {
 
 <style scoped>
 .card-element {
-  border-radius: 20px !important;
-  background: #e0e0e0;
-  padding: 10px;
+  border-radius: 14px !important;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  padding: 12px;
   transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
   cursor: pointer;
   height: 100%;
 }
 
 .card-element:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(62, 98, 138, 0.3) !important;
+  border-color: var(--ntnu-blue-border);
+  box-shadow: 0 8px 30px rgba(0, 80, 158, 0.08) !important;
 }
 
 .card-element-image {
@@ -86,23 +83,29 @@ export default {
 }
 
 .card-element-title {
-  color: #253a55;
-  font-size: 1.5rem;
+  color: var(--vp-c-text-1);
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+  transition: color 0.2s ease;
+}
+
+.card-element:hover .card-element-title {
+  color: var(--ntnu-blue);
 }
 
 .card-element-subtitle {
-  color: #555;
+  color: var(--vp-c-text-2);
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
 .card-element-text {
-  color: #333;
-  line-height: 1.6;
-  font-size: 1rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.65;
+  font-weight: 300;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 719px) {
