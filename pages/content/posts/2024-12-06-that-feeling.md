@@ -30,4 +30,3 @@ Metadata:
 - **Year:** 2021
 - **Version:** 1.0
 - **ArtworkID:** hcc-artwork1
-

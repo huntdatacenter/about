@@ -34,4 +34,3 @@ Metadata:
 - **Year:** 2022
 - **Version:** 1.1
 - **ArtworkID:** hcc-artwork2
-

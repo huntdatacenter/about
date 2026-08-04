@@ -30,4 +30,3 @@ Metadata:
 - **Year:** 2023
 - **Version:** 1.1
 - **ArtworkID:** hcc-artwork4
-
