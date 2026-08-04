@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "The portal"
 author: Ingunn Berg Ferstad
 date: 2024-12-02
@@ -11,8 +12,6 @@ intro: |
 next: false
 prev: false
 ---
-
-<PostDetail>
 
 <img src="https://assets.hdc.ntnu.no/assets/artworks/hunt-cloud_the-portal_full.jpg"></img>
 
@@ -32,4 +31,3 @@ Metadata:
 - **Version:** 1.0
 - **ArtworkID:** hcc-artwork6
 
-</PostDetail>

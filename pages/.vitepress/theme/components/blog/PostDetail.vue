@@ -66,8 +66,9 @@ const contentSectionPath = "content"
         </v-col>
       </v-row>
 
-      <!-- Content Slot -->
-      <slot />
+      <!-- Rendered markdown body (this component is used as the `post` layout,
+           so posts no longer need to wrap their content in <PostDetail>). -->
+      <Content class="vp-doc post-content" />
 
       <!-- Navigation Links -->
       <v-row class="mt-2">

@@ -98,7 +98,7 @@ export default {
 
     context.app.component("Posts", Posts)
     context.app.component("Post", Post)
-    context.app.component("PostDetail", PostDetail)
+    context.app.component("post", PostDetail)
     context.app.component("PostIcon", PostIcon)
     context.app.component("PostAuthor", PostAuthor)
     context.app.component("AuthorDetail", AuthorDetail)
