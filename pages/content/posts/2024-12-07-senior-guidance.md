@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Senior guidance"
 author: Ingunn Berg Ferstad
 date: 2024-12-07
@@ -11,8 +12,6 @@ intro: |
 next: false
 prev: false
 ---
-
-<PostDetail>
 
 <img src="https://assets.hdc.ntnu.no/assets/artworks/hunt-cloud_senior-guidance_full.jpg"></img>
 
@@ -31,5 +30,3 @@ Metadata:
 - **Year:** 2023
 - **Version:** 1.0
 - **ArtworkID:** hcc-artwork25
-
-</PostDetail>

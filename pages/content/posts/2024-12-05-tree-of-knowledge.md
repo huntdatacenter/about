@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Tree of knowledge"
 author: Ingunn Berg Ferstad
 date: 2024-12-05
@@ -11,8 +12,6 @@ intro: |
 next: false
 prev: false
 ---
-
-<PostDetail>
 
 <img src="https://assets.hdc.ntnu.no/assets/artworks/hunt-cloud_tree-of-knowledge_full.jpg"></img>
 
@@ -31,5 +30,3 @@ Metadata:
 - **Year:** 2023
 - **Version:** 1.1
 - **ArtworkID:** hcc-artwork5
-
-</PostDetail>

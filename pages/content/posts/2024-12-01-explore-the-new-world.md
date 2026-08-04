@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Explore the new world"
 author: Ingunn Berg Ferstad
 date: 2023-12-01
@@ -13,8 +14,6 @@ intro: |
 next: false
 prev: false
 ---
-
-<PostDetail>
 
 Imagine a new world. Kind of familiar, kind of different. Where digital laboratories are built on floating islands. Where you are the explorer, and the sky holds no limit. Welcome to HUNT Cloud.
 
@@ -35,5 +34,3 @@ Metadata:
 - **Year:** 2022
 - **Version:** 1.1
 - **ArtworkID:** hcc-artwork2
-
-</PostDetail>
