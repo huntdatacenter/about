@@ -190,7 +190,7 @@ contact: https://docs.hdc.ntnu.no/about/contact/
 <!-- BLOCK End: Who are we -->
 
 <!-- BLOCK START: Specs -->
-  <div class="hc-block">
+  <div class="hc-block" id="technologies" style="scroll-margin-top: var(--vp-nav-height, 64px)">
     <div class="hc-block-container">
       <div class="hc-container-title">
         Technologies
